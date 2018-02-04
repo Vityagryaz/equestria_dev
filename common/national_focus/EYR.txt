@@ -1,0 +1,197 @@
+focus_tree = {
+	id = eyrie_focus
+
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = EYR
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 290 y = 2500 }
+
+	### Political Path
+	focus = {
+		id = EYR_internal_politics
+		icon = GFX_goal_shadow_government
+		x = 10
+		y = 0
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	## Communism
+	focus = {
+		id = EYR_revolution
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_internal_politics }
+		mutually_exclusive = { focus = EYR_status_quo focus = EYR_power_for_the_people focus = EYR_empower_the_duke }
+		x = 7
+		y = 1
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_defense_of_eyrie
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_revolution }
+		x = 7
+		y = 2
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	## Harmony 
+	focus = {
+		id = EYR_power_for_the_people
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_internal_politics }
+		mutually_exclusive = { focus = EYR_status_quo focus = EYR_empower_the_duke focus = EYR_revolution }
+		x = 9
+		y = 1
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_constitutional_monarch
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_power_for_the_people }
+		x = 9
+		y = 2
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_rights_for_people
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_improve_civilian_industry }
+		x = 9
+		y = 4
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	## Neutrality 
+	focus = {
+		id = EYR_status_quo
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_internal_politics }
+		mutually_exclusive = { focus = EYR_empower_the_duke focus = EYR_power_for_the_people focus = EYR_revolution }
+		x = 11
+		y = 1
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_old_fashioned_monarch
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_status_quo }
+		x = 11
+		y = 2
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_rights_for_nobles
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_improve_civilian_industry focus = EYR_improve_military_industry }
+		x = 11
+		y = 4
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	## Harmony/Neutrality merge
+	
+	focus = {
+		id = EYR_improve_civilian_industry
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_old_fashioned_monarch focus = EYR_constitutional_monarch }
+		mutually_exclusive = { focus = EYR_improve_military_industry }
+		x = 10
+		y = 3
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	## Fascism/Neutrality merge
+	
+	focus = {
+		id = EYR_improve_military_industry
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_absolute_monarch focus = EYR_old_fashioned_monarch }
+		mutually_exclusive = { focus = EYR_improve_civilian_industry }
+		x = 12
+		y = 3
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	## Fascism
+	focus = {
+		id = EYR_empower_the_duke
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_internal_politics }
+		mutually_exclusive = { focus = EYR_status_quo focus = EYR_power_for_the_people focus = EYR_revolution }
+		x = 13
+		y = 1
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_absolute_monarch
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_empower_the_duke }
+		x = 13
+		y = 2
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_rights_for_officers
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_improve_military_industry }
+		x = 13
+		y = 4
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+
+}
