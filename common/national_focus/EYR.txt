@@ -39,11 +39,108 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = EYR_defense_of_eyrie
+		id = EYR_government_takeover
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_revolution }
 		x = 7
 		y = 2
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_seduce_the_masses
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_government_takeover }
+		x = 7
+		y = 3
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_defense_of_verenia
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_seduce_the_masses }
+		x = 8
+		y = 3
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_red_guards
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_seduce_the_masses }
+		x = 6
+		y = 3
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_military_buildup
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_red_guards }
+		prerequisite = { focus = EYR_defense_of_verenia }
+		x = 7
+		y = 4
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_ally_with_aqu_rep
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_military_buildup }
+		x = 6
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_support_lib_army
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_military_buildup }
+		x = 4
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_bring_down_empire
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_military_buildup }
+		x = 8
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_breakdown_pact
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_military_buildup }
+		x = 10
+		y = 5
 		cost = 10.00
 		completion_reward = {
 		
@@ -188,6 +285,79 @@ focus_tree = {
 		prerequisite = { focus = EYR_improve_military_industry }
 		x = 13
 		y = 4
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	###Economy Path
+	focus = {
+		id = EYR_home_improvement
+		icon = GFX_goal_shadow_government
+		x = 16
+		y = 0
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_land_reforms
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_home_improvement }
+		x = 16
+		y = 1
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_tractors_for_farmers
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_land_reforms }
+		x = 16
+		y = 2
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_remove_cott_ind
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_tractors_for_farmers }
+		x = 15
+		y = 3
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_verenian_mines
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_tractors_for_farmers }
+		x = 17
+		y = 3
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_out_of_the_fire
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_verenian_mines }
+		prerequisite = { focus = EYR_remove_cott_ind }
+		x = 16
+		y = 3
 		cost = 10.00
 		completion_reward = {
 		
