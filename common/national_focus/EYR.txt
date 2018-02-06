@@ -66,8 +66,8 @@ focus_tree = {
 		id = EYR_defense_of_verenia
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_seduce_the_masses }
-		x = 8
-		y = 3
+		x = 7
+		y = 4
 		cost = 10.00
 		completion_reward = {
 		
@@ -78,8 +78,8 @@ focus_tree = {
 		id = EYR_red_guards
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_seduce_the_masses }
-		x = 6
-		y = 3
+		x = 5
+		y = 4
 		cost = 10.00
 		completion_reward = {
 		
@@ -92,7 +92,7 @@ focus_tree = {
 		prerequisite = { focus = EYR_red_guards }
 		prerequisite = { focus = EYR_defense_of_verenia }
 		x = 7
-		y = 4
+		y = 5
 		cost = 10.00
 		completion_reward = {
 		
@@ -104,7 +104,7 @@ focus_tree = {
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_military_buildup }
 		x = 6
-		y = 5
+		y = 6
 		cost = 10.00
 		completion_reward = {
 		
@@ -116,7 +116,7 @@ focus_tree = {
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_military_buildup }
 		x = 4
-		y = 5
+		y = 6
 		cost = 10.00
 		completion_reward = {
 		
@@ -128,7 +128,7 @@ focus_tree = {
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_military_buildup }
 		x = 8
-		y = 5
+		y = 6
 		cost = 10.00
 		completion_reward = {
 		
@@ -140,7 +140,7 @@ focus_tree = {
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_military_buildup }
 		x = 10
-		y = 5
+		y = 6
 		cost = 10.00
 		completion_reward = {
 		
@@ -295,7 +295,7 @@ focus_tree = {
 	focus = {
 		id = EYR_home_improvement
 		icon = GFX_goal_shadow_government
-		x = 16
+		x = 18
 		y = 0
 		cost = 10.00
 		completion_reward = {
@@ -307,7 +307,7 @@ focus_tree = {
 		id = EYR_land_reforms
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_home_improvement }
-		x = 16
+		x = 18
 		y = 1
 		cost = 10.00
 		completion_reward = {
@@ -319,7 +319,7 @@ focus_tree = {
 		id = EYR_tractors_for_farmers
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_land_reforms }
-		x = 16
+		x = 18
 		y = 2
 		cost = 10.00
 		completion_reward = {
@@ -331,7 +331,7 @@ focus_tree = {
 		id = EYR_remove_cott_ind
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_tractors_for_farmers }
-		x = 15
+		x = 17
 		y = 3
 		cost = 10.00
 		completion_reward = {
@@ -343,7 +343,7 @@ focus_tree = {
 		id = EYR_verenian_mines
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_tractors_for_farmers }
-		x = 17
+		x = 19
 		y = 3
 		cost = 10.00
 		completion_reward = {
@@ -356,8 +356,204 @@ focus_tree = {
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_verenian_mines }
 		prerequisite = { focus = EYR_remove_cott_ind }
+		x = 18
+		y = 4
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	## Civ Industry
+	focus = {
+		id = EYR_new_factories
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_out_of_the_fire }
 		x = 16
-		y = 3
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_new_construction_methods
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_new_factories }
+		x = 16
+		y = 6
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_modern_tools
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_new_factories }
+		x = 14
+		y = 6
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_more_railroads
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_modern_tools }
+		prerequisite = { focus = EYR_new_construction_methods }
+		x = 15
+		y = 7
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	
+	## Mil Industry
+	
+	focus = {
+		id = EYR_fledgling_arm_industry
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_out_of_the_fire }
+		x = 18
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_armament_effort
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_fledgling_arm_industry }
+		x = 18
+		y = 6
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_increase_military_spending
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_armament_effort }
+		x = 18
+		y = 7
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	## Research
+	
+	focus = {
+		id = EYR_education_reform
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_out_of_the_fire }
+		x = 20
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_gov_funded_schools
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_education_reform }
+		x = 20
+		y = 6
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_foreign_experts
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_education_reform }
+		x = 22
+		y = 6
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_new_colleges
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_gov_funded_schools }
+		prerequisite = { focus = EYR_foreign_experts }
+		x = 21
+		y = 7
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	## Last industrial focus
+	
+	focus = {
+		id = EYR_new_colleges
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_new_colleges }
+		prerequisite = { focus = EYR_increase_military_spending }
+		prerequisite = { focus = EYR_more_railroads }
+		x = 18
+		y = 8
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	### International Branch
+	
+	focus = {
+		id = EYR_international_politics
+		icon = GFX_goal_shadow_government
+		x = 26
+		y = 0
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	## Aggressive
+	focus = {
+		id = EYR_aggresive_foreign_policy
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_international_politics }
+		mutually_exclusive = { focus = EYR_diplomatic_foreign_policy }
+		x = 26
+		y = 1
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_diplomatic_foreign_policy
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_international_politics }
+		mutually_exclusive = { focus = EYR_aggresive_foreign_policy }
+		x = 28
+		y = 1
 		cost = 10.00
 		completion_reward = {
 		
