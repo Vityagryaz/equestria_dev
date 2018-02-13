@@ -1,0 +1,15 @@
+﻿add_namespace = eyrie
+
+country_event = {
+	id = eyrie.1
+	title = eyrie.1.t
+	desc = eyrie.1.d
+	picture = GFX_event_griffon_mountain
+
+	fire_only_once = yes
+
+    option = {
+		name = eyrie.1.a
+	}
+}
+

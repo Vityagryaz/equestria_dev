@@ -825,7 +825,7 @@ focus_tree = {
 	focus = {
 		id = EYR_military_reforms 
 		icon = GFX_goal_shadow_government
-		x = 42
+		x = 48
 		y = 0
 		cost = 10.00
 		completion_reward = {
@@ -838,7 +838,7 @@ focus_tree = {
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_military_reforms }
 		mutually_exclusive = { focus = EYR_noble_army }
-		x = 41
+		x = 49
 		y = 1
 		cost = 10.00
 		completion_reward = {
@@ -851,7 +851,7 @@ focus_tree = {
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_military_reforms }
 		mutually_exclusive = { focus = EYR_peasant_army }
-		x = 43
+		x = 47
 		y = 1
 		cost = 10.00
 		completion_reward = {
@@ -859,6 +859,370 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = EYR_war_games 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_noble_army focus = EYR_peasant_army }
+		x = 48
+		y = 2
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
 	## Navy
+	
+	
+	focus = {
+		id = EYR_naval_doctrine 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_war_games }
+		x = 40
+		y = 3
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_battleships 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_naval_doctrine }
+		mutually_exclusive = { focus = EYR_carriers }
+		x = 38
+		y = 4
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_submarines 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_battleships }
+		x = 37
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_battlecruisers 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_battleships }
+		x = 39
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_battleship_doctrine 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_submarines focus = EYR_battlecruisers }
+		x = 38
+		y = 6
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_carriers 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_naval_doctrine }
+		mutually_exclusive = { focus = EYR_battleships }
+		x = 42
+		y = 4
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_cruisers 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_carriers }
+		x = 41
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_naval_bombers 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_carriers }
+		x = 43
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_carrier_doctrine 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_naval_bombers focus = EYR_cruisers  }
+		x = 42
+		y = 6
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	## Army 
+	
+	focus = {
+		id = EYR_army_doctrine 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_war_games }
+		x = 48
+		y = 3
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_mobile_warfare 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_army_doctrine }
+		mutually_exclusive = { focus = EYR_superior_firepower }
+		x = 46
+		y = 4
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_light_tanks 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_mobile_warfare }
+		x = 45
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_motorized 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_mobile_warfare }
+		x = 47
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_knights_of_eyrie 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_motorized }
+		prerequisite = { focus = EYR_light_tanks }
+		x = 46
+		y = 6
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_superior_firepower 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_army_doctrine }
+		mutually_exclusive = { focus = EYR_mobile_warfare }
+		x = 50
+		y = 4
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_infantry 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_superior_firepower }
+		x = 49
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+
+	focus = {
+		id = EYR_arty 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_superior_firepower }
+		x = 51
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_verenian_rifles 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_arty }
+		prerequisite = { focus = EYR_infantry }
+		x = 50
+		y = 6
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_quality_army 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_verenian_rifles }
+		prerequisite = { focus = EYR_knights_of_eyrie }
+		x = 48
+		y = 7
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	## Airforce
+	
+	focus = {
+		id = EYR_air_doctrine 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_war_games }
+		x = 56
+		y = 3
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_heavy_firepower 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_air_doctrine }
+		mutually_exclusive = { focus = EYR_light_airpower }
+		x = 54
+		y = 4
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_heavy_fighters 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_heavy_firepower }
+		x = 53
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_heavy_bombers 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_heavy_firepower }
+		x = 55
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_independent_airforce 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_heavy_bombers }
+		prerequisite = { focus = EYR_heavy_fighters }
+		x = 54
+		y = 6
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_light_airpower 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_air_doctrine }
+		mutually_exclusive = { focus = EYR_heavy_firepower }
+		x = 58
+		y = 4
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_cas_planes 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_light_airpower }
+		x = 57
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_nimble_fighters 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_light_airpower }
+		x = 59
+		y = 5
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = EYR_army_dependent_airforce 
+		icon = GFX_goal_shadow_government
+		prerequisite = { focus = EYR_cas_planes }
+		prerequisite = { focus = EYR_nimble_fighters }
+		x = 58
+		y = 6
+		cost = 10.00
+		completion_reward = {
+		
+		}
+	}
 
 }

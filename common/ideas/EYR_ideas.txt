@@ -1,0 +1,20 @@
+ideas = {
+
+	country = {
+		EYR_something = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+			}
+		}
+    }
+}
