@@ -1,0 +1,27 @@
+﻿l_english:
+### Ideas
+##Internal Politics Ideas
+EYR_revolutionary_spirit:0 "Revolutionary Spirit"
+EYR_revolutionary_spirit_desc:0 ""
+EYR_democratic_spirit:0 "Democratic Spirit"
+EYR_democratic_spirit_desc:0 ""
+EYR_neutrality_spirit:0 "Political Status Quo"
+EYR_neutrality_spirit_desc:0 ""
+EYR_fascist_sympathies:0 "Fascist Sympathies"
+EYR_fascist_sympathies_desc:0 ""
+EYR_military_spending:0 "Military Spending"
+EYR_military_spending_desc:0 ""
+EYR_civilian_spending:0 "Civilian Spending"
+EYR_civilian_spending_desc:0 ""
+EYR_noble_rights:0 "Rights for the Nobles"
+EYR_noble_rights_desc:0 ""
+EYR_peoples_rights:0 "Rights for the People"
+EYR_peoples_rights_desc:0 ""
+EYR_officer_rights:0 "Rights for the Officers"
+EYR_officer_rights_desc:0 ""
+
+##Industry Ideas
+EYR_tractors:0 "Mechanised Agriculture"
+EYR_tractors_desc:0 ""
+
+##International Politics Ideas
