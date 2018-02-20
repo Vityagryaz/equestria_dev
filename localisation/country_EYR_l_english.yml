@@ -19,6 +19,10 @@ EYR_peoples_rights:0 "Rights for the People"
 EYR_peoples_rights_desc:0 ""
 EYR_officer_rights:0 "Rights for the Officers"
 EYR_officer_rights_desc:0 ""
+EYR_defense:0 "Focus on Defense"
+EYR_defense_desc:0 ""
+EYR_red_guard:0 "Red Guard"
+EYR_red_guard_desc:0 ""
 
 ##Industry Ideas
 EYR_tractors:0 "Mechanised Agriculture"

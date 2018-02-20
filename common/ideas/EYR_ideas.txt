@@ -186,5 +186,39 @@ ideas = {
 			}
 		}
 		
+		EYR_defense = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				production_speed_bunker_factor = 0.05
+			}
+		}
+		
+		EYR_red_guard = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				army_core_defence_factor = 0.05
+				conscription = 0.02
+			}
+		}
     }
 }

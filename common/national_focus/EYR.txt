@@ -20,7 +20,7 @@ focus_tree = {
 		y = 0
 		cost = 10.00
 		completion_reward = {
-		
+			add_political_power = 100
 		}
 	}
 	
@@ -34,7 +34,7 @@ focus_tree = {
 		y = 1
 		cost = 10.00
 		completion_reward = {
-		
+			add_ideas = EYR_revolutionary_spirit
 		}
 	}
 	
@@ -46,7 +46,15 @@ focus_tree = {
 		y = 2
 		cost = 10.00
 		completion_reward = {
-		
+			set_politics = {
+				ruling_party = communism
+				elections_allowed = no
+			}
+
+			add_popularity = {
+				ideology = communism
+				popularity = 0.30
+			}
 		}
 	}
 	
@@ -58,11 +66,11 @@ focus_tree = {
 		y = 3
 		cost = 10.00
 		completion_reward = {
-		
+			add_national_unity = 0.10
 		}
 	}
 	
-	focus = {
+	focus = { ### Adds in Forts
 		id = EYR_defense_of_verenia
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = EYR_seduce_the_masses }
@@ -70,7 +78,7 @@ focus_tree = {
 		y = 4
 		cost = 10.00
 		completion_reward = {
-		
+			add_ideas = EYR_defense
 		}
 	}
 	
@@ -82,7 +90,7 @@ focus_tree = {
 		y = 4
 		cost = 10.00
 		completion_reward = {
-		
+			add_ideas = EYR_red_guard
 		}
 	}
 	
@@ -95,11 +103,12 @@ focus_tree = {
 		y = 5
 		cost = 10.00
 		completion_reward = {
-		
+			one_random_arms_factory = yes
+			one_random_infrastructure = yes
 		}
 	}
 	
-	focus = {
+	focus = { ### Need to make some events for this
 		id = EYR_ally_with_aqu_rep
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = EYR_military_buildup }
@@ -107,7 +116,7 @@ focus_tree = {
 		y = 6
 		cost = 10.00
 		completion_reward = {
-		
+			
 		}
 	}
 	
@@ -157,7 +166,7 @@ focus_tree = {
 		y = 1
 		cost = 10.00
 		completion_reward = {
-		
+			add_ideas = EYR_democratic_spirit
 		}
 	}
 	
@@ -169,7 +178,11 @@ focus_tree = {
 		y = 2
 		cost = 10.00
 		completion_reward = {
-		
+			add_political_power = 50
+			add_popularity = {
+				ideology = democractic
+				popularity = 0.20
+			}
 		}
 	}
 	
@@ -181,7 +194,7 @@ focus_tree = {
 		y = 4
 		cost = 10.00
 		completion_reward = {
-		
+			add_ideas = EYR_peoples_rights
 		}
 	}
 	
@@ -195,7 +208,7 @@ focus_tree = {
 		y = 1
 		cost = 10.00
 		completion_reward = {
-		
+			add_ideas = EYR_neutrality_spirit
 		}
 	}
 	
@@ -207,7 +220,11 @@ focus_tree = {
 		y = 2
 		cost = 10.00
 		completion_reward = {
-		
+			add_political_power = 50
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.20
+			}
 		}
 	}
 	
@@ -219,7 +236,7 @@ focus_tree = {
 		y = 4
 		cost = 10.00
 		completion_reward = {
-		
+			add_ideas = EYR_noble_rights
 		}
 	}
 	
@@ -234,7 +251,7 @@ focus_tree = {
 		y = 3
 		cost = 10.00
 		completion_reward = {
-		
+			add_ideas = EYR_civilian_spending
 		}
 	}
 	
@@ -249,7 +266,7 @@ focus_tree = {
 		y = 3
 		cost = 10.00
 		completion_reward = {
-		
+			add_ideas = EYR_military_spending
 		}
 	}
 	
@@ -263,7 +280,7 @@ focus_tree = {
 		y = 1
 		cost = 10.00
 		completion_reward = {
-		
+			add_ideas = EYR_fascist_sympathies
 		}
 	}
 	
@@ -275,7 +292,11 @@ focus_tree = {
 		y = 2
 		cost = 10.00
 		completion_reward = {
-		
+			add_political_power = 50
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.20
+			}
 		}
 	}
 	
@@ -287,7 +308,7 @@ focus_tree = {
 		y = 4
 		cost = 10.00
 		completion_reward = {
-		
+			add_ideas = EYR_officer_rights
 		}
 	}
 	
@@ -323,7 +344,7 @@ focus_tree = {
 		y = 2
 		cost = 10.00
 		completion_reward = {
-		
+			add_ideas = EYR_tractors
 		}
 	}
 	
