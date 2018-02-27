@@ -320,7 +320,13 @@ focus_tree = {
 		y = 0
 		cost = 10.00
 		completion_reward = {
-		
+			add_political_power = 20
+			391 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			400 = {
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 	
@@ -332,13 +338,14 @@ focus_tree = {
 		y = 1
 		cost = 10.00
 		completion_reward = {
-		
+			one_random_infrastructure = yes
+			one_random_infrastructure = yes
 		}
 	}
 	
 	focus = {
 		id = EYR_tractors_for_farmers
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_reichsautobahn
 		prerequisite = { focus = EYR_land_reforms }
 		x = 18
 		y = 2
@@ -350,88 +357,105 @@ focus_tree = {
 	
 	focus = {
 		id = EYR_remove_cott_ind
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = EYR_tractors_for_farmers }
 		x = 17
 		y = 3
 		cost = 10.00
 		completion_reward = {
-		
+			decrease_poverty = yes
 		}
 	}
 	
 	focus = {
 		id = EYR_verenian_mines
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = EYR_tractors_for_farmers }
 		x = 19
 		y = 3
 		cost = 10.00
 		completion_reward = {
-		
+			add_resource = {
+				type = steel
+				amount = 6
+				state = 391
+			}
 		}
 	}
 	
 	focus = {
 		id = EYR_out_of_the_fire
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = EYR_verenian_mines }
 		prerequisite = { focus = EYR_remove_cott_ind }
 		x = 18
 		y = 4
 		cost = 10.00
 		completion_reward = {
-		
+			decrease_poverty = yes
 		}
 	}
 	
 	## Civ Industry
 	focus = {
 		id = EYR_new_factories
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = EYR_out_of_the_fire }
 		x = 16
 		y = 5
 		cost = 10.00
 		completion_reward = {
-		
+			two_random_industrial_complex = yes
+			decrease_poverty = yes
 		}
 	}
 	
 	focus = {
 		id = EYR_new_construction_methods
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_production2
 		prerequisite = { focus = EYR_new_factories }
 		x = 16
 		y = 6
 		cost = 10.00
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
 		}
 	}
 	
 	focus = {
 		id = EYR_modern_tools
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_air_production
 		prerequisite = { focus = EYR_new_factories }
 		x = 14
 		y = 6
 		cost = 10.00
 		completion_reward = {
-		
+			add_tech_bonus = {
+				name = electronics_bonus
+				bonus = 0.50
+				uses = 1
+				category = electronics
+			}
 		}
 	}
 	
 	focus = {
 		id = EYR_more_railroads
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = EYR_modern_tools }
 		prerequisite = { focus = EYR_new_construction_methods }
 		x = 15
 		y = 7
 		cost = 10.00
 		completion_reward = {
-		
+			one_random_infrastructure = yes
+			one_random_infrastructure = yes
+			decrease_poverty = yes
 		}
 	}
 	
@@ -440,37 +464,48 @@ focus_tree = {
 	
 	focus = {
 		id = EYR_fledgling_arm_industry
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = EYR_out_of_the_fire }
 		x = 18
 		y = 5
 		cost = 10.00
 		completion_reward = {
-		
+			one_random_arms_factory = yes
 		}
 	}
 	
 	focus = {
 		id = EYR_armament_effort
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_military_sphere
 		prerequisite = { focus = EYR_fledgling_arm_industry }
 		x = 18
 		y = 6
 		cost = 10.00
 		completion_reward = {
-		
+			two_random_arms_factory = yes
 		}
 	}
 	
 	focus = {
 		id = EYR_increase_military_spending
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = EYR_armament_effort }
 		x = 18
 		y = 7
 		cost = 10.00
 		completion_reward = {
-		
+			if = {
+				limit = {
+					has_idea = EYR_military_spending 
+				}
+				swap_ideas = { 
+					add_idea = EYR_military_spending2 
+					remove_idea = EYR_military_spending  
+				}
+				else = {
+					add_ideas = EYR_military_spending2
+				}
+			}
 		}
 	}
 	
@@ -478,31 +513,31 @@ focus_tree = {
 	
 	focus = {
 		id = EYR_education_reform
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_tfv_generic_tech_sharing
 		prerequisite = { focus = EYR_out_of_the_fire }
 		x = 20
 		y = 5
 		cost = 10.00
 		completion_reward = {
-		
+			decrease_illiteracy = yes
 		}
 	}
 	
 	focus = {
 		id = EYR_gov_funded_schools
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = EYR_education_reform }
 		x = 20
 		y = 6
 		cost = 10.00
 		completion_reward = {
-		
+			add_ideas = EYR_funded_schools
 		}
 	}
 	
 	focus = {
 		id = EYR_foreign_experts
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_scientific_exchange
 		prerequisite = { focus = EYR_education_reform }
 		x = 22
 		y = 6
@@ -514,30 +549,46 @@ focus_tree = {
 	
 	focus = {
 		id = EYR_new_colleges
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_government_icon
 		prerequisite = { focus = EYR_gov_funded_schools }
 		prerequisite = { focus = EYR_foreign_experts }
 		x = 21
 		y = 7
 		cost = 10.00
 		completion_reward = {
-		
+			add_research_slot = 1
+			decrease_illiteracy = yes
+			
 		}
 	}
 	
-	## Last industrial focus
+	## Last industrial focuses
 	
 	focus = {
-		id = EYR_new_colleges
-		icon = GFX_goal_shadow_government
+		id = EYR_poverty_free
+		icon = GFX_goal_gold_reserve
 		prerequisite = { focus = EYR_new_colleges }
 		prerequisite = { focus = EYR_increase_military_spending }
 		prerequisite = { focus = EYR_more_railroads }
-		x = 18
+		x = 17
 		y = 8
 		cost = 10.00
 		completion_reward = {
-		
+			decrease_poverty = yes
+		}
+	}
+	
+	focus = {
+		id = EYR_educated_populace
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = { focus = EYR_new_colleges }
+		prerequisite = { focus = EYR_increase_military_spending }
+		prerequisite = { focus = EYR_more_railroads }
+		x = 19
+		y = 8
+		cost = 10.00
+		completion_reward = {
+			decrease_illiteracy = yes
 		}
 	}
 	
