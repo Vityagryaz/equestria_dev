@@ -596,156 +596,208 @@ focus_tree = {
 	
 	focus = {
 		id = EYR_international_politics
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_positive_trade_relations
 		x = 29
 		y = 0
 		cost = 10.00
 		completion_reward = {
-		
+			add_political_power = 100
 		}
 	}
 	
 	## Aggressive
 	focus = {
 		id = EYR_aggresive_foreign_policy
-		icon = GFX_goal_shadow_government
+		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = EYR_international_politics }
 		mutually_exclusive = { focus = EYR_diplomatic_foreign_policy }
 		x = 26
 		y = 1
 		cost = 10.00
 		completion_reward = {
-		
+			add_ideas = EYR_agro_policy
 		}
 	}
 	
-	focus = {
+	focus = { ## Gives an event dealing with Griffonstone
 		id = EYR_intimidate_erie
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = EYR_aggresive_foreign_policy }
 		x = 26
 		y = 2
 		cost = 10.00
 		completion_reward = {
-		
-		}
-	}
-	
-	focus = {
-		id = EYR_conquer_erie
-		icon = GFX_goal_shadow_government
-		prerequisite = { focus = EYR_intimidate_erie }
-		mutually_exclusive = { focus = EYR_puppet_erie }
-		x = 25
-		y = 3
-		cost = 10.00
-		completion_reward = {
-		
-		}
-	}
-	
-	focus = {
-		id = EYR_puppet_erie
-		icon = GFX_goal_shadow_government
-		prerequisite = { focus = EYR_intimidate_erie }
-		mutually_exclusive = { focus = EYR_conquer_erie }
-		x = 27
-		y = 3
-		cost = 10.00
-		completion_reward = {
-		
+			
 		}
 	}
 	
 	focus = {
 		id = EYR_house_united
-		icon = GFX_goal_shadow_government
-		prerequisite = { focus = EYR_puppet_erie focus = EYR_conquer_erie }
+		icon = GFX_focus_generic_diplomatic_treaty
+		prerequisite = { focus = EYR_intimidate_erie }
+		x = 26
+		y = 3
+		cost = 10.00
+		
+		completion_reward = {
+			add_state_core = 673
+		}
+	}
+	
+	focus = { ## Event to create a Faction
+		id = EYR_between_rock_and_hard_place
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = EYR_house_united }
+		mutually_exclusive = { focus = EYR_conquer_avian }
+		mutually_exclusive = { focus = EYR_conquer_pomovarra }
 		x = 26
 		y = 4
 		cost = 10.00
 		completion_reward = {
-		
-		}
-	}
-	
-	focus = {
-		id = EYR_between_rock_and_hard_place
-		icon = GFX_goal_shadow_government
-		prerequisite = { focus = EYR_house_united }
-		x = 26
-		y = 5
-		cost = 10.00
-		completion_reward = {
-		
+			
 		}
 	}
 	
 	focus = {
 		id = EYR_border_defenses
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = EYR_between_rock_and_hard_place }
 		x = 27
-		y = 6
+		y = 5
 		cost = 10.00
 		completion_reward = {
-		
+			400 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 7863
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 7802
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 12523
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 4782
+					instant_build = yes
+				}
+			}
+			391 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 10544
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 12595
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 7701
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 10673
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 12599
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 7750
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = EYR_eyrian_guard
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = EYR_between_rock_and_hard_place }
 		x = 25
-		y = 6
+		y = 5
 		cost = 10.00
 		completion_reward = {
-		
+			add_ideas = EYR_eyr_guard
 		}
 	}
 	
 	focus = {
 		id = EYR_conquer_pomovarra
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = EYR_house_united }
+		mutually_exclusive = { focus = EYR_between_rock_and_hard_place }
 		x = 28
-		y = 5
+		y = 4
 		cost = 10.00
-		completion_reward = {
 		
+		will_lead_to_war_with = POM
+		completion_reward = {
+			create_wargoal = { 
+				type = annex_everything 
+				target = POM 
+			}
 		}
 	}
 	
 	focus = {
 		id = EYR_conquer_avian
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = EYR_house_united }
+		mutually_exclusive = { focus = EYR_between_rock_and_hard_place }
 		x = 24
-		y = 5
+		y = 4
 		cost = 10.00
-		completion_reward = {
 		
+		will_lead_to_war_with = AVI
+		completion_reward = {
+			create_wargoal = { 
+				type = annex_everything 
+				target = AVI 
+			}
 		}
 	}
 	
 	## Diplomatic
 	focus = {
 		id = EYR_diplomatic_foreign_policy
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = EYR_international_politics }
 		mutually_exclusive = { focus = EYR_aggresive_foreign_policy }
 		x = 32
 		y = 1
 		cost = 10.00
 		completion_reward = {
-		
+			add_ideas = EYR_diplo_policy
 		}
 	}
 	
-	focus = {
+	focus = { ## Event that gives country flags
 		id = EYR_call_for_external_help
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_anschluss
 		prerequisite = { focus = EYR_diplomatic_foreign_policy }
 		x = 32
 		y = 2
@@ -757,18 +809,19 @@ focus_tree = {
 	
 	focus = {
 		id = EYR_help_from_empire
-		icon = GFX_goal_shadow_government
+		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = EYR_call_for_external_help }
 		mutually_exclusive = { focus = EYR_help_from_wingbardy focus = EYR_help_from_aquilea }
+		available = { has_country_flag = EYR_empire }
 		x = 30
 		y = 3
-		cost = 10.00
+		cost = 1.00
 		completion_reward = {
 		
 		}
 	}
 	
-	focus = {
+	focus = { 
 		id = EYR_imperial_advisors
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_help_from_empire }
@@ -780,7 +833,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ## becomes a puppet of the Empire
 		id = EYR_submit_to_emperor
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_imperial_advisors }
@@ -797,9 +850,10 @@ focus_tree = {
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_call_for_external_help }
 		mutually_exclusive = { focus = EYR_help_from_empire focus = EYR_help_from_aquilea }
+		available = { has_country_flag = EYR_wing }
 		x = 32
 		y = 3
-		cost = 10.00
+		cost = 1.00
 		completion_reward = {
 		
 		}
@@ -817,7 +871,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ## Research bonuses
 		id = EYR_military_aid
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_wingbardian_advisors focus = EYR_aquilean_advisors }
@@ -834,9 +888,10 @@ focus_tree = {
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_call_for_external_help }
 		mutually_exclusive = { focus = EYR_help_from_empire focus = EYR_help_from_wingbardy }
+		available = { has_country_flag = EYR_aquil }
 		x = 34
 		y = 3
-		cost = 10.00
+		cost = 1.00
 		completion_reward = {
 		
 		}
@@ -854,7 +909,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ## Event to join the Karthinian Pact
 		id = EYR_join_pact 
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_wingbardian_advisors }
@@ -863,12 +918,12 @@ focus_tree = {
 		y = 6
 		cost = 10.00
 		completion_reward = {
-		
+	
 		}
 	}
 	
 	focus = {
-		id = EYR_aquilean_guarantee 
+		id = EYR_aquilean_guarantee ##Guarantee from Aquileia
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_aquilean_advisors }
 		prerequisite = { focus = EYR_military_aid }
@@ -880,7 +935,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
+	focus = { ## Changes Eyrie to a Kingdom, gives pp
 		id = EYR_more_than_a_duke 
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_join_pact focus = EYR_aquilean_guarantee }
