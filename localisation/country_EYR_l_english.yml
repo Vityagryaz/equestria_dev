@@ -45,3 +45,104 @@ EYR_tractors:0 "Mechanised Agriculture"
 EYR_tractors_desc:0 ""
 
 ##International Politics Ideas
+
+### Events
+eyrie.1.t:0 "The story of Eyrie"
+eyrie.1.d:0 "Todo"
+eyrie.1.a:0 "Todo"
+
+eyrie.2.t:0 "Threat from House Eyrie"
+eyrie.2.d:0 "Todo"
+eyrie.2.a:0 "Todo"
+
+eyrie.3.t:0 "Move on Griffonstone"
+eyrie.3.d:0 "Todo"
+eyrie.3.a:0 "Todo"
+
+eyrie.4.t:0 "Demands from House Eyrie"
+eyrie.4.d:0 "Todo"
+eyrie.4.a:0 "Todo"
+eyrie.4.b:0 "Todo"
+
+eyrie.5.t:0 "Our Demands were Refused!"
+eyrie.5.d:0 "Todo"
+eyrie.5.a:0 "Todo"
+
+eyrie.6.t:0 "The Diplomatic Option"
+eyrie.6.d:0 "Todo"
+eyrie.6.a:0 "Todo"
+eyrie.6.b:0 "Todo"
+eyrie.6.c:0 "Todo"
+
+eyrie.7.t:0 "Dealing with Griffonstone - Empire's Help"
+eyrie.7.d:0 "Todo"
+eyrie.7.a:0 "Todo"
+
+eyrie.8.t:0 "Demands from House Eyrie"
+eyrie.8.d:0 "Todo"
+eyrie.8.a:0 "Todo"
+
+eyrie.9.t:0 "Our Demands were Refused!"
+eyrie.9.d:0 "Todo"
+eyrie.9.a:0 "Todo"
+
+eyrie.10.t:0 "Dealing with Griffonstone - Wingbardy's Help"
+eyrie.10.d:0 "Todo"
+eyrie.10.a:0 "Todo"
+
+eyrie.11.t:0 "Demands from House Eyrie"
+eyrie.11.d:0 "Todo"
+eyrie.11.a:0 "Todo"
+
+eyrie.12t:0 "Our Demands were Refused!"
+eyrie.12.d:0 "Todo"
+eyrie.12.a:0 "Todo"
+
+eyrie.13.t:0 "Dealing with Griffonstone - Aquileia's Help"
+eyrie.13.d:0 "Todo"
+eyrie.13.a:0 "Todo"
+
+eyrie.14.t:0 "Demands from House Eyrie"
+eyrie.14.d:0 "Todo"
+eyrie.14.a:0 "Todo"
+
+eyrie.15.t:0 "Our Demands were Refused!"
+eyrie.15.d:0 "Todo"
+eyrie.15.a:0 "Todo"
+
+eyrie.16.t:0 "Eyrie draws closer"
+eyrie.16.d:0 "Todo"
+eyrie.16.a:0 "Allow this."
+eyrie.16.b:0 "Stop it."
+
+eyrie.17.t:0 "The Empire Doesn't Want Us!"
+eyrie.17.d:0 "Todo"
+eyrie.17.a:0 "Damn."
+
+eyrie.18.t:0 "Eyrie draws closer" 
+eyrie.18.d:0 "Todo"
+eyrie.18.a:0 "Allow this."
+eyrie.18.b:0 "Stop it."
+
+eyrie.19.t:0 "Wingbardy doesn't want us!"
+eyrie.19.d:0 "Todo"
+eyrie.19.a:0 "Damn."
+
+eyrie.20.t:0 "Eyrie draws closer."
+eyrie.20.d:0 "Todo"
+eyrie.20.a:0 "Allow this."
+eyrie.20.b:0 "Stop it."
+
+eyrie.21.t:0 "Aquileia doesn't want us!"
+eyrie.21.d:0 "Todo"
+eyrie.21.a:0 "Damn."
+
+eyrie.22.t:0 "The Empire Demands our Vassilization"
+eyrie.22.d:0 "Todo"
+eyrie.22.a:0 "Todo"
+
+###
+
+EYR_aquil:0 "Aquileian Help"
+EYR_wing:0 "Wingbardian Help"
+EYR_empire:0 "Imperial Help"

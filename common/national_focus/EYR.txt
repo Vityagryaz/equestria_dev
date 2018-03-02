@@ -804,6 +804,10 @@ focus_tree = {
 		cost = 10.00
 		completion_reward = {
 		
+			country_event = {
+				id = eyrie.6
+			}
+		
 		}
 	}
 	
@@ -811,13 +815,14 @@ focus_tree = {
 		id = EYR_help_from_empire
 		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = EYR_call_for_external_help }
-		mutually_exclusive = { focus = EYR_help_from_wingbardy focus = EYR_help_from_aquilea }
 		available = { has_country_flag = EYR_empire }
 		x = 30
 		y = 3
 		cost = 1.00
 		completion_reward = {
-		
+			country_event = {
+				id = eyrie.7
+			}
 		}
 	}
 	
@@ -841,7 +846,13 @@ focus_tree = {
 		y = 5
 		cost = 10.00
 		completion_reward = {
-		
+			add_political_power = 100
+			
+			hidden_effect = {
+				country_event = {
+					id = eyrie.22
+				}
+			}
 		}
 	}
 	
@@ -849,13 +860,14 @@ focus_tree = {
 		id = EYR_help_from_wingbardy
 		icon = GFX_goal_shadow_government
 		prerequisite = { focus = EYR_call_for_external_help }
-		mutually_exclusive = { focus = EYR_help_from_empire focus = EYR_help_from_aquilea }
 		available = { has_country_flag = EYR_wing }
 		x = 32
 		y = 3
 		cost = 1.00
 		completion_reward = {
-		
+			country_event = {
+				id = eyrie.10
+			}
 		}
 	}
 	
@@ -893,7 +905,9 @@ focus_tree = {
 		y = 3
 		cost = 1.00
 		completion_reward = {
-		
+			country_event = {
+				id = eyrie.13
+			}
 		}
 	}
 	
@@ -905,7 +919,7 @@ focus_tree = {
 		y = 4
 		cost = 10.00
 		completion_reward = {
-		
+			
 		}
 	}
 	
