@@ -400,7 +400,10 @@ country_event = { ## Eyrie draws closer
 		
 		ai_chance = { factor = 95 }
 		
-		set_country_flag = EYR_empire
+		
+		EYR_ = {
+			set_country_flag = EYR_empire
+		}
 		
 	}
 	
@@ -446,7 +449,9 @@ country_event = { ## Eyrie draws closer - Wingbardy
 		
 		ai_chance = { factor = 80 }
 		
-		set_country_flag = EYR_wing
+		EYR_ = {
+			set_country_flag = EYR_wing
+		}
 		
 	}
 	
@@ -492,7 +497,9 @@ country_event = { ## Eyrie draws closer - Aquileia
 		
 		ai_chance = { factor = 80 }
 		
-		set_country_flag = EYR_aquil
+		EYR_ = {
+			set_country_flag = EYR_aquil
+		}
 		
 	}
 	
