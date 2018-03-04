@@ -87,7 +87,7 @@ ideas = {
 			equipment_bonus = {
                 infantry_equipment = {
                     instant = yes
-                    build_cost_ic = -0.04
+                    build_cost_ic = -0.02
                 }
                 support_equipment = {
                     build_cost_ic = -0.04
@@ -186,5 +186,188 @@ ideas = {
 			}
 		}
 		
+		EYR_defense = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				production_speed_bunker_factor = 0.05
+			}
+		}
+		
+		EYR_red_guard = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				army_core_defence_factor = 0.05
+				conscription = 0.02
+			}
+		}
+		
+		EYR_military_spending2 = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+			}
+			
+			equipment_bonus = {
+                infantry_equipment = {
+                    instant = yes
+                    build_cost_ic = -0.04
+                }
+                support_equipment = {
+                    build_cost_ic = -0.06
+                    instant = yes
+                }
+            }
+		}
+		
+		EYR_funded_schools = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				research_time_factor = -0.075 	
+			}
+		}
+		
+		EYR_agro_policy = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				justify_war_goal_time = -0.50
+				political_power_cost = 0.2
+			}
+		}
+		
+		EYR_diplo_policy = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				political_power_cost = -0.2
+				improve_relations_maintain_cost_factor = -0.5	
+				trade_opinion_factor = 0.5
+			}
+		}
+		
+		EYR_eyr_guard = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+				conscription_factor = 0.10
+				army_core_defence_factor = 0.10
+			}
+		}
+		
+		### international advisors
+		
+		EYR_empire_adv = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+			}
+		}
+		
+		EYR_wing_adv = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+			}
+		}
+		
+		EYR_aqui_adv = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+			}
+
+			removal_cost = -1
+
+			picture = generic_communism_drift_bonus
+
+			modifier = {
+			}
+		}
     }
 }

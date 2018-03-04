@@ -1,15 +1,544 @@
 ﻿add_namespace = eyrie
 
-country_event = {
+country_event = { ### Introduction Event
 	id = eyrie.1
 	title = eyrie.1.t
 	desc = eyrie.1.d
 	picture = GFX_event_griffon_mountain
-
-	fire_only_once = yes
+	
+	is_triggered_only = yes
 
     option = {
 		name = eyrie.1.a
 	}
 }
+
+country_event = { ### Intimidation Route
+	id = eyrie.2
+	title = eyrie.2.t
+	desc = eyrie.2.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## Annex
+		name = eyrie.2.a
+		
+		ai_chance = { factor = 80 }
+		
+		create_wargoal = {
+            target = ERI 
+			type = annex_everything
+        }
+	}
+	
+	option = { ## Puppet
+		name = eyrie.2.b
+		
+		ai_chance = { factor = 20 }
+		
+		create_wargoal = {
+            target = ERI 
+			type = puppet_wargoal_focus
+        }
+	}
+}
+
+country_event = { ### Move on Griffonstone
+	id = eyrie.3
+	title = eyrie.3.t
+	desc = eyrie.3.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## Send Demands
+		name = eyrie.3.a
+		
+		BOI = {
+			country_event = {
+				id = eyrie.4
+			}
+		}
+	}
+}
+
+country_event = { ### Griffonstone's Response 1
+	id = eyrie.4
+	title = eyrie.4.t
+	desc = eyrie.4.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## Accept Demands
+		name = eyrie.4.a
+		
+		ai_chance = { factor = 50 }
+		
+		EYR = {
+			annex_country = { 
+				target = BOI 
+				transfer_troops = yes 
+			}
+		}
+	}
+	
+	option = { ## Refuse Demands
+		name = eyrie.4.b
+		
+		ai_chance = { factor = 50 }
+		
+		EYR = {
+			country_event = {
+				id = eyrie.5
+			}
+		}
+	}
+}
+
+country_event = { ### Refused Demands
+	id = eyrie.5
+	title = eyrie.5.t
+	desc = eyrie.5.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## To arms!
+		name = eyrie.5.a
+		
+		create_wargoal = {
+            target = BOI 
+			type = annex_everything
+        }
+	}
+}
+
+
+
+country_event = { ### Diplomatic Route
+	id = eyrie.6
+	title = eyrie.6.t
+	desc = eyrie.6.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## Empire
+		name = eyrie.6.a
+		
+		ai_chance = { factor = 60 }
+		
+		hidden_effect = {
+			GRI = {
+				country_event = {
+					id = eyrie.16
+				}
+			}
+		}
+		
+	}
+	
+	option = { ## Wingbardy
+		name = eyrie.6.b
+		
+		ai_chance = { factor = 20 }
+		
+		hidden_effect = {
+			WNG = {
+				country_event = {
+					id = eyrie.18
+				}
+			}
+		}
+	
+	}
+	
+	option = { ## Aquileia
+		name = eyrie.6.b
+		
+		ai_chance = { factor = 20 }
+		
+		hidden_effect = {
+			GRI = {
+				country_event = {
+					id = eyrie.20
+				}
+			}
+		}
+		
+	}
+}
+
+country_event = { ### Submit to the Emperor
+	id = eyrie.7
+	title = eyrie.7.t
+	desc = eyrie.7.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## Request the Empires help
+		name = eyrie.7.a
+		
+		BOI = {
+			country_event = {
+				id = eyrie.8 
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = { ### Griffonstone's response 2
+	id = eyrie.8
+	title = eyrie.8.t
+	desc = eyrie.8.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+     option = { ## Accept Demands
+		name = eyrie.8.a
+		
+		ai_chance = { factor = 95 }
+		
+		EYR = {
+			annex_country = { 
+				target = BOI 
+				transfer_troops = yes 
+			}
+		}
+	}
+	
+	option = { ## Refuse Demands
+		name = eyrie.8.b
+		
+		ai_chance = { factor = 5 }
+		
+		EYR = {
+			country_event = {
+				id = eyrie.9
+			}
+		}
+	}
+}
+
+country_event = { ### Refused Demands 2
+	id = eyrie.9
+	title = eyrie.9.t
+	desc = eyrie.9.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## To arms!
+		name = eyrie.9.a
+		
+		create_wargoal = {
+            target = BOI 
+			type = annex_everything
+        }
+	}
+}
+
+country_event = { ### Wingbardy's Help
+	id = eyrie.10
+	title = eyrie.10.t
+	desc = eyrie.10.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## 
+		name = eyrie.10.a
+		
+		BOI = {
+			country_event = {
+				id = eyrie.11 
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = { ### Griffonstone's response 3
+	id = eyrie.11
+	title = eyrie.11.t
+	desc = eyrie.11.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+     option = { ## Accept Demands
+		name = eyrie.11.a
+		
+		ai_chance = { factor = 80 }
+		
+		EYR = {
+			annex_country = { 
+				target = BOI 
+				transfer_troops = yes 
+			}
+		}
+	}
+	
+	option = { ## Refuse Demands
+		name = eyrie.11.b
+		
+		ai_chance = { factor = 20 }
+		
+		EYR = {
+			country_event = {
+				id = eyrie.12
+			}
+		}
+	}
+}
+
+country_event = { ### Refused Demands 3
+	id = eyrie.12
+	title = eyrie.12.t
+	desc = eyrie.12.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## To arms!
+		name = eyrie.12.a
+		
+		create_wargoal = {
+            target = BOI 
+			type = annex_everything
+        }
+	}
+}
+
+country_event = { ### Aquileia Help
+	id = eyrie.13
+	title = eyrie.13.t
+	desc = eyrie.13.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## 
+		name = eyrie.13.a
+		
+		BOI = {
+			country_event = {
+				id = eyrie.14 
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = { ### Griffonstone's response 4
+	id = eyrie.14
+	title = eyrie.14.t
+	desc = eyrie.14.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+     option = { ## Accept Demands
+		name = eyrie.14.a
+		
+		ai_chance = { factor = 70 }
+		
+		EYR = {
+			annex_country = { 
+				target = BOI 
+				transfer_troops = yes 
+			}
+		}
+	}
+	
+	option = { ## Refuse Demands
+		name = eyrie.14.b
+		
+		ai_chance = { factor = 30 }
+		
+		EYR = {
+			country_event = {
+				id = eyrie.15
+			}
+		}
+	}
+}
+
+country_event = { ### Refused Demands 4
+	id = eyrie.15
+	title = eyrie.15.t
+	desc = eyrie.15.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## To arms!
+		name = eyrie.15.a
+		
+		create_wargoal = {
+            target = BOI 
+			type = annex_everything
+        }
+	}
+}
+
+country_event = { ## Eyrie draws closer
+	id = eyrie.16
+	title = eyrie.16.t
+	desc = eyrie.16.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## Allow this
+		name = eyrie.16.a
+		
+		ai_chance = { factor = 95 }
+		
+		set_country_flag = EYR_empire
+		
+	}
+	
+	option = { ## Stop it.
+		name = eyrie.16.b
+		
+		ai_chance = { factor = 5 }
+		
+		hidden_effect = {
+			EYR = {
+				country_event = {
+					id = eyrie.17
+				}
+			}
+		}
+	
+	}
+}
+
+country_event = { ## The Empire Doesn't want us!
+	id = eyrie.17
+	title = eyrie.17.t
+	desc = eyrie.17.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## Oh no!
+		name = eyrie.17.a	
+	}
+}
+
+country_event = { ## Eyrie draws closer - Wingbardy
+	id = eyrie.18
+	title = eyrie.18.t
+	desc = eyrie.18.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## Allow this
+		name = eyrie.18.a
+		
+		ai_chance = { factor = 80 }
+		
+		set_country_flag = EYR_wing
+		
+	}
+	
+	option = { ## Stop it.
+		name = eyrie.18.b
+		
+		hidden_effect = {
+			EYR = {
+				country_event = {
+					id = eyrie.19
+				}
+			}
+		}
+		
+		ai_chance = { factor = 20 }
+	
+	}
+}
+
+country_event = { ## Wingbardy doesn't want us!
+	id = eyrie.19
+	title = eyrie.19.t
+	desc = eyrie.19.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## Oh no!
+		name = eyrie.19.a	
+	}
+}
+
+country_event = { ## Eyrie draws closer - Aquileia
+	id = eyrie.20
+	title = eyrie.20.t
+	desc = eyrie.20.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## Allow this
+		name = eyrie.18.a
+		
+		ai_chance = { factor = 80 }
+		
+		set_country_flag = EYR_aquil
+		
+	}
+	
+	option = { ## Stop it.
+		name = eyrie.20.b
+		
+		hidden_effect = {
+			EYR = {
+				country_event = {
+					id = eyrie.21
+				}
+			}
+		}
+		
+		ai_chance = { factor = 20 }
+	
+	}
+}
+
+country_event = { ## Aquileia doesn't want us!
+	id = eyrie.21
+	title = eyrie.21.t
+	desc = eyrie.21.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## Oh no!
+		name = eyrie.21.a	
+	}
+}
+
+country_event = { ## Puppet event
+	id = eyrie.22
+	title = eyrie.22.t
+	desc = eyrie.22.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { #
+		name = eyrie.22.a
+		GRI = {
+			puppet = SCS
+		}
+	}
+}
+
 
