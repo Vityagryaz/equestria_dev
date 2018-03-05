@@ -543,8 +543,143 @@ country_event = { ## Puppet event
     option = { #
 		name = eyrie.22.a
 		GRI = {
-			puppet = SCS
+			puppet = EYR
 		}
+	}
+}
+
+country_event = { ## Alliance Creation
+	id = eyrie.23
+	title = eyrie.23.t
+	desc = eyrie.23.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { ## An alliance will make us stronger.
+		name = eyrie.23.a
+		
+		AVI = {
+			country_event = {
+				id = eyrie.24
+			}
+		}
+		
+		POM = {
+			country_event = {
+				id = eyrie.25
+			}
+		}
+		
+		FLO = {
+			country_event = {
+				id = eyrie.26
+			}
+		}
+		
+	}
+}
+
+country_event = { ## Alliance Invitiation
+	id = eyrie.24
+	title = eyrie.24.t
+	desc = eyrie.24.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { # Join
+		name = eyrie.24.a
+		
+		ai_chance = { factor = 80 }
+		
+		EYR = {
+			add_to_faction = AVI
+        }
+	}
+	
+	option = { # Decline
+		name = eyrie.24.a
+		
+		ai_chance = { factor = 20 }
+	}
+}
+
+country_event = { ## Alliance Invitiation
+	id = eyrie.25
+	title = eyrie.25.t
+	desc = eyrie.25.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { # Join
+		name = eyrie.25.a
+		
+		ai_chance = { factor = 80 }
+		
+		EYR = {
+			add_to_faction = POM
+        }
+	}
+	
+	option = { # Decline
+		name = eyrie.25.a
+		
+		ai_chance = { factor = 20 }
+	}
+}
+
+country_event = { ## Alliance Invitiation
+	id = eyrie.26
+	title = eyrie.26.t
+	desc = eyrie.26.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { # Join
+		name = eyrie.26.a
+		
+		ai_chance = { factor = 95 }
+		
+		EYR = {
+			add_to_faction = FLO
+        }
+	}
+	
+	option = { # Decline
+		name = eyrie.26.a
+		
+		ai_chance = { factor = 5 }
+	}
+}
+
+country_event = { ## Join Wingbardy
+	id = eyrie.27
+	title = eyrie.27.t
+	desc = eyrie.27.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { # Join
+		name = eyrie.26.a
+		add_to_faction = EYR
+	}
+}
+
+country_event = { ## Join Aquileia
+	id = eyrie.28
+	title = eyrie.28.t
+	desc = eyrie.28.d
+	picture = GFX_event_griffon_mountain
+	
+	is_triggered_only = yes
+
+    option = { # Join
+		name = eyrie.28.a
+		add_to_faction = EYR
 	}
 }
 
