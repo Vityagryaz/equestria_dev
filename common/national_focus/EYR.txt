@@ -643,6 +643,19 @@ focus_tree = {
 		
 		completion_reward = {
 			add_state_core = 673
+			
+			add_political_power = 100
+			add_national_unity = 0.1
+			
+			ERI = {
+				if = {
+					limit = {
+						 is_subject = yes
+					}
+		
+					add_national_unity = 0.1
+				}
+			}
 		}
 	}
 	
@@ -656,7 +669,14 @@ focus_tree = {
 		y = 4
 		cost = 10.00
 		completion_reward = {
+			set_rule = { 
+				can_create_factions = yes 
+			}
+			create_faction = "noble_coalition"
 			
+			country_event = {
+				id = eyrie.23
+			}
 		}
 	}
 	
@@ -990,7 +1010,11 @@ focus_tree = {
 		y = 1
 		cost = 10.00
 		completion_reward = {
+<<<<<<< HEAD
 			add_ideas = EYR_peasant_army
+=======
+			add_ideas = EYR_army_of_peasants
+>>>>>>> b7d8a1e28216f95ecb8a9a6628e00ff7b76dfd75
 		}
 	}
 	
@@ -1003,7 +1027,11 @@ focus_tree = {
 		y = 1
 		cost = 10.00
 		completion_reward = {
+<<<<<<< HEAD
 			add_ideas = EYR_noble_army
+=======
+			add_ideas = EYR_army_of_nobles
+>>>>>>> b7d8a1e28216f95ecb8a9a6628e00ff7b76dfd75
 		}
 	}
 	
@@ -1201,7 +1229,10 @@ focus_tree = {
 		y = 4
 		cost = 10.00
 		completion_reward = {
+<<<<<<< HEAD
 			add_ideas = EYR_mobile_warfare
+=======
+>>>>>>> b7d8a1e28216f95ecb8a9a6628e00ff7b76dfd75
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
@@ -1251,7 +1282,11 @@ focus_tree = {
 		y = 6
 		cost = 10.00
 		completion_reward = {
+<<<<<<< HEAD
 			add_ideas = EYR_knights_of_eyrie
+=======
+			add_ideas = EYR_eyrie_knights
+>>>>>>> b7d8a1e28216f95ecb8a9a6628e00ff7b76dfd75
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
@@ -1269,7 +1304,10 @@ focus_tree = {
 		y = 4
 		cost = 10.00
 		completion_reward = {
+<<<<<<< HEAD
 			add_ideas = EYR_superior_firepower
+=======
+>>>>>>> b7d8a1e28216f95ecb8a9a6628e00ff7b76dfd75
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 1
@@ -1319,6 +1357,10 @@ focus_tree = {
 		y = 6
 		cost = 10.00
 		completion_reward = {
+<<<<<<< HEAD
+=======
+			add_ideas = EYR_veren_rifle
+>>>>>>> b7d8a1e28216f95ecb8a9a6628e00ff7b76dfd75
 			add_tech_bonus = {
 				ahead_reduction = 1
 				bonus = 0.5
@@ -1329,10 +1371,9 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = EYR_quality_army 
+		id = EYR_a_quality_army 
 		icon = GFX_goal_shadow_government
-		prerequisite = { focus = EYR_verenian_rifles }
-		prerequisite = { focus = EYR_knights_of_eyrie }
+		prerequisite = { focus = EYR_verenian_rifles focus = EYR_knights_of_eyrie  }
 		x = 48
 		y = 7
 		cost = 10.00
@@ -1418,7 +1459,11 @@ focus_tree = {
 		y = 6
 		cost = 10.00
 		completion_reward = {
+<<<<<<< HEAD
 			add_ideas = EYR_independent_airforce
+=======
+			add_ideas = EYR_ind_airforce
+>>>>>>> b7d8a1e28216f95ecb8a9a6628e00ff7b76dfd75
 		}
 	}
 	
@@ -1480,7 +1525,11 @@ focus_tree = {
 		y = 6
 		cost = 10.00
 		completion_reward = {
+<<<<<<< HEAD
 			add_ideas = EYR_army_dependent_airforce
+=======
+			add_ideas = EYR_dep_airforce
+>>>>>>> b7d8a1e28216f95ecb8a9a6628e00ff7b76dfd75
 		}
 	}
 
