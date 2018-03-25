@@ -1,0 +1,198 @@
+ideas = {
+
+	country = {
+		Private_Schools ={
+		
+			allowed ={
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				political_advisor_cost_factor = -0.1
+			}
+		}
+	}
+	
+	country = {
+		Private_Schools2 ={
+		
+			allowed ={
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.15
+				political_advisor_cost_factor = -0.15
+			}
+		}
+	}
+	
+	country = {
+		Private_Schools3 ={
+		
+			allowed ={
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.2
+				political_advisor_cost_factor = -0.2
+			}
+		}
+	}
+
+	country = {
+		Private_Schools4 ={
+		
+			allowed ={
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.25
+				political_advisor_cost_factor = -0.25
+			}
+		}
+	}
+	
+	country = {
+		Public_Schools ={
+		
+			allowed ={
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.25
+				political_advisor_cost_factor = -0.25
+				stability_factor = 0.1
+			}
+		}
+	}
+	
+	country = {
+		Standardised_Teching ={
+		
+			allowed ={
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				research_time_factor = -0.05
+			}
+		}
+	}
+	
+	country = {
+		Teacher_Training_Courses ={
+		
+			allowed ={
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.3
+				political_advisor_cost_factor = -0.3
+				stability_factor = 0.15
+				research_time_factor = -0.1
+				
+			}
+		}
+	}
+	
+	country = {
+		Pay_Rise ={
+		
+			allowed ={
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.4
+				production_factory_efficiency_gain_factor = 0.05
+				consumer_goods_factor = -0.05		
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+###########################
+#######Army Generals#######
+###########################
+army_chief = {
+
+		pirdia = {
+			allowed = {
+				original_tag = CYA
+			}
+			traits = { army_chief_defensive_2 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
