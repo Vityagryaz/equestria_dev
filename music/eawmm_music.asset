@@ -1,0 +1,158 @@
+## Equestria Peace ###
+music = {
+	name = "Carbon_Maestro_Griffon_Kingdom"
+	file = "Carbon_Maestro_Griffon_Kingdom.ogg"
+	volume = 0.85
+}
+music = {
+	name = "Carbon_Maestro_The_Shadow_King"
+	file = "Carbon_Maestro_The_Shadow_King.ogg"
+	volume = 0.85
+}
+music = {
+	name = "Carbon_Maestro_In_Memoriam"
+	file = "Carbon_Maestro_In_Memoriam.ogg"
+	volume = 0.85
+}
+music = {
+	name = "Carbon_Maestro_Changeling_Anthem"
+	file = "Carbon_Maestro_Changeling_Anthem.ogg"
+	volume = 0.85
+}
+music = {
+	name = "Carbon_Maestro_Dancing_Mountain_Deer"
+	file = "Carbon_Maestro_Dancing_Mountain_Deer.ogg"
+	volume = 0.85
+}
+music = {
+	name = "Carbon_Maestro_Buffalo_Nation"
+	file = "Carbon_Maestro_Buffalo_Nation.ogg"
+	volume = 0.85
+}
+music = {
+	name = "Radiarc_Within"
+	file = "Radiarc_Within.ogg"
+	volume = 0.75
+}
+###NLR-EQS war
+music = {
+	name = "Radiarc_Day_and_Nightmare"
+	file = "Radiarc_-_Day_and_Nightmare.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Eclipsed"
+	file = "Radiarc_Eclipsed.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_The_Grand_Descent"
+	file = "Radiarc_The_Grand_Descent.ogg"
+	volume = 0.75
+}
+###SOL
+music = {
+	name = "Radiarc_Solar_Flare"
+	file = "Radiarc_Solar_Flare.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Solar_Reign"
+	file = "Radiarc_Solar_Reign.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Rise_of_The_Solar_Empire"
+	file = "Radiarc_Rise_of_The_Solar_Empire.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Monarch"
+	file = "Radiarc_Monarch.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Determination"
+	file = "Radiarc_Determination.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Princess"
+	file = "Radiarc_Princess.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Countdown_to_Darkness"
+	file = "Radiarc_Countdown_to_Darkness.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Hivemind"
+	file = "Radiarc_Hivemind.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Onslaught"
+	file = "Radiarc_Onslaught.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Castle_Grounds"
+	file = "Radiarc_Castle_Grounds.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Battlegrounds"
+	file = "Radiarc_Battlegrounds.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Among_the_Griffons"
+	file = "Radiarc_Among_the_Griffons.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Gilded_in_Blood"
+	file = "Radiarc_Gilded_in_Blood.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_The_Griffon_Kingdom"
+	file = "Radiarc_The_Griffon_Kingdom.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Land_of_the_Griffons"
+	file = "Radiarc_Land_of_the_Griffons.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_The_Frozen_North"
+	file = "Radiarc_The_Frozen_North.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Once"
+	file = "Radiarc_Once.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Tranquility"
+	file = "Radiarc_Tranquility.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Still"
+	file = "Radiarc_Still.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Calling"
+	file = "Radiarc_Calling.ogg"
+	volume = 0.75
+}
+music = {
+	name = "Radiarc_Crystalline"
+	file = "Radiarc_Crystalline.ogg"
+	volume = 0.75
+}
