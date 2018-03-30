@@ -50,8 +50,8 @@ music = {
 		modifier = {
 			factor = 2
 			OR = {
-				tag = SOL
-				has_war_with = SOL
+				is_EQS_SOL = yes
+				has_war_with = event_target:solar_empire
 				tag = CES
 				has_war_with = CES
 			}
@@ -85,18 +85,6 @@ music = {
 		factor = 1
 		modifier = {
 			factor = 2
-			has_war = no
-		}
-	}
-}
-music = {
-	song = "Dashite_Song"
-
-	chance = {
-		factor = 1
-		modifier = {
-			factor = 1
-
 			has_war = no
 		}
 	}
@@ -155,7 +143,85 @@ music = {
 	chance = {
 		factor = 1
 		modifier = {
+			factor = 3
+
+			is_griffon_race = yes
+		}
+	}
+}
+music = {
+	song = "Radiarc_Among_the_Griffons"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 3
+
+			is_griffon_race = yes
+		}
+	}
+}
+music = {
+	song = "Radiarc_The_Griffon_Kingdom"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 3
+
+			is_griffon_race = yes
+		}
+	}
+}
+music = {
+	song = "Radiarc_Land_of_the_Griffons"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 3
+
+			is_griffon_race = yes
+		}
+	}
+}
+music = {
+	song = "Radiarc_Determination"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 3
+
+			is_griffon_race = yes
+		}
+	}
+}
+music = {
+	song = "Radiarc_Gilded_in_Blood"
+
+	chance = {
+		modifier = {
+			factor = 0
+			has_war = no
+		}
+		modifier = {
 			factor = 2
+			is_griffon_race = yes
+		}
+		modifier = {
+			factor = 2
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "Carbon_Maestro_Griffon_Kingdom"
+
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 3
 
 			is_griffon_race = yes
 		}
@@ -185,6 +251,70 @@ music = {
 	}
 }
 music = {
+	song = "Radiarc_Castle_Grounds"
+
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "Radiarc_Starlight"
+
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "Radiarc_Tranquility"
+
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "Radiarc_Still"
+
+	chance = {
+		factor = 3
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "Radiarc_Battlegrounds"
+
+	chance = {
+		modifier = {
+			factor = 3
+			has_global_flag = the_war_ended
+		}
+	}
+}
+music = {
+	song = "Radiarc_Princess"
+
+	chance = {
+		modifier = {
+			factor = 2
+			is_pony_race = yes
+		}
+	}
+}
+music = {
 	song = "Neighsayer_Mastering_the_Art"
 
 	chance = {
@@ -196,17 +326,32 @@ music = {
 		}
 	}
 }
-#music = {
-#	song = "Radiarc_Calling"
-#
-#	chance = {
-#		modifier = {
-#			factor = 1.5
-#
-#			has_war = no
-#		}
-#	}
-#}
+music = {
+	song = "Radiarc_Calling"
+
+	chance = {
+		modifier = {
+			factor = 1.5
+
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "Radiarc_Monarch"
+
+	chance = {
+		modifier = {
+			factor = 2
+			tag = EQS
+		}
+		modifier = {
+			factor = 3
+			tag = EQS
+			has_war = yes
+		}
+	}
+}
 music = {
 	song = "Neighsayer_Peacetime_Platonica"
 
@@ -247,114 +392,318 @@ music = {
 }
 
 ##NLR-EQS war
-#music = {
-#    song = "Radiarc_Day_and_Nightmare"
-#
-#    chance = {
-#      modifier = {
-#          factor = 2
-#          OR = {
-#						AND = {
-#							OR = {
-#								original_tag = NLR
-#								original_tag = NMS
-#							}
-#							OR = {
-#								has_war_with = EQS
-#								has_war_with = CES
-#							}
-#						}
-#						AND = {
-#							OR = {
-#								original_tag = EQS
-#								original_tag = CES
-#							}
-#							OR = {
-#								has_war_with = NLR
-#								has_war_with = NMS
-#							}
-#						}
-#					}
-#     		}
-#   	}
-#}
-#music = {
-#    song = "Radiarc_The_Grand_Descent"
-#
-#    chance = {
-#      modifier = {
-#          factor = 2
-#          OR = {
-#						AND = {
-#							OR = {
-#								original_tag = NLR
-#								original_tag = NMS
-#							}
-#							OR = {
-#								has_war_with = EQS
-#								has_war_with = CES
-#							}
-#						}
-#						AND = {
-#							OR = {
-#								original_tag = EQS
-#								original_tag = CES
-#							}
-#							OR = {
-#								has_war_with = NLR
-#								has_war_with = NMS
-#							}
-#						}
-#					}
-#     		}
-#   	}
-#}
-#music = {
-#    song = "Radiarc_Eclipsed"
-#
-#    chance = {
-#      modifier = {
-#          factor = 2
-#					OR = {
-#						original_tag = NLR
-#						original_tag = NMS
-#					}
-#     		}
-#   	}
-#}
-#
-##SOL
-#music = {
-#    song = "Radiarc_Solar_Flare"
-#
-#    chance = {
-#			modifier = {
-#				factor = 0
-#				NOT = { original_tag = SOL }
-#			}
-#      modifier = {
-#          factor = 3
-#					original_tag = SOL
-#					has_war = yes
-#     		}
-#   	}
-#}
-#music = {
-#    song = "Radiarc_Solar_Reign"
-#
-#    chance = {
-#			modifier = {
-#				factor = 0
-#				NOT = { original_tag = SOL }
-#			}
-#      modifier = {
-#          factor = 3
-#					original_tag = SOL
-#					has_war = no
-#     		}
-#   	}
-#}
+music = {
+    song = "Radiarc_Day_and_Nightmare"
 
+    chance = {
+      modifier = {
+          factor = 2
+          OR = {
+ 					AND = {
+ 						OR = {
+ 							original_tag = NLR
+ 							original_tag = NMS
+ 						}
+ 						OR = {
+ 							has_war_with = EQS
+ 							has_war_with = CES
+ 						}
+ 					}
+ 					AND = {
+ 						OR = {
+ 							original_tag = EQS
+ 							original_tag = CES
+ 						}
+ 						OR = {
+ 							has_war_with = NLR
+ 							has_war_with = NMS
+ 						}
+ 					}
+ 				}
+     		}
+   	}
+}
+music = {
+    song = "Radiarc_The_Grand_Descent"
+
+    chance = {
+      modifier = {
+          factor = 2
+          OR = {
+ 					AND = {
+ 						OR = {
+ 							original_tag = NLR
+ 							original_tag = NMS
+ 						}
+ 						OR = {
+ 							has_war_with = EQS
+ 							has_war_with = CES
+ 						}
+ 					}
+ 					AND = {
+ 						OR = {
+ 							original_tag = EQS
+ 							original_tag = CES
+ 						}
+ 						OR = {
+ 							has_war_with = NLR
+ 							has_war_with = NMS
+ 						}
+ 					}
+ 				}
+     		}
+   	}
+}
+music = {
+    song = "Radiarc_Eclipsed"
+
+   chance = {
+      modifier = {
+          factor = 2
+					OR = {
+						original_tag = NLR
+						original_tag = NMS
+					}
+     		}
+   	}
+}
+
+##SOL
+music = {
+    song = "Radiarc_Solar_Flare"
+
+    chance = {
+			modifier = {
+				factor = 0
+				NOT = { is_EQS_SOL = yes }
+			}
+      modifier = {
+          factor = 3
+					is_EQS_SOL = yes
+					has_war = yes
+     		}
+   	}
+}
+music = {
+    song = "Radiarc_Solar_Reign"
+
+    chance = {
+			modifier = {
+				factor = 0
+				NOT = { is_EQS_SOL = yes }
+			}
+      modifier = {
+          factor = 3
+					is_EQS_SOL = yes
+					has_war = no
+     		}
+   	}
+}
+music = {
+    song = "Radiarc_Rise_of_The_Solar_Empire"
+
+    chance = {
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { is_EQS_SOL = yes }
+					AND = {
+						tag = EQS
+						has_country_flag = { flag = celestia_evil_meter value < 34 }
+					}
+				}
+			}
+      modifier = {
+          factor = 3
+					is_EQS_SOL = yes
+     		}
+   	}
+}
+#CRY
+music = {
+    song = "Carbon_Maestro_The_Shadow_King"
+
+    chance = {
+			modifier = {
+				factor = 0
+					NOT = {
+						AND = {
+							original_tag = CRY
+							has_government = fascism
+							NOT = { has_country_flag = CRY_solar_governorship }
+						}
+					}
+			}
+      modifier = {
+          factor = 3
+					AND = {
+						original_tag = CRY
+						has_government = fascism
+						NOT = { has_country_flag = CRY_solar_governorship }
+					}
+     		}
+   	}
+}
+music = {
+    song = "Carbon_Maestro_In_Memoriam"
+
+    chance = {
+			modifier = {
+				factor = 0
+					NOT = {
+						is_pony_race = yes
+					}
+			}
+      modifier = {
+          factor = 2
+					AND = {
+						original_tag = CRY
+						NOT = { has_government = fascism }
+					}
+     		}
+   	}
+}
+music = {
+    song = "Radiarc_The_Frozen_North"
+
+    chance = {
+      modifier = {
+          factor = 2
+					original_tag = CRY
+     		}
+				modifier = {
+	          factor = 3
+						has_war = no
+	     	}
+   	}
+}
+music = {
+    song = "Radiarc_Crystalline"
+
+		chance = {
+      modifier = {
+          factor = 2
+					original_tag = CRY
+     		}
+				modifier = {
+	          factor = 3
+						has_war = no
+	     	}
+   	}
+}
+music = {
+    song = "Radiarc_Once"
+
+    chance = {
+      modifier = {
+          factor = 2
+					original_tag = CRY
+     		}
+				modifier = {
+	          factor = 3
+						has_war = no
+	     	}
+   	}
+}
+#BUGS
+music = {
+    song = "Carbon_Maestro_Changeling_Anthem"
+
+    chance = {
+			modifier = {
+				factor = 0
+					NOT = {
+						is_changeling_race = yes
+					}
+			}
+      modifier = {
+          factor = 3
+					is_changeling_race = yes
+     		}
+   	}
+}
+music = {
+    song = "Radiarc_Countdown_to_Darkness"
+
+    chance = {
+			modifier = {
+				factor = 0
+					NOT = {
+						is_changeling_race = yes
+					}
+			}
+      modifier = {
+          factor = 3
+					is_changeling_race = yes
+     		}
+   	}
+}
+music = {
+    song = "Radiarc_Hivemind"
+
+    chance = {
+			modifier = {
+				factor = 0
+					NOT = {
+						is_changeling_race = yes
+					}
+			}
+      modifier = {
+          factor = 2
+					is_changeling_race = yes
+     		}
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+   	}
+}
+music = {
+    song = "Radiarc_Onslaught"
+
+    chance = {
+			modifier = {
+				factor = 0
+					NOT = {
+						is_changeling_race = yes
+					}
+			}
+      modifier = {
+          factor = 2
+					is_changeling_race = yes
+     		}
+			modifier = {
+				factor = 1.5
+				has_war = no
+			}
+   	}
+}
+#BUF
+music = {
+    song = "Carbon_Maestro_Buffalo_Nation"
+
+    chance = {
+      modifier = {
+          factor = 2
+					original_tag = BUF
+     		}
+   	}
+}
+#BUF
+music = {
+    song = "Radiarc_Within"
+
+    chance = {
+      modifier = {
+          factor = 4
+					original_tag = DED
+     		}
+				modifier = {
+	          factor = 0
+						NOT = { original_tag = DED }
+	     		}
+   	}
+}
 #MEMES
 
 ###GEU theme (papers please)
@@ -363,11 +712,17 @@ music = {
 		chance = {
         modifier = {
             factor = 0
-            NOT = { original_tag = GEU }
+            NOT = { AND = {
+							original_tag = STG
+							has_government = fascism
+						} }
        		}
 					modifier = {
 	            factor = 3
-	            original_tag = GEU
+							AND = {
+								original_tag = STG
+								has_government = fascism
+							}
 	       		}
    	}
 }
@@ -385,7 +740,6 @@ music = {
 	            factor = 2
 	            OR = {
 								original_tag = STG
-								original_tag = GEU
 								original_tag = STL
 							}
 	       		}
@@ -398,13 +752,27 @@ music = {
 
     chance = {
         modifier = {
-            	factor = 2.5
+            	factor = 1.5
             	original_tag = OLE
             	has_war = no
             	NOT = {
             		has_government = fascism
             			}
             	is_puppet = no
+       		}
+				modifier = {
+					factor = 2
+					is_deer_race = yes
+				}
+   	}
+}
+music = {
+    song = "Carbon_Maestro_Dancing_Mountain_Deer"
+
+    chance = {
+        modifier = {
+            	factor = 2
+            	is_deer_race = yes
        		}
    	}
 }
