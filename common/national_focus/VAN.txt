@@ -1,0 +1,1249 @@
+focus_tree {
+  id = VAN_focus
+  country = {
+      factor = 0
+      modifier = {
+          add = 10
+          tag = VAN
+          }
+        }
+  default = no
+  continuous_focus_position = { x = 290 y = 2500 }
+
+  ### Just After The Revolution ###
+# A simple focus that gives a quick boost to political power and a flavour event. Now also gives resources.
+focus = {
+  id = VAN_founding
+  icon = GFX_goal_GRF_commies_win
+  cost = 01.00
+  x = 9
+  y = 0
+  ai_will_do = {
+    factor = 100
+  }
+  completion_reward = {
+    add_political_power = 100
+    add_resource = {
+      type = aluminium
+      amount = 12
+      state = 45
+    }
+    add_resource = {
+      type = steel
+      amount = 24
+      state = 14
+      }
+      add_resource = {
+        type = tungsten
+        amount = 8
+        state = 72
+        }
+      }
+  }
+# Adding some Mil Factories to Vanhoover
+focus = {
+  id = VAN_Mil_Nationzation
+  icon = GFX_goal_generic_construct_mil_factory
+  prerequisite = { focus = VAN_founding }
+  cost = 10.00
+  x = 8
+  y = 1
+  ai_will_do = {
+  	factor = 100
+  }
+
+  completion_reward = {
+  14 = {
+  add_extra_state_shared_building_slots = 4
+    add_building_construction = {
+      type = arms_factory
+      level = 4
+      instant_build = yes
+        }
+      }
+    }
+  }
+# Adding some Civ Factories to Vanhoover
+focus = {
+  id = VAN_Civ_Nationzation
+  icon = GFX_goal_generic_soviet_construction
+  prerequisite = { focus = VAN_Mil_Nationzation }
+  cost = 10.00
+  x = 8
+  y = 2
+  ai_will_do = {
+    factor = 100
+    }
+  completion_reward = {
+    14 = {
+        add_extra_state_shared_building_slots = 4
+        add_building_construction = {
+          type = industrial_complex
+          level = 2
+          instant_build = yes
+          }
+        }
+      }
+  }
+# Army's infulence in the government shows, idea required. Now adds manpower.
+focus = {
+	id = VAN_Army_Pol
+	icon = GFX_focus_generic_self_management
+	prerequisite = { focus = VAN_founding }
+  cost = 05.00
+  x = 10
+	y = 1
+	ai_will_do = {
+		factor = 100
+	   }
+
+	completion_reward = {
+    army_experience = 50
+    add_ideas = { VAN_Miltary }
+    add_manpower = 250000
+	   }
+
+  }
+# Army's infulence adds new tech bonuses
+focus = {
+	id = VAN_Miltary_Influnce
+	icon = GFX_focus_RAJ_indian_gentlemen_offcers
+	prerequisite = { focus = VAN_Army_Pol }
+  cost = 05.00
+  x = 10
+	y = 2
+	ai_will_do = {
+		factor = 100
+	   }
+
+	completion_reward = {
+    add_tech_bonus = {
+      name = land_doc_bonus
+      bonus = 0.4
+      uses = 3
+      category = land_doctrine
+    }
+    add_tech_bonus = {
+      name = art_bonus
+      bonus = 0.5
+      uses = 1
+      category = artillery
+    }
+
+   }
+
+  }
+# Formalizing the takeover and exiting the emergany sitiution
+focus = {
+	id = VAN_Exit
+	icon = GFX_focus_generic_strike_at_democracy2
+	prerequisite = { focus = VAN_Civ_Nationzation }
+  prerequisite = { focus = VAN_Miltary_Influnce }
+	cost = 05.00
+	x = 9
+	y = 3
+	ai_will_do = {
+		factor = 100
+	   }
+
+	completion_reward = {
+    add_political_power = 300
+
+	 }
+
+  }
+
+### The Lifeblood of the Revolution ###
+# The Debate over trade and self resources along with some improvements to the Bay Area
+focus = {
+	id = VAN_debate
+	icon = GFX_goal_anschluss
+	prerequisite = { focus = VAN_Exit }
+	cost = 10.00
+	x = 9
+	y = 4
+	ai_will_do = {
+		factor = 100
+	}
+	completion_reward = {
+    45 = {
+    add_extra_state_shared_building_slots = 5
+    add_building_construction = {
+      type = industrial_complex
+      level = 2
+      instant_build = yes
+      }
+    add_building_construction = {
+      type = infrastructure
+      level = 3
+      instant_build = yes
+        }
+      }
+	   }
+  }
+# Path 1: Increase resources production, more resources but far less industry
+focus = {
+	id = VAN_resources
+	icon = GFX_goal_generic_positive_trade_relations
+	prerequisite = { focus = VAN_debate }
+  mutually_exclusive = {
+    focus = VAN_trade1
+  }
+  cost = 10.00
+	x = 12
+	y = 5
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    add_tech_bonus = {
+    name = resources_gain
+    bonus = 0.6
+    uses = 1
+    category = synth_resources
+    }
+    add_ideas = VAN_synth
+	}
+
+	}
+# IR 1, Foucs on the Bay's aluminium
+focus = {
+	id = VAN_Alum
+	icon = GFX_goal_generic_construction2
+	prerequisite = { focus = VAN_resources }
+	cost = 10.00
+	x = 12
+	y = 6
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    add_resource = {
+      type = aluminium
+      amount = 24
+      state = 45
+    }
+    45 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+      type = industrial_complex
+      level = 2
+      instant_build = yes
+      }
+    }
+	}
+
+	}
+# IR 2, Foucs on Vanhoover's steel
+focus = {
+	id = VAN_Steel
+	icon = GFX_goal_generic_construction2
+	prerequisite = { focus = VAN_resources }
+	cost = 10.00
+	x = 15
+	y = 6
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    add_resource = {
+      type = steel
+      amount = 32
+      state = 14
+    }
+    14 = {
+      add_extra_state_shared_building_slots = 2
+      add_building_construction = {
+        type = industrial_complex
+        level = 2
+        instant_build = yes
+      }
+
+    }
+	}
+
+	}
+# IR 3, Foucs on Roe's Tungsten
+focus = {
+	id = VAN_Tung
+	icon = GFX_goal_generic_construction2
+	prerequisite = { focus = VAN_resources }
+	cost = 10.00
+	x = 9
+	y = 6
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    add_resource = {
+      type = tungsten
+      amount = 18
+      state = 72
+    }
+    72 = {
+      add_extra_state_shared_building_slots = 1
+      add_building_construction = {
+        type = industrial_complex
+        level = 1
+        instant_build = yes
+      }
+    }
+	}
+
+	}
+# IR 4, Foucs on other resources
+focus = {
+	id = VAN_oil
+	icon = GFX_goal_generic_oil_refinery
+	prerequisite = { focus = VAN_Alum }
+  prerequisite = { focus = VAN_Steel }
+  prerequisite = { focus = VAN_Tung }
+	cost = 10.00
+	x = 10
+	y = 7
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    add_tech_bonus = {
+      name = synth_2
+      bonus = 0.5
+      ahead_reduction = 1
+      uses = 2
+      category = synth_resources
+      }
+    14 = {
+    add_extra_state_shared_building_slots = 2
+    add_building_construction = {
+      type = synthetic_refinery
+      level = 2
+      instant_build = yes
+    }
+    }
+    }
+	}
+# IR 5, Increase resources gain effefincy
+focus = {
+	id = VAN_Regain
+	icon = GFX_goal_generic_production
+  prerequisite = { focus = VAN_Alum }
+  prerequisite = { focus = VAN_Steel }
+  prerequisite = { focus = VAN_Tung }
+	cost = 10.00
+	x = 14
+	y = 7
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    add_tech_bonus = {
+      name = excavation_bonus
+      bonus = 0.5
+      uses = 2
+      ahead_reduction = 1
+      technology = excavation1
+      technology = excavation2
+      technology = excavation3
+      technology = excavation4
+      technology = excavation5
+
+    }
+	}
+
+	}
+# Path 2: Increase trade, far more industry but requires trading some away.
+# IT 1, Fixing trade realtions and setting up firms for it
+focus = {
+	id = VAN_trade1
+	icon = GFX_goal_generic_intelligence_exchange
+	prerequisite = { focus = VAN_debate }
+  mutually_exclusive = {
+    focus = VAN_resources
+  }
+  cost = 10.00
+	x = 5
+	y = 5
+
+  ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+  remove_ideas = { VAN_Miltary }
+  add_tech_bonus = {
+    name = VAN_trade_bonus
+    bonus = 0.5
+    uses = 3
+    category = industry
+    }
+	}
+
+	}
+# IT 2, Creation of the formal trading compouny
+focus = {
+	id = VAN_trade_comp
+	icon = GFX_goal_generic_trade
+	prerequisite = { focus = VAN_trade1 }
+	cost = 05.00
+	x = 4
+	y = 6
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+  add_ideas = { VAN_trade_company }
+  14 = {
+  add_extra_state_shared_building_slots = 3
+  add_building_construction = {
+    type = industrial_complex
+    level = 3
+    instant_build = yes
+      }
+
+    }
+  }
+
+	}
+# IT 3Trade company first expantion
+focus = {
+	id = VAN_trade_comp2
+	icon = GFX_goal_generic_consumer_goods
+	prerequisite = { focus = VAN_trade_comp }
+	cost = 05.00
+	x = 4
+	y = 7
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+  14 = {
+  add_extra_state_shared_building_slots = 2
+  add_building_construction = {
+    type = industrial_complex
+    level = 2
+    instant_build = yes
+      }
+
+    }
+  swap_ideas = { remove_idea = VAN_trade_company add_idea = VAN_trade_company2 }
+
+  }
+
+	}
+# IT 4 Trade Comapny second expantion
+focus = {
+	id = VAN_trade_comp3
+	icon = GFX_goal_generic_consumer_goods
+	prerequisite = { focus = VAN_trade_comp2 }
+	cost = 05.00
+	x = 4
+	y = 8
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+  14 = {
+  add_extra_state_shared_building_slots = 2
+  add_building_construction = {
+    type = industrial_complex
+    level = 2
+    instant_build = yes
+      }
+
+    }
+  swap_ideas = { remove_idea = VAN_trade_company2 add_idea = VAN_trade_company3 }
+
+  }
+
+	}
+# IT 5, Focus extra effort on building Mil Factories
+focus = {
+	id = VAN_trade2
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = { focus = VAN_trade1 }
+	cost = 10.00
+	x = 6
+	y = 6
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+  45 = {
+    add_extra_state_shared_building_slots = 4
+    add_building_construction = {
+      type = arms_factory
+      level = 4
+      instant_build = yes
+    }
+  }
+
+	}
+
+	}
+# IT 6, Focus extra effort on building Civ Factories
+focus = {
+	id = VAN_trade3
+	icon = GFX_goal_generic_production2
+	prerequisite = { focus = VAN_trade2 }
+	cost = 10.00
+	x = 6
+	y = 7
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+  45 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+      type = industrial_complex
+      level = 3
+      instant_build = yes
+	     }
+      }
+    }
+
+	}
+# IT 7, Focus on infrastructure, industry tech and contruction
+focus = {
+	id = VAN_trade4
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = VAN_trade3 }
+	cost = 10.00
+	x = 6
+	y = 8
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+  14 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+      type = infrastructure
+      level = 3
+      instant_build = yes
+       }
+      }
+
+  45 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+      type = infrastructure
+      level = 3
+      instant_build = yes
+       }
+      }
+
+  72 = {
+    add_extra_state_shared_building_slots = 3
+    add_building_construction = {
+      type = infrastructure
+      level = 3
+      instant_build = yes
+       }
+
+
+      }
+
+  add_tech_bonus = {
+    name = VAN_tech_bonus_industry
+    bonus = 0.5
+    uses = 3
+    category = industry
+    }
+	}
+
+	}
+# A tech bonus for solving the issue
+focus = {
+	id = VAN_tech_level1
+	icon = GFX_focus_generic_socialist_science
+	prerequisite = { focus = VAN_trade4 focus = VAN_trade_comp3 focus = VAN_Regain focus = VAN_oil}
+	cost = 10.00
+	x = 8
+	y = 10
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    add_research_slot = 1
+
+	}
+
+	}
+
+### The Army With A State ###
+
+## The first three focuses
+# The Army seizes formal control. Increasing XP and PP
+focus = {
+	id = VAN_ArmyTakeOver
+	icon = GFX_focus_generic_self_management
+	prerequisite = { focus = VAN_Exit }
+	cost = 05.00
+	x = 0
+	y = 4
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    army_experience = 50
+    add_political_power = 150
+	}
+
+	}
+# The Commander takes the Premiership. PP increase. Event needed
+focus = {
+	id = VAN_Commander
+	icon = GFX_focus_hun_assassinate_horthy
+	prerequisite = { focus = VAN_ArmyTakeOver }
+	cost = 05.00
+	x = 0
+	y = 5
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    add_political_power = 150
+	}
+
+	}
+# The Commander's reforms eleimatne politcal enemies. Remove divided idea
+focus = {
+	id = VAN_FirstReform
+	icon = GFX_goal_generic_demand_territory
+	prerequisite = { focus = VAN_Commander }
+	cost = 05.00
+	x = 0
+	y = 6
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+   add_popularity = { ideology = democratic popularity = -0.25 }
+	}
+
+	}
+
+## The twin paths of the Commander's reforms
+# Commander's Reforms: Manpower 1. Increase manpower
+focus = {
+	id = VAN_CRManpower1
+	icon = GFX_focus_generic_military_mission
+	prerequisite = { focus = VAN_FirstReform }
+	cost = 05.00
+	x = -2
+	y = 7
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    add_manpower = 250000
+	}
+
+	}
+# Commander's Reforms: Manpower 2. Gives idea for bounes manpower
+focus = {
+	id = VAN_CRManpower2
+	icon = GFX_focus_generic_little_entente
+	prerequisite = { focus = VAN_CRManpower1 }
+	cost = 05.00
+	x = -2
+	y = 8
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    add_ideas = VAN_Conscription
+	}
+
+	}
+# Commander's Reforms: Manpower 3. Grants training time modifier down
+focus = {
+	id = VAN_CRManpower3
+	icon = GFX_goal_rhineland
+	prerequisite = { focus = VAN_CRManpower2 }
+	cost = 05.00
+	x = -2
+	y = 9
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    add_ideas = VAN_Training
+	}
+
+	}
+# Commander's Reforms: Fighting Spirt 1. Grants idea with a bounes for fighting on core land
+focus = {
+	id = VAN_CRFightingSpirt1
+	icon = GFX_goal_generic_national_unity
+	prerequisite = { focus = VAN_FirstReform }
+	cost = 05.00
+	x = 0
+	y = 7
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    add_ideas = VAN_CoreFighting
+	}
+
+	}
+# Commander's Reforms: Fighting Spirt 2. Grants bonus to org and speed
+focus = {
+	id = VAN_CRFightingSpirt2
+	icon = GFX_goal_generic_cavalry
+	prerequisite = { focus = VAN_CRFightingSpirt1 }
+	cost = 05.00
+	x = 0
+	y = 8
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    add_ideas = VAN_DivSpeed
+	}
+
+	}
+# Commander's Reforms: Fighting Spirt 3. Lowers production cost of Mortz and inf equiment
+focus = {
+	id = VAN_CRFightingSpirt3
+	icon = GFX_focus_generic_license_production
+	prerequisite = { focus = VAN_CRFightingSpirt2 }
+	cost = 05.00
+	x = 0
+	y = 9
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    add_ideas = VAN_LowerProduction
+	}
+
+	}
+# Commander's Reforms: New Ideas 1: Grants tank and mot tech bounes
+focus = {
+	id = VAN_CRNewIdeas1
+	icon = GFX_goal_generic_army_tanks
+	prerequisite = { focus = VAN_FirstReform }
+	cost = 05.00
+	x = 2
+	y = 7
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    add_tech_bonus = {
+      name = land_doc_bonus
+      bonus = 0.6
+      uses = 3
+      category = armor
+      }
+    add_tech_bonus = {
+      name = land_doc_bonus
+      bonus = 0.6
+      uses = 1
+      category = motorized_equipment
+      }
+  }
+
+
+	}
+# Commander's Reforms: New Ideas 2: Grants Mil Theroy tech bounes
+focus = {
+	id = VAN_CRNewIdeas2
+	icon = GFX_focus_generic_support_the_left_right
+	prerequisite = { focus = VAN_CRNewIdeas1 }
+	cost = 05.00
+	x = 2
+	y = 8
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+  add_tech_bonus = {
+    bonus = 0.6
+    uses = 3
+    category = land_doctrine
+    }
+	}
+
+	}
+# Commander's Reforms: New Ideas: Grants Inf E and Arty tech bonuses
+focus = {
+	id = VAN_CRNewIdeas3
+	icon = GFX_goal_generic_small_arms
+	prerequisite = { focus = VAN_CRNewIdeas2 }
+	cost = 05.00
+	x = 2
+	y = 9
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+  add_tech_bonus = {
+    bonus = 0.5
+    uses = 2
+    category = infantry_weapons
+    }
+  add_tech_bonus = {
+    bonus = 0.5
+    uses = 2
+    category = artillery
+    }
+  }
+	}
+## Tech bounse for doing all reforms
+focus = {
+	id = VAN_tech_level2
+	icon = GFX_focus_generic_socialist_science
+  prerequisite = { focus = VAN_CRNewIdeas3 focus = VAN_CRManpower3 focus = VAN_CRFightingSpirt3}
+  cost = 10.00
+	x = 0
+	y = 11
+	ai_will_do = {
+		factor = 100
+	   }
+
+	completion_reward = {
+    add_research_slot = 1
+    }
+
+	}
+
+### In Defence of the Revolution ###
+## The Best Defence is a good offinace. We must take land in order to defend ourselves
+# Place Communist agitors within these states: Fair Flanks and Unicorn Range
+focus = {
+	id = VAN_Action
+	icon = GFX_goal_generic_dangerous_deal
+	prerequisite = { focus = VAN_Exit }
+	cost = 10.00
+	x = 18
+	y = 4
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+  73 = { add_core_of = VAN }
+  172 = { add_core_of = VAN }
+
+	}
+
+	}
+# Seize those states!
+focus = {
+	id = VAN_Seize
+	icon = GFX_goal_generic_forceful_treaty
+	prerequisite = { focus = VAN_Action }
+	cost = 10.00
+	x = 18
+	y = 5
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    VAN = { transfer_state = 73 }
+    VAN = { transfer_state = 172 }
+    EQS = { country_event = { days = 1 id = equestria.500 } }
+	}
+
+	}
+# We have big plans... But first we must succer the Unicorn Range!
+focus = {
+	id = VAN_Action2
+	icon = GFX_goal_generic_dangerous_deal
+	prerequisite = { focus = VAN_Seize }
+	cost = 10.00
+	x = 18
+	y = 6
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    61 = { add_core_of = VAN }
+
+	}
+
+	}
+# Once again we test the beast...
+focus = {
+	id = VAN_Seize2
+	icon = GFX_goal_generic_forceful_treaty
+	prerequisite = { focus = VAN_Action2 }
+	cost = 10.00
+	x = 18
+	y = 7
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    VAN = { transfer_state = 61 }
+    EQS = { country_event = { days = 1 id = equestria.501 } }
+
+	}
+
+	}
+# With the Range under our control we make our final move. There's no way that Equestira will take this sitting down though...
+focus = {
+	id = VAN_War
+	icon = GFX_goal_generic_war_with_comintern
+	prerequisite = { focus = VAN_Seize2 }
+	cost = 10.00
+	x = 18
+	y = 8
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    VAN = { transfer_state = 46 }
+    VAN = { transfer_state = 59 }
+    VAN = { transfer_state = 60 }
+    46 = { add_core_of = VAN }
+    59 = { add_core_of = VAN }
+    60 = { add_core_of = VAN }
+    EQS = { country_event = { days = 1 id = equestria.502 } }
+
+
+	}
+
+	}
+# Now with Tall Tails under our control we can nationalize some of its industry
+focus = {
+	id = VAN_TallTails_Industry
+	icon = GFX_goal_generic_construction
+	prerequisite = { focus = VAN_War }
+  available = {
+			VAN = { owns_state = 59 }
+      }
+
+	cost = 05.00
+	x = 18
+	y = 9
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+    59 = {
+    add_extra_state_shared_building_slots = 6
+    add_building_construction = {
+      type = industrial_complex
+      level = 3
+      instant_build = yes
+    }
+    add_building_construction = {
+      type = arms_factory
+      level = 3
+      instant_build = yes
+	}
+  }
+  }
+  }
+# Tall Tails' RnD can be used for the war effort!
+focus = {
+	id = VAN_tech_level3
+	icon = GFX_focus_generic_socialist_science
+	prerequisite = { focus = VAN_TallTails_Industry }
+	cost = 10.00
+	x = 18
+	y = 11
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+  add_research_slot = 1
+	}
+
+	}
+# Equestria cannot defend its own ponies from themselves. It will be Vanhoover, not Canterlot, that shall lead Equestria in a new golden age!
+focus = {
+	id = VAN_Rising1
+	icon = GFX_goal_generic_attack_allies
+	prerequisite = { focus = VAN_tech_level3 }
+  prerequisite = { focus = VAN_tech_level2 }
+  available = {
+     3 = { is_owned_and_controlled_by = ROOT }
+     }
+	cost = 10.00
+	x = 10
+	y = 13
+	ai_will_do = {
+		factor = 100
+	}
+
+	completion_reward = {
+  add_ideas = { VAN_Rising }
+  99 = { add_core_of = VAN }
+  97 = { add_core_of = VAN }
+  96 = { add_core_of = VAN }
+  94 = { add_core_of = VAN }
+  95 = { add_core_of = VAN }
+  93 = { add_core_of = VAN }
+  92 = { add_core_of = VAN }
+  90 = { add_core_of = VAN }
+  91 = { add_core_of = VAN }
+
+	}
+
+	}
+  focus = {
+  	id = VAN_Rising2
+  	icon = GFX_goal_generic_attack_allies
+  	prerequisite = { focus = VAN_Rising1 }
+    available = {
+       3 = { is_owned_and_controlled_by = ROOT }
+       }
+    cost = 10.00
+  	x = 9
+  	y = 14
+  	ai_will_do = {
+  		factor = 100
+  	}
+
+  	completion_reward = {
+    59 = { add_core_of = VAN }
+    56 = { add_core_of = VAN }
+    54 = { add_core_of = VAN }
+    525 = { add_core_of = VAN }
+    52 = { add_core_of = VAN }
+    51 = { add_core_of = VAN }
+    5 = { add_core_of = VAN }
+    50 = { add_core_of = VAN }
+    49 = { add_core_of = VAN }
+    48 = { add_core_of = VAN }
+    47 = { add_core_of = VAN }
+    46 = { add_core_of = VAN }
+    44 = { add_core_of = VAN }
+    43 = { add_core_of = VAN }
+    42 = { add_core_of = VAN }
+    41 = { add_core_of = VAN }
+    40 = { add_core_of = VAN }
+    4 = { add_core_of = VAN }
+    39 = { add_core_of = VAN }
+    38 = { add_core_of = VAN }
+    37 = { add_core_of = VAN }
+    36 = { add_core_of = VAN }
+    353 = { add_core_of = VAN }
+    352 = { add_core_of = VAN }
+    351 = { add_core_of = VAN }
+    350 = { add_core_of = VAN }
+    349 = { add_core_of = VAN }
+    35 = { add_core_of = VAN }
+    348 = { add_core_of = VAN }
+    34 = { add_core_of = VAN }
+    33 = { add_core_of = VAN }
+    327 = { add_core_of = VAN }
+    326 = { add_core_of = VAN }
+    32 = { add_core_of = VAN }
+    31 = { add_core_of = VAN }
+    30 = { add_core_of = VAN }
+    3 = { add_core_of = VAN }
+    29 = { add_core_of = VAN }
+    28 = { add_core_of = VAN }
+    27 = { add_core_of = VAN }
+    26 = { add_core_of = VAN }
+    25 = { add_core_of = VAN }
+  	}
+
+  	}
+    focus = {
+    	id = VAN_Rising3
+    	icon = GFX_goal_generic_attack_allies
+    	prerequisite = { focus = VAN_Rising1 }
+      available = {
+			   3 = { is_owned_and_controlled_by = ROOT }
+         }
+    	cost = 10.00
+    	x = 11
+    	y = 14
+    	ai_will_do = {
+    		factor = 100
+    	}
+
+    	completion_reward = {
+      241 = { add_core_of = VAN }
+      24 = { add_core_of = VAN }
+      230 = { add_core_of = VAN }
+      232 = { add_core_of = VAN }
+      231 = { add_core_of = VAN }
+      23 = { add_core_of = VAN }
+      226 = { add_core_of = VAN }
+      228 = { add_core_of = VAN }
+      227 = { add_core_of = VAN }
+      229 = { add_core_of = VAN }
+      223 = { add_core_of = VAN }
+      221 = { add_core_of = VAN }
+      22 = { add_core_of = VAN }
+      21 = { add_core_of = VAN }
+      20 = { add_core_of = VAN }
+      2 = { add_core_of = VAN }
+      188 = { add_core_of = VAN }
+      19 = { add_core_of = VAN }
+      187 = { add_core_of = VAN }
+      186 = { add_core_of = VAN }
+      185 = { add_core_of = VAN }
+      184 = { add_core_of = VAN }
+      182 = { add_core_of = VAN }
+      183 = { add_core_of = VAN }
+      181 = { add_core_of = VAN }
+      180 = { add_core_of = VAN }
+      179 = { add_core_of = VAN }
+      178 = { add_core_of = VAN }
+      176 = { add_core_of = VAN }
+      177 = { add_core_of = VAN }
+      175 = { add_core_of = VAN }
+      174 = { add_core_of = VAN }
+      173 = { add_core_of = VAN }
+      171 = { add_core_of = VAN }
+      172 = { add_core_of = VAN }
+      17 = { add_core_of = VAN }
+      170 = { add_core_of = VAN }
+      169 = { add_core_of = VAN }
+      167 = { add_core_of = VAN }
+      166 = { add_core_of = VAN }
+      162 = { add_core_of = VAN }
+      164 = { add_core_of = VAN }
+      163 = { add_core_of = VAN }
+      161 = { add_core_of = VAN }
+      160 = { add_core_of = VAN }
+      159 = { add_core_of = VAN }
+      16 = { add_core_of = VAN }
+      158 = { add_core_of = VAN }
+      156 = { add_core_of = VAN }
+      157 = { add_core_of = VAN }
+      155 = { add_core_of = VAN }
+      154 = { add_core_of = VAN }
+      15 = { add_core_of = VAN }
+      136 = { add_core_of = VAN }
+      137 = { add_core_of = VAN }
+      138 = { add_core_of = VAN }
+      135 = { add_core_of = VAN }
+      134 = { add_core_of = VAN }
+      133 = { add_core_of = VAN }
+      132 = { add_core_of = VAN }
+      131 = { add_core_of = VAN }
+      13 = { add_core_of = VAN }
+      130 = { add_core_of = VAN }
+      129 = { add_core_of = VAN }
+      128 = { add_core_of = VAN }
+      127 = { add_core_of = VAN }
+      126 = { add_core_of = VAN }
+      125 = { add_core_of = VAN }
+      124 = { add_core_of = VAN }
+      123 = { add_core_of = VAN }
+      122 = { add_core_of = VAN }
+      121 = { add_core_of = VAN }
+      120 = { add_core_of = VAN }
+      12 = { add_core_of = VAN }
+      119 = { add_core_of = VAN }
+      117 = { add_core_of = VAN }
+      118 = { add_core_of = VAN }
+      116 = { add_core_of = VAN }
+      116 = { add_core_of = VAN }
+      114 = { add_core_of = VAN }
+      112 = { add_core_of = VAN }
+      110 = { add_core_of = VAN }
+      113 = { add_core_of = VAN }
+      111 = { add_core_of = VAN }
+      109 = { add_core_of = VAN }
+      107 = { add_core_of = VAN }
+      108 = { add_core_of = VAN }
+      106 = { add_core_of = VAN }
+      105 = { add_core_of = VAN }
+      103 = { add_core_of = VAN }
+      102 = { add_core_of = VAN }
+      104 = { add_core_of = VAN }
+      101 = { add_core_of = VAN }
+      100 = { add_core_of = VAN }
+      1 = { add_core_of = VAN }
+    	 }
+
+    	}
+
+      focus = {
+      	id = VAN_Rising4
+      	icon = GFX_goal_generic_attack_allies
+      	prerequisite = { focus = VAN_Rising1 }
+
+        available = {
+  			   3 = { is_owned_and_controlled_by = ROOT }
+           }
+        cost = 10.00
+      	x = 10
+      	y = 15
+      	ai_will_do = {
+      		factor = 100
+      	}
+
+      	completion_reward = {
+        86 = { add_core_of = VAN }
+        89 = { add_core_of = VAN }
+        88 = { add_core_of = VAN }
+        87 = { add_core_of = VAN }
+        85 = { add_core_of = VAN }
+        83 = { add_core_of = VAN }
+        84 = { add_core_of = VAN }
+        82 = { add_core_of = VAN }
+        81 = { add_core_of = VAN }
+        78 = { add_core_of = VAN }
+        74 = { add_core_of = VAN }
+        75 = { add_core_of = VAN }
+        73 = { add_core_of = VAN }
+        71 = { add_core_of = VAN }
+        70 = { add_core_of = VAN }
+        68 = { add_core_of = VAN }
+        67 = { add_core_of = VAN }
+        662 = { add_core_of = VAN }
+        661 = { add_core_of = VAN }
+        66 = { add_core_of = VAN }
+        653 = { add_core_of = VAN }
+        65 = { add_core_of = VAN }
+        63 = { add_core_of = VAN }
+        61 = { add_core_of = VAN }
+        60 = { add_core_of = VAN }
+      	}
+
+      	}
+
+
+
+
+
+
+
+
+
+## Added the new name of the VAN leader to the text file along with increaseing the tech slots by 1.
+}

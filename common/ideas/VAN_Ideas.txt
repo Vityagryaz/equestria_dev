@@ -1,0 +1,182 @@
+ideas = {
+country = {
+	VAN_Miltary = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+			production_factory_max_efficiency_factor = -0.05
+			industrial_capacity_factory = -0.10
+			global_building_slots_factor = -0.10
+			army_morale_factor = 0.10
+			conscription = 0.02
+
+			}
+		}
+	}
+## industry ideas
+
+country = {
+	VAN_synth = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+			local_resources_factor = 0.20
+			min_export = -0.25
+
+			}
+		}
+	}
+	country = {
+		VAN_trade_company = {
+				allowed = {
+					always = yes
+				}
+				removal_cost = -1
+
+				modifier = {
+				production_speed_buildings_factor = 0.10
+				global_building_slots_factor = 0.10
+				consumer_goods_factor = -0.05
+
+				}
+			}
+		}
+	country = {
+		VAN_trade_company2 = {
+				allowed = {
+					always = yes
+				}
+				removal_cost = -1
+
+				modifier = {
+				production_speed_buildings_factor = 0.20
+				global_building_slots_factor = 0.25
+				consumer_goods_factor = -0.10
+
+				}
+			}
+		}
+	country = {
+		VAN_trade_company3 = {
+				allowed = {
+					always = yes
+				}
+				removal_cost = -1
+
+				modifier = {
+				consumer_goods_factor = -0.15
+				production_speed_buildings_factor = 0.30
+				global_building_slots_factor = 0.50
+
+
+				}
+			}
+		}
+
+
+country = {
+	VAN_Conscription = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			conscription = 0.04
+
+			}
+		}
+	}
+
+	country = {
+		VAN_Training = {
+				allowed = {
+					always = yes
+				}
+				removal_cost = -1
+
+				modifier = {
+				training_time_army_factor = -0.2
+
+				}
+			}
+		}
+		country = {
+			VAN_CoreFighting = {
+					allowed = {
+						always = yes
+					}
+					removal_cost = -1
+
+					modifier = {
+					army_core_attack_factor = 0.2
+					army_core_defence_factor = 0.2
+
+					}
+				}
+			}
+			country = {
+				VAN_DivSpeed = {
+						allowed = {
+							always = yes
+						}
+						removal_cost = -1
+
+						modifier = {
+						army_speed_factor = 0.20
+						org_loss_when_moving = -0.25
+						breakthrough = 0.20
+
+
+						}
+					}
+				}
+				country = {
+					VAN_LowerProduction= {
+							allowed = {
+								always = yes
+							}
+							removal_cost = -1
+
+							modifier = {
+								production_speed_buildings_factor = 0.10
+								production_factory_max_efficiency_factor = 0.10
+								industrial_capacity_factory = 0.15
+
+									}
+								}
+							}
+
+							country = {
+								VAN_Rising= {
+										allowed = {
+											always = yes
+										}
+										removal_cost = -1
+
+										modifier = {
+											unity_factor = 0.2
+												}
+											}
+										}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

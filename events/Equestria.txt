@@ -5047,3 +5047,87 @@ country_event = { #Add cores/claims
 
 
 }
+### VAN's annex reaction events
+country_event = {
+         id = equestria.500
+         title = equestria.500.t
+         desc = equestria.500.d
+         picture = GFX_event_buffalo_relations
+
+         is_triggered_only = yes
+
+         option = {
+            name = equestria.500.a
+	    ai_chance = { factor = 100 }
+            }
+
+	option = {
+            name = equestria.500.b
+            add_political_power = -250
+            add_national_unity = -0.15
+            add_threat = 10
+            declare_war_on = {
+                target = VAN
+                type = annex_everything
+            }
+            VAN = {
+                country_event = { days = 1 id = vanhoover.500 }
+            }
+            ai_chance = { factor = 0 }
+         }
+}
+country_event = {
+         id = equestria.501
+         title = equestria.501.t
+         desc = equestria.501.d
+         picture = GFX_event_buffalo_relations
+
+         is_triggered_only = yes
+
+         option = {
+            name = equestria.501.a
+	    ai_chance = { factor = 95 }
+            }
+
+	option = {
+            name = equestria.501.b
+            add_political_power = -100
+            add_national_unity = -0.05
+            add_threat = 5
+            declare_war_on = {
+                target = VAN
+                type = annex_everything
+            }
+            VAN = {
+                country_event = { days = 1 id = vanhoover.500 }
+            }
+            ai_chance = { factor = 5 }
+         }
+}
+
+country_event = {
+         id = equestria.502
+         title = equestria.502.t
+         desc = equestria.502.d
+         picture = GFX_event_buffalo_relations
+
+         is_triggered_only = yes
+
+         option = {
+            name = equestria.502.a
+	    ai_chance = { factor = 5 }
+            }
+
+	option = {
+            name = equestria.502.b
+            add_political_power = -25
+            declare_war_on = {
+                target = VAN
+                type = annex_everything
+            }
+            VAN = {
+                country_event = { days = 1 id = vanhoover.500 }
+            }
+            ai_chance = { factor = 95 }
+         }
+}

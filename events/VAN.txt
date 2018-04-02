@@ -1,0 +1,14 @@
+add_namespace = vanhoover
+
+country_event = {
+	id = vanhoover.500
+	title = vanhoover.500.t
+	desc = vanhoover.500.d
+	picture = GFX_event_buffalo_relations
+	is_triggered_only = yes
+	option = {
+		name = vanhoover.500.a
+		}
+
+
+}
