@@ -1,14 +1,35 @@
+⚔ “Knights and Flowers” 1.0.3 🌼
+
+✦Fixes:
+✢ Griffon Liberation Army can upgrade to modern society
+✢ Griffon Liberation Army accepts proper members into their faction
+✢ No draft dodging, when there is no drafting
+✢ Stalliongrad joins the war against Changelings properly
+✢ Equestrian wartime militias are stronger
+✢ You can no longer walk on water of some griffon lakes
+✢ Equestria won't invade changeling-occupied Olenia instead of protecting the homeland
+✢ Smarter focus choices for Equestria and Lunar Empire
+✢ Fixed Equestrian militias spawning for random countries
+✢ Some new generals with portraits
+
 ⚔ “Knights and Flowers” 1.0.2 🌼
 
 ✦Fixes:
 ✢ Stalliongrad palace construction fixed
 ✢ Flavour Decisions to Brodfeld
 ✢ Cosmetic tag for Arcturian Order when it becomes a kingdom
-✢ Griffon Liberation Army and Brodfeld can't puppet each other
 ✢ Formable Socialist Union and Socialist Republic of Equestria
+✢ Formable Prywhen
+✢ Formable Yak Empire
+✢ Fixed Griffon Liberation Army and Brodfeld puppeting each other
 ✢ Fixes to Griffon Liberation Army AI
-✢ Fixed some CTDs
+✢ Fixes November 28th, 1007 crash for no-TfV players
+✢ Fixed other Crashes to Desktop
 ✢ Fixed Dread League supply consumption
+✢ Fixed Dread League can be released after annexation
+✢ Fixed localisation
+✢ Fixed russian localisation
+✢ Other small bugfixes, additions and improvements
 
 ⚔ “Knights and Flowers” 1.0.1 🌼
 
