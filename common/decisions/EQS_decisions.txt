@@ -182,6 +182,140 @@ EQS_celestia_evil_meter_category = {
 		}
 	}
 }
+EQS_communist_revolution_category = {
+	EQS_central_region = {
+		icon = generic_political_actions
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		highlight_states = {
+			state = 3
+		}
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						region = 58
+						region = 57
+						region = 44
+						region = 41
+						region = 55
+						region = 61
+						region = 64
+						region = 76
+						region = 63
+					}
+				}
+			}
+		}
+	}
+	EQS_west_region = {
+		icon = generic_political_actions
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		highlight_states = {
+			state = 66
+		}
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						region = 42
+						region = 45
+						region = 62
+						region = 69
+						region = 46
+						region = 47
+					}
+				}
+			}
+		}
+	}
+	EQS_east_region = {
+		icon = generic_political_actions
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		highlight_states = {
+			state = 75
+		}
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						region = 50
+						region = 56
+						region = 59
+						region = 51
+						region = 60
+						region = 75
+						region = 46
+						region = 53
+						region = 83
+						region = 86
+						region = 84
+					}
+				}
+			}
+		}
+	}
+	EQS_south_west_region = {
+		icon = generic_political_actions
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		highlight_states = {
+			state = 13
+		}
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						region = 32
+						region = 33
+						region = 34
+						region = 35
+						region = 43
+					}
+				}
+			}
+		}
+	}
+	EQS_south_east_region = {
+		icon = generic_political_actions
+		visible = {
+			always = yes
+		}
+		fire_only_once = no
+		highlight_states = {
+			state = 38
+		}
+		complete_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						region = 50
+						region = 56
+						region = 59
+						region = 51
+						region = 60
+						region = 75
+						region = 46
+						region = 53
+						region = 83
+						region = 86
+						region = 84
+					}
+				}
+			}
+		}
+	}
+}
 demobilization = {
 	EQS_remove_fascism_decision = {
 		icon = generic_political_actions

@@ -7,6 +7,16 @@ EQS_celestia_evil_meter_category = {
 		base = 110
 	}
 }
+EQS_communist_revolution_category = {
+	allowed = {
+		original_tag = EQS
+		has_government = democratic
+	}
+	icon = generic_political_actions
+	priority = {
+		base = 109
+	}
+}
 EQS_bring_back_puppets = {
 	allowed = {
 		OR = {
