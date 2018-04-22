@@ -20,51 +20,55 @@ focus_tree = {
 
 	}
 	focus = {
-		id = CYA_remove_status_quo
-		icon = GFX_goal_generic_demand_territory
+		id = CYA_openHistory
+		icon = GFX_goal_generic_propaganda
 		cost = 10.00
-		x = 27
-		y = 6
-			completion_reward = {
-					add_ideas = Public_Health2
-					remove_ideas = Public_Health
+		mutually_exclusive = {
+			focus = CYA_filteredHistory
+			focus = CYA_filteredHistory
+		}
+		x = 20
+		y = 7
+			completion_Reward = {
+					add_political_power = 150
+					opinion_gain_monthly_factor = 0.10
 				}
 
 	}
 	focus = {
-		id = CYA_science_funding
-		icon = GFX_goal_generic_demand_territory
+		id = CYA_openHistory
+		icon = GFX_goal_generic_propaganda
 		cost = 10.00
-		x = 27
-		y = 10
-			completion_reward = {
-					remove_ideas = feudalism
+		mutually_exclusive = {
+			focus = CYA_filteredHistory
+			focus = CYA_filteredHistory
+		}
+		x = 20
+		y = 7
+			completion_Reward = {
+					add_political_power = 150
+					opinion_gain_monthly_factor = 0.10
 				}
 
 	}
 	focus = {
-		id = modern_science1
-		icon = GFX_goal_unknown
-		cost = 0.00
-		x = 26
-		y = 3
-			completion_reward = {
-					add_ideas = Scienctific_Growth
+		id = CYA_State_of_emergency
+		icon = GFX_goal_generic_army_doctrines
+		cost = 1.00
+		x = 38
+		y = 1
+			available = {
+					is_justifying_wargoal_against = CYA
 				}
-
-	}
-	focus = {
-		id = modern_culture1
-		icon = GFX_goal_unknown
-		cost = 0.00
-		x = 28
-		y = 3
+			completion_reward = {
+					war_support_factor = 0.10
+				}
 
 	}
 	focus = {
 		id = CYA_industry1
 		icon = GFX_goal_generic_construct_civilian
-		cost = 0.00
+		cost = 5.00
 		prerequisite = {
 			focus = CYA_current_situation
 		}
@@ -92,7 +96,7 @@ focus_tree = {
 	focus = {
 		id = CYA_industry_civ1
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = CYA_industrial_problem
 		}
@@ -135,7 +139,7 @@ focus_tree = {
 	focus = {
 		id = CYA_industry_inf1
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 0.00
+		cost = 5.00
 		prerequisite = {
 			focus = CYA_industrial_problem
 		}
@@ -178,7 +182,7 @@ focus_tree = {
 	focus = {
 		id = CYA_industry_inf2
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = CYA_industry_inf1
 		}
@@ -221,7 +225,7 @@ focus_tree = {
 	focus = {
 		id = CYA_industry_mil1
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = CYA_industrial_problem
 		}
@@ -264,7 +268,7 @@ focus_tree = {
 	focus = {
 		id = CYA_industry_mil2
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = CYA_industry_civ1
 			focus = CYA_industry_mil1
@@ -339,7 +343,7 @@ focus_tree = {
 	focus = {
 		id = CYA_literature1
 		icon = GFX_goal_generic_national_unity
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = CYA_literacy_prolem
 		}
@@ -353,7 +357,7 @@ focus_tree = {
 	focus = {
 		id = CYA_literature2
 		icon = GFX_goal_generic_national_unity
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = CYA_literature1
 		}
@@ -395,7 +399,7 @@ focus_tree = {
 	focus = {
 		id = CYA_filteredHistory
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = CYA_public_schools
 		}
@@ -415,7 +419,7 @@ focus_tree = {
 	focus = {
 		id = CYA_literature4
 		icon = GFX_goal_generic_national_unity
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = CYA_public_schools
 		}
@@ -429,7 +433,7 @@ focus_tree = {
 	focus = {
 		id = CYA_literature5
 		icon = GFX_goal_generic_national_unity
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = CYA_public_schools
 		}
@@ -443,7 +447,7 @@ focus_tree = {
 	focus = {
 		id = CYA_literature6
 		icon = GFX_goal_generic_national_unity
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = CYA_literature5
 		}
@@ -453,7 +457,7 @@ focus_tree = {
 		x = 18
 		y = 9
 			completion_reward = {
-					add_ideas = Teacher_Training_Courses
+					add_ideas = Public_Schools3
 				}
 
 	}
@@ -474,7 +478,7 @@ focus_tree = {
 	focus = {
 		id = CYA_literature1_MilTheory
 		icon = GFX_goal_generic_national_unity
-		cost = 0.00
+		cost = 5.00
 		prerequisite = {
 			focus = CYA_literacy_prolem
 		}
@@ -488,14 +492,13 @@ focus_tree = {
 							uses = 1
 							category = infantry_weapons
 						}
-					army_leader_start_level = 1
 				}
 
 	}
 	focus = {
 		id = CYA_literature2_MilTheory2
 		icon = GFX_goal_generic_national_unity
-		cost = 0.00
+		cost = 5.00
 		prerequisite = {
 			focus = CYA_literature1
 			focus = CYA_literature1_MilTheory
@@ -510,14 +513,13 @@ focus_tree = {
 							uses = 2
 							category = land_doctrine
 						}
-					military_leader_cost_factor = -0.25
 				}
 
 	}
 	focus = {
 		id = CYA_literature3_TrimmelsWork
 		icon = GFX_goal_generic_forceful_treaty
-		cost = 0.00
+		cost = 5.00
 		prerequisite = {
 			focus = CYA_literature2
 			focus = CYA_literature2_MilTheory2
@@ -543,26 +545,6 @@ focus_tree = {
 							uses = 1
 							category = support_weapons
 						}
-					army_leader_start_level = 1
-				}
-
-	}
-	focus = {
-		id = CYA_openHistory
-		icon = GFX_goal_generic_propaganda
-		cost = 0.00
-		prerequisite = {
-			focus = CYA_public_schools
-		}
-		mutually_exclusive = {
-			focus = CYA_filteredHistory
-			focus = CYA_filteredHistory
-		}
-		x = 20
-		y = 7
-			completion_Reward = {
-					add_political_power = 150
-					opinion_gain_monthly_factor = 0.10
 				}
 
 	}
@@ -577,6 +559,254 @@ focus_tree = {
 		y = 2
 			completion_reward = {
 					add_ideas = Public_Health
+				}
+
+	}
+	focus = {
+		id = CYA_Clinics
+		icon = GFX_goal_generic_construction2
+		cost = 5.00
+		prerequisite = {
+			focus = CYA_modernisation
+		}
+		x = 25
+		y = 3
+			completion_reward = {
+					political_power = 50
+					monthly_population = 0.15
+				}
+
+	}
+	focus = {
+		id = CYA_Doctors
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CYA_Clinics
+		}
+		x = 25
+		y = 4
+
+	}
+	focus = {
+		id = CYA_Hospitals
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CYA_Doctors
+		}
+		x = 25
+		y = 5
+
+	}
+	focus = {
+		id = CYA_medics
+		icon = GFX_goal_generic_allies_build_infantry
+		cost = 5.00
+		prerequisite = {
+			focus = CYA_modernisation
+		}
+		x = 27
+		y = 3
+			completion_reward = {
+					attrition = -0.1
+					supply_consumption_factor = -0.10
+				}
+
+	}
+	focus = {
+		id = CYA_specialised_medics
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CYA_medics
+		}
+		x = 27
+		y = 4
+
+	}
+	focus = {
+		id = CYA_cya_medic_regiment
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CYA_specialised_medics
+		}
+		x = 27
+		y = 5
+
+	}
+	focus = {
+		id = CYA_hippogrifatic_oath
+		icon = GFX_goal_generic_improve_relations
+		cost = 5.00
+		prerequisite = {
+			focus = CYA_modernisation
+		}
+		x = 29
+		y = 3
+			completion_reward = {
+					stability_factor = 0.15
+					war_support_factor = -0.05
+				}
+
+	}
+	focus = {
+		id = CYA_Update_Law
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CYA_hippogrifatic_oath
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = CYA_Trade_deals
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = CYA_Update_Law
+		}
+		x = 29
+		y = 5
+
+	}
+	focus = {
+		id = CYA_remove_status_quo
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		prerequisite = {
+			focus = CYA_cya_medic_regiment
+		}
+		prerequisite = {
+			focus = CYA_Hospitals
+		}
+		prerequisite = {
+			focus = CYA_Trade_deals
+		}
+		x = 27
+		y = 6
+			completion_reward = {
+					add_ideas = Public_Health2
+					remove_ideas = Public_Health
+				}
+
+	}
+	focus = {
+		id = CYA_Counter
+		icon = GFX_goal_generic_army_doctrines
+		cost = 2.00
+		prerequisite = {
+			focus = CYA_State_of_emergency
+		}
+		x = 34
+		y = 2
+			completion_reward = {
+					war_support_factor = 0.05
+				}
+
+	}
+	focus = {
+		id = CYA_Attack
+		icon = GFX_goal_generic_army_doctrines
+		cost = 4.00
+		prerequisite = {
+			focus = CYA_Counter
+		}
+		x = 33
+		y = 3
+			completion_reward = {
+
+}
+
+	}
+	focus = {
+		id = CYA_Speed
+		icon = GFX_goal_generic_army_doctrines
+		cost = 4.00
+		prerequisite = {
+			focus = CYA_Counter
+		}
+		x = 35
+		y = 3
+			completion_reward = {
+					army_org_Factor = 0.05
+					army_speed_factor = 0.05
+				}
+
+	}
+	focus = {
+		id = CYA_conscription
+		icon = GFX_goal_generic_army_doctrines
+		cost = 2.00
+		prerequisite = {
+			focus = CYA_State_of_emergency
+		}
+		x = 38
+		y = 2
+			completion_reward = {
+					war_support_factor = 0.05
+				}
+
+	}
+	focus = {
+		id = CYA_conscription_laws
+		icon = GFX_goal_generic_army_doctrines
+		cost = 4.00
+		prerequisite = {
+			focus = CYA_conscription
+		}
+		x = 37
+		y = 3
+			completion_reward = {
+					conscription_factor = 0.1
+					non_core_manpower = 0.05
+				}
+
+	}
+	focus = {
+		id = CYA_mobilisation_speed
+		icon = GFX_goal_generic_army_doctrines
+		cost = 4.00
+		prerequisite = {
+			focus = CYA_conscription
+		}
+		x = 39
+		y = 3
+			completion_reward = {
+					mobilization_speed = 0.1
+					military_leader_cost_factor = -0.25
+				}
+
+	}
+	focus = {
+		id = CYA_Defence
+		icon = GFX_goal_generic_army_doctrines
+		cost = 2.00
+		prerequisite = {
+			focus = CYA_State_of_emergency
+		}
+		x = 42
+		y = 2
+			completion_reward = {
+					war_support_factor = 0.05
+				}
+
+	}
+	focus = {
+		id = CYA_entrenchment
+		icon = GFX_goal_generic_army_doctrines
+		cost = 4.00
+		prerequisite = {
+			focus = CYA_Defence
+		}
+		x = 41
+		y = 3
+			completion_reward = {
+					max_dig_in = 2
+					army_core_defence_factor = 0.1
 				}
 
 	}
@@ -600,6 +830,20 @@ focus_tree = {
 
 	}
 	focus = {
+		id = CYA_science_funding
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		prerequisite = {
+			focus = CYA_remove_status_quo
+		}
+		x = 27
+		y = 10
+			completion_reward = {
+					remove_ideas = feudalism
+				}
+
+	}
+	focus = {
 		id = CYA_privatise_industrial_sector
 		icon = GFX_goal_generic_construction
 		cost = 10.00
@@ -614,6 +858,7 @@ focus_tree = {
 		y = 6
 			completion_reward = {
 					decrease_poverty = yes
+					global_building_slots_factor = 0.10
 				}
 
 	}
@@ -645,7 +890,7 @@ focus_tree = {
 	focus = {
 		id = CYA_industry_civ2
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = CYA_industry_civ1
 			focus = CYA_industry_mil1
@@ -692,7 +937,7 @@ focus_tree = {
 	focus = {
 		id = CYA_industry_mil3
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = CYA_privatise_industrial_sector
 		}
@@ -738,7 +983,7 @@ focus_tree = {
 	focus = {
 		id = CYA_industry_inf3
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 0.00
+		cost = 5.00
 		prerequisite = {
 			focus = CYA_privatise_industrial_sector
 		}
@@ -781,7 +1026,7 @@ focus_tree = {
 	focus = {
 		id = CYA_industry_civ3
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = CYA_privatise_industrial_sector
 		}
@@ -827,7 +1072,7 @@ focus_tree = {
 	focus = {
 		id = CYA_industry_civ4
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = CYA_industry_civ3
 			focus = CYA_industry_inf3
@@ -872,7 +1117,7 @@ focus_tree = {
 	focus = {
 		id = CYA_industry_inf4
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = CYA_industry_civ3
 			focus = CYA_industry_mil3
@@ -917,7 +1162,7 @@ focus_tree = {
 	focus = {
 		id = CYA_industry_mil4
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 0.00
+		cost = 10.00
 		prerequisite = {
 			focus = CYA_industry_mil3
 			focus = CYA_industry_inf3
@@ -954,6 +1199,25 @@ focus_tree = {
 									type = arms_factory
 									level = 2
 									instant_build = yes
+								}
+						}
+				}
+
+	}
+	focus = {
+		id = CYA_Forts
+		icon = GFX_goal_generic_army_doctrines
+		cost = 4.00
+		prerequisite = {
+			focus = CYA_Defence
+		}
+		x = 43
+		y = 3
+			completion_reward = {
+					every_country = {
+							if = {
+									limit = { has_annex_wargoal }
+									production_speed_bunker_factor = 0.5
 								}
 						}
 				}

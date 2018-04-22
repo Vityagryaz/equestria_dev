@@ -17,13 +17,29 @@
  ### NAMES ###
 
  ### PARTIES ###
+ EQC_neutrality_party:0 "Freedom Party"
+ EQC_neutrality_party_long:0 "New Mareland Freedom Party"
+ EQC_communism_party:0 "CPNM"
+ EQC_communism_party_long:0 "Communist Party of New Mareland"
+ EQC_democratic_party:0 "UEP"
+ EQC_democratic_party_long:0 "United Equestrian Party"
+ EQC_fascism_party:0 "NatSoc"
+ EQC_fascism_party_long:0 "National Socialist Party of New Mareland"
 
  ### FOCUS ###
 
- ### IDEAS ####
+ ### IDEAS ###
  EQC_great_depression_1:0 "Great Depression"
  EQC_great_depression_2:0 "Great Depression"
  EQC_great_depression_3:0 "Great Depression"
+
+ ### DECISIONS ###
+ EQC_EQS_relations_category:0 "Relations with the Metropole"
+ EQC_EQS_relations_category_desc:0 "Stranded on a strange, foreign Continent, we must ensure to keep strong ties and good relations with our fellow ponies back home.""
+ EQC_break_free:0 "Declare Independence from the Solar Empire"
+ EQC_break_free_desc:0 "With the War over, it is time for us to finally sever ties with Daybreaker and her regime. This is not the Equestria we pledged to serve!"
+
+
  ### ADVISORS ###
  sour_sweet:0 "Sour Sweet"
  sunny_flare:0 "Sunny Flare"

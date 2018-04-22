@@ -2,11 +2,11 @@ prospect_for_resources = {
 	develop_baltimare_aluminium = { #13
 		
 		icon = aluminium
-
+		
 		allowed = {
 			
 		}
-
+		
 		highlight_states = {
 			state = 13
 		}
@@ -24,16 +24,16 @@ prospect_for_resources = {
 				}
 			}
 		}
-
+		
 		fire_only_once = yes
-
+		
 		cost = 35
 		days_remove = 60
-
+		
 		modifier = {
 			civilian_factory_use = 2
 		}
-
+		
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -41,8 +41,8 @@ prospect_for_resources = {
 				factor = 1
 			}
 		}
-		remove_effect = { 
-			13 = { set_state_flag = baltimare_alluminium } 
+		remove_effect = {
+			13 = { set_state_flag = baltimare_alluminium }
 			13 = {
 				add_resource = {
 					type = aluminium
@@ -78,16 +78,16 @@ prospect_for_resources = {
 		fire_only_once = yes
 		cost = 25
 		days_remove = 140
-
+		
 		modifier = {
 			civilian_factory_use = 1
 		}
-
+		
 		ai_will_do = {
 			factor = 1
 		}
-		remove_effect = { 
-			107 = { set_state_flag = apple_groove_mines_developed } 
+		remove_effect = {
+			107 = { set_state_flag = apple_groove_mines_developed }
 			custom_effect_tooltip = apple_groove_mines_developed_tt
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -126,11 +126,11 @@ prospect_for_resources = {
 		fire_only_once = yes
 		cost = 60
 		days_remove = 60
-
+		
 		modifier = {
 			civilian_factory_use = 3
 		}
-
+		
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -138,8 +138,8 @@ prospect_for_resources = {
 				factor = 1
 			}
 		}
-		remove_effect = { 
-			110 = { set_state_flag = freeside_steel_factories } 
+		remove_effect = {
+			110 = { set_state_flag = freeside_steel_factories }
 			110 = {
 				add_resource = {
 					type = steel
@@ -151,7 +151,7 @@ prospect_for_resources = {
 	develop_ghastly_gorge_crystals = { #123
 		
 		icon = crystals
-
+		
 		allowed = {
 			
 		}
@@ -164,7 +164,7 @@ prospect_for_resources = {
 			owns_state = 123
 			controls_state = 123
 		}
-
+		
 		visible = {
 			has_tech = excavation1
 			owns_state = 123
@@ -175,16 +175,16 @@ prospect_for_resources = {
 				}
 			}
 		}
-
+		
 		fire_only_once = yes
-
+		
 		cost = 40
 		days_remove = 88
-
+		
 		modifier = {
 			civilian_factory_use = 3
 		}
-
+		
 		ai_will_do = {
 			factor = 0
 			modifier = {
@@ -192,19 +192,19 @@ prospect_for_resources = {
 				factor = 1
 			}
 		}
-		remove_effect = { 
-			123 = { set_state_flag = ghastly_gorge_crystal_deposits } 
+		remove_effect = {
+			123 = { set_state_flag = ghastly_gorge_crystal_deposits }
 			123 = {
 				add_resource = {
 					type = crystals
 					amount = 6
 				}
 			}
-		}	
+		}
 	}
-	develop_welcoming_hills_tungsten_deposits = { #135	
+	develop_welcoming_hills_tungsten_deposits = { #135
 		icon = tungsten
-		allowed = {	
+		allowed = {
 		}
 		available = {
 			has_tech = excavation4
@@ -247,9 +247,9 @@ prospect_for_resources = {
 			}
 		}
 	}
-	neighgara_falls_crystals_develop = { #56	
+	neighgara_falls_crystals_develop = { #56
 		icon = crystals
-		allowed = {	
+		allowed = {
 		}
 		available = {
 			has_tech = excavation2
@@ -292,9 +292,9 @@ prospect_for_resources = {
 			}
 		}
 	}
-	some_magical_plateu_oil = { #227	
+	some_magical_plateu_oil = { #227
 		icon = oil
-		allowed = {	
+		allowed = {
 		}
 		available = {
 			has_tech = excavation4
@@ -337,9 +337,9 @@ prospect_for_resources = {
 			}
 		}
 	}
-	deeper_into_crystal_mountains = { #64	
+	deeper_into_crystal_mountains = { #64
 		icon = crystals
-		allowed = {	
+		allowed = {
 		}
 		available = {
 			has_tech = excavation2
@@ -382,9 +382,9 @@ prospect_for_resources = {
 			}
 		}
 	}
-	deeper_into_crystal_mountains_2 = { #64	
+	deeper_into_crystal_mountains_2 = { #64
 		icon = crystals
-		allowed = {	
+		allowed = {
 		}
 		available = {
 			has_tech = excavation3
@@ -433,9 +433,9 @@ prospect_for_resources = {
 			}
 		}
 	}
-	upper_unicorn_range_chromium = { #73	
+	upper_unicorn_range_chromium = { #73
 		icon = chromium
-		allowed = {	
+		allowed = {
 		}
 		available = {
 			has_tech = excavation4
@@ -478,9 +478,9 @@ prospect_for_resources = {
 			}
 		}
 	}
-	bogg_toxic_marsh_oil = { #327	
+	bogg_toxic_marsh_oil = { #327
 		icon = oil
-		allowed = {	
+		allowed = {
 		}
 		available = {
 			has_tech = excavation2
@@ -523,9 +523,9 @@ prospect_for_resources = {
 			}
 		}
 	}
-	bogg_toxic_marsh_rubber = { #327	
+	bogg_toxic_marsh_rubber = { #327
 		icon = rubber
-		allowed = {	
+		allowed = {
 		}
 		available = {
 			has_tech = excavation1
@@ -570,9 +570,9 @@ prospect_for_resources = {
 			}
 		}
 	}
-	haysead_marsh_rubber = { #27	
+	haysead_marsh_rubber = { #27
 		icon = rubber
-		allowed = {	
+		allowed = {
 		}
 		available = {
 			has_tech = excavation1
@@ -615,9 +615,9 @@ prospect_for_resources = {
 			}
 		}
 	}
-	albion_aluminium_aircraft = { #525	
+	albion_aluminium_aircraft = { #525
 		icon = aluminium
-		allowed = {	
+		allowed = {
 		}
 		available = {
 			has_tech = improved_machine_tools
@@ -661,9 +661,9 @@ prospect_for_resources = {
 		}
 	}
 	
-	falcontown_oil_well = { #495	
+	falcontown_oil_well = { #495
 		icon = oil
-		allowed = {	
+		allowed = {
 		}
 		available = {
 			has_tech = excavation1
@@ -703,12 +703,12 @@ prospect_for_resources = {
 		}
 	}
 	
-	falcontown_oil_well_2 = { #495	
+	falcontown_oil_well_2 = { #495
 		icon = oil
-		allowed = {	
+		allowed = {
 		}
 		visible = {
-		495 = { has_state_flag = falcontown_oil_1 }
+			495 = { has_state_flag = falcontown_oil_1 }
 		}
 		available = {
 			has_tech = excavation3
@@ -779,26 +779,26 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 1
 		}
-		remove_effect = { 
-			287 = { set_state_flag = crystal_peaks_mined } 
+		remove_effect = {
+			287 = { set_state_flag = crystal_peaks_mined }
 			287 = {
 				add_resource = {
 					type = crystals
 					amount = 16
 				}
 			}
-		}	
+		}
 	}
 	
 	beak_mine_expansion = { #245
 		icon = steel
-		allowed = {	
+		allowed = {
 		}
 		highlight_states = {
 			state = 245
 		}
 		available = {
-		    has_tech = excavation1
+			has_tech = excavation1
 			num_of_civilian_factories_available_for_projects > 2
 			owns_state = 245
 			controls_state = 245
@@ -822,8 +822,8 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 1
 		}
-		remove_effect = { 
-			245 = { set_state_flag = beak_mine_expansion_flag } 
+		remove_effect = {
+			245 = { set_state_flag = beak_mine_expansion_flag }
 			245 = {
 				add_resource = {
 					type = steel
@@ -835,13 +835,13 @@ prospect_for_resources = {
 	
 	northern_steel_expansion = { #284
 		icon = steel
-		allowed = {	
+		allowed = {
 		}
 		highlight_states = {
 			state = 284
 		}
 		available = {
-		    has_tech = excavation2
+			has_tech = excavation2
 			num_of_civilian_factories_available_for_projects > 2
 			owns_state = 284
 			controls_state = 284
@@ -865,8 +865,8 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 1
 		}
-		remove_effect = { 
-			284 = { set_state_flag = northern_steel_expansion_flag } 
+		remove_effect = {
+			284 = { set_state_flag = northern_steel_expansion_flag }
 			284 = {
 				add_resource = {
 					type = steel
@@ -907,15 +907,15 @@ prospect_for_resources = {
 		ai_will_do = {
 			factor = 1
 		}
-		remove_effect = { 
-			315 = { set_state_flag = jem_mines_flag } 
+		remove_effect = {
+			315 = { set_state_flag = jem_mines_flag }
 			315 = {
 				add_resource = {
 					type = crystals
 					amount = 17
 				}
 			}
-		}	
+		}
 	}
 	
 	tainaholm_aluminium = { #308
@@ -927,7 +927,7 @@ prospect_for_resources = {
 			state = 308
 		}
 		available = {
-		    has_tech = excavation1
+			has_tech = excavation1
 			num_of_civilian_factories_available_for_projects > 2
 			owns_state = 308
 			controls_state = 308
@@ -949,13 +949,455 @@ prospect_for_resources = {
 		}
 		ai_will_do = {
 			factor = 1
-			}
-		remove_effect = { 
-			308 = { set_state_flag = tainaholm_aluminium_flag } 
+		}
+		remove_effect = {
+			308 = { set_state_flag = tainaholm_aluminium_flag }
 			308 = {
 				add_resource = {
 					type = aluminium
 					amount = 14
+				}
+			}
+		}
+	}
+	
+	develop_celestia_rubber_plantations = { 
+		
+		icon = rubber
+
+		allowed = {
+
+		}
+
+		available = {
+			owns_state = 354
+			controls_state = 354
+			num_of_civilian_factories_available_for_projects > 2
+		}
+
+		highlight_states = {
+			state = 354
+		}
+
+		visible = {
+			owns_state = 354
+			controls_state = 354
+			354 = {
+				NOT = {
+					has_state_flag = celestia_rubber_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 180
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			354 = {
+				set_state_flag = celestia_rubber_developed
+			}
+			354 = {
+				add_resource = {
+					type = rubber
+					amount = 10
+				}
+			}
+		}
+	}
+	
+	develop_northern_cross_tungsten_deposits_1 = { #361
+		
+		icon = tungsten
+
+		allowed = {
+			
+		}
+
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 361
+			controls_state = 361
+		}
+
+		highlight_states = {
+			state = 361
+		}
+
+		visible = {
+			owns_state = 361
+			controls_state = 361
+			361 = {
+				NOT = {
+					has_state_flag = northern_cross_tungsten_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			361 = { set_state_flag = northern_cross_tungsten_developed }
+			361 = {
+				add_resource = {
+					type = tungsten
+					amount = 4
+				}
+			}
+		}
+	}
+	develop_northern_cross_tungsten_deposits_2 = { #361
+		
+		icon = tungsten
+
+		allowed = {
+			
+		}
+
+		available = {
+			has_tech = excavation4
+			num_of_civilian_factories_available_for_projects > 4
+			owns_state = 361
+			controls_state = 361
+		}
+
+		highlight_states = {
+			state = 361
+		}
+
+		visible = {
+			owns_state = 361
+			controls_state = 361
+			361 = {
+				NOT = {
+					has_state_flag = northern_cross_tungsten_developed_2
+				}
+				has_state_flag = northern_cross_tungsten_developed
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 90
+
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			361 = { set_state_flag = northern_cross_tungsten_developed_2 }
+			361 = {
+				add_resource = {
+					type = tungsten
+					amount = 6
+				}
+			}
+		}
+	}
+	
+	develop_karthin_oil_fields = { #371
+		
+		icon = oil
+
+		allowed = {
+			NOT = {
+				tag = WNG
+			}
+		}
+
+		available = {
+			has_tech = excavation2
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 371
+			controls_state = 371
+		}
+
+		highlight_states = {
+			state = 371
+		}
+
+		visible = {
+			owns_state = 371
+			controls_state = 371
+			371 = {
+				NOT = {
+					has_state_flag = karthin_oil_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			371 = {
+				set_state_flag = karthin_oil_developed
+			}
+			371 = {
+				add_resource = {
+					type = oil
+					amount = 13
+				}
+			}
+		}
+	}
+	
+	develop_bloodtalon_rubber_plantations = { #536
+		
+		icon = rubber
+
+		allowed = {
+			NOT = {
+				tag = WNG
+			}
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 536
+			controls_state = 536
+		}
+
+		highlight_states = {
+			state = 536
+		}
+
+		visible = {
+			owns_state = 536
+			controls_state = 536
+			536 = {
+				NOT = {
+					has_state_flag = bloodtalon_rubber_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 180
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			536 = {
+				set_state_flag = bloodtalon_rubber_developed
+			}
+			536 = {
+				add_resource = {
+					type = rubber
+					amount = 12
+				}
+			}
+		}
+	}
+	
+	develop_warthog_forest_rubber_plantations = { #373
+		
+		icon = rubber
+
+		allowed = {
+			NOT = {
+				tag = WNG
+			}
+		}
+
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 373
+			controls_state = 373
+		}
+
+		highlight_states = {
+			state = 373
+		}
+
+		visible = {
+			owns_state = 373
+			controls_state = 373
+			373 = {
+				NOT = {
+					has_state_flag = warthog_forest_rubber_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			373 = {
+				set_state_flag = warthog_forest_rubber_developed
+			}
+			373 = {
+				add_resource = {
+					type = rubber
+					amount = 7
+				}
+			}
+		}
+	}
+	
+	develop_griffinstone_crystal_mines = { #389
+		
+		icon = crystals
+
+		allowed = {
+
+		}
+
+		available = {
+			has_tech = excavation1
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 389
+			controls_state = 389
+		}
+
+		highlight_states = {
+			state = 389
+		}
+
+		visible = {
+			owns_state = 389
+			controls_state = 389
+			389 = {
+				NOT = {
+					has_state_flag = griffinstone_crystal_mines_developed
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			389 = {
+				set_state_flag = griffinstone_crystal_mines_developed
+			}
+			389 = {
+				add_resource = {
+					type = crystals
+					amount = 7
+				}
+			}
+		}
+	}
+	
+	develop_griffinstone_crystal_mines2 = { #389
+		
+		icon = crystals
+
+		allowed = {
+
+		}
+
+		available = {
+			has_tech = excavation3
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 389
+			controls_state = 389
+		}
+
+		highlight_states = {
+			state = 389
+		}
+
+		visible = {
+			owns_state = 389
+			controls_state = 389
+			389 = {
+				has_state_flag = griffinstone_crystal_mines_developed
+				NOT = {
+					has_state_flag = griffinstone_crystal_mines_developed2
+				}
+			}
+		}
+
+		fire_only_once = yes
+
+		cost = 25
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		remove_effect = {
+			389 = {
+				set_state_flag = griffinstone_crystal_mines_developed
+			}
+			389 = {
+				add_resource = {
+					type = crystals
+					amount = 10
 				}
 			}
 		}

@@ -245,3 +245,47 @@ defined_text = { # Country
 		localization_key = griffon_traditonal_warfair_desc_other
 	}
 }
+defined_text = { # Country
+	name = GetEquestrianOverlordDesc
+	text = {
+		trigger = {
+			original_tag = CRY
+		}
+		localization_key = equestrian_overlord_desc_cry
+	}
+	text = {
+		trigger = {
+			NOT = { original_tag = CRY }
+		}
+		localization_key = equestrian_overlord_desc_gen
+	}
+}
+
+defined_text = { # Country
+	name = GetPrywhenRevolutionDecisionDesc
+	text = {
+		trigger = {
+			has_war_with = BRF
+		}
+		localization_key = GRW_defense_of_the_revolution_desc_start
+	}
+	text = {
+		trigger = {
+			NOT = { has_war_with = BRF }
+			NOT = {
+				has_completed_focus = GRW_exansionism
+				has_completed_focus = GRW_global_revolution
+			}
+		}
+		localization_key = GRW_defense_of_the_revolution_postwar_desc
+	}
+	text = {
+		trigger = {
+			OR = {
+				has_completed_focus = GRW_exansionism
+				has_completed_focus = GRW_global_revolution
+			}
+		}
+		localization_key = GRW_defense_of_the_revolution_export_of_revolution_desc
+	}
+}

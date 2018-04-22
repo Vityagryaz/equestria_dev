@@ -1,3 +1,73 @@
+⚔ “Knights and Flowers” 1.0.3.2 🌼
+
+✦Fixes and additions:
+✢ Fixed various humen portrait errors for Workshop (hopefully)
+✢ Griffon Republic can now actually core all Imperial Territory
+✢ Griffinstone now has new portraits and generals, woo-hoo
+✢ Fixed Kill Blocker decisions showing up for players
+✢ Equestria AI template fix, minor starting buff to Equestria, as it starts with 1 line artillery now
+✢ Stalliongrad Grammer Tweaks
+✢ Griffonian Vassals can now be annexed
+✢ Rearrangement of pony racial technologies
+✢ Minor buffs to racial technologies
+✢ Conversion counter for Dread League
+✢ Fixes to Solar Empire focus tree
+✢ Nova Griffonia rolls Imperator Highhill less on non-historical AI
+✢ Crystal Empire cannot be Communist and Sombra at the same time
+✢ Other miscellaneous fixes and improvements
+
+⚔ “Knights and Flowers” 1.0.3 🌼
+
+✦Fixes and additions:
+✢ Griffon Liberation Army can upgrade to modern society
+✢ Griffon Liberation Army accepts proper members into their faction
+✢ No draft dodging, when there is no drafting
+✢ Stalliongrad joins the war against Changelings properly
+✢ Stalliongrad can abandon the palace project
+✢ Equestrian wartime militias are stronger
+✢ You can no longer walk on water of some griffon lakes
+✢ Equestria won't invade changeling-occupied Olenia instead of protecting the homeland
+✢ Smarter focus choices for Equestria and Lunar Empire
+✢ Fixed Equestrian militias spawning for random countries
+✢ Some new generals with portraits
+✢ Other miscellaneous fixes and improvements	
+
+⚔ “Knights and Flowers” 1.0.2 🌼
+
+✦Fixes:
+✢ Stalliongrad palace construction fixed
+✢ Flavour Decisions to Brodfeld
+✢ Cosmetic tag for Arcturian Order when it becomes a kingdom
+✢ Formable Socialist Union and Socialist Republic of Equestria
+✢ Formable Prywhen
+✢ Formable Yak Empire
+✢ Fixed Griffon Liberation Army and Brodfeld puppeting each other
+✢ Fixes to Griffon Liberation Army AI
+✢ Fixes November 28th, 1007 crash for no-TfV players
+✢ Fixed other Crashes to Desktop
+✢ Fixed Dread League supply consumption
+✢ Fixed Dread League can be released after annexation
+✢ Fixed localisation
+✢ Fixed russian localisation
+✢ Other small bugfixes, additions and improvements
+
+⚔ “Knights and Flowers” 1.0.1 🌼
+
+✦Fixes:
+✢ Infantry Equipment upgrades were brought back
+✢ Sombra has 70 days to finish the civil war, before Equestria declares war on him
+✢ Fixes to Olenia-Thorax relationships
+✢ Fixes to Thorax focus tree and events
+✢ Fixes to Solar Empire triggers
+✢ Balancing to Solar Empire, Griffonian Republic and Lunar Empire
+✢ More focus icons
+✢ Fixed localisation
+✢ Topbar background is fixed
+✢ Duplicates removed
+✢ Flavour Decisions in Griffon Liberation Army
+✢ Some memes removed
+✢ Other bugfixes and improvements
+
 ⚔ “Knights and Flowers” 1.0 🌼
 Changelog:
 Features:
@@ -13,11 +83,10 @@ Features:
 ✢ Blackrock Bandits
 ✢ Dread League
 ✢ Rumare
-✢ City of Flowena
 ✢ Greifwald
 ✢ Brodfeld
-✢ Eyrie
 ✢ Holy Order
+✢ Nyumba ya Kaskazini
 
 Various choices, not enough griffon portraits and more land to conquer
 
@@ -27,21 +96,23 @@ Various choices, not enough griffon portraits and more land to conquer
 ✢ Solar Empire
 ✢ Celestial State
 ✢ Democratic path for Equestria
+✢ Harmonic Thorax's Changeling path
+✢ Rearranged Changeling focuses
 ✢ Lunar Empire focus tree improved
 ✢ Penguins
 ✢ Yakyakistan reworked
 ✢ Buffalo Chiefdom
 
-❈ Continental shape:
+❈ Changes to Equestrian continent:
 ✢ Numerous changes to coastline to make it fatter and more realistic
 ✢ Adjustments to Equestrian weather, now there are no temperature jumps
 ✢ More provinces in Equestria
-✢ Our Town is now smaller 
+✢ Our Town is now smaller
 ✢ More towns and villages on the map
 ✢ Adjustments to the river that flows near Whinnyapolis and Bales, more realistic trail
 ✢ Adjustments to jungles
 
-✦Added:
+✦Additions and fixes:
 ❈ Development Idea Tab
 ㅇScience Bases
 ❈ Various flavour and fun decisions:
@@ -56,9 +127,11 @@ Various choices, not enough griffon portraits and more land to conquer
 ✢ New focus icons
 ✢ More event pictures
 ✢ Buffalo Generals and Advisors
+✢ Better generic griffon generals
+✢ You can now marry Sakira in Sombra route
 ✢ Better russian localisation
 ✢ Vanilla tags removed from the game
-✢ Polising and miscellaneous improvements
+✢ Polishing and miscellaneous improvements
 
 [img]https://i.imgur.com/WeP8i7M.png[/img]
 0.6 “MAGIC”
@@ -204,5 +277,3 @@ Basic focus tree for NLR
 - Some generic pony portraits.
 - Fixed naval research.
 - Added straits.
-
-

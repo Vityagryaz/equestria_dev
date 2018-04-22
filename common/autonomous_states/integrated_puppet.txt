@@ -60,7 +60,7 @@ autonomy_state = {
 					original_tag = EQS
 				}
 			}
-			always = no
+			NOT = { original_tag = CRY }
 		}
 		if = {
 			limit = { overlord = { tag = FAT } }

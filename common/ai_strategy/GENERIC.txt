@@ -1,6 +1,4 @@
-CHN_no_one_loves_them = { # Reverse strategy
-	reversed = yes
-
+CHN_no_one_loves_them = {
 	enable = {
 		NOT = { tag = CHN }
 		CHN = {
@@ -9,7 +7,7 @@ CHN_no_one_loves_them = { # Reverse strategy
 		NOT = { is_subject_of = CHN }
 		NOT = { is_in_faction_with = CHN }
 	}
-
+	
 	abort = {
 		OR = {
 			is_subject_of = CHN
@@ -21,22 +19,58 @@ CHN_no_one_loves_them = { # Reverse strategy
 			}
 		}
 	}
-
+	
 	ai_strategy = {
 		type = alliance
 		id = "CHN"
 		value = -500
 	}
 	ai_strategy = {
-        type = befriend
-        id = "CHN"
-        value = -50
-    }
+		type = befriend
+		id = "CHN"
+		value = -50
+	}
+}
+
+CHN_no_one_loves_them_rev = { # Reverse strategy
+	reversed = yes
+	
+	enable = {
+		NOT = { tag = CHN }
+		CHN = {
+			has_government = fascism
+		}
+		NOT = { is_subject_of = CHN }
+		NOT = { is_in_faction_with = CHN }
+	}
+	
+	abort = {
+		OR = {
+			is_subject_of = CHN
+			is_in_faction_with = CHN
+			CHN = {
+				OR = {
+					NOT = {	has_government = fascism }
+				}
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = alliance
+		id = "CHN"
+		value = -500
+	}
+	ai_strategy = {
+		type = befriend
+		id = "CHN"
+		value = -50
+	}
 }
 
 EQS_ignore_griffons = { # Reverse strategy
 	reversed = yes
-
+	
 	enable = {
 		is_griffon_continent_country = yes
 		NOT = { original_tag = EQC }
@@ -52,7 +86,7 @@ EQS_ignore_griffons = { # Reverse strategy
 			}
 		}
 	}
-
+	
 	ai_strategy = {
 		type = ignore
 		id = "EQS"
@@ -207,7 +241,7 @@ EQS_ignore_griffons = { # Reverse strategy
 }
 
 griffons_ignore_EQS = { #
-
+	
 	enable = {
 		capital_scope = { is_on_continent = asia }
 		NOT = { original_tag = EQC }
@@ -223,7 +257,7 @@ griffons_ignore_EQS = { #
 			}
 		}
 	}
-
+	
 	ai_strategy = {
 		type = ignore
 		id = "EQS"
@@ -378,7 +412,7 @@ griffons_ignore_EQS = { #
 }
 
 griffons_wont_ally_eqs = {
-
+	
 	enable = {
 		capital_scope = { is_on_continent = asia }
 		NOT = { tag = EQC }
@@ -393,7 +427,7 @@ griffons_wont_ally_eqs = {
 			}
 		}
 	}
-
+	
 	ai_strategy = {
 		type = alliance
 		id = "EQS"
@@ -431,7 +465,7 @@ griffons_wont_ally_eqs = {
 	}
 }
 BAN_ANG_YAL_not_ally_WNG = {
-
+	
 	enable = {
 		original_tag = ANG
 		original_tag = YAL
@@ -441,7 +475,7 @@ BAN_ANG_YAL_not_ally_WNG = {
 		WNG = { has_government = democratic }
 		has_government = democratic
 	}
-
+	
 	ai_strategy = {
 		type = alliance
 		id = "WNG"

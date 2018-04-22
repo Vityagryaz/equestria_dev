@@ -37,6 +37,8 @@
  agrarian_society_desc:0 "Society where agriculture largely dominates heavy or light industry."
  outdated_industry:0 "Outdated Industrial Sector"
  outdated_industry_desc:0 "Despite Industrializing this nation has largely failed to keep their industrial sector up to date with the modern times."
+ outdated_industry2:0 "Outdated Industrial Sector"
+ outdated_industry2_desc:0 "Despite Industrializing this nation has largely failed to keep their industrial sector up to date with the modern times."
  tribal_society:0 "Tribal Society"
  tribal_society_desc:0 "Primitive, hardly civilized society."
  communal_society:0 "Communal Society"
@@ -98,16 +100,6 @@
 
 
  ## Yakyakistan Ideas ##
- YAK_political_turmoil:0 "Politial Turmoil"
- YAK_political_turmoil_desc:0 ""
- YAK_facist_beliefs:0 "Facist Ideals"
-  YAK_facist_beliefs_desc:0 ""
- YAK_communist_beliefs:0 "Communist Ideals"
-  YAK_communist_beliefs_desc:0 ""
- YAK_changing_society:0 "Changing Society"
-  YAK_changing_society_desc:0 ""
- YAK_growing_industry:0 "Growing Industry"
-  YAK_growing_industry_desc:0 ""
 
 ## SCS (Confederation) Ideas ##
  colt_arms:0 "Colt Arms"
@@ -253,3 +245,5 @@ farbrook_shipbuilding:0 "Farbrook Ships"
 idol_of_boreas_lost:0 "Idol of Boreas Lost"
 kingdom_with_no_king:0 "Kingdom with no King"
 home_of_the_griffons:0 "Home of the Griffons"
+
+elia_storm:0 "Elia Storm"

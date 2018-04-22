@@ -78,9 +78,6 @@ ideas = {
 			allowed = {
 				original_tag = CHN
 			}
-			available = {
-				NOT = {	has_completed_focus = assassinate_fieldmarshaltrimmel_CHN }
-			}
 			
 			
 			traits = { army_chief_maneuver_2 }
@@ -264,9 +261,6 @@ ideas = {
 			
 			allowed = {
 				original_tag = CHN
-			}
-			available = {
-				NOT = { has_completed_focus = assassinate_fieldmarshaltrimmel_CHN }
 			}
 			research_bonus = {
 				land_doctrine = 0.09
@@ -628,6 +622,30 @@ ideas = {
 		}
 	}
 	country = {
+		canterlot_defeat_but_for_friends = {
+			picture = canterlot_defeat
+			
+			allowed = {
+				always = no
+			}
+			available = {
+				is_subject = no
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.45
+				enemy_partisan_effect = -0.05
+				war_support_factor = 0.1
+				stability_factor = 0.035
+			}
+		}
+	}
+	country = {
 		political_divisions = {
 			
 			
@@ -773,6 +791,7 @@ ideas = {
 				experience_gain_army = 0.02
 				army_leader_start_level = 1
 				planning_speed = 0.10
+				max_command_power = 10
 			}
 		}
 	}
@@ -852,7 +871,6 @@ ideas = {
 			}
 		}
 	}
-	
 	country = {
 		covert_agents = {
 			allowed = {
@@ -862,6 +880,74 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.15
 				research_time_factor = -0.05
+			}
+		}
+	}
+	country = {
+		chn_vesalipolis_construction = {
+			picture = CHN_construction_effort
+			allowed = {
+				original_tag = CHN }
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+	}
+	country = {
+		chn_ditrysium_construction_1 = {
+			picture = CHN_naval_effort
+			allowed = {
+				original_tag = CHN
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_dockyard_factor = 0.15
+			}
+		}
+	}
+	country = {
+		chn_ditrysium_construction_2 = {
+			picture = CHN_naval_effort
+			allowed = {
+				original_tag = CHN
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_dockyard = 0.135
+			}
+		}
+	}
+	country = {
+		chn_vraks_military_effort = {
+
+			allowed = {
+				original_tag = CHN }
+			
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+	}
+	country = {
+		chn_vraks_military_effort_2 = {
+			picture = chn_vraks_military_effort
+			allowed = {
+				original_tag = CHN }
+			
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
 			}
 		}
 	}

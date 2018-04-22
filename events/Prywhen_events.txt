@@ -7,12 +7,9 @@ country_event = {
 	title = "Testing"
 	desc = prywhen_test.1.d
 	picture = GFX_event_griffon_mountain
-	
-	trigger = {
-		tag = GRW
-	}
-	mean_time_to_happen = { days = 1 }
-	fire_only_once = yes
+
+	is_triggered_only = yes
+
 	option = {
 		name = "I want to test political line"
 		annex_country = { target = BRF }
@@ -31,7 +28,7 @@ country_event = {
 	title = prywhen.1.t
 	desc = prywhen.1.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		owns_state = 385
@@ -94,22 +91,17 @@ country_event = { ### ask bandits of help
 	id = prywhen.2
 	title = prywhen.2.t
 	desc = prywhen.2.d
-	picture = GFX_event_griffon_mountain
-	
-	trigger = {
-		tag = BRF
-		surrender_progress > 0.5
-	}
-	mean_time_to_happen = { days = 1 }
-	fire_only_once = yes
+	picture = GFX_event_griffons_machine_gun
+
+	is_triggered_only = yes
 	option = {
 		name = prywhen.2.a
 		ai_chance = { factor = 100
 			modifier = {
 				factor = 0
 				BAN = { has_government = communism }
-				}
 			}
+		}
 		BAN = { country_event = { id = prywhen.3 hours = 12 } }
 	}
 	option = {
@@ -118,23 +110,23 @@ country_event = { ### ask bandits of help
 			modifier = {
 				add = 100
 				BAN = { has_government = communism }
-				}
 			}
+		}
 	}
 }
 country_event = { ## event for bandits
 	id = prywhen.3
 	title = prywhen.3.t
 	desc = prywhen.3.d
-	picture = GFX_event_griffon_mountain
-	
+	picture = GFX_event_griffons_machine_gun
+
 	is_triggered_only = yes
 	option = {
 		name = prywhen.3.a
 		ai_chance = { factor = 50
 			modifier = {
-			factor = 0
-			has_government = communism
+				factor = 0
+				has_government = communism
 			}
 			modifier = {
 				add = 40
@@ -167,8 +159,8 @@ country_event = {
 	id = prywhen.4
 	title = prywhen.4.t
 	desc = prywhen.4.d
-	picture = GFX_event_griffon_mountain
-	
+	picture = GFX_event_griffons_machine_gun
+
 	is_triggered_only = yes
 	option = {
 		name = prywhen.4.a
@@ -180,8 +172,8 @@ country_event = {
 	id = prywhen.5
 	title = prywhen.5.t
 	desc = prywhen.5.d
-	picture = GFX_event_griffon_mountain
-	
+	picture = GFX_event_griffons_machine_gun
+
 	trigger = {
 		tag = BAN
 		BRF = { exists = no }
@@ -243,8 +235,8 @@ country_event = { ## Focus Militia
 	id = prywhen.7
 	title = prywhen.7.t
 	desc = prywhen.7.d
-	picture = GFX_event_griffon_mountain
-	
+	picture = GFX_event_griffons_machine_gun
+
 	is_triggered_only = yes
 	option = {
 		name = prywhen.7.a
@@ -258,7 +250,7 @@ country_event = { ## Focus Partisans
 	title = prywhen.8.t
 	desc = prywhen.8.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = {
 		name = prywhen.8.a
@@ -293,7 +285,7 @@ country_event = { ## Focus Victory in Civil War
 	title = prywhen.9.t
 	desc = prywhen.9.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = {
 		name = prywhen.9.a
@@ -305,7 +297,7 @@ country_event = { ## Civil War Aftermath Gradual dissapearance
 	title = prywhen.10.t
 	desc = prywhen.10.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_completed_focus = GRW_victory_in_civil_war
@@ -323,7 +315,7 @@ country_event = { ## Civil War Aftermath Gradual dissapearance
 	title = prywhen.11.t
 	desc = prywhen.11.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_completed_focus = GRW_victory_in_civil_war
@@ -342,7 +334,7 @@ country_event = { ## Civil War Aftermath Gradual dissapearance
 	title = prywhen.12.t
 	desc = prywhen.12.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_completed_focus = GRW_victory_in_civil_war
@@ -361,7 +353,7 @@ country_event = { ## Civil War Aftermath Gradual dissapearance
 	title = prywhen.13.t
 	desc = prywhen.13.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_completed_focus = GRW_victory_in_civil_war
@@ -379,7 +371,7 @@ country_event = { ## Civil War Aftermath Gradual dissapearance
 	title = prywhen.14.t
 	desc = prywhen.14.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_completed_focus = GRW_victory_in_civil_war
@@ -400,7 +392,7 @@ country_event = {
 	title = prywhen.15.t
 	desc = prywhen.15.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = BAN
 		BRF = { exists = no }
@@ -420,7 +412,7 @@ country_event = {
 	title = prywhen.16.t
 	desc = prywhen.16.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = {
 		name = prywhen.16.a
@@ -435,7 +427,7 @@ country_event = {
 	title = prywhen.17.t
 	desc = prywhen.17.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_country_flag = BRFprince_escaped
@@ -452,7 +444,7 @@ country_event = {
 	title = prywhen.18.t
 	desc = prywhen.18.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_country_flag = BRFprince_killed
@@ -468,7 +460,7 @@ country_event = {
 	title = prywhen.19.t
 	desc = prywhen.19.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_country_flag = BRFprince_captured
@@ -522,7 +514,7 @@ country_event = {
 	title = prywhen.20.t
 	desc = prywhen.20.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = {
 		name = prywhen.20.a
@@ -536,7 +528,7 @@ country_event = {
 	title = prywhen.21.t
 	desc = prywhen.21.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_country_flag = BRFlord_escaped
@@ -554,7 +546,7 @@ country_event = {
 	title = prywhen.22.t
 	desc = prywhen.22.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_country_flag = BRFlord_killed
@@ -572,7 +564,7 @@ country_event = {
 	title = prywhen.23.t
 	desc = prywhen.23.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_country_flag = BRFlord_captured
@@ -598,7 +590,7 @@ country_event = {
 	title = prywhen.24.t
 	desc = prywhen.24.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = {
 		name = prywhen.24.a
@@ -634,7 +626,7 @@ country_event = {
 	title = prywhen.25.t
 	desc = prywhen.25.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_country_flag = BRF_supporters_captured
@@ -674,7 +666,7 @@ country_event = {
 	title = prywhen.26.t
 	desc = prywhen.26.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_country_flag = BRF_supporters_not_captured
@@ -694,8 +686,8 @@ country_event = {
 	id = prywhen.27
 	title = prywhen.27.t
 	desc = prywhen.27.d
-	picture = GFX_event_griffon_mountain
-	
+	picture = GFX_event_griffons_machine_gun
+
 	trigger = {
 		tag = GRW
 		NOT = {
@@ -720,6 +712,9 @@ country_event = {
 				transfer_state = 508
 				transfer_state = 590
 				transfer_state = 385
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				add_popularity = { ideology = neutrality popularity = 0.7 }
+				add_popularity = { ideology = fascism popularity = 0.4 }
 				transfer_technology = yes
 				add_ideas = war_economy
 				add_ideas = service_by_requirement
@@ -738,8 +733,8 @@ country_event = {
 	id = prywhen.28
 	title = prywhen.27.t
 	desc = prywhen.27.d
-	picture = GFX_event_griffon_mountain
-	
+	picture = GFX_event_griffons_machine_gun
+
 	trigger = {
 		tag = GRW
 		NOT = { has_country_flag = counter_revolution_successful }
@@ -758,6 +753,9 @@ country_event = {
 		}
 		has_country_flag = BRF_supporters_not_captured
 		BRF = { exists = no }
+		NOT = {
+			has_country_flag = { flag = monarchist_repressions value > 10 }
+		}
 	}
 	mean_time_to_happen = { days = 100 }
 	fire_only_once = yes
@@ -772,6 +770,9 @@ country_event = {
 				transfer_state = 508
 				transfer_state = 590
 				transfer_state = 385
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				add_popularity = { ideology = neutrality popularity = 0.7 }
+				add_popularity = { ideology = fascism popularity = 0.4 }
 				transfer_technology = yes
 				add_ideas = war_economy
 				add_ideas = service_by_requirement
@@ -790,8 +791,8 @@ country_event = {
 	id = prywhen.29
 	title = prywhen.27.t
 	desc = prywhen.27.d
-	picture = GFX_event_griffon_mountain
-	
+	picture = GFX_event_griffons_machine_gun
+
 	trigger = {
 		tag = GRW
 		NOT = { has_country_flag = counter_revolution_successful }
@@ -808,6 +809,9 @@ country_event = {
 		}
 		has_country_flag = BRF_supporters_not_captured
 		BRF = { exists = no }
+		NOT = {
+			has_country_flag = { flag = monarchist_repressions value > 10 }
+		}
 	}
 	mean_time_to_happen = { days = 100 }
 	fire_only_once = yes
@@ -825,6 +829,9 @@ country_event = {
 				add_manpower = 15000
 				transfer_state = 508
 				transfer_state = 385
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				add_popularity = { ideology = neutrality popularity = 0.7 }
+				add_popularity = { ideology = fascism popularity = 0.4 }
 				transfer_technology = yes
 				add_ideas = war_economy
 				add_ideas = service_by_requirement
@@ -854,6 +861,9 @@ country_event = {
 				add_manpower = 10000
 				transfer_state = 508
 				transfer_state = 385
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				add_popularity = { ideology = neutrality popularity = 0.7 }
+				add_popularity = { ideology = fascism popularity = 0.4 }
 				transfer_technology = yes
 				add_ideas = war_economy
 				add_ideas = service_by_requirement
@@ -883,6 +893,9 @@ country_event = {
 				add_manpower = 13000
 				transfer_state = 508
 				transfer_state = 385
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				add_popularity = { ideology = neutrality popularity = 0.7 }
+				add_popularity = { ideology = fascism popularity = 0.4 }
 				transfer_technology = yes
 				add_ideas = war_economy
 				add_ideas = service_by_requirement
@@ -915,6 +928,9 @@ country_event = {
 				add_manpower = 8000
 				transfer_state = 508
 				transfer_state = 385
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				add_popularity = { ideology = neutrality popularity = 0.7 }
+				add_popularity = { ideology = fascism popularity = 0.4 }
 				transfer_technology = yes
 				add_ideas = war_economy
 				add_ideas = service_by_requirement
@@ -933,8 +949,8 @@ country_event = {
 	id = prywhen.30
 	title = prywhen.27.t
 	desc = prywhen.27.d
-	picture = GFX_event_griffon_mountain
-	
+	picture = GFX_event_griffons_machine_gun
+
 	trigger = {
 		tag = GRW
 		NOT = { has_country_flag = counter_revolution_successful }
@@ -972,6 +988,9 @@ country_event = {
 				add_manpower = 2000
 				transfer_state = 508
 				transfer_technology = yes
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				add_popularity = { ideology = neutrality popularity = 0.7 }
+				add_popularity = { ideology = fascism popularity = 0.4 }
 				add_ideas = war_economy
 				add_ideas = service_by_requirement
 				add_ideas = pre_industrial_society
@@ -1000,6 +1019,9 @@ country_event = {
 				add_manpower = 1500
 				transfer_state = 508
 				transfer_technology = yes
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				add_popularity = { ideology = neutrality popularity = 0.7 }
+				add_popularity = { ideology = fascism popularity = 0.4 }
 				add_ideas = war_economy
 				add_ideas = service_by_requirement
 				add_ideas = pre_industrial_society
@@ -1028,6 +1050,9 @@ country_event = {
 				add_manpower = 1300
 				transfer_state = 508
 				transfer_technology = yes
+				set_politics = { ruling_party = neutrality elections_allowed = no }
+				add_popularity = { ideology = neutrality popularity = 0.7 }
+				add_popularity = { ideology = fascism popularity = 0.4 }
 				add_ideas = war_economy
 				add_ideas = service_by_requirement
 				add_ideas = pre_industrial_society
@@ -1052,7 +1077,7 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			random_list = { 
+			random_list = {
 				15 = {
 					set_country_flag = counter_revolution_successful
 					add_stability = -0.1
@@ -1060,6 +1085,9 @@ country_event = {
 					BRF = {
 						add_manpower = 800
 						transfer_state = 508
+						set_politics = { ruling_party = neutrality elections_allowed = no }
+						add_popularity = { ideology = neutrality popularity = 0.7 }
+						add_popularity = { ideology = fascism popularity = 0.4 }
 						transfer_technology = yes
 						add_ideas = war_economy
 						add_ideas = service_by_requirement
@@ -1075,7 +1103,7 @@ country_event = {
 					country_event = { id = prywhen.33 }
 				}
 			}
-			
+
 		}
 	}
 }
@@ -1085,7 +1113,7 @@ country_event = {
 	title = prywhen.31.t
 	desc = prywhen.31.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_completed_focus = GRW_enter_modern_age
@@ -1103,7 +1131,7 @@ country_event = {
 	title = prywhen.32.t
 	desc = prywhen.32.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_completed_focus = GRW_enter_modern_age
@@ -1121,7 +1149,7 @@ country_event = {
 	title = prywhen.33.t
 	desc = prywhen.33.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = {
 		add_political_power = 100
@@ -1130,7 +1158,7 @@ country_event = {
 }
 country_event = {
 	id = prywhen.34
-	
+
 	hidden = yes
 	trigger = {
 		tag = GRW
@@ -1157,7 +1185,7 @@ country_event = {
 	title = prywhen.35.t
 	desc = prywhen.35.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_completed_focus = GRW_enter_modern_age
@@ -1176,7 +1204,7 @@ country_event = {
 	title = prywhen.36.t
 	desc = prywhen.36.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = {
 		name = prywhen.36.a
@@ -1191,7 +1219,7 @@ country_event = {
 	title = prywhen.37.t
 	desc = prywhen.37.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = {
 		name = prywhen.37.a
@@ -1206,7 +1234,7 @@ country_event = {
 	title = prywhen.38.t
 	desc = prywhen.38.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = {
 		name = prywhen.38.a
@@ -1221,7 +1249,7 @@ country_event = {
 	title = prywhen.39.t
 	desc = prywhen.39.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = { ## yes
 		name = prywhen.39.a
@@ -1259,7 +1287,7 @@ country_event = {
 	title = prywhen.40.t
 	desc = prywhen.40.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = { ## yes
 		name = prywhen.40.a
@@ -1283,7 +1311,7 @@ country_event = {
 	title = prywhen.41.t
 	desc = prywhen.41.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = { ## yes
 		name = prywhen.41.a
@@ -1309,7 +1337,7 @@ country_event = {
 	title = prywhen.42.t
 	desc = prywhen.42.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		OR = {
 			tag = GRW
@@ -1337,9 +1365,9 @@ country_event = {
 				AND = {
 					has_completed_focus = GRW_ricefield_training
 					has_completed_focus = GRW_adopt_potatos
-					}
-					has_completed_focus = BRF_operation_boiled_rice_part_2
 				}
+				has_completed_focus = BRF_operation_boiled_rice_part_2
+			}
 			factor = 2
 		}
 		modifier = {
@@ -1361,7 +1389,7 @@ country_event = {
 	title = prywhen.43.t
 	desc = prywhen.43.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		OR = {
 			tag = GRW
@@ -1385,9 +1413,9 @@ country_event = {
 				AND = {
 					has_completed_focus = GRW_ricefield_training
 					has_completed_focus = GRW_adopt_potatos
-					}
-					has_completed_focus = BRF_operation_boiled_rice_part_2
 				}
+				has_completed_focus = BRF_operation_boiled_rice_part_2
+			}
 			factor = 2
 		}
 		modifier = {
@@ -1409,7 +1437,7 @@ country_event = {
 	title = prywhen.44.t
 	desc = prywhen.44.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_idea = GRW_famine
@@ -1428,7 +1456,7 @@ country_event = {
 	title = prywhen.45.t
 	desc = prywhen.45.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		has_idea = GRW_famine_start
@@ -1442,6 +1470,7 @@ country_event = {
 		remove_ideas = GRW_famine_start
 	}
 }
+
 country_event = {
 	id = prywhen.46
 	hidden = yes
@@ -1462,6 +1491,309 @@ country_event = {
 		add_manpower = 8000
 	}
 }
+country_event = {
+	id = prywhen.47
+	hidden = yes
+	trigger = {
+		original_tag = GRW
+		has_country_flag = GRW_prywhen_formed
+		any_state = {
+			NOT = { is_core_of = GRW }
+			NOT = { is_core_of = BAN }
+			is_owned_by = GRW
+		}
+	}
+	fire_only_once = yes
+	option = {
+		drop_cosmetic_tag = yes
+	}
+}
+
+country_event = {
+	id = prywhen.48
+	title = prywhen.48.t
+	desc = prywhen.48.d
+	picture = GFX_event_griffon_mountain
+
+	trigger = {
+		tag = GRW
+		has_country_flag = {
+			flag = monarchist_repressions value > 3
+		}
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 14
+	}
+	option = { ## accept
+		name = prywhen.48.a
+		trigger = {
+			NOT = {
+				385 = { is_controlled_by = GRW }
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+		hidden_effect = {
+			random_list = {
+				50 = {
+					set_country_flag = make_it_through_passage
+				}
+				30 = {
+					set_country_flag = passage_gets_destroyed
+				}
+				20 = {
+					set_country_flag = company_lost_in_passage
+				}
+			}
+		}
+	}
+	option = { ## accept and lead
+		name = prywhen.48.b
+		trigger = {
+			NOT = {
+				385 = { is_controlled_by = GRW }
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		add_political_power = 25
+		hidden_effect = {
+			random_list = {
+				50 = {
+					set_country_flag = make_it_through_passage
+				}
+				30 = {
+					set_country_flag = passage_gets_destroyed_redglad_ded
+				}
+				20 = {
+					set_country_flag = company_lost_in_passage_redglad_ded
+				}
+			}
+		}
+	}
+	option = { ## don't accept
+		name = prywhen.48.c
+		trigger = {
+			NOT = {
+				385 = { is_controlled_by = GRW }
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ## shoot the bastard
+		name = prywhen.48.sydia_owned
+		trigger = {
+			385 = { is_controlled_by = GRW }
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = { ## shoot the bastard
+		name = prywhen.48.e
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+country_event = {
+	id = prywhen.49
+	title = prywhen.49.t
+	desc = prywhen.49.d
+	picture = GFX_event_griffon_mountain
+
+	trigger = {
+		tag = GRW
+		has_country_flag = make_it_through_passage
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 7
+	}
+	option = { ## accept
+		name = prywhen.49.a
+		hidden_effect = {
+			load_oob = "GRW_sydia_passage"
+		}
+	}
+}
+country_event = {
+	id = prywhen.50
+	title = prywhen.50.t
+	desc = prywhen.50.d
+	picture = GFX_event_griffon_mountain
+
+	trigger = {
+		tag = GRW
+		has_country_flag = passage_gets_destroyed
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = { ## accept
+		name = prywhen.50.a
+		add_manpower = -1000
+	}
+	option = { ## accept
+		name = prywhen.50.b
+		add_manpower = -750
+		add_political_power = -20
+	}
+}
+country_event = {
+	id = prywhen.51
+	title = prywhen.51.t
+	desc = prywhen.51.d
+	picture = GFX_event_griffon_mountain
+
+	trigger = {
+		tag = GRW
+		has_country_flag = company_lost_in_passage
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 14
+	}
+	option = { ## accept
+		name = prywhen.51.a
+		add_manpower = -1000
+	}
+}
+country_event = {
+	id = prywhen.52
+	title = prywhen.52.t
+	desc = prywhen.52.d
+	picture = GFX_event_griffon_mountain
+
+	trigger = {
+		tag = GRW
+		has_country_flag = company_lost_in_passage_redglad_ded
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 14
+	}
+	option = { ## accept
+		name = prywhen.52.a
+		add_manpower = -1000
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Richard Spear"
+			picture = "RichardSpear.tga"
+			expire = "1965.1.1"
+			ideology = leninism
+			traits = { }
+		}
+		if = {
+			limit = {
+				has_unit_leader = 50
+			}
+			remove_unit_leader = 50
+		}
+	}
+}
+country_event = {
+	id = prywhen.53
+	title = prywhen.53.t
+	desc = prywhen.53.d
+	picture = GFX_event_griffon_mountain
+
+	trigger = {
+		tag = GRW
+		has_country_flag = passage_gets_destroyed_redglad_ded
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 5
+	}
+	option = { ## accept
+		name = prywhen.53.a
+		add_manpower = -1000
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Richard Spear"
+			picture = "RichardSpear.tga"
+			expire = "1965.1.1"
+			ideology = leninism
+			traits = { }
+		}
+		if = {
+			limit = {
+				has_unit_leader = 50
+			}
+			remove_unit_leader = 50
+		}
+	}
+	option = { ## accept
+		name = prywhen.53.b
+		add_manpower = -750
+		add_political_power = -25
+		kill_country_leader = yes
+		create_country_leader = {
+			name = "Richard Spear"
+			picture = "RichardSpear.tga"
+			expire = "1965.1.1"
+			ideology = leninism
+			traits = { }
+		}
+		if = {
+			limit = {
+				has_unit_leader = 50
+			}
+			remove_unit_leader = 50
+		}
+	}
+}
+country_event = {
+	id = prywhen.54
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		if = {
+			limit = { threat < 50 }
+			add_threat = 50
+			set_global_flag = cw_threat_added
+		}
+		random_other_country = {
+			limit = {
+				original_tag = ROOT
+				NOT = {
+					has_government = communism
+				}
+			}
+			FROM = { add_to_war = { targeted_alliance = ROOT enemy = PREV  } }
+		}
+		if = {
+			limit = { has_global_flag = cw_threat_added }
+			add_threat = -50
+			clr_global_flag = cw_threat_added
+		}
+	}
+}
+country_event = {
+	id = prywhen.55
+	title = prywhen.55.t
+	desc = prywhen.55.d
+	picture = GFX_event_griffon_mountain
+
+	is_triggered_only = yes
+
+	option = { ## accept
+		name = prywhen.55.a
+		add_manpower = 5000
+	}
+}
 ####################################################
 ########## BRODFELD ################################
 ####################################################
@@ -1471,7 +1803,7 @@ country_event = { ### ask countries for military aid
 	title = brodfeld.1.t
 	desc = brodfeld.1.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = {
 		name = brodfeld.1.a
@@ -1499,7 +1831,7 @@ country_event = { ### Military aid for brodfeld {other nations}
 	title = brodfeld.2.t
 	desc = brodfeld.2.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = {
 		name = brodfeld.2.a
@@ -1607,7 +1939,7 @@ country_event = { ### result of military aid
 	desc = { text = brodfeld.3.d_not_arrived
 		trigger = { has_country_flag = { flag = prywhen_aid_meter value < 1 } } }
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = BRF
 		has_country_flag = GRY_replied_BRF
@@ -1690,7 +2022,7 @@ country_event = { ### result of military aid
 			}
 		}
 	}
-	
+
 	option = { #nobody said yes
 		name = brodfeld.3.b
 		trigger = { has_country_flag = { flag = prywhen_aid_meter value < 1 } }
@@ -1701,7 +2033,7 @@ country_event = { ### ask countries for industrial aid
 	title = brodfeld.4.t
 	desc = brodfeld.4.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = {
 		name = brodfeld.4.a
@@ -1729,14 +2061,14 @@ country_event = { ### Industrial aid for brodfeld {other nations}
 	title = brodfeld.5.t
 	desc = brodfeld.5.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = {
 		name = brodfeld.5.a
 		trigger = { tag = LUS }
 		ai_chance = { factor = 40 }
 		add_political_power = -40
-		
+
 		hidden_effect = {
 			BRF = { modify_country_flag = { flag = prywhen_industry_aid_meter value = 1 }
 				set_country_flag = LUS_replied_BRF2 }
@@ -1748,7 +2080,7 @@ country_event = { ### Industrial aid for brodfeld {other nations}
 		trigger = { tag = CYA }
 		ai_chance = { factor = 70 }
 		add_political_power = -40
-		
+
 		hidden_effect = {
 			BRF = { modify_country_flag = { flag = prywhen_industry_aid_meter value = 1 }
 				set_country_flag = CYA_replied_BRF2 }
@@ -1760,7 +2092,7 @@ country_event = { ### Industrial aid for brodfeld {other nations}
 		trigger = { tag = BOI }
 		ai_chance = { factor = 50 }
 		add_political_power = -40
-		
+
 		hidden_effect = {
 			BRF = { modify_country_flag = { flag = prywhen_industry_aid_meter value = 1 }
 				set_country_flag = BOI_replied_BRF2 }
@@ -1772,7 +2104,7 @@ country_event = { ### Industrial aid for brodfeld {other nations}
 		trigger = { tag = GRU }
 		ai_chance = { factor = 80 }
 		add_political_power = -40
-		
+
 		hidden_effect = {
 			BRF = { modify_country_flag = { flag = prywhen_industry_aid_meter value = 1 }
 				set_country_flag = GRU_replied_BRF2 }
@@ -1783,7 +2115,7 @@ country_event = { ### Industrial aid for brodfeld {other nations}
 		trigger = { tag = GRY }
 		ai_chance = { factor = 20 }
 		add_political_power = -40
-		
+
 		hidden_effect = {
 			BRF = { modify_country_flag = { flag = prywhen_industry_aid_meter value = 1 }
 				set_country_flag = GRY_replied_BRF2 }
@@ -1835,7 +2167,7 @@ country_event = { ### result of industrial aid
 	title = brodfeld.6.t
 	desc = brodfeld.6.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = BRF
 		has_country_flag = GRY_replied_BRF2
@@ -1907,7 +2239,7 @@ country_event = { ### result of industrial aid
 			}
 		}
 	}
-	
+
 	option = { #nobody said yes
 		name = brodfeld.6.b
 		trigger = { has_country_flag = { flag = prywhen_industry_aid_meter value < 1 } }
@@ -1920,7 +2252,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = brodfeld.7.a
-		load_oob = "BRF_marsh_brigade"
+		custom_effect_tooltip = marsh_brigade_will_appear
+		hidden_effect = {
+			load_oob = "BRF_marsh_brigade"
+		}
 	}
 }
 country_event = {
@@ -1938,7 +2273,7 @@ country_event = { ## MAKE PLAYER'S LIFE HARDER
 	title = brodfeld.9.t
 	desc = brodfeld.9.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = GRW
 		is_ai = yes
@@ -1958,7 +2293,7 @@ country_event = { ## Foreign Engineers
 	title = brodfeld.10.t
 	desc = brodfeld.10.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = {
 		name = brodfeld.10.a
@@ -1979,7 +2314,7 @@ country_event = { ## Foreign Engineers other countrys event
 	title = brodfeld.11.t
 	desc = brodfeld.11.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = {
 		name = brodfeld.11.a
@@ -2019,7 +2354,7 @@ country_event = { ## MAKE PLAYER'S LIFE HARDER
 	title = brodfeld.12.t
 	desc = brodfeld.12.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = BRF
 		OR = {
@@ -2054,7 +2389,7 @@ country_event = { ## Steal tank
 	title = brodfeld.13.t
 	desc = brodfeld.13.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = {
 		name = brodfeld.13.a
@@ -2086,7 +2421,7 @@ country_event = { ## Steal tank
 	title = brodfeld.14.t
 	desc = brodfeld.14.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		OR = {
 			has_country_flag = tank_delivery_fastest
@@ -2145,7 +2480,7 @@ country_event = { ## Focus Victory in Civil War Brodfeld
 	title = brodfeld.15.t
 	desc = brodfeld.15.d
 	picture = GFX_event_griffon_mountain
-	
+
 	is_triggered_only = yes
 	option = {
 		name = brodfeld.15.a
@@ -2157,7 +2492,7 @@ country_event = { ## Civil War Aftermath Gradual dissapearance
 	title = brodfeld.16.t
 	desc = brodfeld.16.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = BRF
 		has_idea = prywhen_civil_war_aftermath
@@ -2174,7 +2509,7 @@ country_event = { ## Civil War Aftermath Gradual dissapearance
 	title = brodfeld.17.t
 	desc = brodfeld.17.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = BRF
 		has_idea = prywhen_civil_war_aftermath2
@@ -2191,7 +2526,7 @@ country_event = { ## Civil War Aftermath Gradual dissapearance
 	title = brodfeld.18.t
 	desc = brodfeld.18.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = BRF
 		has_idea = prywhen_civil_war_aftermath3
@@ -2208,7 +2543,7 @@ country_event = { ## Civil War Aftermath Gradual dissapearance
 	title = brodfeld.19.t
 	desc = brodfeld.19.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = BRF
 		has_idea = prywhen_civil_war_aftermath4
@@ -2225,7 +2560,7 @@ country_event = { ## Civil War Aftermath Gradual dissapearance
 	title = brodfeld.20.t
 	desc = brodfeld.20.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = BRF
 		has_idea = prywhen_civil_war_aftermath5
@@ -2242,7 +2577,7 @@ country_event = {
 	title = brodfeld.21.t
 	desc = brodfeld.21.d
 	picture = GFX_event_griffon_mountain
-	
+
 	trigger = {
 		tag = BRF
 		OR = {
@@ -2260,8 +2595,197 @@ country_event = {
 			news_event = { id = prywhen_news.2 hours = 12 }
 		}
 		if = { limit = { is_faction_leader = yes }
-			 dismantle_faction = yes }
+			dismantle_faction = yes }
 	}
+}
+## conscript peasants ##
+country_event = {
+	id = brodfeld.22
+	title = brodfeld.22.t
+	desc = brodfeld.22.d
+	picture = GFX_event_griffon_soldier
+
+	is_triggered_only = yes
+	option = {
+		name = brodfeld.22.a
+		add_manpower = 5000
+		random_state = {
+			limit = {
+				is_controlled_by = ROOT
+			}
+			add_manpower = -5000
+		}
+		add_to_variable = { var = peasant_anger value = 5 }
+		custom_effect_tooltip = peasant_anger_increase_tt_high
+	}
+	option = {
+		name = brodfeld.22.b
+		add_manpower = 2500
+		random_state = {
+			limit = {
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+				NOT = {
+					has_state_flag = brodfeld_city
+				}
+			}
+			add_manpower = -2500
+		}
+		add_to_variable = { var = peasant_anger value = 3 }
+		custom_effect_tooltip = peasant_anger_increase_tt_average
+	}
+	option = {
+		name = brodfeld.22.c
+		add_manpower = 1000
+		random_state = {
+			limit = {
+				is_controlled_by = ROOT
+			}
+			add_manpower = -1000
+		}
+		add_to_variable = { var = peasant_anger value = 1 }
+		custom_effect_tooltip = peasant_anger_increase_tt_light
+	}
+}
+## conscript peasants of kivessin ##
+country_event = {
+	id = brodfeld.23
+	title = brodfeld.23.t
+	desc = brodfeld.23.d
+	picture = GFX_event_griffon_soldier
+
+	is_triggered_only = yes
+	option = {
+		name = brodfeld.22.a
+		add_manpower = 5000
+		508 = {
+			add_manpower = -5000
+		}
+		add_to_variable = { var = peasant_anger value = 5 }
+		custom_effect_tooltip = peasant_anger_increase_tt_high
+	}
+	option = {
+		name = brodfeld.22.b
+		add_manpower = 2500
+		508 = {
+			add_manpower = -2500
+		}
+		add_to_variable = { var = peasant_anger value = 3 }
+		custom_effect_tooltip = peasant_anger_increase_tt_average
+	}
+	option = {
+		name = brodfeld.22.c
+		add_manpower = 1000
+		508 = {
+			add_manpower = -1000
+		}
+		add_to_variable = { var = peasant_anger value = 1 }
+		custom_effect_tooltip = peasant_anger_increase_tt_light
+	}
+}
+## conscript the peasants of sydia ##
+country_event = {
+	id = brodfeld.24
+	title = brodfeld.24.t
+	desc = brodfeld.24.d
+	picture = GFX_event_griffon_soldier
+
+	is_triggered_only = yes
+	option = {
+		name = brodfeld.22.a
+		add_manpower = 5000
+		385 = {
+			add_manpower = -5000
+		}
+		add_to_variable = { var = peasant_anger value = 5 }
+		custom_effect_tooltip = peasant_anger_increase_tt_high
+	}
+	option = {
+		name = brodfeld.22.b
+		add_manpower = 2500
+		385 = {
+			add_manpower = -2500
+		}
+		add_to_variable = { var = peasant_anger value = 3 }
+		custom_effect_tooltip = peasant_anger_increase_tt_average
+	}
+	option = {
+		name = brodfeld.22.c
+		add_manpower = 1000
+		385 = {
+			add_manpower = -1000
+		}
+		add_to_variable = { var = peasant_anger value = 1 }
+		custom_effect_tooltip = peasant_anger_increase_tt_light
+	}
+}
+
+country_event = {
+	id = brodfeld.25
+	picture = GFX_event_griffon_soldier
+	hidden = yes
+
+	trigger = {
+		tag = BRF
+		has_country_flag = peasant_rebellion_crushed
+	}
+	mean_time_to_happen = {
+		days = 50
+	}
+	option = {
+		clr_country_flag = peasant_rebellion_crushed
+	}
+}
+country_event = {
+	id = brodfeld.26
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		if = {
+			limit = {
+				GRW = {
+					OR = {
+						has_country_flag = BRFlord_killed
+						has_country_flag = BRFlord_captured
+					}
+					has_country_flag = BRFprince_escaped
+				}
+			}
+			create_country_leader = {
+				name = "Prince Tomado de Kissau"
+				desc = ""
+				picture = "Prince.tga"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				GRW = {
+					OR = {
+						has_country_flag = BRFlord_killed
+						has_country_flag = BRFlord_captured
+					}
+					OR = {
+						has_country_flag = BRFprince_captured
+						has_country_flag = BRFprince_killed
+					}
+				}
+			}
+			create_country_leader = {
+				name = "Mason of Kivessin"
+				desc = ""
+				picture = "Mason.tga"
+				expire = "1965.1.1"
+				ideology = despotism
+				traits = {
+				}
+			}
+		}
+	}
+	
 }
 ### The End of The Civil War
 news_event = {
@@ -2278,7 +2802,7 @@ news_event = {
 	is_triggered_only = yes
 	option = {
 		name = prywhen_news.1.a
-		
+
 	}
 }
 news_event = {
@@ -2295,7 +2819,7 @@ news_event = {
 	is_triggered_only = yes
 	option = {
 		name = prywhen_news.2.a
-		
+
 	}
 }
 news_event = {
@@ -2315,8 +2839,8 @@ news_event = {
 	}
 	option = {
 		trigger = { OR = {
-			has_government = neutrality
-			has_government = fascism
+				has_government = neutrality
+				has_government = fascism
 			}
 		}
 		name = prywhen_news.3.c
