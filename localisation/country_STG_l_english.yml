@@ -210,6 +210,7 @@ STG_palace_construction_effort_final:0 "Construction of the Palace of the Soviet
 STG_palace_the_statue:0 "Order The Statue for the Palace"
 STG_palace_construction_effort_final:0 "The Final Stage of Construction"
 
+<<<<<<< HEAD
 STG_palace_construction_effort_desc:0 "Let's begin!"
 STG_palace_construction_effort_2_desc:0 "Time marches on."
 STG_palace_the_statue_desc:0 "A statue is needed to be placed ontop of the building."
@@ -225,6 +226,23 @@ STG_palace_construction_second_completed:0 "The construction is approaching its 
 STG_palace_construction_last_part:0 "The construction is almost finished. The third section of the palace is next, then the statue that will be placed ontop of it, and lastly the palace will finally be finished."
 
 STG_something_else:0 "Something Else"
+=======
+STG_palace_construction_effort_desc:0 "[Root.ConstructionOfPalaceProgressLoc]"
+STG_palace_construction_effort_2_desc:0 "[Root.ConstructionOfPalaceProgressLoc]"
+STG_palace_the_statue_desc:0 "A statue is needed to be placed ontop of the building."
+STG_palace_construction_effort_final_desc:0 "[Root.ConstructionOfPalaceProgressLoc]"
+
+STG_palace_construction_not_began:0 "The construction of the palace has just begun. The place in the center of Stalliongrad was cleared from old buildings."
+STG_palace_construction_started:0 "The construction of the palace has begun. The workers are moving concrete blocks and metal frame to the construction site. The basement is being worked on."
+STG_palace_construction_started_1:0 "The construction of the palace has begun. The workers are moving concrete blocks and metal frames to the construction site. The basement is almost finished and the first floor is being built."
+STG_palace_construction_started_2:0 "The construction of the palace has begun. The workers are moving more and more concrete blocks and metal frames. The first floor has been completed and the second one is being worked on right now."
+STG_palace_construction_first_completed:0 "The construction is in progress. The first section of the palace has been finished and it is already being decorated. The works on the second section have begun."
+STG_palace_construction_second_halfway:0 "The construction is in progress. The second section of the palace is halway finished."
+STG_palace_construction_second_completed:0 "The construction is approaching its end. The second section of the palace is finished."
+STG_palace_construction_last_part:0 "The construction is almost finished. The third section of the palace is needed to be build, the statue will be placed ontop of it, after that the palace is finally finished."
+
+STG_something_else:0 "Something else"
+>>>>>>> master
 palace_construction_continues:0 "Construction of the Palace level"
 statue_obtained:0 "The statue for the palace is created."
 STG_foreign_affairs:0 "Foreign Affairs"
@@ -232,9 +250,15 @@ claimed_EQS_territory_already:0 "Already claimed the cores."
 STG_protection:0 "Defense of the Motherland"
 palace_project_abandoned:0 "The Palace project is abandoned."
 STG_abandon_construction_of_palace:0 "Abandon the Construction"
+<<<<<<< HEAD
 STG_abandon_construction_of_palace_desc:0 "We can't do this anymore."
 STG_abandon_construction_of_palace_war_time:0 "Abandon the Construction"
 STG_abandon_construction_of_palace_war_time_desc:0 "We have other concerns."
+=======
+STG_abandon_construction_of_palace_desc:0 "[Root.AbandonConstructionWarOrNoWar]"
+STG_abandon_construction_of_palace_war_time:0 "Abandon the Construction"
+STG_abandon_construction_of_palace_war_time_desc:0 "[Root.AbandonConstructionWarOrNoWar]"
+>>>>>>> master
 STG_palace_constructed_tt:0 "The palace is not constructed yet"
 STG_abandon_construction_war:0 "The palace takes up a lot of resources, we can abandon its construction and use them somewhere else..."
 STG_abandon_construction_no_war:0 "The palaces takes up a lot of essential resources for its construction, we can deconstruct it and relocate them. Our motherland needs everything for its protection!"
@@ -703,9 +727,32 @@ stalliongrad_news.106.a:0 "Oh my."
 stalliongrad_news.107.t:0 "General Secretary Vasiliy Pantsushenko steps up."
 stalliongrad_news.107.d:0 "Following the events in Stalliongrad, as Gensec Dark Wing has assassinated of his fellow party member and contender in the last elections, Sinister Serov, on public demand Dark Wing will be judged by higher court. Supported by general Nestor Lunin, Vasiliy Pantsushenko has been appointed as the new Gensec of Stalliongrad."
 stalliongrad_news.107.a:0 "Oh my."
+
 stalliongrad_news.108.t:0 "General Secretary Sinister steps up."
 stalliongrad_news.108.d:0 "Following the events in Stalliongrad, as Gensec Dark Wing has assassinated of his fellow party member and contender in the last elections, Vasiliy Pantsushenko, on public demand Dark Wing will be judged by higher court. Supported by general Nestor Lunin, Vasiliy Pantsushenko has been appointed as the new Gensec of Stalliongrad."
 stalliongrad_news.108.a:0 "Oh my."
+
+stalliongrad_news.109.t_integration:0 "Integration of Stalliongrad"
+stalliongrad_news.109.t_annexation:0 "Equestria annexes Stalliongrad"
+stalliongrad_news.109.d:0 "After Dark Wing has been elected as the general secretary of Stalliongradian Republic, the country drifted to pro-equestrian rethoric. In several months, Stalliongrad became an autonomous state under Equestrian leadership. Now equestrian and stalliongradian officials have decided that the time has come to reunite Stalliongrad with Equestria. From this day Stalliongard as an independent or semi-independent nation ceases to exist."
+stalliongrad_news.109.a:0 "One day, the proletariat will strike again..."
+stalliongrad_news.109.b:0 "You're finally home!"
+stalliongrad_news.109.c:0 "Equestria uses every method to subjugate its neighbours."
+stalliongrad_news.109.e:0 "Stalliongrad is Equestrian soil."
+
+stalliongrad.143.t:0 "[EQS.GetNameDef] wishes to integrate [Root.GetName]"
+stalliongrad.143.d:0 "An equestrian official arrived early in the morning to demand the dissolution of Stalliongradian government, cancelling of pairlament meetings and trasnfer of every power apparatus to the hooves of Equestrian governors. This means that the [Root.GetName] will lose all its autonomy and cease to exist."
+stalliongrad.143.a:0 "We are ready to reunite!"
+stalliongrad.143.b:0 "No way, this wasn't our plan."
+stalliongrad.144.t:0 "Stalliongrad accepts"
+stalliongrad.144.d:0 "The government of Stalliongrad has accepted our terms to hoof us the control over the region. The history of independent Stalliongrad ends now."
+stalliongrad.144.a:0 "That's settled then."
+stalliongrad.145.t:0 "Stalliongrad declines"
+stalliongrad.145.d:0 "The government of Stalliongrad has declined our terms to hoof us the control over the region. Stalliongrad wants to remain an autonomous state."
+stalliongrad.145.a:0 "What can we do..."
+stalliongrad.145.b:0 "Enough of this."
+darkwing_ready_to_be_annexed:0 "Stalliongradian Autonomy has been a puppet for two years."
+
 stalliongrad.114.t:0 "The Griffon Liberation Army asks of help."
 stalliongrad.114.d:0 "Yesterday an old cracked sailing ship appeared at the port of St. Petershoof. It was filled with griffons, who waved red banners and shouted "Komrads!" all across the harbour. Our sailors warmly greeted them and provided accommodation in their ships and showed them the city. They were generally amazed by equestrian architecture and all technological advancements of the ponies across the ocean. The griffons, however, had a mission. They said they've come from Prywhen, a land in Griffonia now plunged into a bloody civil war, peasants fighting against their tyrant lord. The leader of Prywhen revolutionaries have sent this party to sail over the whole world to appeal to the ponies of Stalliongrad to provide help in any form possible to ease the struggle of all griffons. The global revolution is near, says [GRW.GetLeader]. Taking our current situation into consideration and the ship they took for this journey, we spare that much."
 stalliongrad.114.d_no_war:0 "Yesterday an old cracked sailing ship appeared at the port of St. Petershoof. It was filled with griffons, who waved red banners and shouted "Komrads!" all across the harbour. Our sailors warmly greeted them and provided accommodation in their ships and showed them the city. They were generally amazed by equestrian architecture and all technological advancements of the ponies across the ocean. The griffons, however, had a mission. They said they've come from Prywhen, a land in Griffonia, where the peasant revolution has succeeded. Now the country is undergoing rapid industrialization and collectivization processes. The leader of Prywhen revolutionaries have sent this party to sail over the whole world to appeal to the ponies of Stalliongrad to provide help in any form possible to ease the struggle of all griffons. The global revolution is near, says [GRW.GetLeader]. Taking our current situation into consideration and the ship they took for this journey, we spare that much."
@@ -808,4 +855,17 @@ stalliongrad.139.t:0 "Altidiya left us"
 stalliongrad.139.d:0 "News came from Sovenok sanatorium, Altidiya died in bed in her chamber. Extuberbated tuberculosis exhausted her in recent years. The doctors could not help on this stage of the disease. The news spread throughout the country, the population is shocked. The leader of the past is gone.\n\nThe funeral will take place in the central cemetry of Stalliongrad."
 stalliongrad.139.a:0 "We will not forget!"
 
+<<<<<<< HEAD
 STG_rename_Severokholm_to_Altytown:0 "Rename Severokholm to Altytown"
+=======
+STG_rename_Severokholm_to_Altytown:0 "Rename Severokholm to Altytown"
+
+stalliongrad.146.t:0 "Stalliongrad invites us to faction"
+stalliongrad.146.d:0 ""
+stalliongrad.146.a:0 "Accept."
+stalliongrad.146.b:0 "Decline."
+stalliongrad.147.t:0 "[From.GetName] rejects"
+stalliongrad.147.d:0 ""
+stalliongrad.147.a:0 "Fine."
+STG_invite_people_to_faction:0 "Invite [From.GetName] to our alliance"
+>>>>>>> master

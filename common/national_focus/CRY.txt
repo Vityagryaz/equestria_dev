@@ -85,12 +85,12 @@ focus_tree = {
 			army_experience = 40
 		}
 	}
-	
+
 	focus = { #Grand crystal festival (PP Buff, NU buff, something else buffed)
 		id = CRY_grandfestival
 		icon = GFX_goal_cry_festival
 		cost = 10
-		x = 3
+		x = 4
 		y = 1
 		ai_will_do = {
 			factor = 5
@@ -126,7 +126,7 @@ focus_tree = {
 				id = cryscr.5 days  = 1
 			}
 		}
-		
+
 	}
 	focus = {
 		id = CRY_umbruminitial ## Underground meeting
@@ -140,6 +140,7 @@ focus_tree = {
 		available = {
 			has_country_flag = invitation_to_join_the_club
 			NOT = { has_country_flag = CRY_solar_governorship }
+			NOT = { has_completed_focus = CRY_communistideas }
 		}
 		bypass = {
 			has_country_flag = dark_heart_is_ready
@@ -170,7 +171,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = { id = cryscr.23 days = 1 }
 		}
-		
+
 	}
 	focus = { #
 		id = CRY_search_for_the_artifact
@@ -197,7 +198,7 @@ focus_tree = {
 			}
 			set_country_flag = dark_heart_in_progress
 		}
-		
+
 	}
 	focus = { #
 		id = CRY_active_crystals
@@ -225,7 +226,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = CRY_fame
 		icon = GFX_goal_crystal_empire_symbol_cry
@@ -242,14 +243,14 @@ focus_tree = {
 		prerequisite = {
 			focus = CRY_crystalfaire
 		}
-		x = 3
+		x = 4
 		y = 3
 		completion_reward = {
 			add_popularity = { ideology = democratic popularity = 0.08 }
 			add_popularity = { ideology = neutrality popularity = 0.08 }
 			add_popularity = { ideology = communism popularity = 0.03 }
 		}
-		
+
 	}
 	focus = {
 		id = CRY_oldorder
@@ -268,7 +269,7 @@ focus_tree = {
 			NOT = { has_global_flag = sombra_returned }
 		}
 		bypass = { has_country_flag = CRY_solar_governorship }
-		x = 1
+		x = 2
 		y = 5
 		completion_reward = {
 			add_popularity = { ideology = democratic popularity = 0.05 }
@@ -292,7 +293,7 @@ focus_tree = {
 			NOT = { has_global_flag = sombra_returned }
 			NOT = { has_country_flag = CRY_solar_governorship }
 		}
-		x = 5
+		x = 6
 		y = 5
 		completion_reward = {
 			add_popularity = { ideology = democratic popularity = -0.03 }
@@ -300,140 +301,6 @@ focus_tree = {
 			add_popularity = { ideology = neutrality popularity = 0.08 }
 			add_popularity = { ideology = communism popularity = 0.08 }
 		}
-	}
-	focus = {
-		id = CRY_olddignity
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = CRY_neworder
-		}
-		mutually_exclusive = {
-			focus = CRY_communistideas
-		}
-		available = {
-			NOT = { has_government = fascism }
-			NOT = { has_country_flag = CRY_solar_governorship }
-			NOT = { has_global_flag = sombra_returned }
-		}
-		available = {
-			neutrality > 0.4
-		}
-		completion_reward = {
-			add_ideas = idea_old_dignity
-		}
-		x = 6
-		y = 7
-		
-	}
-	focus = {
-		id = CRY_aristocracy
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = CRY_olddignity
-		}
-		available = {
-			NOT = { has_government = fascism }
-			NOT = { has_country_flag = CRY_solar_governorship }
-		}
-		mutually_exclusive = {
-			focus = CRY_militia
-		}
-		completion_reward = {
-			add_ideas = supported_aristrocrats
-			add_ideas = political_turmoil
-			create_country_leader = {
-				name = "Prince Calcite"
-				expire = "1965.1.1"
-				ideology = despotism
-				picture = "Calcite.tga"
-				traits = { staunch_monarchist }
-			}
-		}
-		x = 5
-		y = 8
-		
-	}
-	focus = {
-		id = CRY_militia
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = CRY_olddignity
-		}
-		available = {
-			NOT = { has_government = fascism }
-			NOT = { has_country_flag = CRY_solar_governorship }
-		}
-		mutually_exclusive = {
-			focus = CRY_aristocracy
-		}
-		completion_reward = {
-			add_ideas = supported_militia
-			add_ideas = political_turmoil
-			create_country_leader = {
-				name = "Field Marschal Colloid"
-				expire = "1965.1.1"
-				ideology = centrism
-				picture = "Colloid.tga"
-				traits = { triumphant_revolutionary staunch_monarchist }
-			}
-		}
-		x = 7
-		y = 8
-		
-	}
-	focus = {
-		id = CRY_revolution
-		icon = GFX_goal_unknown
-		cost = 10
-		prerequisite = {
-			focus = CRY_militia
-			focus = CRY_aristocracy
-		}
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
-			NOT = { has_country_flag = CRY_solar_governorship }
-		}
-		completion_reward = {
-			country_event = { days = 5 id = crystalemp.9 }
-			hidden_effect = {
-				news_event = { id = news.cry.0 days = 1 }
-			}
-		}
-		x = 6
-		y = 9
-		
-	}
-	focus = {
-		id = CRY_independence
-		icon = GFX_goal_unknown
-		cost = 10
-		available = {
-			has_government = neutrality
-		}
-		prerequisite = {
-			focus = CRY_revolution
-		}
-		bypass = {
-			is_subject = no
-		}
-		available = {
-			NOT = { has_country_flag = CRY_solar_governorship }
-		}
-		completion_reward = {
-			EQS = { country_event = { days = 1 id = crystalemp.12 } }
-			hidden_effect = {
-				news_event = { id = news.cry.1 days = 1 }
-			}
-			
-		}
-		
-		x = 6
-		y = 11
 	}
 	#####################################################################
 	########### SOMBRA FINALS / TAKES POWER #############################
@@ -454,7 +321,7 @@ focus_tree = {
 			NOT = { has_country_flag = CRY_solar_governorship }
 		}
 		x = 12
-		y = 6
+		y = 10
 		completion_reward = {
 			custom_effect_tooltip = sombra_return_tt
 		}
@@ -462,7 +329,7 @@ focus_tree = {
 	focus = {
 		id = CRY_oldking
 		icon = GFX_goal_crystal_palace
-		cost = 10
+		cost = 2
 		prerequisite = {
 			focus = CRY_crystalheartstolen
 		}
@@ -775,7 +642,7 @@ focus_tree = {
 		icon = GFX_goal_cry_factory
 		cost = 3
 		prerequisite = {
-			focus = CRY_industry
+			focus = CRY_industry_f
 		}
 		ai_will_do = {
 			factor = 20
@@ -986,7 +853,7 @@ focus_tree = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = darkar_design
 		}
-		
+
 	}
 	focus = {
 		id = CRY_evilgenius
@@ -1027,7 +894,7 @@ focus_tree = {
 		y = 21
 		completion_reward = {
 			swap_ideas = { remove_idea = evil_genius add_idea = evil_genius2 }
-			
+
 		}
 	}
 	focus = {
@@ -1355,6 +1222,7 @@ focus_tree = {
 			STG = {
 				OR = {
 					has_country_flag = darkwing_elected
+					NOT = { has_government = communism }
 					exists = no
 				}
 			}
@@ -1454,7 +1322,7 @@ focus_tree = {
 		completion_reward = {
 			country_event = {
 				id = crycom.7 days = 1
-				}
+			}
 			STG = {
 				country_event = {
 					id = stalliongrad.101 days = 1 }
@@ -1505,14 +1373,14 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = CRY_industry
+		id = CRY_industry_f
 		icon = GFX_goal_cry_factory
 		cost = 10
 		prerequisite = {
 			focus = CRY_military
 		}
 		available = {
-			has_government = communism
+
 		}
 		ai_will_do = {
 			factor = 20
@@ -1606,7 +1474,7 @@ focus_tree = {
 		icon = GFX_goal_cry_heavy_tanks
 		cost = 10
 		prerequisite = {
-			focus = CRY_industry
+			focus = CRY_industry_f
 			focus = CRY_crystals
 		}
 		ai_will_do = {
@@ -1669,7 +1537,7 @@ focus_tree = {
 			factor = 15
 		}
 		available = { has_government = democratic }
-		x = 23
+		x = 22
 		y = 9
 		completion_reward = {
 			add_ideas = CRY_science
@@ -1679,21 +1547,6 @@ focus_tree = {
 				uses = 1
 				category = jet_technology
 			}
-		}
-	}
-	focus = {
-		id = CRY_naval_concern
-		icon = GFX_goal_cry_manehattan
-		cost = 10
-		available = {
-			owns_state = 75
-		}
-		x = 25
-		y = 9
-		completion_reward = {
-			custom_effect_tooltip = available_designer
-			show_ideas_tooltip = manehattan_concern_navy
-			add_political_power = 30
 		}
 	}
 	focus = {
@@ -1714,7 +1567,7 @@ focus_tree = {
 		icon = GFX_goal_cry_gunfactories
 		cost = 10
 		prerequisite = {
-			focus = CRY_industry
+			focus = CRY_industry_f
 		}
 		available = {
 			has_war = yes
@@ -1760,7 +1613,7 @@ focus_tree = {
 		cost = 10
 		prerequisite = {
 			focus = CRY_rndinstitute
-			focus = CRY_industry
+			focus = CRY_industry_f
 		}
 		x = 29
 		y = 6
@@ -1822,7 +1675,7 @@ focus_tree = {
 			focus = CRY_magicalsource
 			focus = CRY_newpowersource
 		}
-		x = 30
+		x = 24
 		y = 8
 		completion_reward = {
 			add_tech_bonus = {
@@ -1840,7 +1693,7 @@ focus_tree = {
 		prerequisite = {
 			focus = CRY_aviation
 		}
-		x = 30
+		x = 24
 		y = 9
 		completion_reward = {
 			add_tech_bonus = {
@@ -1861,7 +1714,7 @@ focus_tree = {
 		bypass = {
 			has_country_flag = CRY_solar_governorship
 		}
-		x = 1
+		x = 2
 		y = 7
 		completion_reward = {
 			add_political_power = 40
@@ -1892,7 +1745,7 @@ focus_tree = {
 		}
 		available = {
 			has_government = democratic
-			overlord = { has_government = democratic tag = EQS }
+			overlord = { has_government = democratic original_tag = EQS }
 			has_civil_war = no
 		}
 		x = 0
@@ -1913,10 +1766,10 @@ focus_tree = {
 		}
 		available = {
 			has_government = democratic
-			overlord = { has_government = democratic tag = EQS}
+			overlord = { has_government = democratic original_tag = EQS }
 			has_civil_war = no
 		}
-		x = 2
+		x = 4
 		y = 11
 		completion_reward = {
 			country_event = {
@@ -1929,18 +1782,16 @@ focus_tree = {
 		icon = GFX_goal_cry_eqs_hat
 		cost = 10
 		prerequisite = {
-			focus = CRY_miamore
+			focus = CRY_eqsforces
 		}
 		available = {
 			OR = {
 				is_subject_of = EQS
 				is_in_faction_with = EQS
-				is_subject_of = SOL
-				is_in_faction_with = SOL
 			}
 		}
-		x = 2
-		y = 8
+		x = 3
+		y = 9
 		completion_reward = {
 			add_ideas = equestrian_advisors
 			add_tech_bonus = {
@@ -1962,11 +1813,9 @@ focus_tree = {
 			OR = {
 				is_subject_of = EQS
 				is_in_faction_with = EQS
-				is_subject_of = SOL
-				is_in_faction_with = SOL
 			}
 		}
-		x = 0
+		x = 2
 		y = 8
 		completion_reward = {
 			custom_effect_tooltip = harmony_advisors_cry
@@ -1986,11 +1835,9 @@ focus_tree = {
 			OR = {
 				is_subject_of = EQS
 				is_in_faction_with = EQS
-				is_subject_of = SOL
-				is_in_faction_with = SOL
 			}
 		}
-		x = 0
+		x = 1
 		y = 9
 		completion_reward = {
 			add_tech_bonus = {
@@ -2015,16 +1862,13 @@ focus_tree = {
 		icon = GFX_goal_cry_factory_cel
 		cost = 10
 		prerequisite = {
-			focus = CRY_eqsadvisors
-			focus = CRY_eqsadvisors
 			focus = CRY_eqsengineers
+			focus = CRY_eqsadvisors
 		}
 		available = {
 			OR = {
 				is_subject_of = EQS
 				is_in_faction_with = EQS
-				is_subject_of = SOL
-				is_in_faction_with = SOL
 			}
 		}
 		x = 2
@@ -2098,7 +1942,7 @@ focus_tree = {
 		cost = 13
 		prerequisite = {
 			focus = CRY_rndinstitute
-			focus = CRY_industry
+			focus = CRY_industry_f
 		}
 		available = {
 			has_government = democratic
@@ -2164,7 +2008,7 @@ focus_tree = {
 	focus = {
 		id = CRY_chgalliance
 		icon = GFX_goal_som_chrysalis
-		cost = 5
+		cost = 3
 		prerequisite = {
 			focus = CRY_conquest
 		}
@@ -2285,7 +2129,7 @@ focus_tree = {
 			}
 			has_government = fascism
 		}
-		
+
 		mutually_exclusive = {
 			focus = CRY_stgconquest
 		}
@@ -2422,12 +2266,13 @@ focus_tree = {
 			NOT = { has_government = fascism }
 			NOT = { has_country_flag = CRY_solar_governorship }
 			NOT = { has_global_flag = sombra_returned }
+			NOT = { has_completed_focus = CRY_umbruminitial }
 		}
 		bypass = {
 			has_government = communism
 		}
 		mutually_exclusive = {
-			focus = CRY_olddignity
+			#focus = CRY_olddignity
 		}
 		x = 18
 		y = 7
@@ -2713,6 +2558,6 @@ focus_tree = {
 		completion_reward = {
 			country_event = crycom.14
 		}
-		
+
 	}
 }

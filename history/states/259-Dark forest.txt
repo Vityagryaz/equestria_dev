@@ -2,9 +2,9 @@ state={
 	id=259
 	name="STATE_259"
 	provinces={
-		709 722 751 3121 3156 6710 9667 9724 11085 11181 
+		709 722 751 3121 3156 6710 9667 9724 11085 11181
 	}
-	manpower = 1689763
+	manpower =2196691
 	history={
 		owner = CHN
 		add_core_of = CHN
@@ -19,6 +19,6 @@ state={
 	}
 	
 	state_category = large_city
-
+	
 	buildings_max_level_factor=1.000
 }

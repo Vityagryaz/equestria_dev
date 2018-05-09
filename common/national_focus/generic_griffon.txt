@@ -7,7 +7,7 @@ focus_tree = {
 		modifier = {
 			add = 5
 			OR = {
-				is_griffon_continent_griffon_country = yes
+				is_griffon_continent_country = yes
 				original_tag = HAU
 			}
 		}
@@ -71,7 +71,7 @@ focus_tree = {
 
 		completion_reward = {
 			add_political_power = 40
-			add_national_unity = 0.025
+			add_stability = 0.025
 		}
 		ai_will_do = {
 			factor = 1
@@ -178,7 +178,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_national_unity = 0.05
+			add_stability = 0.05
+			add_war_support = 0.05
 		}
 		ai_will_do = {
 			factor = 1
@@ -194,6 +195,15 @@ focus_tree = {
 				has_completed_focus = griffon_only_strong_will_survive
 				has_completed_focus = griffon_harmony_and_liberty
 				has_completed_focus = griffon_the_old_ways
+			}
+			hidden_trigger = {
+				NOT = { tag = BRF }
+				NOT = {
+					AND = {
+						tag = GRW
+						NOT = { has_government = communism }
+					}
+				}
 			}
 		}
 		prerequisite = {
@@ -700,8 +710,24 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_national_unity = 0.05
+			add_war_support = 0.05
 			remove_ideas = feudalism
+			if = {
+				limit = { has_idea = feudalism }
+				remove_ideas = feudalism
+			}
+			if = {
+				limit = { has_idea = FAT_Chaos_Idea }
+				remove_ideas = FAT_Chaos_Idea
+			}
+			if = {
+				limit = { has_idea = FAT_Chaos_Idea1 }
+				remove_ideas = FAT_Chaos_Idea1
+			}
+			if = {
+				limit = { has_idea = FAT_Chaos_Idea2 }
+				remove_ideas = FAT_Chaos_Idea2
+			}
 			if = {
 				limit = { is_ai = no }
 				set_rule = { can_create_factions = yes }
@@ -1100,10 +1126,11 @@ focus_tree = {
 			decrease_poverty = yes
 			if = {
 				limit = { has_idea = agrarian_society }
-				swap_ideas = {
-					remove_idea = agrarian_society
-					add_idea = pre_industrial_society
-				}
+				add_ideas = pre_industrial_society
+			}
+			else_if = {
+				limit = { has_idea = communal_society }
+				add_ideas = agrarian_society
 			}
 		}
 	}
@@ -1326,10 +1353,11 @@ focus_tree = {
 			decrease_poverty = yes
 			if = {
 				limit = { has_idea = pre_industrial_society }
-				swap_ideas = {
-					remove_idea = pre_industrial_society
-					add_idea = outdated_industry
-				}
+				add_ideas = outdated_industry
+			}
+			else_if = {
+				limit = { has_idea = agrarian_society }
+				add_ideas = pre_industrial_society
 			}
 		}
 	}
@@ -1422,9 +1450,13 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = pre_industrial_society
-				add_idea = modern_society
+			if = {
+				limit = { has_idea = outdated_industry }
+				add_ideas = modern_society
+			}
+			else_if = {
+				limit = { has_idea = pre_industrial_society }
+				add_ideas = outdated_industry
 			}
 		}
 	}
@@ -1547,6 +1579,10 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 			decrease_illiteracy = yes
+			if = {
+				limit = { has_idea = outdated_industry }
+				add_ideas = modern_society
+			}
 		}
 	}
 	focus = {
@@ -1867,6 +1903,18 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			if = {
+				limit = { has_idea = FAT_unruly_army_Idea }
+				remove_ideas = FAT_unruly_army_Idea
+			}
+			if = {
+				limit = { has_idea = FAT_unruly_army_Idea1 }
+				remove_ideas = FAT_unruly_army_Idea1
+			}
+			if = {
+				limit = { has_idea = FAT_unruly_army_Idea2 }
+				remove_ideas = FAT_unruly_army_Idea2
+			}
 			army_experience = 5
 			add_tech_bonus = {
 				name = land_doc_bonus
@@ -1910,11 +1958,31 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = griffon_knights
-				bonus = 0.5
-				uses = 1
-				category = knights_tech
+			if = {
+				limit = { is_griffon_race = yes }
+				add_tech_bonus = {
+					name = griffon_knights
+					bonus = 0.5
+					uses = 1
+					category = knights_tech
+				}
+			}
+			else_if = {
+				limit = { is_pony_race = yes }
+				add_tech_bonus = {
+					name = pegasi
+					bonus = 0.5
+					uses = 1
+					category = pegasi_tech
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = magical_bonus
+					bonus = 0.3
+					uses = 1
+					category = magical_tech
+				}
 			}
 		}
 	}
@@ -2272,7 +2340,7 @@ focus_tree = {
 		cost = 10
 
 		available = {
-
+			has_dlc = "Death or Dishonor"
 		}
 
 		bypass = {

@@ -29,6 +29,7 @@ SOL = "countries/SolarEmpire.txt"
 ZRS = "countries/ZecoranResistance.txt"
 CCN = "countries/ChangelingHarmony.txt"
 CTN = "countries/ChangelingTrimmel.txt"
+MAN = "countries/Manehattan.txt" ## Equestrian East Coast
 ############################## Griffon Continent ####
 GRI = "countries/GriffonEmpire.txt"
 DED = "countries/DeadCountry.txt"
@@ -89,6 +90,7 @@ HAU = "countries/Hauklands.txt"
 SRS = "countries/SocialistRepublicofSocialists.txt"
 EQP = "countries/PonyProtectorate.txt"
 NCH = "countries/VillageChangelings.txt"
+NTR = "countries/NorthernTribes.txt"
 #########################
 
 

@@ -6,7 +6,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
 	}
 
-### GENERIC PORTRAITS EUROPE
+	### GENERIC PORTRAITS EUROPE
 	### suffix from graphicalculturetype
 
 	## WESTERN EUROPEAN CULTURE ##
@@ -1634,7 +1634,7 @@ spriteTypes = {
 		name = "GFX_idea_wingbardian_crown"
 		texturefile = "gfx/interface/ideas/Wingbardy/wingbardian_crown.dds"
 	}
-	
+
 	############################ New Mareland EQC ################################
 	spriteType = {
 		name = "GFX_idea_sour_sweet"
@@ -1728,10 +1728,33 @@ spriteTypes = {
 		name = "GFX_idea_amethyst_star"
 		texturefile = "gfx/interface/ideas/idea_amethyst_star.dds"
 	}
-	
+	SpriteType = {
+		name = "GFX_idea_celestia_exile"
+		texturefile = "gfx/interface/ideas/idea_celestia_exile.dds"
+	}	
+	SpriteType = {
+		name = "GFX_idea_eqc_defence_of_the_commonwelth"
+		texturefile = "gfx/interface/ideas/EQC/idea_EQC_defence_of_the_commonwelth.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_eqc_fascist_pony"
+		texturefile = "gfx/interface/ideas/EQC/EQC_fascist_pony.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_eqc_neutral_pony"
+		texturefile = "gfx/interface/ideas/EQC/EQC_neutral_pony.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_eqc_harmony_pony"
+		texturefile = "gfx/interface/ideas/EQC/EQC_harmony_pony.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_eqc_commie_pony"
+		texturefile = "gfx/interface/ideas/EQC/EQC_commie_pony.dds"
+	}
 	
 	############################ River Fed RIV ################################
-	spriteType = {
+		spriteType = {
 		name = "GFX_idea_lake_city"
 		texturefile = "gfx/interface/ideas/RIV/idea_lake_city.dds"
 	}
@@ -1741,7 +1764,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_nimbusia"
-		texturefile = "gfx/interface/ideas/RIV/idea_idea_nimbusia.dds"
+		texturefile = "gfx/interface/ideas/RIV/idea_nimbusia.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_nimbusia_blue"
@@ -1759,12 +1782,12 @@ spriteTypes = {
 		name = "GFX_idea_wittenland"
 		texturefile = "gfx/interface/ideas/RIV/idea_wittenland.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_idea_magic_stars"
 		texturefile = "gfx/interface/ideas/idea_magic_stars.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_idea_STL_city_state"
 		texturefile = "gfx/interface/ideas/idea_closed_city_state.dds"
@@ -1792,6 +1815,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_raven"
 		texturefile = "gfx/interface/ideas/idea_raven.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sweetie_drops"
+		texturefile = "gfx/interface/ideas/idea_sweetie_drops.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_benevelle"
@@ -1949,10 +1976,6 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_EQS_cel_executive"
-		texturefile = "gfx/interface/ideas/idea_celestia.dds"
-	}
-	spriteType = {
-		name = "GFX_idea_EQS_cel_figurehead"
 		texturefile = "gfx/interface/ideas/idea_celestia.dds"
 	}
 	spriteType = {
@@ -2115,8 +2138,8 @@ spriteTypes = {
 		name = "GFX_idea_FAR_NCH_trade"
 		texturefile = "gfx/interface/ideas/idea_FAR_NCH_trade.dds"
 	}
-	
-	
+
+
 	spriteType = {
 		name = "GFX_idea_astimare_concern"
 		texturefile = "gfx/interface/ideas/idea_astimare.dds"
@@ -2145,7 +2168,7 @@ spriteTypes = {
 		name = "GFX_idea_WAT_holy_srings"
 		texturefile = "gfx/interface/ideas/idea_WAT_holy_srings.dds"
 	}
-	
+
 	SpriteType = {
 		name = "GFX_idea_generic_race_idea"
 		texturefile = "gfx/interface/ideas/generic_race.dds"
@@ -2582,5 +2605,152 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_ofi"
 		texturefile = "gfx/interface/ideas/RIV/idea_ofi.dds"
-	}	
+	}
+	SpriteType = {
+		name = "GFX_idea_magehold"
+		texturefile = "gfx/interface/ideas/magehold.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_JER_scientist"
+		texturefile = "gfx/interface/ideas/JER_scientist.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_chnocellus"
+		texturefile = "gfx/interface/ideas/idea_chnocellus.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOL_Imperial_Inquisition_idea"
+		texturefile = "gfx/interface/ideas/SOL_Imperial_Inquisition_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOL_Solar_Cult_idea"
+		texturefile = "gfx/interface/ideas/SOL_Solar_Cult_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOL_Lux_et_Tenebris_idea"
+		texturefile = "gfx/interface/ideas/SOL_Lux_et_Tenebris_idea.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_SOL_Imperial_Corporation_Council_idea"
+		texturefile = "gfx/interface/ideas/SOL_Imperial_Corporation_Council_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOL_Harmony_through_Order_idea0"
+		texturefile = "gfx/interface/ideas/SOL_Harmony_through_Order_idea0.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOL_Firm_but_Fair_idea"
+		texturefile = "gfx/interface/ideas/SOL_Firm_but_Fair_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOL_defence_of_empire_act_idea"
+		texturefile = "gfx/interface/ideas/SOL_defence_of_empire_act_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOL_imperial_bureaucracy_idea"
+		texturefile = "gfx/interface/ideas/SOL_imperial_bureaucracy_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOL_Freedom_from_Fear_idea"
+		texturefile = "gfx/interface/ideas/SOL_Freedom_from_Fear_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SOL_Protect_the_Weak_idea"
+		texturefile = "gfx/interface/ideas/SOL_Protect_the_Weak_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_dassault"
+		texturefile = "gfx/interface/ideas/dassault.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_cynosura"
+		texturefile = "gfx/interface/ideas/idea_cynosura.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_griffon_scientist"
+		texturefile = "gfx/interface/ideas/griffon_scientist.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_griffon_engineer"
+		texturefile = "gfx/interface/ideas/griffon_engineer.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BRF_everyman_a_knight"
+		texturefile = "gfx/interface/ideas/BRF_everyman_a_knight.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BRF_all_to_the_front"
+		texturefile = "gfx/interface/ideas/BRF_all_to_the_front.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_elia_storm"
+		texturefile = "gfx/interface/ideas/elia_storm.dds"
+	}
+
+	### BOI - Griffonstone ###
+	SpriteType = {
+		name = "GFX_idea_greta"
+		texturefile = "gfx/interface/ideas/idea_greta.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_gallus"
+		texturefile = "gfx/interface/ideas/idea_gallus.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_eqs_order_idea"
+		texturefile = "gfx/interface/ideas/eqs_order_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BRF_industry_support_5_5"
+		texturefile = "gfx/interface/ideas/BRF_industry_support_5_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_BRF_military_support_5_5"
+		texturefile = "gfx/interface/ideas/BRF_military_support_5_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHN_construction_effort"
+		texturefile = "gfx/interface/ideas/CHN_construction_effort.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHN_naval_effort"
+		texturefile = "gfx/interface/ideas/CHN_naval_effort.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_chn_vraks_military_effort"
+		texturefile = "gfx/interface/ideas/chn_vraks_military_effort.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHN_crystal_city_research"
+		texturefile = "gfx/interface/ideas/CHN_crystal_city_research.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_EQS_luna_executive"
+		texturefile = "gfx/interface/ideas/idea_luna.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_lone_princess_luna"
+		texturefile = "gfx/interface/ideas/idea_lone_princess_luna.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_popular_discontent"
+		texturefile = "gfx/interface/ideas/idea_popular_discontent.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_mistral"
+		texturefile = "gfx/interface/ideas/mistral.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_armada"
+		texturefile = "gfx/interface/ideas/armada.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_JER_memories"
+		texturefile = "gfx/interface/ideas/JER_memories.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_WNG_braindrain"
+		texturefile = "gfx/interface/ideas/WNG_braindrain.dds"
+	}
 }
