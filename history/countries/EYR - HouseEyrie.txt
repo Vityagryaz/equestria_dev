@@ -42,8 +42,7 @@ set_politics = {
 	elections_allowed = no
 }
 add_ideas = { outdated_industry
-	lack_of_scientists2
-	poverty3 }
+	lack_of_scientists3	poverty3 }
 
 set_stability = 0.50
 

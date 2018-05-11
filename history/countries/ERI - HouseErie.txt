@@ -11,7 +11,7 @@ set_technology = {
 	tech_recon = 1
 	tech_support = 1
 	tech_mountaineers = 1
-}
+	infantry_weapons = 1}
 
 
 set_convoys = 70
@@ -43,7 +43,7 @@ set_politics = {
 }
 add_ideas = { outdated_industry
 	lack_of_scientists3
-	poverty }
+	poverty3 }
 
 set_stability = 0.50
 

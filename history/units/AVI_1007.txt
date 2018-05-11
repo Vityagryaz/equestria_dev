@@ -10,11 +10,17 @@
 	}
 	
 	support = {
+		recon = { x = 0 y = 0 }
 	}
 }
 units = {
 	division = {
 		name = "1. Infantry Division"
+		location = 5063
+		division_template = "Griffon Infantry Division"
+		start_experience_factor = 0.3
+	division = {
+		name = "Dutches' Guard"
 		location = 5063
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3
