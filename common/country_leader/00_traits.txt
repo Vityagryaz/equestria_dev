@@ -3223,4 +3223,25 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	
+	### Blackrock traits
+	bandit_lord_trait = {
+		random = no
+		justify_war_goal_time = -0.2
+		political_power_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	bandit_queen_trait = {
+		random = no
+		justify_war_goal_time = -0.5
+		political_power_factor = 0.4
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

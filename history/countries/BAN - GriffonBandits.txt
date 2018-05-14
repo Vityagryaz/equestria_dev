@@ -42,13 +42,11 @@ set_politics = {
 	elections_allowed = no
 }
 add_ideas = {
-	limited_conscription
+	volunteer_only
+	closed_economy
+	war_economy
 	pre_industrial_society
 	BAN_bandit_culture
-	BAN_old_nobility
-	BAN_reeve's_rebels
-	BAN_wrecked_economy
-	BAN_unorganized_army
 }
 
 set_stability = 0.70
@@ -71,7 +69,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = fascism_ideology
 	traits = {
-		
+		bandit_lord_trait
 	}
 }
 
