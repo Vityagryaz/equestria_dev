@@ -1,0 +1,31 @@
+﻿focus_tree = {
+    id = eyrie
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = EYR
+        }
+    }
+        focus = {
+        id = ERY_winwar
+        icon = 
+        cost = 3
+
+        ai_will_do = {
+            factor = 20
+        }
+        x = 3
+        y = 1
+        available = {
+            has_war = yes
+
+        }
+        completion_reward = {
+            add_ideas = ERY_win_the_war
+        }
+
+
+
+    }
+}
