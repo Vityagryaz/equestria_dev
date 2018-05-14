@@ -22,6 +22,8 @@ NTR_mistress_of_the_ice:0 "Fair Mistress of the Ice"
 
 NTR_the_throne_of_ice:0 "Atop the Icy Mantle"
 
+NTR_weak_griffons:0 "The Day of Closed Beaks WIP"
+
 
 
 ### economic
@@ -42,6 +44,10 @@ NTR_organised_army:0 "Discipline the Milita"
 
 NTR_new_weapons:0 "Guns of Glory!"
 
+NTR_gun_factories:0 "Halls of Gunsmithing"
+
+NTR_rally_the_tribesponies:0 "Tribal Levies"
+
 
 ### technological
 NTR_world_around_us:0 "Isolated No Longer"
@@ -59,6 +65,10 @@ NTR_the_question:0 "Overcome the Stagnation of Progress"
 NTR_our_future:0 "Look to the Future"
 
 NTR_working_hall_standards:0 "Working Standards"
+
+NTR_root_of_innovation:0 "Scientific Theorum"
+
+NTR_industrialisation_start:0 "Embrace the Future"
 
 ############################################
 ### IDEAS ##################################
@@ -84,8 +94,6 @@ NTR_new_ways:0 "Technology before Tradition"
 NTR_tradition_and_technology:0 "Tradition before Technology"
 
 NTR_our_bright_future:0 "To Look Towards the Future"
-
-NTR_root_of_innovation:0 "Development of Science"
 
 ############################################
 ### EVENTS #################################

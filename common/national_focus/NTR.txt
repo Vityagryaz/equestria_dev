@@ -168,7 +168,7 @@ focus_tree = {
 	focus = {
 		id = NTR_witches_of_the_frozen_woods
 		icon = GFX_focus_generic_home_defense
-		x = 36
+		x = 37
 		y = 3
 		cost = 10.00
 		
@@ -194,7 +194,7 @@ focus_tree = {
 	focus = {
 		id = NTR_mistress_of_the_ice
 		icon = GFX_focus_generic_home_defense
-		x = 36
+		x = 38
 		y = 4
 		cost = 10.00
 		
@@ -220,7 +220,7 @@ focus_tree = {
 	focus = {
 		id = NTR_the_throne_of_ice
 		icon = GFX_focus_generic_home_defense
-		x = 36
+		x = 39
 		y = 5
 		cost = 10.00
 		
@@ -239,6 +239,43 @@ focus_tree = {
 			add_popularity = { 
 				ideology = fascism 
 				popularity = 0.3
+			}
+			
+			country_event = {
+				days = 1
+				id = northerntribe.5
+			}
+		}
+	}
+	
+	focus = {
+		id = NTR_weak_griffons
+		icon = GFX_focus_generic_home_defense
+		x = 40
+		y = 6
+		cost = 10.00
+		
+		available = {
+		}
+		
+		visible = {
+			has_country_flag = NTR_evil
+		}
+		
+		prerequisite = {
+			focus = NTR_the_throne_of_ice
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		completion_reward = {
+			add_popularity = { 
+				ideology = communism 
+				popularity = -1
+				
+				
 			}
 			
 			country_event = {
@@ -324,10 +361,8 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_tech_bonus = { 
-				bonus = 0.50 
-				uses = 1 
-				category = infantry_weapons
+			set_technology = {
+				infantry_weapons = 1
 			}
 		}
 	}
@@ -495,7 +530,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		x = 14
 		y = 4
-		cost = 12.00
+		cost = 10.00
 		
 		available = {
 		}
@@ -540,6 +575,34 @@ focus_tree = {
 		
 		prerequisite = {
 			focus = NTR_our_future
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		completion_reward = {
+			set_country_flag = ntr_progress
+			}
+	}
+	
+	
+	focus = {
+		id = NTR_industrialisation_start
+		icon = GFX_goal_tfv_generic_tech_sharing
+		x = 13
+		y = 5
+		cost = 12.00
+		
+		available = {
+		}
+		
+		prerequisite = {
+			focus = NTR_our_future
+		}
+		
+		prerequisite = {
+			focus = NTR_working_hall_standards
 		}
 		
 		ai_will_do = {
@@ -673,6 +736,8 @@ focus_tree = {
 		
 		prerequisite = {
 			focus = NTR_the_old_milita
+		}
+		prerequisite = {
 			focus = NTR_new_training_traditions
 		}
 		
@@ -702,15 +767,92 @@ focus_tree = {
 			focus = NTR_the_old_milita
 		}
 		
+		prerequisite = {
+			focus = NTR_thunder_sticks
+		}
+		
+		prerequisite = {
+		focus = NTR
+		}
+		
 		ai_will_do = {
 			factor = 100
 		}
 		
 		completion_reward = {
-			set_technology = {
-				infantry_weapons = 1
+			add_tech_bonus = { 
+				bonus = 0.50 
+				uses = 1 
+				category = infantry_weapons
 			}
 		}
+	}
+	
+	focus = {
+		id = NTR_gun_factories
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 6
+		y = 4
+		cost = 10.00
+		
+		available = {
+		}
+		
+		prerequisite = {
+			focus = NTR_organised_army
+		}
+		
+		prerequisite = {
+			focus = NTR_new_weapons
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		completion_reward = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}	
+	
+	focus = {
+		id = NTR_rally_the_tribesponies
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 4
+		y = 4
+		cost = 10.00
+		
+		available = {
+		}
+		
+		prerequisite = {
+			focus = NTR_organised_army
+		}
+		
+		prerequisite = {
+			focus = NTR_military_designs
+		}
+		
+		prerequisite = {
+		
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		completion_reward = {
+			add_manpower = 20000
+			army_experience = -5
+		}
+		
 	}
 	
 	
