@@ -1,0 +1,27 @@
+﻿l_english:
+  ###Countryname###
+  EYR_neutrality:0 "Eyrie"
+ EQC_neutrality_DEF:0 "Eyrie"
+ EQC_neutrality_ADJ:0 "Eyrian"
+ EQC_fascism:0 "State of Eyrie"
+ EQC_fascism_DEF:0 "The State of Eyrie"
+ EQC_fascism_ADJ:0 "Eyrian"
+ EQC_communism:0 "Democratic Griffin's Republic of Eyrie"
+ EQC_communism_DEF:0 "The Democratic Griffin's Republic of Eyrie"
+ EQC_communism_ADJ:0 "Eyrian"
+ EQC_democratic:0 "Republic of Eyrie"
+ EQC_democratic_DEF:0 "The Republic of Eyrie"
+ EQC_democratic_ADJ:0 "Eyrian"
+
+### PARTIES ###
+ EQC_neutrality_party:0 "Duke's Court"
+ EQC_neutrality_party_long:0 "The court of Duke Iovinus"
+ EQC_communism_party:0 "CPE"
+ EQC_communism_party_long:0 "Communist Party of Eyrie"
+ EQC_democratic_party:0 "PPF"
+ EQC_democratic_party_long:0 "The Popular People's Front"
+ EQC_fascism_party:0 "PRC"
+ EQC_fascism_party_long:0 "The Party of Religious Control"
+
+ ###Tooltips###
+ EYR_militia_tooltip_tp:0 "We shall summon our Militas to the call of war"

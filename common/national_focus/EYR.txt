@@ -7,9 +7,9 @@
             tag = EYR
         }
     }
-        focus = {
+    focus = {
         id = ERY_winwar
-        icon = 
+        icon = GFX_goal_generic_occupy_states_ongoing_war
         cost = 3
 
         ai_will_do = {
@@ -24,8 +24,36 @@
         completion_reward = {
             add_ideas = ERY_win_the_war
         }
+    }  
+    focus = {
+        id = EYR_our_militia
+        icon = GFX_goal_generic_small_arms
+        x = 1
+        y = 1
+        relative_position_id = ERY_winwar
+        prerequisite = { focus = ERY_winwar }
+        cost = 4
+        ai_will_do = {
+            factor = 5
+        }
 
+        available = { has_war = yes
 
+        }
+        
+        bypass = {
 
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        completion_reward = {
+            custom_effect_tooltip = EYR_militia_tooltip_tp
+            hidden_effect = {
+                 load_oob = "EYR_militia"
+            }
+        }
     }
 }

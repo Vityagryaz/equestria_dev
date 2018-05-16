@@ -1,0 +1,29 @@
+﻿l_english:
+  ###Countryname###
+  EYR_neutrality:0 "Erie"
+ EQC_neutrality_DEF:0 "Erie"
+ EQC_neutrality_ADJ:0 "Eirian"
+ EQC_fascism:0 "State of Erie"
+ EQC_fascism_DEF:0 "The State of Erie"
+ EQC_fascism_ADJ:0 "Eirian"
+ EQC_communism:0 "People's Republic of the Eirie"
+ EQC_communism_DEF:0 "The People's Republic of the Eirie"
+ EQC_communism_ADJ:0 "Eirian"
+ EQC_democratic:0 "Republic of Eirie"
+ EQC_democratic_DEF:0 "The Republic of Eirie"
+ EQC_democratic_ADJ:0 "Eirian"
+
+### PARTIES ###
+ EQC_neutrality_party:0 "Vincent's ring"
+ EQC_neutrality_party_long:0 "The supporters of Duke Vincent"
+ EQC_communism_party:0 "PFP"
+ EQC_communism_party_long:0 "People's Foundation Party"
+ EQC_democratic_party:0 "PHE"
+ EQC_democratic_party_long:0 "The Party for a Harmonious Eirie"
+ EQC_fascism_party:0 "Junta"
+ EQC_fascism_party_long:0 "The Military Junta"
+
+ ### EVENTS ###
+
+ eirie.1.t:0 "The Crowning"
+ eirie.1.d:0 "The entire city of Griffenhiem went up in cheers today as the imperial carriage went down the street. The procession was glorious as it approached the imperial palace. Having been driven all the way from the shores of lake Rumare to Griffinheim it was a sight for all Griffon's to behold. As it arrived on the steps of the Imperial palace there was a grand flourish of trumpets and other instruments as the carriage opens up and a figure emerges from it. Dressed in a military uniform the figure suprises people by the lack of much of the dress normal for the position they are about to be in. The figure draws applause from the crowd and many try to get a better view by climbing over their fellow Griffons. As the figure enters the palace the Archon of Boreas is there ready to make this official. As the figure bows in front of the imperial throne ceremonially and turns to face the other end of the hall the Archon takes the crown and places it on the Griffon who now stands atop the Empire. He turns to the court and the people and declares. /"Long live the Empress! Long Live Empress Rivertail!/""

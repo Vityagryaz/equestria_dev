@@ -1,0 +1,30 @@
+﻿division_template = {
+name = "Griffon Militia"
+priority = 2
+
+regiments = {
+infantry = { x = 0 y = 0 }
+infantry = { x = 0 y = 1 }
+infantry = { x = 0 y = 2 }           
+infantry = { x = 1 y = 0 }
+infantry = { x = 1 y = 1 }
+                            
+}
+                        
+}
+
+units = {
+division = {
+        name = "Men of Vincent"
+        location = 10601
+        division_template = "Griffon Militia"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0 }
+division = {
+        name = "Kirio Miners"
+        location = 12430
+        division_template = "Griffon Militia"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0 }
+
+}

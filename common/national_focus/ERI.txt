@@ -9,7 +9,7 @@
     }
         focus = {
         id = EIR_winwar
-        icon = 
+        icon = GFX_goal_generic_occupy_states_ongoing_war
         cost = 3
 
         ai_will_do = {
