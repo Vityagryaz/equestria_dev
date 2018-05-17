@@ -10,620 +10,310 @@ focus_tree = {
 	
 	default = no
 	
-	continuous_focus_position = { x = 3 y = 1300 }
+	continuous_focus_position = { x = 3 y = 2000 }
 	
 	focus = {
-		id = BAN_current_situation
+		id = BAN_hunt_countess
 		icon = GFX_goal_generic_demand_territory
 		cost = 10
-		x = 10
+		x = 7
 		y = 0
 		ai_will_do = { factor = 100 }
 		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_current_situation"#Auto-logging
-			add_political_power = 150
+			log = "[Root.GetName]: Focus BAN_hunt_countess"#Auto-logging
 		}
 	}
 	
 	focus = {
-		id = BAN_internal_problems
+		id = BAN_in_griffonstone
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = BAN_current_situation }
+		prerequisite = { focus = BAN_hunt_countess }
+		available = { has_country_flag = BAN_countess_in_griffonstone }
+		cost = 10
+		x = 4
+		y = 1
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_in_griffonstone"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_storm_griffonstone
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_in_griffonstone }
+		cost = 10
+		x = 4
+		y = 2
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_storm_griffonstone"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_in_falcor
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_hunt_countess }
+		available = { has_country_flag = BAN_countess_in_falcor }
+		cost = 10
+		x = 6
+		y = 1
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_in_griffonstone"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_storm_falcor
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_in_falcor }
+		cost = 10
+		x = 6
+		y = 2
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_storm_falcor"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_in_cyanolisia
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_hunt_countess }
+		available = { has_country_flag = BAN_countess_in_cyanolisia }
+		cost = 10
+		x = 8
+		y = 1
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_in_cyanolisia"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_through_the_ridge
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_in_cyanolisia }
+		cost = 10
+		x = 8
+		y = 2
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_through_the_ridge"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_in_sicameon
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_hunt_countess }
+		available = { has_country_flag = BAN_countess_in_sicameon }
 		cost = 10
 		x = 10
 		y = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_internal_problems"#Auto-logging
-			hidden_effect = {
-				BAN = {
-					country_event = {
-						days = 1
-						id = bandit.17
-					}
-				}
-			}
-			custom_effect_tooltip = unlock_focuses
-		}
-	}
-	
-	#### Stay with Blackrock
-	
-	focus = {
-		id = BAN_blackrock_recovers
-		prerequisite = { focus = BAN_internal_problems }
-		mutually_exclusive = { focus = BAN_blackrock_dies }
-		icon = GFX_goal_support_fascism
-		available = {
-			has_country_flag = BAN_blackrock_alive
-		}
-		cost = 10
-		x = 6
-		y = 2
-		ai_will_do = { factor = 100 }
-		bypass = {
-			has_country_flag = BAN_blackrock_alive
+			log = "[Root.GetName]: Focus BAN_in_sicameon"#Auto-logging
 		}
 	}
 	
 	focus = {
-		id = BAN_reaffirm_control
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = BAN_blackrock_recovers }
-		cost = 10
-		x = 6
-		y = 3
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_blackrock_recovers"#Auto-logging
-			add_political_power = 100
-		}
-	}
-	
-	focus = {
-		id = BAN_lockdown_the_gla_border
-		icon = GFX_goal_generic_construct_military
-		prerequisite = { focus = BAN_reaffirm_control }
-		bypass = {
-			GRW = {
-				exists = no
-			}
-		}
-		cost = 10
-		x = 5
-		y = 4
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_reaffirm_control"#Auto-logging
-			489 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 4528
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 11983
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 1833
-					instant_build = yes
-				}
-			}
-			606 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 12023
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 2213
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 8214
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 10668
-					instant_build = yes
-				}
-			}
-			446 = {
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 12940
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 7103
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = bunker
-					level = 1
-					province = 12433
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = BAN_hunt_down_communists
-		icon = GFX_goal_generic_war_with_comintern
-		prerequisite = { focus = BAN_lockdown_the_gla_border }
-		cost = 10
-		x = 5
-		y = 5
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_lockdown_the_gla_border"#Auto-logging
-			add_stability = 0.05
-			add_political_power = 40
-		}
-	}
-	
-	focus = {
-		id = BAN_execute_reeve
-		icon = GFX_goal_demand_sudetenland
-		prerequisite = { focus = BAN_hunt_down_communists }
-		cost = 10
-		x = 5
-		y = 6
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_hunt_down_communists"#Auto-logging
-			remove_ideas = BAN_reeve's_rebels
-		}
-	}
-	
-	focus = {
-		id = BAN_sieze_noble_holdings
-		icon = GFX_focus_rom_handle_king
-		prerequisite = { focus = BAN_reaffirm_control }
-		cost = 10
-		x = 7
-		y = 4
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_execute_reeve"#Auto-logging
-			532 = {
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			490 = {
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {
-		id = BAN_execute_bluecrest
-		icon = GFX_focus_rom_abdicate
-		prerequisite = { focus = BAN_sieze_noble_holdings }
-		cost = 10
-		x = 7
-		y = 5
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_sieze_noble_holdings"#Auto-logging
-			remove_ideas = BAN_old_nobility
-			add_stability = -0.04
-		}
-	}
-	
-	focus = {
-		id = BAN_bandit_nobles
-		icon = GFX_focus_rom_royal_dictatorship
-		prerequisite = { focus = BAN_execute_bluecrest }
-		cost = 10
-		x = 7
-		y = 6
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_execute_bluecrest"#Auto-logging
-			add_ideas = BAN_new_nobility
-		}
-	}
-	
-	focus = {
-		id = BAN_ancient_claims
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = BAN_execute_reeve }
-		prerequisite = { focus = BAN_bandit_nobles }
-		cost = 10
-		x = 6
-		y = 7
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_bandit_nobles"#Auto-logging
-			add_state_claim = 518
-			add_state_claim = 570
-			add_state_claim = 392
-			add_state_claim = 393
-		}
-	}
-	
-	### Fascist and neutrality fix industry
-	
-	focus = {
-		id = BAN_farmer_protections
-		icon = GFX_goal_agrarian_reform
-		prerequisite = { focus = BAN_reaffirm_control focus = BAN_reeve_takes_control focus = BAN_the_duel }
-		cost = 10
-		x = 10
-		y = 4
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_ancient_claims"#Auto-logging
-			swap_ideas = {
-				remove_idea = BAN_wrecked_economy
-				add_idea = BAN_wrecked_economy2
-			}
-		}
-	}
-	
-	focus = {
-		id = BAN_incentivise_the_peasants
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = BAN_farmer_protections }
-		cost = 10
-		x = 10
-		y = 5
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_farmer_protections"#Auto-logging
-			swap_ideas = {
-				remove_idea = BAN_wrecked_economy2
-				add_idea = BAN_wrecked_economy3
-			}
-		}
-	}
-	
-	focus = {
-		id = BAN_crackdown_on_troublemakers
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = { focus = BAN_incentivise_the_peasants }
-		cost = 10
-		x = 10
-		y = 6
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_incentivise_the_peasants"#Auto-logging
-			add_stability = 0.10
-			add_political_power = 50
-		}
-	}
-	
-	focus = {
-		id = BAN_restore_the_economy
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = BAN_crackdown_on_troublemakers }
-		cost = 10
-		x = 10
-		y = 7
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_crackdown_on_troublemakers"#Auto-logging
-			remove_ideas = BAN_wrecked_economy3
-			
-			set_country_flag = restored_economy
-		}
-	}
-	
-	#### Commie
-	
-	focus = {
-		id = BAN_blackrock_dies
-		icon = GFX_goal_GRF_troubles_begin
-		prerequisite = { focus = BAN_internal_problems }
-		mutually_exclusive = { focus = BAN_blackrock_recovers }
-		available = {
-			has_country_flag = BAN_blackrock_dead
-		}
-		cost = 1
-		x = 14
-		y = 2
-		ai_will_do = { factor = 100 }
-		bypass = {
-			has_country_flag = BAN_blackrock_dead
-		}
-	}
-	
-	focus = {
-		id = BAN_reeve_takes_control
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = BAN_blackrock_dies }
-		cost = 10
-		x = 14
-		y = 3
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_restore_the_economy"#Auto-logging
-			set_politics = {
-				ruling_party = communism
-				elections_allowed = no
-			}
-			
-			add_popularity = {
-				ideology = communism
-				popularity = 0.30
-			}
-			
-			BAN = {
-				country_event = {
-					id = bandit.18
-				}
-			}
-			
-			swap_ideas = {
-				add_idea = BAN_reeve's_rebels2
-				remove_idea = BAN_reeve's_rebels
-			}
-			
-		}
-	}
-	
-	focus = {
-		id = BAN_deal_with_blackrocks_lackys
-		icon = GFX_focus_generic_strike_at_democracy2
-		prerequisite = { focus = BAN_reeve_takes_control }
-		available = {
-			has_government = communism
-		}
-		cost = 10
-		x = 13
-		y = 4
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_blackrock_dies"#Auto-logging
-			add_popularity = {
-				ideology = communism
-				popularity = 0.20
-			}
-			add_political_power =  40
-		}
-	}
-	
-	focus = {
-		id = BAN_arrest_outlaws_and_bandits
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = BAN_deal_with_blackrocks_lackys }
-		cost = 10
-		x = 13
-		y = 5
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_reeve_takes_control"#Auto-logging
-			remove_ideas = BAN_bandit_culture
-		}
-	}
-	
-	focus = {
-		id = BAN_the_noble_problem
-		icon = GFX_focus_rom_handle_king
-		prerequisite = { focus = BAN_reeve_takes_control }
-		available = {
-			has_government = communism
-		}
-		cost = 10
-		x = 15
-		y = 4
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_deal_with_blackrocks_lackys"#Auto-logging
-			remove_ideas = BAN_old_nobility
-			add_popularity = {
-				ideology = communism
-				popularity = 0.10
-			}
-		}
-	}
-	
-	focus = {
-		id = BAN_peoples_councils
-		icon = GFX_goal_ideology_syndicalist
-		prerequisite = { focus = BAN_the_noble_problem }
-		cost = 10
-		x = 15
-		y = 5
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_arrest_outlaws_and_bandits"#Auto-logging
-			add_ideas = BAN_commie_councils
-		}
-	}
-	
-	focus = {
-		id = BAN_spread_revolution
-		icon = GFX_goal_generic_war_with_comintern
-		prerequisite = { focus = BAN_peoples_councils }
-		prerequisite = { focus = BAN_arrest_outlaws_and_bandits }
-		cost = 10
-		x = 14
-		y = 6
-		
-		will_lead_to_war_with = FAL
-		will_lead_to_war_with = BOI
-		
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_the_noble_problem"#Auto-logging
-			
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = BOI
-			}
-			create_wargoal = {
-				type = puppet_wargoal_focus
-				target = FAL
-			}
-		}
-	}
-	
-	focus = {
-		id = BAN_pact_with_GRW
-		icon = GFX_goal_support_communism
-		prerequisite = { focus = BAN_spread_revolution }
-		cost = 10
-		x = 14
-		y = 7
-		ai_will_do = { factor = 100 }
-		available = {
-			GRW = {
-				exists = yes
-				has_government = communism
-			}
-		}
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_peoples_councils"#Auto-logging
-			GRW = {
-				country_event = {
-					id = bandit.21
-				}
-			}
-		}
-	}
-	
-	### Neutrality
-	
-	focus = {
-		id = BAN_the_duel
-		icon = GFX_goal_generic_major_war
-		cost = 10
-		x = 18
-		y = 3
-		available = {
-			always = no
-		}
-		ai_will_do = { factor = 100 }
-		bypass = {
-			has_country_flag = BAN_duel_won
-		}
-	}
-	
-	focus = {
-		id = BAN_bluecrest_makes_a_move
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = BAN_the_duel }
-		cost = 10
-		x = 18
-		y = 4
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFX_goal_ideology_syndicalist"#Auto-logging
-			set_politics = {
-				ruling_party = neutrality
-				elections_allowed = no
-			}
-			
-			swap_ideas = {
-				add_idea = BAN_old_nobility2
-				remove_idea = BAN_old_nobility
-			}
-		}
-	}
-	
-	focus = {
-		id = BAN_assume_direct_control
-		icon = GFX_focus_generic_home_defense
-		prerequisite = { focus = BAN_bluecrest_makes_a_move }
-		cost = 10
-		x = 18
-		y = 5
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_spread_revolution"#Auto-logging
-			add_political_power = 100
-		}
-	}
-	
-	focus = {
-		id = BAN_remove_bandits
+		id = BAN_blaze_through_cannabia
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = BAN_assume_direct_control }
+		prerequisite = { focus = BAN_in_sicameon }
 		cost = 10
-		x = 17
-		y = 6
+		x = 10
+		y = 2
 		ai_will_do = { factor = 100 }
 		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_pact_with_GRW"#Auto-logging
-			remove_ideas = BAN_bandit_culture
+			log = "[Root.GetName]: Focus BAN_blaze_through_cannabia"#Auto-logging
 		}
 	}
 	
 	focus = {
-		id = BAN_communist_purge
-		icon = GFX_goal_LEC_monkey
-		prerequisite = { focus = BAN_assume_direct_control }
+		id = BAN_blackrock_queen_of_blackhollow
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_blaze_through_cannabia focus = BAN_through_the_ridge focus = BAN_storm_falcor focus = BAN_storm_griffonstone }
 		cost = 10
-		x = 19
-		y = 6
+		x = 7
+		y = 3
 		ai_will_do = { factor = 100 }
 		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_the_duel"#Auto-logging
-			remove_ideas = BAN_reeve's_rebels2
+			log = "[Root.GetName]: Focus BAN_blackrock_queen_of_blackhollow"#Auto-logging
 		}
 	}
 	
 	focus = {
-		id = BAN_return_to_normalcy
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		prerequisite = { focus = BAN_remove_bandits }
-		prerequisite = { focus = BAN_communist_purge }
+		id = BAN_a_proper_kingdom
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_blackrock_queen_of_blackhollow }
+		mutually_exclusive = { focus = BAN_empire_of_bandits }
 		cost = 10
-		x = 18
+		x = 6
+		y = 4
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_a_proper_kingdom"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_empire_of_bandits
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_blackrock_queen_of_blackhollow }
+		mutually_exclusive = { focus = BAN_a_proper_kingdom }
+		cost = 10
+		x = 8
+		y = 4
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_empire_of_bandits"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_restore_the_farms
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_a_proper_kingdom }
+		cost = 10
+		x = 6
+		y = 5
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_restore_the_farms"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_banditry_based_economy
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_empire_of_bandits }
+		cost = 10
+		x = 8
+		y = 5
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_banditry_based_economy"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_restore_blackhollow_industry
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_banditry_based_economy focus = BAN_restore_the_farms }
+		cost = 10
+		x = 7
+		y = 6
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_restore_blackhollow_industry"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_rebuild_workshops
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_restore_blackhollow_industry }
+		cost = 10
+		x = 6
 		y = 7
 		ai_will_do = { factor = 100 }
 		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_bluecrest_makes_a_move"#Auto-logging
-			add_political_power = 50
-			add_popularity = {
-				ideology = neutrality
-				popularity = 0.20
-			}
+			log = "[Root.GetName]: Focus BAN_rebuild_workshops"#Auto-logging
 		}
 	}
 	
 	focus = {
-		id = BAN_old_claims
-		icon = GFX_focus_rom_royal_dictatorship
-		prerequisite = { focus = BAN_return_to_normalcy }
+		id = BAN_factories_for_civilians
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_rebuild_workshops }
 		cost = 10
-		x = 18
+		x = 6
 		y = 8
 		ai_will_do = { factor = 100 }
 		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_assume_direct_control"#Auto-logging
-			add_state_claim = 518
-			add_state_claim = 570
-			add_state_claim = 392
-			add_state_claim = 393
-			add_state_claim = 651
-			add_state_claim = 605
+			log = "[Root.GetName]: Focus BAN_factories_for_civilians"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_hire_gunsmiths
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_restore_blackhollow_industry }
+		cost = 10
+		x = 8
+		y = 7
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_hire_gunsmiths"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_gun_factories
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_hire_gunsmiths }
+		cost = 10
+		x = 8
+		y = 8
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_gun_factories"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_a_decent_economy
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_gun_factories }
+		prerequisite = { focus = BAN_factories_for_civilians }
+		cost = 10
+		x = 7
+		y = 9
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_a_decent_economy"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_new_nobility
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_a_proper_kingdom }
+		cost = 10
+		x = 4
+		y = 5
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_new_nobility"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_new_nobility
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_a_proper_kingdom }
+		cost = 10
+		x = 4
+		y = 5
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_new_nobility"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_seek_recognition
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_new_nobility }
+		cost = 10
+		x = 4
+		y = 6
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_seek_recognition"#Auto-logging
 		}
 	}
 	
