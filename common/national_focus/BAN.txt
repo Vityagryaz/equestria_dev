@@ -16,7 +16,7 @@ focus_tree = {
 		id = BAN_hunt_countess
 		icon = GFX_goal_generic_demand_territory
 		cost = 10
-		x = 7
+		x = 8
 		y = 0
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -30,7 +30,7 @@ focus_tree = {
 		prerequisite = { focus = BAN_hunt_countess }
 		available = { has_country_flag = BAN_countess_in_griffonstone }
 		cost = 10
-		x = 4
+		x = 5
 		y = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -43,7 +43,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = BAN_in_griffonstone }
 		cost = 10
-		x = 4
+		x = 5
 		y = 2
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -57,7 +57,7 @@ focus_tree = {
 		prerequisite = { focus = BAN_hunt_countess }
 		available = { has_country_flag = BAN_countess_in_falcor }
 		cost = 10
-		x = 6
+		x = 7
 		y = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -70,7 +70,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = BAN_in_falcor }
 		cost = 10
-		x = 6
+		x = 7
 		y = 2
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -84,7 +84,7 @@ focus_tree = {
 		prerequisite = { focus = BAN_hunt_countess }
 		available = { has_country_flag = BAN_countess_in_cyanolisia }
 		cost = 10
-		x = 8
+		x = 9
 		y = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -97,7 +97,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = BAN_in_cyanolisia }
 		cost = 10
-		x = 8
+		x = 9
 		y = 2
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -111,7 +111,7 @@ focus_tree = {
 		prerequisite = { focus = BAN_hunt_countess }
 		available = { has_country_flag = BAN_countess_in_sicameon }
 		cost = 10
-		x = 10
+		x = 11
 		y = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -124,7 +124,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = BAN_in_sicameon }
 		cost = 10
-		x = 10
+		x = 11
 		y = 2
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -137,7 +137,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = BAN_blaze_through_cannabia focus = BAN_through_the_ridge focus = BAN_storm_falcor focus = BAN_storm_griffonstone }
 		cost = 10
-		x = 7
+		x = 8
 		y = 3
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -151,7 +151,7 @@ focus_tree = {
 		prerequisite = { focus = BAN_blackrock_queen_of_blackhollow }
 		mutually_exclusive = { focus = BAN_empire_of_bandits }
 		cost = 10
-		x = 6
+		x = 7
 		y = 4
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -165,7 +165,7 @@ focus_tree = {
 		prerequisite = { focus = BAN_blackrock_queen_of_blackhollow }
 		mutually_exclusive = { focus = BAN_a_proper_kingdom }
 		cost = 10
-		x = 8
+		x = 9
 		y = 4
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -178,7 +178,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = BAN_a_proper_kingdom }
 		cost = 10
-		x = 6
+		x = 7
 		y = 5
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -191,7 +191,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = BAN_empire_of_bandits }
 		cost = 10
-		x = 8
+		x = 9
 		y = 5
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -204,7 +204,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = BAN_banditry_based_economy focus = BAN_restore_the_farms }
 		cost = 10
-		x = 7
+		x = 8
 		y = 6
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -217,7 +217,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = BAN_restore_blackhollow_industry }
 		cost = 10
-		x = 6
+		x = 7
 		y = 7
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -230,7 +230,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = BAN_rebuild_workshops }
 		cost = 10
-		x = 6
+		x = 7
 		y = 8
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -243,7 +243,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = BAN_restore_blackhollow_industry }
 		cost = 10
-		x = 8
+		x = 9
 		y = 7
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -256,7 +256,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = BAN_hire_gunsmiths }
 		cost = 10
-		x = 8
+		x = 9
 		y = 8
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -270,7 +270,7 @@ focus_tree = {
 		prerequisite = { focus = BAN_gun_factories }
 		prerequisite = { focus = BAN_factories_for_civilians }
 		cost = 10
-		x = 7
+		x = 8
 		y = 9
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -283,20 +283,7 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = BAN_a_proper_kingdom }
 		cost = 10
-		x = 4
-		y = 5
-		ai_will_do = { factor = 100 }
-		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_new_nobility"#Auto-logging
-		}
-	}
-	
-	focus = {
-		id = BAN_new_nobility
-		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = BAN_a_proper_kingdom }
-		cost = 10
-		x = 4
+		x = 5
 		y = 5
 		ai_will_do = { factor = 100 }
 		completion_reward = {
@@ -309,13 +296,162 @@ focus_tree = {
 		icon = GFX_goal_generic_forceful_treaty
 		prerequisite = { focus = BAN_new_nobility }
 		cost = 10
-		x = 4
+		x = 5
 		y = 6
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_seek_recognition"#Auto-logging
 		}
 	}
+	
+	focus = {
+		id = BAN_turn_a_new_leaf
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_seek_recognition }
+		mutually_exclusive = { focus = BAN_assert_dominance }
+		cost = 10
+		x = 5
+		y = 7
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_turn_a_new_leaf"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_new_bureacracy
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_turn_a_new_leaf }
+		cost = 10
+		x = 5
+		y = 8
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_new_bureacracy"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_new_friends
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_new_bureacracy }
+		mutually_exclusive = { focus = BAN_make_amends }
+		cost = 10
+		x = 4
+		y = 9
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_new_friends"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_make_amends
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_new_bureacracy }
+		mutually_exclusive = { focus = BAN_new_friends}
+		cost = 10
+		x = 6
+		y = 9
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_make_amends"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_a_peaceful_kingdom
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_new_friends focus = BAN_make_amends }
+		cost = 10
+		x = 5
+		y = 10
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_a_peaceful_kingdom"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_assert_dominance
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_seek_recognition }
+		mutually_exclusive = { focus = BAN_turn_a_new_leaf }
+		cost = 10
+		x = 0
+		y = 7
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_assert_dominance"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_beyond_blackhollow
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_assert_dominance }
+		cost = 10
+		x = 0
+		y = 8
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_beyond_blackhollow"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_meet_with_maximilliana
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_beyond_blackhollow }
+		cost = 10
+		x = -2
+		y = 9
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_meet_with_maximilliana"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_persuade_duke
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_beyond_blackhollow }
+		cost = 10
+		x = 0
+		y = 9
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_persuade_duke"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_speak_with_countess
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_beyond_blackhollow }
+		cost = 10
+		x = 2
+		y = 9
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_persuade_duke"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = BAN_kingdom_without_king
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAN_assert_dominance }
+		cost = 10
+		x = 2
+		y = 8
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[Root.GetName]: Focus BAN_kingdom_without_king"#Auto-logging
+		}
+	}
+	
+	
 	
 	### Industrial Tree
 	
