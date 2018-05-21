@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
     id = erie
     country = {
         factor = 0
@@ -8,24 +8,105 @@
         }
     }
         focus = {
-        id = EIR_winwar
+        id = ERI_winwar
         icon = GFX_goal_generic_occupy_states_ongoing_war
         cost = 3
 
         ai_will_do = {
             factor = 20
         }
-        x = 3
+        x = 1
         y = 1
         available = {
             has_war = yes
 
         }
         completion_reward = {
-            add_ideas = EIR_win_the_war
+            add_ideas = ERI_war
         }
 
 
 
+    }
+    focus = {
+        id = ERI_our_militia
+        icon = GFX_goal_generic_small_arms
+        relative_position_id = ERI_winwar
+        x = 1
+        y = 1
+        prerequisite = { focus = ERI_winwar }
+        cost = 4
+        ai_will_do = {
+            factor = 5
+        }
+
+        available = { has_war = yes }
+        
+        bypass = {
+
+        }
+
+        cancel_if_invalid = yes
+        continue_if_invalid = no
+        available_if_capitulated = no
+
+        completion_reward = {
+            custom_effect_tooltip = ERI_militia_tooltip_tp
+            hidden_effect = {
+                 load_oob = "ERI_militia"
+            }
+        }
+    }
+    focus = {
+        id = ERi_knights_militia
+        icon = GFX_goal_generic_small_arms
+        cost = 4
+
+        ai_will_do = {
+            factor = 5
+        }
+
+        available = { has_war = yes }
+
+        relative_position_id = ERI_winwar
+        x = -1
+        y = 1
+
+        prerequisite = { 
+            focus = ERI_winwar
+        }
+        mutually_exclusive = {
+            focus = ERI_our_militia
+        }
+
+        completion_reward = {
+        load_oob = "ERI_militia_knights"
+
+        }
+    }
+    focus = {
+        id = ERI_equipment_scrounge
+        icon = GFX_goal_generic_small_arms
+        cost = 4
+
+        ai_will_do = {
+            factor = 5
+        }
+
+        available = { has_war = yes }
+
+        relative_position_id = ERI_winwar
+        x = 0
+        y = 2
+
+        prerequisite = { 
+            focus = ERI_winwar
+        }
+
+        completion_reward = {
+        add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = ERI }
+        add_political_power = -50
+
+        }
     }
 }

@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
     id = eyrie
     country = {
         factor = 0
@@ -15,31 +15,26 @@
         ai_will_do = {
             factor = 20
         }
-        x = 3
+        x = 1
         y = 1
-        available = {
-            has_war = yes
-
-        }
+        available = { has_war = yes }
         completion_reward = {
-            add_ideas = ERY_win_the_war
+            add_ideas = ERY_war
         }
     }  
     focus = {
         id = EYR_our_militia
         icon = GFX_goal_generic_small_arms
+        relative_position_id = ERY_winwar
         x = 1
         y = 1
-        relative_position_id = ERY_winwar
         prerequisite = { focus = ERY_winwar }
         cost = 4
         ai_will_do = {
             factor = 5
         }
 
-        available = { has_war = yes
-
-        }
+        available = { has_war = yes }
         
         bypass = {
 
@@ -54,6 +49,82 @@
             hidden_effect = {
                  load_oob = "EYR_militia"
             }
+        }
+    }
+    focus = {
+        id = EYR_knights_militia
+        icon = GFX_goal_generic_small_arms
+        cost = 4
+
+        ai_will_do = {
+            factor = 5
+        }
+
+        available = { has_war = yes }
+
+        relative_position_id = ERY_winwar
+        x = -1
+        y = 1
+
+        prerequisite = { 
+            focus = ERY_winwar
+        }
+        mutually_exclusive = {
+            focus = EYR_our_militia
+        }
+
+        completion_reward = {
+        load_oob = "ERY_militia_knights"
+
+        }
+    }
+    focus = {
+        id = ERY_equipment_scrounge
+        icon = GFX_goal_generic_small_arms
+        cost = 4
+
+        ai_will_do = {
+            factor = 5
+        }
+
+        available = { has_war = yes }
+
+        relative_position_id = ERY_winwar
+        x = 1
+        y = 2
+
+        prerequisite = { 
+            focus = ERY_winwar
+        }
+
+        completion_reward = {
+        add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = EYR }
+        add_political_power = -50
+
+        }
+    }
+    focus = {
+        id = EYR_army_command
+        icon = GFX_goal_generic_small_arms
+        cost = 4
+
+        ai_will_do = {
+            factor = 5
+        }
+
+        available = { has_war = yes }
+
+        relative_position_id = ERY_winwar
+        x = -1
+        y = 2
+
+        prerequisite = { 
+            focus = ERY_winwar
+        }
+
+        completion_reward = {
+        army_experience = 40
+
         }
     }
 }

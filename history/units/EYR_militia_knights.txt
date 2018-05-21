@@ -1,0 +1,31 @@
+division_template = {
+name = "Dukedom Knights"
+priority = 2
+
+regiments = {
+knights = { x = 0 y = 0 }
+knights = { x = 0 y = 1 }
+knights = { x = 0 y = 2 }
+knights = { x = 0 y = 3 }
+knights = { x = 0 y = 4 }
+knights = { x = 0 y = 5 }            
+knights = { x = 1 y = 0 }
+knights = { x = 1 y = 1 }
+knights = { x = 1 y = 2 }
+knights = { x = 1 y = 3 }
+knights = { x = 1 y = 4 }
+knights = { x = 1 y = 5 }
+}
+support = {
+                recon = { x = 0 y = 0 }
+        }                     
+}
+
+units = {
+division = {
+        name = "Knights of Iovinus"
+        location = 4404
+        division_template = "Griffon Militia"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0 }
+}

@@ -1,0 +1,22 @@
+ideas = {
+country = {
+		ERY_war = {
+			
+			
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_war = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.1
+				army_attack_factor = 0.1
+				war_support_factor = 0.05
+			}
+		}
+	}
+	}
