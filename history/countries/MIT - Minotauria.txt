@@ -73,11 +73,15 @@ create_country_leader = {
 create_country_leader = {
 	name = "King Taurus III"
 	desc = ""
-	picture = "Governor.tga"
+	picture = "Minotaur.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 	}
 }
 
@@ -88,6 +92,10 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 	}
 }

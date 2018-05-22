@@ -1,7 +1,12 @@
 ﻿add_namespace = aquileia
+add_namespace = aquileia_news
 ### Michel-Dennis Arguments###
 country_event = {
 	id = aquileia.1
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event aquileia.1"}#Auto-logging
+>>>>>>> master
 	title = aquileia.1.t
 	desc = aquileia.1.d
 	picture = GFX_event_griffon_mountain
@@ -40,6 +45,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.2
+	immediate = {log = "[Root.GetName]: event aquileia.2"}#Auto-logging
 	title = aquileia.2.t
 	desc = aquileia.2.d
 	picture = GFX_event_griffon_back
@@ -71,6 +77,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.3
+	immediate = {log = "[Root.GetName]: event aquileia.3"}#Auto-logging
 	title = aquileia.3.t
 	desc = aquileia.3.d
 	picture = GFX_event_griffon_back
@@ -110,6 +117,7 @@ country_event = {
 }
 country_event = {
 	id = aquileia.4
+	immediate = {log = "[Root.GetName]: event aquileia.4"}#Auto-logging
 	title = aquileia.4.t
 	desc = aquileia.4.d
 	picture = GFX_event_griffon_back
@@ -141,6 +149,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.5
+	immediate = {log = "[Root.GetName]: event aquileia.5"}#Auto-logging
 	title = aquileia.5.t
 	desc = aquileia.5.d
 	picture = GFX_event_griffon_back
@@ -180,6 +189,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.6
+	immediate = {log = "[Root.GetName]: event aquileia.6"}#Auto-logging
 	title = aquileia.6.t
 	desc = aquileia.6.d
 	picture = GFX_event_griffon_mountain
@@ -200,6 +210,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.7
+	immediate = {log = "[Root.GetName]: event aquileia.7"}#Auto-logging
 	title = aquileia.7.t
 	desc = aquileia.7.d
 	picture = GFX_event_griffon_mountain
@@ -220,6 +231,10 @@ country_event = {
 
 country_event = { #Vinovia-Twins Argument
 	id = aquileia.8
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event aquileia.8"}#Auto-logging
+>>>>>>> master
 	title = aquileia.8.t
 	desc = aquileia.8.d
 	picture = GFX_event_griffon_mountain
@@ -259,6 +274,7 @@ country_event = { #Vinovia-Twins Argument
 
 country_event = {
 	id = aquileia.9
+	immediate = {log = "[Root.GetName]: event aquileia.9"}#Auto-logging
 	title = aquileia.9.t
 	desc = aquileia.9.d
 	picture = GFX_event_griffon_back
@@ -292,6 +308,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.10
+	immediate = {log = "[Root.GetName]: event aquileia.10"}#Auto-logging
 	title = aquileia.10.t
 	desc = aquileia.10.d
 	picture = GFX_event_griffon_back
@@ -331,6 +348,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.11
+	immediate = {log = "[Root.GetName]: event aquileia.11"}#Auto-logging
 	title = aquileia.11.t
 	desc = aquileia.11.d
 	picture = GFX_event_griffon_mountain
@@ -351,6 +369,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.12
+	immediate = {log = "[Root.GetName]: event aquileia.12"}#Auto-logging
 	title = aquileia.12.t
 	desc = aquileia.12.d
 	picture = GFX_event_griffon_back
@@ -382,6 +401,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.14
+	immediate = {log = "[Root.GetName]: event aquileia.14"}#Auto-logging
 	title = aquileia.14.t
 	desc = aquileia.14.d
 	picture = GFX_event_griffon_back
@@ -421,6 +441,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.15
+	immediate = {log = "[Root.GetName]: event aquileia.15"}#Auto-logging
 	title = aquileia.15.t
 	desc = aquileia.15.d
 	picture = GFX_event_griffon_mountain
@@ -441,6 +462,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.16
+	immediate = {log = "[Root.GetName]: event aquileia.16"}#Auto-logging
 	title = aquileia.16.t
 	desc = aquileia.16.d
 	picture = GFX_event_griffon_back
@@ -461,6 +483,10 @@ country_event = {
 			ruling_party = democratic
 			elections_allowed = no
 		}
+<<<<<<< HEAD
+=======
+		set_cosmetic_tag = JER_REPUBLIC
+>>>>>>> master
 		add_ideas = JER_revolutionary
 		remove_unit_leader = 75651
 		hidden_effect = { JER = {
@@ -487,12 +513,17 @@ country_event = {
 			declare_war_on = { target = JFT type = annex_everything }
 			set_country_flag = have_regular_puppets
 			load_oob = "JER_revolutionaries"
+<<<<<<< HEAD
+=======
+			news_event = { id = aquileia_news.1 hours = 1 }
+>>>>>>> master
 		}
 	}
 }
 
 country_event = {
 	id = aquileia.17
+	immediate = {log = "[Root.GetName]: event aquileia.17"}#Auto-logging
 	title = aquileia.17.t
 	desc = aquileia.17.d
 	picture = GFX_event_griffon_back
@@ -515,6 +546,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.18
+	immediate = {log = "[Root.GetName]: event aquileia.18"}#Auto-logging
 	title = aquileia.18.t
 	desc = aquileia.18.d
 	picture = GFX_event_griffon_back
@@ -587,6 +619,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.19
+	immediate = {log = "[Root.GetName]: event aquileia.19"}#Auto-logging
 	title = aquileia.19.t
 	desc = aquileia.19.d
 	picture = GFX_event_griffon_back
@@ -605,6 +638,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.20
+	immediate = {log = "[Root.GetName]: event aquileia.20"}#Auto-logging
 	title = aquileia.20.t
 	desc = aquileia.20.d
 	picture = GFX_event_griffon_back
@@ -622,6 +656,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.21
+	immediate = {log = "[Root.GetName]: event aquileia.21"}#Auto-logging
 	title = aquileia.21.t
 	desc = aquileia.21.d
 	picture = GFX_event_griffon_back
@@ -641,6 +676,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.22
+	immediate = {log = "[Root.GetName]: event aquileia.22"}#Auto-logging
 	title = aquileia.22.t
 	desc = aquileia.22.d
 	picture = GFX_event_griffon_back
@@ -661,6 +697,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.23
+	immediate = {log = "[Root.GetName]: event aquileia.23"}#Auto-logging
 	title = aquileia.23.t
 	desc = aquileia.23.d
 	picture = GFX_event_griffon_back
@@ -691,6 +728,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.24
+	immediate = {log = "[Root.GetName]: event aquileia.24"}#Auto-logging
 	title = aquileia.24.t
 	desc = aquileia.24.d
 	picture = GFX_event_griffon_back
@@ -705,6 +743,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.25
+	immediate = {log = "[Root.GetName]: event aquileia.25"}#Auto-logging
 	title = aquileia.25.t
 	desc = aquileia.25.d
 	picture = GFX_event_griffon_back
@@ -718,6 +757,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.26
+	immediate = {log = "[Root.GetName]: event aquileia.26"}#Auto-logging
 	title = aquileia.26.t
 	desc = aquileia.26.d
 	picture = GFX_event_griffon_back
@@ -748,6 +788,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.27
+	immediate = {log = "[Root.GetName]: event aquileia.27"}#Auto-logging
 	title = aquileia.27.t
 	desc = aquileia.27.d
 	picture = GFX_event_griffon_back
@@ -762,6 +803,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.28
+	immediate = {log = "[Root.GetName]: event aquileia.28"}#Auto-logging
 	title = aquileia.28.t
 	desc = aquileia.28.d
 	picture = GFX_event_griffon_back
@@ -775,6 +817,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.29
+	immediate = {log = "[Root.GetName]: event aquileia.29"}#Auto-logging
 	title = aquileia.29.t
 	desc = aquileia.29.d
 	picture = GFX_event_griffon_back
@@ -799,6 +842,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.30
+	immediate = {log = "[Root.GetName]: event aquileia.30"}#Auto-logging
 	title = aquileia.30.t
 	desc = aquileia.30.d
 	picture = GFX_event_griffon_mountain
@@ -819,6 +863,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.31
+	immediate = {log = "[Root.GetName]: event aquileia.31"}#Auto-logging
 	title = aquileia.31.t
 	desc = aquileia.31.d
 	picture = GFX_event_griffon_mountain
@@ -923,6 +968,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.32
+	immediate = {log = "[Root.GetName]: event aquileia.32"}#Auto-logging
 	title = aquileia.32.t
 	desc = aquileia.32.d
 	picture = GFX_event_griffon_back
@@ -943,6 +989,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.33
+	immediate = {log = "[Root.GetName]: event aquileia.33"}#Auto-logging
 	title = aquileia.33.t
 	desc = aquileia.33.d
 	picture = GFX_event_griffon_back
@@ -986,6 +1033,7 @@ country_event = {
 
 country_event = {
 	id = aquileia.39
+	immediate = {log = "[Root.GetName]: event aquileia.39"}#Auto-logging
 	title = aquileia.39.t
 	desc = aquileia.39.d
 	picture = GFX_event_griffon_back
@@ -1012,6 +1060,199 @@ country_event = {
 				GRI = {
 					country_event = { days = 60 id = imperial.53 }
 				}
+			}
+<<<<<<< HEAD
+		}
+=======
+		}
+	}
+}
+country_event = {
+	id = aquileia.40
+	immediate = {log = "[Root.GetName]: event aquileia.40"}#Auto-logging
+	hidden = yes
+	trigger = {
+		has_cosmetic_tag = JER_PUPPET
+		NOT = {
+			is_subject = yes
+		}
+	}
+	option = {
+		name = aquileia.40.a
+		drop_cosmetic_tag = yes
+	}
+}
+news_event = { #Revolution Began
+	id = aquileia_news.1
+	immediate = {log = "[Root.GetName]: event aquileia_news.1"}#Auto-logging
+	title = aquileia_news.1.t
+	desc = aquileia_news.1.d
+	picture = GFX_news_aquiliea_revolution
+	major = yes
+    is_triggered_only = yes
+	option = {
+		name = aquileia_news.1.a
+		trigger = {
+			OR = {
+				tag = JER
+				is_on_equestrian_continent = yes
+			}
+		}
+	}
+	option = {
+		name = aquileia_news.1.b
+		trigger = {
+			has_war_with = JER
+		}
+	}
+	option = {
+		name = aquileia_news.1.c
+		trigger = {
+			is_griffon_continent_country = yes
+			OR = {
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+	}
+	option = {
+		name = aquileia_news.1.e
+		trigger = {
+			is_griffon_continent_country = yes
+			OR = {
+				has_government = democratic
+				has_government = communism
+			}
+		}
+	}
+}
+country_event = { #Revolution Won
+	id = aquileia_news.2
+	immediate = {log = "[Root.GetName]: event aquileia_news.2"}#Auto-logging
+	hidden = yes
+	trigger = {
+		tag = JER
+		has_government = democratic
+		JEB = { exists = no }
+		JRR = { exists = no }
+		VIN = { exists = no }
+		JFT = { exists = no }
+	}
+	fire_only_once = yes
+	option = {
+		name = aquileia_news.2.a
+		news_event = { id = aquileia_news.3 hours = 10 }
+	}
+}
+news_event = { #Revolution Won
+	id = aquileia_news.3
+	immediate = {log = "[Root.GetName]: event aquileia_news.3"}#Auto-logging
+	title = aquileia_news.3.t
+	desc = aquileia_news.3.d
+	picture = GFX_news_species_rights
+	major = yes
+    is_triggered_only = yes
+	option = {
+		name = aquileia_news.3.a
+		trigger = {
+			OR = {
+				tag = JER
+				is_on_equestrian_continent = yes
+			}
+		}
+	}
+	option = {
+		name = aquileia_news.3.c
+		trigger = {
+			is_griffon_continent_country = yes
+			OR = {
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+	}
+	option = {
+		name = aquileia_news.3.e
+		trigger = {
+			is_griffon_continent_country = yes
+			OR = {
+				has_government = democratic
+				has_government = communism
+			}
+		}
+	}
+}
+country_event = { #Revolution Lost
+	id = aquileia_news.4
+	immediate = {log = "[Root.GetName]: event aquileia_news.4"}#Auto-logging
+	hidden = yes
+	trigger = {
+		OR = {
+			tag = JEB
+			tag = JES
+			tag = VIN
+			tag = JFT
+			tag = JRR
+		}
+		OR = {
+			JER = { exists = no }
+			JER = { is_subject = yes }
+		}
+		NOT = {
+			JER = { has_government = democratic }
+		}
+	}
+	fire_only_once = yes
+	option = {
+		name = aquileia_news.4.a
+		news_event = { id = aquileia_news.5 hours = 10 }
+>>>>>>> master
+	}
+}
+news_event = { #Revolution Lost
+	id = aquileia_news.5
+	immediate = {log = "[Root.GetName]: event aquileia_news.5"}#Auto-logging
+	title = aquileia_news.5.t
+	desc = aquileia_news.5.d
+	picture = GFX_news_griffon_soldier
+	major = yes
+    is_triggered_only = yes
+	option = {
+		name = aquileia_news.5.a
+		trigger = {
+			is_on_equestrian_continent = yes
+		}
+	}
+	option = {
+		name = aquileia_news.5.b
+		trigger = {
+			OR = {
+				tag = JER
+				tag = JEB
+				tag = JFT
+				tag = JES
+				tag = VIN
+				tag = JRR
+			}
+		}
+	}
+	option = {
+		name = aquileia_news.5.c
+		trigger = {
+			is_griffon_continent_country = yes
+			OR = {
+				has_government = neutrality
+				has_government = fascism
+			}
+		}
+	}
+	option = {
+		name = aquileia_news.5.e
+		trigger = {
+			is_griffon_continent_country = yes
+			OR = {
+				has_government = democratic
+				has_government = communism
 			}
 		}
 	}

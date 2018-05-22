@@ -18,6 +18,10 @@ state={
 			infrastructure = 1
 		}
 	}
+<<<<<<< HEAD
 	manpower=63457
+=======
+	manpower=103457
+>>>>>>> master
 	buildings_max_level_factor=1.000
 }

@@ -10,6 +10,7 @@ state={
 		owner = RIV
 		add_core_of = RIV
 		victory_points = { 11911 25 }
+<<<<<<< HEAD
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -17,6 +18,16 @@ state={
 			dockyard = 1
 			11911 = { naval_base = 1 }
 		}
+=======
+	        buildings = {
+	            infrastructure = 5
+	            industrial_complex = 2
+				arms_factory = 1
+				dockyard = 1
+				air_base = 4
+				11911 = { naval_base = 2 }
+	    }
+>>>>>>> master
 	}
 	manpower=1567899
 	buildings_max_level_factor=1.000

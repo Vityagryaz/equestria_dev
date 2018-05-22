@@ -2,14 +2,27 @@
 
 country_event = {
 	id = equestriancolony.1
+<<<<<<< HEAD
 	hidden = yes
 	
+=======
+	immediate = {log = "[Root.GetName]: event equestriancolony.1"}#Auto-logging
+	hidden = yes
+
+>>>>>>> master
 	trigger = {
 		original_tag = EQC
 		is_subject = yes
 		OR = {
 			AND = {
+<<<<<<< HEAD
 				overlord = { is_original_EQS = yes }
+=======
+				overlord = {
+					is_original_EQS = yes
+					NOT = { has_completed_focus = eqs_new_equestrian_republic }
+				}
+>>>>>>> master
 				NOT = { has_country_flag = is_eqs_puppet }
 			}
 			AND = {
@@ -22,6 +35,7 @@ country_event = {
 			}
 		}
 	}
+<<<<<<< HEAD
 	
 	mean_time_to_happen = {
 		days = 1
@@ -30,6 +44,21 @@ country_event = {
 	immediate = {
 		if = {
 			limit = { overlord = { is_original_EQS = yes } }
+=======
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				overlord = {
+					is_original_EQS = yes
+					NOT = { has_completed_focus = eqs_new_equestrian_republic }
+				}
+			}
+>>>>>>> master
 			clr_country_flag = is_sol_puppet
 			set_country_flag = is_eqs_puppet
 			clr_country_flag = is_nlr_puppet
@@ -54,12 +83,61 @@ country_event = {
 			break = yes
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+
 	option = {
 	}
 }
 
 country_event = {
+	id = equestriancolony.2
+	immediate = {log = "[Root.GetName]: event equestriancolony.2"}#Auto-logging
+	hidden = yes
+
+	trigger = {
+		original_tag = EQC
+		OR = {
+			is_subject = no
+			AND = {
+				overlord = {
+					is_original_EQS = yes
+					has_completed_focus = eqs_new_equestrian_republic
+				}
+			}
+		}
+		OR = {
+			has_country_flag = is_sol_puppet
+			has_country_flag = is_eqs_puppet
+			has_country_flag = is_nlr_puppet
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		clr_country_flag = is_sol_puppet
+		clr_country_flag = is_eqs_puppet
+		clr_country_flag = is_nlr_puppet
+
+		if = {
+			limit = {
+				NOT = { has_country_flag = is_maresoc }
+			}
+			drop_cosmetic_tag = yes
+		}
+	}
+
+>>>>>>> master
+	option = {
+	}
+}
+
+country_event = {
+<<<<<<< HEAD
 	id = equestriancolony.2
 	hidden = yes
 	
@@ -86,4 +164,33 @@ country_event = {
 	
 	option = {
 	}
+=======
+	id = equestriancolony.3
+	immediate = {log = "[Root.GetName]: event equestriancolony.3"}#Auto-logging
+	hidden = yes
+
+	trigger = {
+		original_tag = EQC
+		has_country_flag = is_maresoc
+		OR = {
+			NOT = { has_government = communism }
+			is_subject = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		clr_country_flag = is_maresoc
+		if = {
+			limit = { has_cosmetic_tag = EQC_maresoc }
+			drop_cosmetic_tag = yes
+		}
+	}
+
+	option = {
+	}
+>>>>>>> master
 }

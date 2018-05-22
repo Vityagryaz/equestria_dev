@@ -1,6 +1,11 @@
 ﻿add_namespace = stalliongrad
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.0
+=======
+	id = stalliongrad.0
+	immediate = {log = "[Root.GetName]: event stalliongrad.0"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.0.t
 	desc = stalliongrad.0.d
 	picture = GFX_event_stg_red_army
@@ -16,7 +21,12 @@ country_event = {
 	}
 }
 country_event = { ## Introduction
+<<<<<<< HEAD
 	id = stalliongrad.12
+=======
+	id = stalliongrad.12
+	immediate = {log = "[Root.GetName]: event stalliongrad.12"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.12.t
 	desc = stalliongrad.12.d
 	picture = GFX_event_stg_techno_magic
@@ -32,7 +42,12 @@ country_event = { ## Introduction
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.1
+=======
+	id = stalliongrad.1
+	immediate = {log = "[Root.GetName]: event stalliongrad.1"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.1.t
 	desc = stalliongrad.1.d
 	picture = report_event_technical
@@ -58,7 +73,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.2
+=======
+	id = stalliongrad.2
+	immediate = {log = "[Root.GetName]: event stalliongrad.2"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.2.t
 	desc = stalliongrad.2.d
 	picture = GFX_event_stg_pairlament
@@ -94,7 +114,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.3
+=======
+	id = stalliongrad.3
+	immediate = {log = "[Root.GetName]: event stalliongrad.3"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.3.t
 	desc = stalliongrad.3.d
 	picture = report_event_technical
@@ -126,7 +151,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.4
+=======
+	id = stalliongrad.4
+	immediate = {log = "[Root.GetName]: event stalliongrad.4"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.4.t
 	desc = stalliongrad.4.d
 	picture = report_event_technical
@@ -158,7 +188,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.5
+=======
+	id = stalliongrad.5
+	immediate = {log = "[Root.GetName]: event stalliongrad.5"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.5.t
 	desc = stalliongrad.5.d
 	picture = report_event_technical
@@ -201,7 +236,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.6
+=======
+	id = stalliongrad.6
+	immediate = {log = "[Root.GetName]: event stalliongrad.6"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.6.t
 	desc = stalliongrad.6.d
 	picture = report_event_technical
@@ -228,7 +268,12 @@ country_event = {
 }
 
 country_event = { ## BAL objection
+<<<<<<< HEAD
 	id = stalliongrad.8
+=======
+	id = stalliongrad.8
+	immediate = {log = "[Root.GetName]: event stalliongrad.8"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.8.t
 	desc = stalliongrad.8.d
 	picture = report_event_technical
@@ -247,7 +292,12 @@ country_event = { ## BAL objection
 	}
 }
 country_event = { ## BAL objection
+<<<<<<< HEAD
 	id = stalliongrad.9
+=======
+	id = stalliongrad.9
+	immediate = {log = "[Root.GetName]: event stalliongrad.9"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.9.t
 	desc = stalliongrad.9.d
 	picture = report_event_technical
@@ -260,7 +310,12 @@ country_event = { ## BAL objection
 }
 
 country_event = { ## BAL help
+<<<<<<< HEAD
 	id = stalliongrad.10
+=======
+	id = stalliongrad.10
+	immediate = {log = "[Root.GetName]: event stalliongrad.10"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.10.t
 	desc = stalliongrad.10.d
 	picture = report_event_technical
@@ -279,7 +334,12 @@ country_event = { ## BAL help
 	}
 }
 country_event = { ## BAL help against NLR
+<<<<<<< HEAD
 	id = stalliongrad.11
+=======
+	id = stalliongrad.11
+	immediate = {log = "[Root.GetName]: event stalliongrad.11"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.11.t
 	desc = stalliongrad.11.d
 	picture = report_event_technical
@@ -300,7 +360,12 @@ country_event = { ## BAL help against NLR
 #### Actual STG events #######
 
 country_event = { ## Party problems
+<<<<<<< HEAD
 	id = stalliongrad.13
+=======
+	id = stalliongrad.13
+	immediate = {log = "[Root.GetName]: event stalliongrad.13"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.13.t
 	desc = stalliongrad.13.d
 	picture = GFX_event_stg_oldgroup
@@ -316,7 +381,12 @@ country_event = { ## Party problems
 	}
 }
 country_event = { ## Palace
+<<<<<<< HEAD
 	id = stalliongrad.14
+=======
+	id = stalliongrad.14
+	immediate = {log = "[Root.GetName]: event stalliongrad.14"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.14.t
 	desc = stalliongrad.14.d
 	picture = GFX_event_stalliongrad_tower
@@ -334,7 +404,12 @@ country_event = { ## Palace
 }
 
 country_event = { ## Complete Polya Choose
+<<<<<<< HEAD
 	id = stalliongrad.15
+=======
+	id = stalliongrad.15
+	immediate = {log = "[Root.GetName]: event stalliongrad.15"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.15.t
 	desc = stalliongrad.15.d
 	picture = GFX_event_stg_pairlament
@@ -352,7 +427,12 @@ country_event = { ## Complete Polya Choose
 	}
 }
 country_event = { ## Complete Vasya Choose
+<<<<<<< HEAD
 	id = stalliongrad.16
+=======
+	id = stalliongrad.16
+	immediate = {log = "[Root.GetName]: event stalliongrad.16"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.16.t
 	desc = stalliongrad.16.d
 	picture = GFX_event_stg_pairlament2
@@ -370,7 +450,12 @@ country_event = { ## Complete Vasya Choose
 	}
 }
 country_event = { ## Mixed Focus Chosen
+<<<<<<< HEAD
 	id = stalliongrad.17
+=======
+	id = stalliongrad.17
+	immediate = {log = "[Root.GetName]: event stalliongrad.17"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.17.t
 	desc = stalliongrad.17.d
 	picture = GFX_event_stg_pairlament2
@@ -391,7 +476,12 @@ country_event = { ## Mixed Focus Chosen
 	}
 }
 country_event = { ## Mixed Focus Chosen #2
+<<<<<<< HEAD
 	id = stalliongrad.18
+=======
+	id = stalliongrad.18
+	immediate = {log = "[Root.GetName]: event stalliongrad.18"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.18.t
 	desc = stalliongrad.18.d
 	picture = GFX_event_stg_pairlament2
@@ -412,7 +502,12 @@ country_event = { ## Mixed Focus Chosen #2
 	}
 }
 country_event = { ## Поля
+<<<<<<< HEAD
 	id = stalliongrad.19
+=======
+	id = stalliongrad.19
+	immediate = {log = "[Root.GetName]: event stalliongrad.19"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.19.t
 	desc = stalliongrad.19.d
 	picture = GFX_event_stg_pairlament2
@@ -424,7 +519,12 @@ country_event = { ## Поля
 	}
 }
 country_event = { ## Поля 2
+<<<<<<< HEAD
 	id = stalliongrad.20
+=======
+	id = stalliongrad.20
+	immediate = {log = "[Root.GetName]: event stalliongrad.20"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.20.t
 	desc = stalliongrad.20.d
 	picture = GFX_event_stg_pairlament2
@@ -442,7 +542,12 @@ country_event = { ## Поля 2
 	}
 }
 country_event = { ## Вася
+<<<<<<< HEAD
 	id = stalliongrad.21
+=======
+	id = stalliongrad.21
+	immediate = {log = "[Root.GetName]: event stalliongrad.21"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.21.t
 	desc = stalliongrad.21.d
 	picture = GFX_event_stg_pairlament2
@@ -460,7 +565,12 @@ country_event = { ## Вася
 	}
 }
 country_event = { ## Компромисс
+<<<<<<< HEAD
 	id = stalliongrad.22
+=======
+	id = stalliongrad.22
+	immediate = {log = "[Root.GetName]: event stalliongrad.22"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.22.t
 	desc = stalliongrad.22.d
 	picture = GFX_event_autumn
@@ -476,7 +586,12 @@ country_event = { ## Компромисс
 	}
 }
 country_event = { ## Выборы - Вася
+<<<<<<< HEAD
 	id = stalliongrad.23
+=======
+	id = stalliongrad.23
+	immediate = {log = "[Root.GetName]: event stalliongrad.23"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.23.t
 	desc = stalliongrad.23.d
 	picture = GFX_event_stg_pairlament
@@ -490,7 +605,12 @@ country_event = { ## Выборы - Вася
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.24
+=======
+	id = stalliongrad.24
+	immediate = {log = "[Root.GetName]: event stalliongrad.24"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.24.t
 	desc = stalliongrad.24.d
 	picture = GFX_event_stg_pairlament2
@@ -507,7 +627,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.25
+=======
+	id = stalliongrad.25
+	immediate = {log = "[Root.GetName]: event stalliongrad.25"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.25.t
 	desc = stalliongrad.25.d
 	picture = GFX_event_stg_pairlament2
@@ -519,7 +644,12 @@ country_event = {
 	}
 }
 country_event = { ## Вася Government
+<<<<<<< HEAD
 	id = stalliongrad.26
+=======
+	id = stalliongrad.26
+	immediate = {log = "[Root.GetName]: event stalliongrad.26"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.26.t
 	desc = stalliongrad.26.d
 	picture = GFX_event_stg_pairlament2
@@ -547,7 +677,12 @@ country_event = { ## Вася Government
 	}
 }
 country_event = { ## Выборы - Sinister Introduction
+<<<<<<< HEAD
 	id = stalliongrad.27
+=======
+	id = stalliongrad.27
+	immediate = {log = "[Root.GetName]: event stalliongrad.27"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.27.t
 	desc = stalliongrad.27.d
 	picture = GFX_event_sinister_stg
@@ -569,7 +704,12 @@ country_event = { ## Выборы - Sinister Introduction
 	}
 }
 country_event = { ## Выборы - Vasya Introduction
+<<<<<<< HEAD
 	id = stalliongrad.28
+=======
+	id = stalliongrad.28
+	immediate = {log = "[Root.GetName]: event stalliongrad.28"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.28.t
 	desc = stalliongrad.28.d
 	picture = GFX_event_vasya_stg
@@ -591,7 +731,12 @@ country_event = { ## Выборы - Vasya Introduction
 	}
 }
 country_event = { ## Выборы - Dark Wing Introduction
+<<<<<<< HEAD
 	id = stalliongrad.29
+=======
+	id = stalliongrad.29
+	immediate = {log = "[Root.GetName]: event stalliongrad.29"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.29.t
 	desc = stalliongrad.29.d
 	picture = GFX_event_darkwing_stg
@@ -610,7 +755,12 @@ country_event = { ## Выборы - Dark Wing Introduction
 	}
 }
 country_event = { ## Выборы - Только старые админы кекерино
+<<<<<<< HEAD
 	id = stalliongrad.30
+=======
+	id = stalliongrad.30
+	immediate = {log = "[Root.GetName]: event stalliongrad.30"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.30.t
 	desc = stalliongrad.30.d
 	picture = GFX_event_stg_pairlament2
@@ -676,7 +826,12 @@ country_event = { ## Выборы - Только старые админы ке�
 	}
 }
 country_event = { ## Выборы - Compromise Path Elections
+<<<<<<< HEAD
 	id = stalliongrad.31
+=======
+	id = stalliongrad.31
+	immediate = {log = "[Root.GetName]: event stalliongrad.31"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.31.t
 	desc = stalliongrad.31.d
 	picture = GFX_event_stg_pairlament2
@@ -765,7 +920,12 @@ country_event = { ## Выборы - Compromise Path Elections
 	}
 }
 country_event = { ## Поля уходит
+<<<<<<< HEAD
 	id = stalliongrad.32
+=======
+	id = stalliongrad.32
+	immediate = {log = "[Root.GetName]: event stalliongrad.32"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.32.t
 	desc = stalliongrad.32.d
 	picture = GFX_event_altidiya_retires
@@ -818,7 +978,12 @@ country_event = { ## Поля уходит
 	}
 }
 country_event = { ## Начало выборов после ухода Польки в Компромиссе
+<<<<<<< HEAD
 	id = stalliongrad.34
+=======
+	id = stalliongrad.34
+	immediate = {log = "[Root.GetName]: event stalliongrad.34"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.34.t
 	desc = stalliongrad.34.d
 	picture = GFX_event_stg_pairlament
@@ -840,7 +1005,12 @@ country_event = { ## Начало выборов после ухода Поль�
 	}
 }
 country_event = { ## 10 условий
+<<<<<<< HEAD
 	id = stalliongrad.35
+=======
+	id = stalliongrad.35
+	immediate = {log = "[Root.GetName]: event stalliongrad.35"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.35.t
 	desc = stalliongrad.35.d
 	picture = GFX_event_stg_pairlament2
@@ -872,7 +1042,12 @@ country_event = { ## 10 условий
 	}
 }
 country_event = { ## DarkWing takes power
+<<<<<<< HEAD
 	id = stalliongrad.36
+=======
+	id = stalliongrad.36
+	immediate = {log = "[Root.GetName]: event stalliongrad.36"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.36.t
 	desc = stalliongrad.36.d
 	picture = GFX_event_stg_pairlament2
@@ -903,7 +1078,12 @@ country_event = { ## DarkWing takes power
 	}
 }
 country_event = { ## DarkWing takes power in Polya Root
+<<<<<<< HEAD
 	id = stalliongrad.37
+=======
+	id = stalliongrad.37
+	immediate = {log = "[Root.GetName]: event stalliongrad.37"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.37.t
 	desc = stalliongrad.37.d
 	picture = GFX_event_darkwing_stg
@@ -934,7 +1114,12 @@ country_event = { ## DarkWing takes power in Polya Root
 ####### THAT FUCKER DARKWING PATH ALRIGHT ################################
 #####################################################################
 country_event = { ## Celestial Relations
+<<<<<<< HEAD
 	id = stalliongrad.38
+=======
+	id = stalliongrad.38
+	immediate = {log = "[Root.GetName]: event stalliongrad.38"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.38.t
 	desc = stalliongrad.38.d
 	picture = GFX_event_darkwing_stg
@@ -946,7 +1131,12 @@ country_event = { ## Celestial Relations
 	}
 }
 country_event = { ## Celestial Relations
+<<<<<<< HEAD
 	id = stalliongrad.39
+=======
+	id = stalliongrad.39
+	immediate = {log = "[Root.GetName]: event stalliongrad.39"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.39.t
 	desc = stalliongrad.39.d
 	picture = GFX_event_darkwing_stg
@@ -960,7 +1150,12 @@ country_event = { ## Celestial Relations
 	}
 }
 country_event = { ## Celestial Relations
+<<<<<<< HEAD
 	id = stalliongrad.40
+=======
+	id = stalliongrad.40
+	immediate = {log = "[Root.GetName]: event stalliongrad.40"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.40.t
 	desc = stalliongrad.40.d
 	picture = GFX_event_darkwing_stg
@@ -979,7 +1174,12 @@ country_event = { ## Celestial Relations
 	}
 }
 country_event = { ## Celestial Relations
+<<<<<<< HEAD
 	id = stalliongrad.41
+=======
+	id = stalliongrad.41
+	immediate = {log = "[Root.GetName]: event stalliongrad.41"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.41.t
 	desc = stalliongrad.41.d
 	picture = GFX_event_darkwing_stg
@@ -996,7 +1196,12 @@ country_event = { ## Celestial Relations
 ############## VASYA PATH AND SOME SHIT ################################
 ## Farmers rebel against regulations
 country_event = { ##
+<<<<<<< HEAD
 	id = stalliongrad.4000
+=======
+	id = stalliongrad.4000
+	immediate = {log = "[Root.GetName]: event stalliongrad.4000"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.4000.t
 	desc = stalliongrad.4000.d
 	picture = GFX_event_our_town
@@ -1010,7 +1215,12 @@ country_event = { ##
 	}
 }
 country_event = { ## Annexation of STL
+<<<<<<< HEAD
 	id = stalliongrad.42
+=======
+	id = stalliongrad.42
+	immediate = {log = "[Root.GetName]: event stalliongrad.42"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.42.t
 	desc = stalliongrad.42.d
 	picture = GFX_event_our_town
@@ -1024,7 +1234,12 @@ country_event = { ## Annexation of STL
 	}
 }
 country_event = { ## Annexation of STL
+<<<<<<< HEAD
 	id = stalliongrad.43
+=======
+	id = stalliongrad.43
+	immediate = {log = "[Root.GetName]: event stalliongrad.43"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.43.t
 	desc = stalliongrad.43.d
 	picture = GFX_event_our_town
@@ -1046,7 +1261,11 @@ country_event = { ## Annexation of STL
 				has_country_flag = vasya_elected
 			}
 		}
+<<<<<<< HEAD
 		add_state_claim = 57
+=======
+		add_state_core = 57
+>>>>>>> master
 	}
 	option = {
 		name = stalliongrad.43.b
@@ -1066,7 +1285,12 @@ country_event = { ## Annexation of STL
 	}
 }
 country_event = { ## Food Problem Vasya
+<<<<<<< HEAD
 	id = stalliongrad.44
+=======
+	id = stalliongrad.44
+	immediate = {log = "[Root.GetName]: event stalliongrad.44"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.44.t
 	desc = stalliongrad.44.d
 	picture = GFX_event_stg_chleb
@@ -1081,7 +1305,12 @@ country_event = { ## Food Problem Vasya
 	}
 }
 country_event = { ## Creation of Socialist Union Faction
+<<<<<<< HEAD
 	id = stalliongrad.45
+=======
+	id = stalliongrad.45
+	immediate = {log = "[Root.GetName]: event stalliongrad.45"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.45.t
 	desc = stalliongrad.45.d
 	picture = GFX_event_stg_pairlament2
@@ -1110,11 +1339,23 @@ country_event = { ## Creation of Socialist Union Faction
 				factor = 100
 				is_historical_focus_on = yes
 			}
+<<<<<<< HEAD
+=======
+			modifier = {
+				factor = 100
+				is_in_faction = yes
+			}
+>>>>>>> master
 		}
 	}
 }
 country_event = { ## Supporting Griffon Communists Vasya Root
+<<<<<<< HEAD
 	id = stalliongrad.46
+=======
+	id = stalliongrad.46
+	immediate = {log = "[Root.GetName]: event stalliongrad.46"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.46.t
 	desc = stalliongrad.46.d
 	picture = GFX_event_stg_pairlament2
@@ -1125,7 +1366,11 @@ country_event = { ## Supporting Griffon Communists Vasya Root
 		name = stalliongrad.46.a
 		add_political_power = 35
 		GRF = {
+<<<<<<< HEAD
 			add_opinion_modifier = { target = STG modifier = hostility }
+=======
+			add_opinion_modifier = { target = ROOT modifier = hostility }
+>>>>>>> master
 			country_event = {
 				id = griffons.5 days = 1
 			}
@@ -1133,7 +1378,12 @@ country_event = { ## Supporting Griffon Communists Vasya Root
 	}
 }
 country_event = { ## Worst Case Plan
+<<<<<<< HEAD
 	id = stalliongrad.47
+=======
+	id = stalliongrad.47
+	immediate = {log = "[Root.GetName]: event stalliongrad.47"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.47.t
 	desc = stalliongrad.47.d
 	picture = GFX_event_stg_pairlament2
@@ -1147,7 +1397,12 @@ country_event = { ## Worst Case Plan
 	}
 }
 country_event = { ## Worst Case Plan #2
+<<<<<<< HEAD
 	id = stalliongrad.48
+=======
+	id = stalliongrad.48
+	immediate = {log = "[Root.GetName]: event stalliongrad.48"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.48.t
 	desc = stalliongrad.48.d
 	picture = GFX_event_stg_pairlament2
@@ -1169,7 +1424,12 @@ country_event = { ## Worst Case Plan #2
 	}
 }
 country_event = { ## Worst Case Plan #3 Puppet
+<<<<<<< HEAD
 	id = stalliongrad.49
+=======
+	id = stalliongrad.49
+	immediate = {log = "[Root.GetName]: event stalliongrad.49"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.49.t
 	desc = stalliongrad.49.d
 	picture = GFX_event_stg_pairlament2
@@ -1182,7 +1442,12 @@ country_event = { ## Worst Case Plan #3 Puppet
 	}
 }
 country_event = { ## Worst Case Plan #4 Wargoal
+<<<<<<< HEAD
 	id = stalliongrad.50
+=======
+	id = stalliongrad.50
+	immediate = {log = "[Root.GetName]: event stalliongrad.50"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.50.t
 	desc = stalliongrad.50.d
 	picture = GFX_event_stg_pairlament2
@@ -1202,7 +1467,12 @@ country_event = { ## Worst Case Plan #4 Wargoal
 	}
 }
 country_event = { ## Indirect Support
+<<<<<<< HEAD
 	id = stalliongrad.51
+=======
+	id = stalliongrad.51
+	immediate = {log = "[Root.GetName]: event stalliongrad.51"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.51.t
 	desc = stalliongrad.51.d
 	picture = GFX_event_stg_pairlament2
@@ -1226,7 +1496,12 @@ country_event = { ## Indirect Support
 	}
 }
 country_event = { ## Communism in GRF
+<<<<<<< HEAD
 	id = stalliongrad.5111
+=======
+	id = stalliongrad.5111
+	immediate = {log = "[Root.GetName]: event stalliongrad.5111"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.5111.t
 	desc = stalliongrad.5111.d
 	picture = GFX_event_stg_pairlament2
@@ -1243,7 +1518,12 @@ country_event = { ## Communism in GRF
 #### Revolution in Equestria ####
 ##############################
 country_event = { ## Support the party
+<<<<<<< HEAD
 	id = stalliongrad.52
+=======
+	id = stalliongrad.52
+	immediate = {log = "[Root.GetName]: event stalliongrad.52"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.52.t
 	desc = stalliongrad.52.d
 	picture = GFX_event_stg_pairlament2
@@ -1259,7 +1539,12 @@ country_event = { ## Support the party
 	}
 }
 country_event = { ## Activists
+<<<<<<< HEAD
 	id = stalliongrad.53
+=======
+	id = stalliongrad.53
+	immediate = {log = "[Root.GetName]: event stalliongrad.53"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.53.t
 	desc = stalliongrad.53.d
 	picture = GFX_event_stg_pairlament2
@@ -1274,7 +1559,12 @@ country_event = { ## Activists
 	}
 }
 country_event = { ## Civil War Help
+<<<<<<< HEAD
 	id = stalliongrad.54
+=======
+	id = stalliongrad.54
+	immediate = {log = "[Root.GetName]: event stalliongrad.54"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.54.t
 	desc = stalliongrad.54.d
 	picture = GFX_event_stg_pairlament2
@@ -1311,7 +1601,12 @@ country_event = { ## Civil War Help
 	}
 }
 country_event = { ## Civil War Help { Event for Equestria Triggered Above }
+<<<<<<< HEAD
 	id = stalliongrad.55
+=======
+	id = stalliongrad.55
+	immediate = {log = "[Root.GetName]: event stalliongrad.55"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.55.t
 	desc = stalliongrad.55.d
 	picture = GFX_event_stg_pairlament2
@@ -1353,7 +1648,12 @@ country_event = { ## Civil War Help { Event for Equestria Triggered Above }
 	}
 }
 country_event = { ## Civil War Help { Event for Equestria Triggered Above }
+<<<<<<< HEAD
 	id = stalliongrad.56
+=======
+	id = stalliongrad.56
+	immediate = {log = "[Root.GetName]: event stalliongrad.56"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.56.t
 	desc = stalliongrad.56.d
 	picture = GFX_event_stg_pairlament2
@@ -1366,7 +1666,12 @@ country_event = { ## Civil War Help { Event for Equestria Triggered Above }
 	}
 }
 country_event = { ## Civil War Help Coming from EQS
+<<<<<<< HEAD
 	id = stalliongrad.57
+=======
+	id = stalliongrad.57
+	immediate = {log = "[Root.GetName]: event stalliongrad.57"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.57.t
 	desc = stalliongrad.57.d
 	picture = GFX_event_stg_pairlament2
@@ -1379,7 +1684,12 @@ country_event = { ## Civil War Help Coming from EQS
 	}
 }
 country_event = { ## Union with EQS after EQS won the CivilWAr
+<<<<<<< HEAD
 	id = stalliongrad.58
+=======
+	id = stalliongrad.58
+	immediate = {log = "[Root.GetName]: event stalliongrad.58"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.58.t
 	desc = stalliongrad.58.d
 	picture = GFX_event_stg_pairlament2
@@ -1406,7 +1716,12 @@ country_event = { ## Union with EQS after EQS won the CivilWAr
 	}
 }
 country_event = { ## Union with EQS after EQS won the CivilWAr
+<<<<<<< HEAD
 	id = stalliongrad.59
+=======
+	id = stalliongrad.59
+	immediate = {log = "[Root.GetName]: event stalliongrad.59"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.59.t
 	desc = stalliongrad.59.d
 	picture = GFX_event_stg_pairlament2
@@ -1433,7 +1748,12 @@ country_event = { ## Union with EQS after EQS won the CivilWAr
 	}
 }
 country_event = { ## Union with EQS after EQS won the CivilWAr
+<<<<<<< HEAD
 	id = stalliongrad.60
+=======
+	id = stalliongrad.60
+	immediate = {log = "[Root.GetName]: event stalliongrad.60"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.60.t
 	desc = stalliongrad.60.d
 	picture = GFX_event_stg_pairlament2
@@ -1456,7 +1776,12 @@ country_event = { ## Union with EQS after EQS won the CivilWAr
 }
 
 country_event = { ## Union with EQS with Chaning Tags to EQS
+<<<<<<< HEAD
 	id = stalliongrad.61
+=======
+	id = stalliongrad.61
+	immediate = {log = "[Root.GetName]: event stalliongrad.61"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.61.t
 	desc = stalliongrad.61.d
 	picture = GFX_event_stg_pairlament2
@@ -1474,7 +1799,12 @@ country_event = { ## Union with EQS with Chaning Tags to EQS
 	}
 }
 country_event = { ## Union with CRY
+<<<<<<< HEAD
 	id = stalliongrad.62
+=======
+	id = stalliongrad.62
+	immediate = {log = "[Root.GetName]: event stalliongrad.62"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.62.t
 	desc = stalliongrad.62.d
 	picture = GFX_event_stg_pairlament2
@@ -1489,7 +1819,12 @@ country_event = { ## Union with CRY
 	}
 }
 country_event = { ## Union with CRY
+<<<<<<< HEAD
 	id = stalliongrad.63
+=======
+	id = stalliongrad.63
+	immediate = {log = "[Root.GetName]: event stalliongrad.63"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.63.t
 	desc = stalliongrad.63.d
 	picture = GFX_event_stg_pairlament2
@@ -1511,7 +1846,12 @@ country_event = { ## Union with CRY
 	}
 }
 country_event = { ## Union with EQS after EQS won the CivilWAr Refused
+<<<<<<< HEAD
 	id = stalliongrad.64
+=======
+	id = stalliongrad.64
+	immediate = {log = "[Root.GetName]: event stalliongrad.64"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.64.t
 	desc = stalliongrad.64.d
 	picture = GFX_event_stg_pairlament2
@@ -1526,7 +1866,12 @@ country_event = { ## Union with EQS after EQS won the CivilWAr Refused
 ####### CULTURAL REVOLUTION ###############################
 ###########################################################
 country_event = { ## Pioneer Movement Support
+<<<<<<< HEAD
 	id = stalliongrad.65
+=======
+	id = stalliongrad.65
+	immediate = {log = "[Root.GetName]: event stalliongrad.65"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.65.t
 	desc = stalliongrad.65.d
 	picture = GFX_event_pioneer_derpy
@@ -1539,7 +1884,12 @@ country_event = { ## Pioneer Movement Support
 	}
 }
 country_event = { ## Culture Fest
+<<<<<<< HEAD
 	id = stalliongrad.66
+=======
+	id = stalliongrad.66
+	immediate = {log = "[Root.GetName]: event stalliongrad.66"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.66.t
 	desc = stalliongrad.66.d
 	picture = GFX_event_stg_pioneers
@@ -1552,7 +1902,12 @@ country_event = { ## Culture Fest
 	}
 }
 country_event = { ## Organization of Clubs
+<<<<<<< HEAD
 	id = stalliongrad.67
+=======
+	id = stalliongrad.67
+	immediate = {log = "[Root.GetName]: event stalliongrad.67"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.67.t
 	desc = stalliongrad.67.d
 	picture = GFX_event_education_or_smth
@@ -1566,7 +1921,12 @@ country_event = { ## Organization of Clubs
 	}
 }
 country_event = { ## Militarized Schools
+<<<<<<< HEAD
 	id = stalliongrad.68
+=======
+	id = stalliongrad.68
+	immediate = {log = "[Root.GetName]: event stalliongrad.68"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.68.t
 	desc = stalliongrad.68.d
 	picture = GFX_event_pioneers
@@ -1579,7 +1939,12 @@ country_event = { ## Militarized Schools
 	}
 }
 country_event = { ## Day of Knowledge
+<<<<<<< HEAD
 	id = stalliongrad.69
+=======
+	id = stalliongrad.69
+	immediate = {log = "[Root.GetName]: event stalliongrad.69"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.69.t
 	desc = stalliongrad.69.d
 	picture = GFX_event_pioneer_girl
@@ -1594,7 +1959,12 @@ country_event = { ## Day of Knowledge
 
 ############ CLAIM CORES AFTER The War ENDED  ###########
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.70
+=======
+	id = stalliongrad.70
+	immediate = {log = "[Root.GetName]: event stalliongrad.70"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.70.t
 	desc = stalliongrad.70.d
 	picture = GFX_event_stg_pioneers
@@ -1609,7 +1979,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.71
+=======
+	id = stalliongrad.71
+	immediate = {log = "[Root.GetName]: event stalliongrad.71"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.71.t
 	desc = stalliongrad.71.d
 	picture = GFX_event_stg
@@ -1626,7 +2001,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.72
+=======
+	id = stalliongrad.72
+	immediate = {log = "[Root.GetName]: event stalliongrad.72"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.72.t
 	desc = stalliongrad.72.d
 	picture = GFX_event_stg
@@ -1683,7 +2063,12 @@ country_event = {
 	}
 }
 country_event = {  ## Revolt in Yakistan
+<<<<<<< HEAD
 	id = stalliongrad.73
+=======
+	id = stalliongrad.73
+	immediate = {log = "[Root.GetName]: event stalliongrad.73"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.73.t
 	desc = stalliongrad.73.d
 	picture = GFX_event_stg
@@ -1703,7 +2088,12 @@ country_event = {  ## Revolt in Yakistan
 	}
 }
 country_event = {  ## Revolt in Yakistan
+<<<<<<< HEAD
 	id = stalliongrad.74
+=======
+	id = stalliongrad.74
+	immediate = {log = "[Root.GetName]: event stalliongrad.74"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.74.t
 	desc = stalliongrad.74.d
 	picture = GFX_event_stg
@@ -1717,7 +2107,12 @@ country_event = {  ## Revolt in Yakistan
 	}
 }
 country_event = {  ## Stalliongrad offers help to Equestria against Changelings
+<<<<<<< HEAD
 	id = stalliongrad.75
+=======
+	id = stalliongrad.75
+	immediate = {log = "[Root.GetName]: event stalliongrad.75"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.75.t
 	desc = stalliongrad.75.d
 	picture = GFX_event_stg
@@ -1733,7 +2128,12 @@ country_event = {  ## Stalliongrad offers help to Equestria against Changelings
 	}
 }
 country_event = {  ## Sinnie Focus Events: Strike Griffons
+<<<<<<< HEAD
 	id = stalliongrad.76
+=======
+	id = stalliongrad.76
+	immediate = {log = "[Root.GetName]: event stalliongrad.76"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.76.t
 	desc = stalliongrad.76.d
 	picture = GFX_event_stg
@@ -1756,7 +2156,12 @@ country_event = {  ## Sinnie Focus Events: Strike Griffons
 	}
 }
 country_event = {  ## Sinnie Focus Events: Strike Griffons
+<<<<<<< HEAD
 	id = stalliongrad.77
+=======
+	id = stalliongrad.77
+	immediate = {log = "[Root.GetName]: event stalliongrad.77"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.77.t
 	desc = stalliongrad.77.d
 	picture = GFX_event_stg
@@ -1771,7 +2176,12 @@ country_event = {  ## Sinnie Focus Events: Strike Griffons
 	}
 }
 country_event = {  ## Sinnie Focus Events: Strike Griffons
+<<<<<<< HEAD
 	id = stalliongrad.78
+=======
+	id = stalliongrad.78
+	immediate = {log = "[Root.GetName]: event stalliongrad.78"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.78.t
 	desc = stalliongrad.78.d
 	picture = GFX_event_stg
@@ -1800,7 +2210,12 @@ country_event = {  ## Sinnie Focus Events: Strike Griffons
 	}
 }
 country_event = {  ## Sinnie Focus Annex Equestria
+<<<<<<< HEAD
 	id = stalliongrad.79
+=======
+	id = stalliongrad.79
+	immediate = {log = "[Root.GetName]: event stalliongrad.79"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.79.t
 	desc = stalliongrad.79.d
 	picture = GFX_event_stg
@@ -1828,7 +2243,12 @@ country_event = {  ## Sinnie Focus Annex Equestria
 	}
 }
 country_event = { ## Universities and Colleges
+<<<<<<< HEAD
 	id = stalliongrad.80
+=======
+	id = stalliongrad.80
+	immediate = {log = "[Root.GetName]: event stalliongrad.80"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.80.t
 	desc = stalliongrad.80.d
 	picture = GFX_event_unicorn_worker
@@ -1854,7 +2274,12 @@ country_event = { ## Universities and Colleges
 #### Food Shortages Going Away ###################
 #####################################
 country_event = { ## Food Problem Vasya
+<<<<<<< HEAD
 	id = stalliongrad.81
+=======
+	id = stalliongrad.81
+	immediate = {log = "[Root.GetName]: event stalliongrad.81"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.81.t
 	desc = stalliongrad.81.d
 	picture = GFX_event_stg_chleb
@@ -1872,7 +2297,12 @@ country_event = { ## Food Problem Vasya
 	}
 }
 country_event = { ## Food Problem Vasya
+<<<<<<< HEAD
 	id = stalliongrad.82
+=======
+	id = stalliongrad.82
+	immediate = {log = "[Root.GetName]: event stalliongrad.82"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.82.t
 	desc = stalliongrad.82.d
 	picture = GFX_event_stg_chleb
@@ -1892,7 +2322,12 @@ country_event = { ## Food Problem Vasya
 	}
 }
 country_event = { ## Kulaks
+<<<<<<< HEAD
 	id = stalliongrad.8222
+=======
+	id = stalliongrad.8222
+	immediate = {log = "[Root.GetName]: event stalliongrad.8222"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.8222.t
 	desc = stalliongrad.8222.d
 	picture = GFX_event_stg_chleb
@@ -1918,7 +2353,12 @@ country_event = { ## Kulaks
 	}
 }
 country_event = { ## Food Problem Vasya
+<<<<<<< HEAD
 	id = stalliongrad.83
+=======
+	id = stalliongrad.83
+	immediate = {log = "[Root.GetName]: event stalliongrad.83"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.83.t
 	desc = stalliongrad.83.d
 	picture = GFX_event_stg_chleb
@@ -1937,7 +2377,12 @@ country_event = { ## Food Problem Vasya
 	}
 }
 country_event = { ## Food Problem Vasya
+<<<<<<< HEAD
 	id = stalliongrad.84
+=======
+	id = stalliongrad.84
+	immediate = {log = "[Root.GetName]: event stalliongrad.84"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.84.t
 	desc = stalliongrad.84.d
 	picture = GFX_event_stg_chleb
@@ -1955,7 +2400,12 @@ country_event = { ## Food Problem Vasya
 	}
 }
 country_event = { ## Food Problem Vasya
+<<<<<<< HEAD
 	id = stalliongrad.8444
+=======
+	id = stalliongrad.8444
+	immediate = {log = "[Root.GetName]: event stalliongrad.8444"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.8444.t
 	desc = stalliongrad.8444.d
 	picture = GFX_event_stg_chleb
@@ -1973,7 +2423,12 @@ country_event = { ## Food Problem Vasya
 	}
 }
 country_event = { ## Food Problem Vasya
+<<<<<<< HEAD
 	id = stalliongrad.85
+=======
+	id = stalliongrad.85
+	immediate = {log = "[Root.GetName]: event stalliongrad.85"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.85.t
 	desc = stalliongrad.85.d
 	picture = GFX_event_stg_future_poster
@@ -1994,7 +2449,12 @@ country_event = { ## Food Problem Vasya
 	}
 }
 country_event = { ## Food Problem Sinnie
+<<<<<<< HEAD
 	id = stalliongrad.86
+=======
+	id = stalliongrad.86
+	immediate = {log = "[Root.GetName]: event stalliongrad.86"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.86.t
 	desc = stalliongrad.86.d
 	picture = GFX_event_gardening
@@ -2013,7 +2473,12 @@ country_event = { ## Food Problem Sinnie
 	}
 }
 country_event = { ## Food Problem Sinnie
+<<<<<<< HEAD
 	id = stalliongrad.87
+=======
+	id = stalliongrad.87
+	immediate = {log = "[Root.GetName]: event stalliongrad.87"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.87.t
 	desc = stalliongrad.87.d
 	picture = GFX_event_gardening
@@ -2037,7 +2502,12 @@ country_event = { ## Food Problem Sinnie
 	}
 }
 country_event = { ## Food removal Sinnie
+<<<<<<< HEAD
 	id = stalliongrad.88
+=======
+	id = stalliongrad.88
+	immediate = {log = "[Root.GetName]: event stalliongrad.88"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.88.t
 	desc = stalliongrad.88.d
 	picture = GFX_event_gardening
@@ -2055,7 +2525,12 @@ country_event = { ## Food removal Sinnie
 	}
 }
 country_event = { ## Food removal Sinnie
+<<<<<<< HEAD
 	id = stalliongrad.89
+=======
+	id = stalliongrad.89
+	immediate = {log = "[Root.GetName]: event stalliongrad.89"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.89.t
 	desc = stalliongrad.89.d
 	picture = GFX_event_gardening
@@ -2073,7 +2548,12 @@ country_event = { ## Food removal Sinnie
 	}
 }
 country_event = { ## Food removal Sinnie
+<<<<<<< HEAD
 	id = stalliongrad.90
+=======
+	id = stalliongrad.90
+	immediate = {log = "[Root.GetName]: event stalliongrad.90"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.90.t
 	desc = stalliongrad.90.d
 	picture = GFX_event_gardening
@@ -2090,7 +2570,12 @@ country_event = { ## Food removal Sinnie
 	}
 }
 country_event = { ## Food removal Sinnie
+<<<<<<< HEAD
 	id = stalliongrad.91
+=======
+	id = stalliongrad.91
+	immediate = {log = "[Root.GetName]: event stalliongrad.91"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.91.t
 	desc = stalliongrad.91.d
 	picture = GFX_event_gardening
@@ -2111,7 +2596,12 @@ country_event = { ## Food removal Sinnie
 ############# THE PALACE IS BUILT AT LAST #######################
 ###############################################################
 country_event = { ## Palace
+<<<<<<< HEAD
 	id = stalliongrad.92
+=======
+	id = stalliongrad.92
+	immediate = {log = "[Root.GetName]: event stalliongrad.92"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.92.t
 	desc = stalliongrad.92.d
 	picture = GFX_event_stalliongrad_tower
@@ -2129,7 +2619,12 @@ country_event = { ## Palace
 	}
 }
 country_event = { ## Civil War
+<<<<<<< HEAD
 	id = stalliongrad.93
+=======
+	id = stalliongrad.93
+	immediate = {log = "[Root.GetName]: event stalliongrad.93"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.93.t
 	desc = stalliongrad.93.d
 	picture = GFX_event_stalliongrad_tower
@@ -2152,7 +2647,12 @@ country_event = { ## Civil War
 	}
 }
 country_event = { ## Polya is old
+<<<<<<< HEAD
 	id = stalliongrad.94
+=======
+	id = stalliongrad.94
+	immediate = {log = "[Root.GetName]: event stalliongrad.94"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.94.t
 	desc = stalliongrad.94.d
 	picture = GFX_event_altidiya_retires
@@ -2183,7 +2683,12 @@ country_event = { ## Polya is old
 	}
 }
 country_event = { ## Darwking Hunger continues
+<<<<<<< HEAD
 	id = stalliongrad.95
+=======
+	id = stalliongrad.95
+	immediate = {log = "[Root.GetName]: event stalliongrad.95"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.95.t
 	desc = stalliongrad.95.d
 	picture = GFX_event_stg_pairlament2
@@ -2195,7 +2700,12 @@ country_event = { ## Darwking Hunger continues
 	}
 }
 country_event = { ## Griffon Intervention
+<<<<<<< HEAD
 	id = stalliongrad.96
+=======
+	id = stalliongrad.96
+	immediate = {log = "[Root.GetName]: event stalliongrad.96"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.96.t
 	desc = stalliongrad.96.d
 	picture = GFX_event_stg_pairlament2
@@ -2229,7 +2739,12 @@ country_event = { ## Griffon Intervention
 	}
 }
 country_event = { ## Rename Konzan to Sinistergrad
+<<<<<<< HEAD
 	id = stalliongrad.97
+=======
+	id = stalliongrad.97
+	immediate = {log = "[Root.GetName]: event stalliongrad.97"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.97.t
 	desc = stalliongrad.97.d
 	picture = GFX_event_stg_pairlament2
@@ -2244,7 +2759,12 @@ country_event = { ## Rename Konzan to Sinistergrad
 	}
 }
 country_event = { ## Cosmetic Tag STG
+<<<<<<< HEAD
 	id = stalliongrad.98
+=======
+	id = stalliongrad.98
+	immediate = {log = "[Root.GetName]: event stalliongrad.98"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.98.t
 	desc = stalliongrad.98.d
 	picture = GFX_event_stg_pairlament2
@@ -2261,6 +2781,10 @@ country_event = { ## Cosmetic Tag STG
 		add_political_power = -300
 		set_cosmetic_tag = STG_CHN
 		set_country_flag = is_changeling_puppet
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 		hidden_effect = {
 			retire_country_leader = yes
 			create_country_leader = {
@@ -2270,11 +2794,20 @@ country_event = { ## Cosmetic Tag STG
 				expire = "1965.1.1"
 				ideology = nazism
 			}
+<<<<<<< HEAD
+=======
+			load_focus_tree = generic_focus
+>>>>>>> master
 		}
 	}
 }
 country_event = { ## Sombra offers alliance
+<<<<<<< HEAD
 	id = stalliongrad.99
+=======
+	id = stalliongrad.99
+	immediate = {log = "[Root.GetName]: event stalliongrad.99"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.99.t
 	desc = stalliongrad.99.d
 	picture = GFX_event_stg_pairlament2
@@ -2301,7 +2834,12 @@ country_event = { ## Sombra offers alliance
 	}
 }
 country_event = { ## Communist Crystal Empire offers alliance
+<<<<<<< HEAD
 	id = stalliongrad.100
+=======
+	id = stalliongrad.100
+	immediate = {log = "[Root.GetName]: event stalliongrad.100"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.100.t
 	desc = stalliongrad.100.d
 	picture = GFX_event_stg_pairlament2
@@ -2337,7 +2875,12 @@ country_event = { ## Communist Crystal Empire offers alliance
 	}
 }
 country_event = { ## Communist Crystal Empire research center
+<<<<<<< HEAD
 	id = stalliongrad.101
+=======
+	id = stalliongrad.101
+	immediate = {log = "[Root.GetName]: event stalliongrad.101"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.101.t
 	desc = stalliongrad.101.d
 	picture = GFX_event_stg_pairlament2
@@ -2349,7 +2892,12 @@ country_event = { ## Communist Crystal Empire research center
 	}
 }
 country_event = { ## Communist Crystal Empire research center
+<<<<<<< HEAD
 	id = stalliongrad.102
+=======
+	id = stalliongrad.102
+	immediate = {log = "[Root.GetName]: event stalliongrad.102"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.102.t
 	desc = stalliongrad.102.d
 	picture = GFX_event_stg_pairlament2
@@ -2367,7 +2915,12 @@ country_event = { ## Communist Crystal Empire research center
 	}
 }
 country_event = { ## Take STG cores
+<<<<<<< HEAD
 	id = stalliongrad.103
+=======
+	id = stalliongrad.103
+	immediate = {log = "[Root.GetName]: event stalliongrad.103"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.103.t
 	desc = stalliongrad.103.d
 	picture = GFX_event_stg_pairlament2
@@ -2400,7 +2953,12 @@ country_event = { ## Take STG cores
 	}
 }
 country_event = { ## STL asks of help, industry
+<<<<<<< HEAD
 	id = stalliongrad.104
+=======
+	id = stalliongrad.104
+	immediate = {log = "[Root.GetName]: event stalliongrad.104"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.104.t
 	desc = stalliongrad.104.d
 	picture = GFX_event_stg_pairlament2
@@ -2436,7 +2994,12 @@ country_event = { ## STL asks of help, industry
 	}
 }
 country_event = { ## STL asks of help, military
+<<<<<<< HEAD
 	id = stalliongrad.105
+=======
+	id = stalliongrad.105
+	immediate = {log = "[Root.GetName]: event stalliongrad.105"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.105.t
 	desc = stalliongrad.105.d
 	picture = GFX_event_stg_pairlament2
@@ -2475,7 +3038,12 @@ country_event = { ## STL asks of help, military
 
 ## DARKWING ASSASINATES VASYA AND SINISTER ###
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.106
+=======
+	id = stalliongrad.106
+	immediate = {log = "[Root.GetName]: event stalliongrad.106"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.106.t
 	desc = stalliongrad.106.d
 	picture = GFX_event_stg_pairlament2
@@ -2560,7 +3128,12 @@ country_event = {
 
 #### NESTOR REVOLT ###
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.109
+=======
+	id = stalliongrad.109
+	immediate = {log = "[Root.GetName]: event stalliongrad.109"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.109.t
 	desc = stalliongrad.109.d
 	picture = GFX_event_stg_pairlament2
@@ -2619,7 +3192,12 @@ country_event = {
 }
 ## BOTH KILLED, NESTOR TAKES POWER ####
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.110
+=======
+	id = stalliongrad.110
+	immediate = {log = "[Root.GetName]: event stalliongrad.110"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.110.t
 	desc = stalliongrad.110.d
 	picture = GFX_event_stg_pairlament2
@@ -2649,7 +3227,12 @@ country_event = {
 }
 ## SINISTER KILLED, VASYA TAKES POWER ####
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.111
+=======
+	id = stalliongrad.111
+	immediate = {log = "[Root.GetName]: event stalliongrad.111"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.111.t
 	desc = stalliongrad.111.d
 	picture = GFX_event_stg_pairlament2
@@ -2677,7 +3260,12 @@ country_event = {
 }
 ## VASYA KILLED, SINISTER TAKES POWER ####
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.112
+=======
+	id = stalliongrad.112
+	immediate = {log = "[Root.GetName]: event stalliongrad.112"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.112.t
 	desc = stalliongrad.112.d
 	picture = GFX_event_stg_pairlament2
@@ -2696,6 +3284,13 @@ country_event = {
 				picture = "Chernushka.tga"
 				traits = { vzletaem }
 				skill = 1
+<<<<<<< HEAD
+=======
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+>>>>>>> master
 			}
 			retire_country_leader = yes
 			create_country_leader = {
@@ -2712,7 +3307,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.113
+=======
+	id = stalliongrad.113
+	immediate = {log = "[Root.GetName]: event stalliongrad.113"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.113.t
 	desc = stalliongrad.113.d
 	picture = GFX_event_stg_pairlament2
@@ -2728,7 +3328,12 @@ country_event = {
 	}
 }
 country_event = { ## GRW asks for tanks
+<<<<<<< HEAD
 	id = stalliongrad.114
+=======
+	id = stalliongrad.114
+	immediate = {log = "[Root.GetName]: event stalliongrad.114"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.114.t
 	desc = { text = stalliongrad.114.d
 		trigger = { BRF = { exists = yes } } }
@@ -2778,7 +3383,12 @@ country_event = { ## GRW asks for tanks
 	}
 }
 country_event = { ## Tanks
+<<<<<<< HEAD
 	id = stalliongrad.115
+=======
+	id = stalliongrad.115
+	immediate = {log = "[Root.GetName]: event stalliongrad.115"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.115.t
 	desc = stalliongrad.115.d
 	picture = GFX_event_stg_red_army
@@ -2828,7 +3438,12 @@ country_event = { ## Tanks
 	}
 }
 country_event = { ## Graduates Projects
+<<<<<<< HEAD
 	id = stalliongrad.116
+=======
+	id = stalliongrad.116
+	immediate = {log = "[Root.GetName]: event stalliongrad.116"}#Auto-logging
+>>>>>>> master
 	title = stalliongrad.116.t
 	desc = { text = stalliongrad.116.d
 		trigger = { has_country_flag = electronics_project } }
@@ -2893,7 +3508,12 @@ country_event = { ## Graduates Projects
 }
 
 country_event = { ## Graduates Projects
+<<<<<<< HEAD
 	id = stalliongrad.117
+=======
+	id = stalliongrad.117
+	immediate = {log = "[Root.GetName]: event stalliongrad.117"}#Auto-logging
+>>>>>>> master
 	hidden = yes
 	is_triggered_only = yes
 
@@ -2902,7 +3522,12 @@ country_event = { ## Graduates Projects
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.118
+=======
+	id = stalliongrad.118
+	immediate = {log = "[Root.GetName]: event stalliongrad.118"}#Auto-logging
+>>>>>>> master
 	hidden = yes
 	trigger = {
 		OR = {
@@ -2924,10 +3549,13 @@ country_event = {
 		trigger = { has_idea = trade_relations_with_stalliongrad_close }
 		swap_ideas = { add_idea = trade_relations_with_stalliongrad_bad_times remove_idea = trade_relations_with_stalliongrad_close }
 	}
+<<<<<<< HEAD
+=======
 }
 
 country_event = {
 	id = stalliongrad.119
+	immediate = {log = "[Root.GetName]: event stalliongrad.119"}#Auto-logging
 	hidden = yes
 	trigger = {
 		has_idea = trade_relations_with_stalliongrad
@@ -2940,6 +3568,7 @@ country_event = {
 }
 country_event = {
 	id = stalliongrad.120
+	immediate = {log = "[Root.GetName]: event stalliongrad.120"}#Auto-logging
 	hidden = yes
 	trigger = {
 		has_idea = trade_relations_with_stalliongrad_close
@@ -2950,6 +3579,204 @@ country_event = {
 	}
 }
 country_event = {
+	id = stalliongrad.121
+	immediate = {log = "[Root.GetName]: event stalliongrad.121"}#Auto-logging
+	hidden = yes
+	trigger = {
+		OR = {
+			has_idea = trade_relations_with_stalliongrad
+			has_idea = trade_relations_with_stalliongrad_close
+			has_idea = trade_relations_with_stalliongrad_bad_times
+		}
+		OR = {
+			STG = { has_war = yes }
+			has_war = yes
+		}
+	}
+
+	option = {
+		trigger = { has_idea = trade_relations_with_stalliongrad }
+		swap_ideas = { add_idea = trade_relations_with_stalliongrad_terrible_times remove_idea = trade_relations_with_stalliongrad }
+	}
+	option = {
+		trigger = { has_idea = trade_relations_with_stalliongrad_close }
+		swap_ideas = { add_idea = trade_relations_with_stalliongrad_terrible_times remove_idea = trade_relations_with_stalliongrad_close }
+	}
+	option = {
+		trigger = { has_idea = trade_relations_with_stalliongrad_bad_times }
+		swap_ideas = { add_idea = trade_relations_with_stalliongrad_terrible_times remove_idea = trade_relations_with_stalliongrad_bad_times }
+	}
+>>>>>>> master
+}
+country_event = {
+	id = stalliongrad.122
+	immediate = {log = "[Root.GetName]: event stalliongrad.122"}#Auto-logging
+	hidden = yes
+	trigger = {
+		has_idea = trade_relations_with_stalliongrad_terrible_times
+		NOT = {
+			STG = { has_war = yes }
+			has_war = yes
+		}
+	}
+
+	option = {
+		swap_ideas = { add_idea = trade_relations_with_stalliongrad remove_idea = trade_relations_with_stalliongrad_terrible_times }
+	}
+}
+country_event = {
+<<<<<<< HEAD
+	id = stalliongrad.119
+	hidden = yes
+	trigger = {
+		has_idea = trade_relations_with_stalliongrad
+		is_neighbor_of = STG
+	}
+
+	option = {
+		swap_ideas = { add_idea = trade_relations_with_stalliongrad_close remove_idea = trade_relations_with_stalliongrad }
+=======
+	id = stalliongrad.123
+	immediate = {log = "[Root.GetName]: event stalliongrad.123"}#Auto-logging
+	hidden = yes
+	trigger = {
+		is_major = yes
+		OR = {
+			has_idea = trade_relations_with_stalliongrad
+			has_idea = trade_relations_with_stalliongrad_bad_times
+			has_idea = trade_relations_with_stalliongrad_terrible_times
+			has_idea = trade_relations_with_stalliongrad_close
+		}
+	}
+
+	option = {
+		remove_ideas =  {
+			trade_relations_with_stalliongrad
+			trade_relations_with_stalliongrad_bad_times
+			trade_relations_with_stalliongrad_terrible_times
+			trade_relations_with_stalliongrad_close
+		}
+	}
+}
+country_event = {
+	id = stalliongrad.124
+	immediate = {log = "[Root.GetName]: event stalliongrad.124"}#Auto-logging
+	title = stalliongrad.124.t
+	desc = stalliongrad.124.d
+	picture = GFX_event_stg_pairlament2
+
+	is_triggered_only = yes
+	option = {
+		name = stalliongrad.124.a
+		GRW = {
+			set_country_flag = STG_to_join_GRW_faction
+			country_event = { id = griffonwill.114 days = 2 }
+		}
+		ai_chance = {
+			factor = 3
+		}
+	}
+	option = {
+		name = stalliongrad.124.b
+		if = {
+			limit = {
+					is_faction_leader = no
+				}
+				create_faction = "Comintern"
+			}
+		GRW = {
+			set_country_flag = GRW_to_join_STG
+			country_event = { id = griffonwill.114 days = 2 }
+		}
+		ai_chance = {
+			factor = 2
+		}
+	}
+	option = {
+		name = stalliongrad.124.b
+
+		GRW = {
+			set_country_flag = STG_refused_alliance
+			country_event = { id = griffonwill.114 days = 2 }
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+## VASYA'S SPEECH AGAINST CHN ##
+country_event = {
+	id = stalliongrad.125
+	immediate = {log = "[Root.GetName]: event stalliongrad.125"}#Auto-logging
+	title = stalliongrad.125.t
+	desc = stalliongrad.125.d
+	picture = GFX_event_vasya_stg
+
+	is_triggered_only = yes
+	option = {
+		name = stalliongrad.125.a
+		add_stability = 0.05
+		add_war_support = 0.1
+		add_political_power = 15
+		add_timed_idea = {
+			idea = deterrence days = 50
+		}
+		add_timed_idea = {
+			idea = political_commissars_focus days = 30
+		}
+>>>>>>> master
+	}
+}
+## VASILY AGAINST EQUESTRIA, DEFENSIVE ##
+country_event = {
+<<<<<<< HEAD
+	id = stalliongrad.120
+	hidden = yes
+	trigger = {
+		has_idea = trade_relations_with_stalliongrad_close
+		NOT = { is_neighbor_of = STG }
+	}
+	option = {
+		swap_ideas = { add_idea = trade_relations_with_stalliongrad remove_idea = trade_relations_with_stalliongrad_close }
+=======
+	id = stalliongrad.126
+	immediate = {log = "[Root.GetName]: event stalliongrad.126"}#Auto-logging
+	title = stalliongrad.126.t
+	desc = stalliongrad.126.d
+	picture = GFX_event_vasya_stg
+
+	is_triggered_only = yes
+	option = {
+		name = stalliongrad.126.a
+		add_stability = 0.085
+		add_war_support = 0.09
+		add_timed_idea = {
+			idea = deterrence days = 35
+		}
+		add_timed_idea = {
+			idea = political_commissars_focus days = 20
+		}
+>>>>>>> master
+	}
+}
+## VASILY AGAINST EQUESTRIA, OFFENSIVE ##
+country_event = {
+	id = stalliongrad.127
+	immediate = {log = "[Root.GetName]: event stalliongrad.127"}#Auto-logging
+	title = stalliongrad.127.t
+	desc = stalliongrad.127.d
+	picture = GFX_event_vasya_stg
+
+	is_triggered_only = yes
+	option = {
+		name = stalliongrad.127.a
+		add_stability = 0.03
+		add_war_support = 0.03
+	}
+}
+## VASILY AGAINST FROM, DEFENSIVE ##
+country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.121
 	hidden = yes
 	trigger = {
@@ -3011,10 +3838,533 @@ country_event = {
 			trade_relations_with_stalliongrad_bad_times
 			trade_relations_with_stalliongrad_terrible_times
 			trade_relations_with_stalliongrad_close
+=======
+	id = stalliongrad.128
+	immediate = {log = "[Root.GetName]: event stalliongrad.128"}#Auto-logging
+	title = stalliongrad.128.t
+	desc = stalliongrad.128.d
+	picture = GFX_event_vasya_stg
+
+	is_triggered_only = yes
+	option = {
+		name = stalliongrad.128.a
+		add_stability = 0.025
+		add_war_support = 0.025
+	}
+}
+## VASILY AGAINST FROM, OFFENSIVE ##
+country_event = {
+	id = stalliongrad.129
+	immediate = {log = "[Root.GetName]: event stalliongrad.129"}#Auto-logging
+	title = stalliongrad.129.t
+	desc = stalliongrad.129.d
+	picture = GFX_event_vasya_stg
+
+	is_triggered_only = yes
+	option = {
+		name = stalliongrad.129.a
+		add_stability = 0.02
+		add_war_support = 0.025
+	}
+}
+country_event = {
+	id = stalliongrad.130
+	immediate = {log = "[Root.GetName]: event stalliongrad.130"}#Auto-logging
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = stalliongrad.130.a
+		trigger = {
+			FROM = { has_defensive_war_with = ROOT }
+		}
+		FROM = { country_event = stalliongrad.129 }
+	}
+	option = {
+		name = stalliongrad.130.a
+		trigger = {
+			FROM = { has_offensive_war_with = ROOT }
+		}
+		FROM = { country_event = stalliongrad.128 }
+	}
+}
+country_event = {
+	id = stalliongrad.131
+	immediate = {log = "[Root.GetName]: event stalliongrad.131"}#Auto-logging
+	title = stalliongrad.131.t
+	desc = stalliongrad.131.d
+	picture = GFX_event_sinister_speaks
+
+	is_triggered_only = yes
+	option = {
+		name = stalliongrad.126.a
+		add_stability = 0.03
+		add_war_support = 0.03
+		add_timed_idea = {
+			idea = political_commissars_focus days = 15
 		}
 	}
 }
 country_event = {
+	id = stalliongrad.132
+	immediate = {log = "[Root.GetName]: event stalliongrad.132"}#Auto-logging
+	title = stalliongrad.132.t
+	desc = stalliongrad.132.d
+	picture = GFX_event_sinister_speaks
+
+	is_triggered_only = yes
+	option = {
+		name = stalliongrad.126.a
+		add_stability = 0.07
+		add_war_support = 0.09
+		add_timed_idea = {
+			idea = deterrence days = 30
+		}
+		add_timed_idea = {
+			idea = political_commissars_focus days = 20
+		}
+	}
+}
+
+country_event = {
+	id = stalliongrad.133
+	immediate = {log = "[Root.GetName]: event stalliongrad.133"}#Auto-logging
+	title = stalliongrad.133.t
+	desc = stalliongrad.133.d
+	picture = GFX_event_sinister_speaks
+
+	is_triggered_only = yes
+	option = {
+		name = stalliongrad.126.a
+		add_stability = 0.055
+		add_war_support = 0.055
+	}
+}
+
+country_event = {
+	id = stalliongrad.134
+	immediate = {log = "[Root.GetName]: event stalliongrad.134"}#Auto-logging
+	title = stalliongrad.134.t
+	desc = stalliongrad.134.d
+	picture = GFX_event_sinister_speaks
+
+	is_triggered_only = yes
+	option = {
+		name = stalliongrad.126.a
+		add_stability = 0.03
+		add_war_support = 0.042
+	}
+}
+
+country_event = {
+	id = stalliongrad.135
+	immediate = {log = "[Root.GetName]: event stalliongrad.135"}#Auto-logging
+	title = stalliongrad.135.t
+	desc = stalliongrad.135.d
+	picture = GFX_event_sinister_speaks
+
+	is_triggered_only = yes
+	option = {
+		name = stalliongrad.135.a
+		trigger = {
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
+		add_stability = 0.021
+		add_war_support = 0.021
+	}
+	option = {
+		name = stalliongrad.126.a
+		trigger = {
+			NOT = {
+				any_enemy_country = {
+					is_major = yes
+				}
+			}
+		}
+		add_stability = 0.01
+		add_war_support = 0.01
+	}
+}
+
+country_event = {
+	id = stalliongrad.136
+	immediate = {log = "[Root.GetName]: event stalliongrad.136"}#Auto-logging
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = stalliongrad.136.a
+		trigger = {
+			FROM = { has_defensive_war_with = ROOT }
+		}
+		FROM = { country_event = stalliongrad.135 }
+	}
+}
+
+country_event = {
+	id = stalliongrad.137
+	immediate = {log = "[Root.GetName]: event stalliongrad.137"}#Auto-logging
+	title = stalliongrad.137.t
+	desc = stalliongrad.137.d
+	picture = GFX_event_sinister_speaks
+
+	trigger = {
+		original_tag = STG
+		has_government = communism
+		has_completed_focus = sinister_leader
+		has_country_leader = { ruling_only = yes name = "Sinister Serov" }
+		owns_state = 3
+		owns_state = 75
+		owns_state = 14
+		owns_state = 243
+		has_completed_focus = STG_liquid_magic
+		has_country_flag = chernushka_get
+	}
+	fire_only_once = yes
+	mean_time_to_happen = {
+		days = 30
+	}
+	option = {
+		name = stalliongrad.137.a
+		hidden_effect = {
+			create_corps_commander = {
+				name = "Chernushka"
+				picture = "Chernushka.tga"
+				traits = { vzletaem }
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+			}
+		}
+		add_stability = 0.01
+	}
+}
+
+country_event = {
+	id = stalliongrad.138
+	immediate = {log = "[Root.GetName]: event stalliongrad.138"}#Auto-logging
+	title = stalliongrad.138.t
+	desc = {
+		text = stalliongrad.138.d
+		trigger = {
+			has_war = yes
+		}
+	}
+	desc = {
+		text = stalliongrad.138.d_no_war
+		trigger = {
+			has_war = no
+		}
+	}
+	picture = GFX_event_stg_pairlament2
+
+	trigger = {
+		tag = STG
+		OR = {
+			has_offensive_war_with = GRF
+			has_offensive_war_with = EQS
+		}
+		has_country_leader = { ruling_only = yes name = "Sinister Serov" }
+	}
+	immediate = {
+		if = {
+			limit = {
+				has_country_flag = ponies_disappointed_in_war
+			}
+			modify_country_flag = {
+				flag = ponies_disappointed_in_war value = 2
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 180
+		modifier = {
+			factor = 4
+			has_idea = volunteer_only
+		}
+		modifier = {
+			factor = 3
+			has_idea = limited_conscription
+		}
+		modifier = {
+			factor = 2
+			has_idea = extensive_conscription
+		}
+		modifier = {
+			factor = 1
+			has_idea = service_by_requirement
+		}
+		modifier = {
+			factor = 0.5
+			has_idea = all_adults_serve
+		}
+		modifier = {
+			factor = 0.3
+			has_idea = scraping_the_barrel
+		}
+	}
+	option = {
+		name = stalliongrad.138.a
+		if = {
+			limit = {
+				has_country_flag = {
+					flag = ponies_disappointed_in_war value > 10
+				}
+
+			}
+			add_stability = -0.08
+				add_war_support = -0.08
+		}
+		else_if = {
+			limit = {
+				has_country_flag = {
+					flag = ponies_disappointed_in_war value > 8
+				}
+
+			}
+			add_stability = -0.07
+				add_war_support = -0.07
+		}
+		else_if = {
+			limit = {
+				has_country_flag = {
+					flag = ponies_disappointed_in_war value > 5
+				}
+
+			}
+			add_stability = -0.05
+				add_war_support = -0.05
+		}
+		else_if = {
+			limit = {
+				has_country_flag = {
+					flag = ponies_disappointed_in_war value > 3
+				}
+
+			}
+			add_stability = -0.025
+				add_war_support = -0.025
+		}
+		else_if = {
+			limit = {
+				has_country_flag = {
+					flag = ponies_disappointed_in_war value > 0
+				}
+			}
+			add_stability = -0.015
+			add_war_support = -0.015
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					has_country_flag = ponies_disappointed_in_war
+				}
+			}
+			add_stability = -0.005
+			add_war_support = -0.005
+			set_country_flag = ponies_disappointed_in_war
+		}
+	}
+}
+
+country_event = {
+	id = stalliongrad.139
+	immediate = {log = "[Root.GetName]: event stalliongrad.139"}#Auto-logging
+	title = stalliongrad.139.t
+	desc = stalliongrad.139.d
+	picture = GFX_event_altidiya_retires
+
+	trigger = {
+		tag = STG
+		date > 1010.1.1
+	}
+	mean_time_to_happen = {
+		days = 150
+	}
+	fire_only_once = yes
+	option = {
+		name = stalliongrad.139.a
+		add_stability = -0.02
+		add_political_power = -10
+		hidden_effect = {
+			country_event = {
+				days = 50 id = stalliongrad.140
+			}
+		}
+	}
+}
+country_event = {
+	id = stalliongrad.140
+	immediate = {log = "[Root.GetName]: event stalliongrad.140"}#Auto-logging
+	hidden = yes
+	is_triggered_only = yes
+	option = {
+		set_country_flag = altidiya_died
+	}
+}
+
+country_event = {
+	id = stalliongrad.141
+	immediate = {log = "[Root.GetName]: event stalliongrad.141"}#Auto-logging
+	hidden = yes
+	trigger = {
+		tag = STG
+		has_country_flag = war_help
+		is_in_faction = yes
+		is_faction_leader = no
+		is_subject = no
+		any_other_country = {
+			original_tag = EQS
+			is_in_faction = ROOT
+			has_war = no
+			NOT = { has_government = communism }
+		}
+	}
+	option = {
+		leave_faction = yes
+	}
+}
+
+country_event = {
+	id = stalliongrad.142
+	immediate = {log = "[Root.GetName]: event stalliongrad.142"}#Auto-logging
+	hidden = yes
+	trigger = {
+		original_tag = STG
+		has_government = democratic
+		has_country_leader = { ruling_only = yes name = "Dark Wing" } 
+	}
+	mean_time_to_happen = {
+		days = 750
+	}
+	fire_only_once = yes
+	option = {
+		set_country_flag = darkwing_ready_to_be_annexed
+	}
+}
+## Darkwing annexation process###
+country_event = {
+	id = stalliongrad.143
+	immediate = {log = "[Root.GetName]: event stalliongrad.143"}#Auto-logging
+	title = stalliongrad.143.t
+	desc = stalliongrad.143.d
+	picture = GFX_event_darkwing_stg
+	is_triggered_only = yes
+	option = { ## accept to be annexed
+		name = stalliongrad.143.a
+		ai_chance = {
+			factor = 100
+		}
+		EQS = {
+			country_event = {
+				id = stalliongrad.144 days = 1
+			}
+		}
+	}
+	option = {## not accept to be annexed
+		name = stalliongrad.143.b
+		ai_chance = {
+			factor = 0
+		}
+		EQS = {
+			country_event = {
+				id = stalliongrad.145 days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = stalliongrad.144
+	immediate = {log = "[Root.GetName]: event stalliongrad.144"}#Auto-logging
+	title = stalliongrad.144.t
+	desc = stalliongrad.144.d
+	picture = GFX_event_darkwing_stg
+	is_triggered_only = yes
+	option = {
+		name = stalliongrad.144.a
+		annex_country = { target = FROM transfer_troops = yes }
+		hidden_effect = {
+			news_event = {
+				id = stalliongrad_news.109 hours = 12
+			}
+		}
+	}
+}
+country_event = {
+	id = stalliongrad.145
+	immediate = {log = "[Root.GetName]: event stalliongrad.145"}#Auto-logging
+	title = stalliongrad.145.t
+	desc = stalliongrad.145.d
+	picture = GFX_event_darkwing_stg
+	is_triggered_only = yes
+	option = {
+		name = stalliongrad.145.a
+		add_political_power = -70
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = {
+		name = stalliongrad.145.b
+		hidden_effect = {
+			modify_country_flag = { flag = celestia_evil_meter value = 12 }
+		}
+		add_political_power = -150
+		add_stability = -0.05
+		add_war_support = -0.1
+		FROM = {
+			end_puppet_this = yes
+		}
+		create_wargoal = {
+			type = annex_everything target = FROM
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				has_country_flag = { flag = celestia_evil_meter value > 33 }
+				factor = 40
+			}
+		}
+	}
+}
+
+country_event = {
+	id = stalliongrad.146
+	immediate = {log = "[Root.GetName]: event stalliongrad.146"}#Auto-logging
+	title = stalliongrad.146.t
+	desc = stalliongrad.146.d
+	picture = GFX_event_stg_pairlament
+	is_triggered_only = yes
+	option = {
+		name = stalliongrad.146.a
+		STG = { add_to_faction = ROOT }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_opinion = { target = STG value > 10 }
+			}
+		}
+	}
+	option = {
+		name = stalliongrad.146.b
+		country_event = { days = 1 id = stalliongrad.147 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_opinion = { target = STG value < -10 }
+			}
+>>>>>>> master
+		}
+	}
+}
+country_event = {
+<<<<<<< HEAD
 	id = stalliongrad.124
 	title = stalliongrad.124.t
 	desc = stalliongrad.124.d
@@ -3487,3 +4837,15 @@ country_event = {
 		leave_faction = yes
 	}
 }
+=======
+	id = stalliongrad.147
+	immediate = {log = "[Root.GetName]: event stalliongrad.147"}#Auto-logging
+	title = stalliongrad.147.t
+	desc = stalliongrad.147.d
+	picture = GFX_event_stg_pairlament
+	is_triggered_only = yes
+	option = {
+		name = stalliongrad.147.a
+	}
+}
+>>>>>>> master

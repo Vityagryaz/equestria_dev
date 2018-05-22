@@ -44,7 +44,11 @@ EQS_INF_01 =
 	#link_numbering_with = { EQS_INF_01 }
 	
 	fallback_name = "%d Onhooves Division"
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
@@ -159,7 +163,11 @@ EQS_MAG_01 =
 	#link_numbering_with = { EQS_INF_01 }
 	
 	fallback_name = "%d Magical Division"
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
@@ -168,7 +176,7 @@ EQS_MAG_01 =
 		1 = { "%dst 'Sparkle' Magical Division" }
 		2 = { "%dnd 'Lulamoon' Magical Division" }
 		3 = { "%drd 'Crescent' Magical Division" }
-		4 = { "%dth 'Skylight'  MagicalDivision" }
+		4 = { "%dth 'Skylight'  Magical Division" }
 		5 = { "%dth 'Blue Moon' Magical Division" }
 		6 = { "%dth 'Sparking Light' Magical Division" }
 		7 = { "%dth 'Allspark' Magical Division" }
@@ -214,7 +222,11 @@ EQS_MOT_01 =
 	link_numbering_with = { EQS_INF_01 }
 	
 	fallback_name = "%d Onwheels Division"
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
@@ -273,7 +285,11 @@ EQS_MEC_01 =
 	link_numbering_with = { EQS_INF_01 }
 	
 	fallback_name = "%d Ontracks Division"
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
@@ -325,7 +341,11 @@ EQS_ARM_01 =
 	#link_numbering_with = { EQS_INF_01 }
 	
 	fallback_name = "%d Armoured Division"
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
@@ -370,7 +390,11 @@ EQS_PAR_01 =
 	#link_numbering_with = { EQS_INF_01 }
 	
 	fallback_name = "%d Airborne Division"
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
@@ -412,7 +436,11 @@ EQS_MAR_01 =
 	#link_numbering_with = { ENG_INF_01 }
 	
 	fallback_name = "%d Royal Marines Division"
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
@@ -439,7 +467,11 @@ EQS_MNT_01 =
 	link_numbering_with = { EQS_INF_01 }
 	
 	fallback_name = "%d Onhooves Division"
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
@@ -489,7 +521,11 @@ EQS_GRD_01 =
 	#link_numbering_with = { EQS_INF_01 }
 	
 	fallback_name = "%d Royal Guard Division"
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
@@ -520,13 +556,18 @@ EQS_GAR_01 =
 	#link_numbering_with = { EQS_INF_01 }
 	
 	fallback_name = "%d Guard Auxiliary"
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
 		300 = { "Manehattan Coastal Guard" }
 		301 = { "Fillydelphia Coastal Guard" }
+<<<<<<< HEAD
 		303 = { "Vanhoover Vanilla Guard" }
 		304 = { "Appleloosa Training Regiment" }
 		305 = { "Dodge City Police" }
@@ -545,6 +586,26 @@ EQS_GAR_01 =
 		318 = { "Whitebell Guards" }
 		319 = { "Badlands Police Force" }
 		320 = { "Northern Border Guard Division" }
+=======
+		302 = { "Vanhoover Vanilla Guard" }
+		303 = { "Appleloosa Training Regiment" }
+		304 = { "Dodge City Police" }
+		305 = { "Bittyberry Fields Training Division" }
+		306 = { "Kurpchkino Garrison" }
+		307 = { "Krasnoye Garrison" }
+		308 = { "Manehattan Police Force" }
+		309 = { "Ponyville Auxiliary Guard" }
+		310 = { "Los Pegasus Police" }
+		311 = { "Malinovka Reserve Regiment" }
+		312 = { "Mareiposa Training Division" }
+		313 = { "Fillydelphia Police Force" }
+		314 = { "Canterlot Auxiliary Guard Regiment" }
+		315 = { "Marechester Public Force" }
+		316 = { "Wonderbolt Auxiliaries" }
+		317 = { "Whitebell Guards" }
+		318 = { "Badlands Police Force" }
+		319 = { "Northern Border Guard Division" }
+>>>>>>> master
 	}
 }
 
@@ -562,7 +623,11 @@ EQS_PEG_01 =
 	#link_numbering_with = { EQS_INF_01 }
 	
 	fallback_name = "%d Air Landing"
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	# Names with numbers (only one number per entry).
 	# It's okay to have gaps in numbering.
 	ordered =

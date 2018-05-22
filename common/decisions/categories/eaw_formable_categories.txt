@@ -85,6 +85,21 @@ form_aquileia_category = {
 			original_tag = AET
 			original_tag = HEL
 			original_tag = FEZ
+<<<<<<< HEAD
+		}
+	}
+}
+
+form_prywhen = {
+	icon = form_prywhen_category
+	picture = GFX_decision_cat_form_prywhen
+	priority = 30
+	allowed = {
+		OR = {
+			original_tag = GRW
+			original_tag = BRF
+=======
+>>>>>>> master
 		}
 	}
 }
@@ -98,5 +113,11 @@ form_prywhen = {
 			original_tag = GRW
 			original_tag = BRF
 		}
+	}
+}
+form_the_socialist_world_republic = {
+	icon = generic_communism
+	priority = 50
+	allowed = {
 	}
 }

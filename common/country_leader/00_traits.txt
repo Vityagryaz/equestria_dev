@@ -143,8 +143,14 @@ leader_traits = {
 		war_support_factor = 0.05
 		army_core_attack_factor = 0.05
 		army_core_defence_factor = 0.05
+<<<<<<< HEAD
 		
 		
+=======
+		democratic_acceptance = 30
+
+
+>>>>>>> master
 		ai_will_do = {
 			factor = 1
 		}
@@ -170,12 +176,17 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	
+
 	deranged = {
 		random = no
 		ai_focus_aggressive_factor = 0.5
+<<<<<<< HEAD
 		
 		political_power_factor = -0.15
+=======
+
+		political_power_gain = -0.15
+>>>>>>> master
 		planning_speed = -0.10
 		army_attack_factor = 0.05
 		
@@ -183,14 +194,43 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	
+
+	eccentric = {
+		random = no
+		ai_focus_aggressive_factor = 0.25
+
+		political_power_factor = -0.05
+		encryption_factor = 0.10
+		army_defence_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chosen_by_maar = {
+		random = no
+		ai_focus_aggressive_factor = 0.75
+        justify_war_goal_time = -0.5
+		army_morale_factor = 0.10
+		army_attack_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	changeling_fuhrer = {
 		random = no
 		
 		justify_war_goal_time = -0.10
 		political_power_gain = 0.08
 		army_morale_factor = 0.05
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		ai_will_do = {
 			factor = 1
 		}
@@ -212,7 +252,11 @@ leader_traits = {
 		send_volunteers_tension = 1.0
 		guarantee_tension = 1.0
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	#ai_focus_defense_factor
 	#ai_focus_aggressive_factor
 	#ai_focus_production_factor
@@ -221,6 +265,7 @@ leader_traits = {
 	#ai_focus_naval_factor
 	#ai_focus_naval_air_factor
 	#ai_focus_aviation_factor
+<<<<<<< HEAD
 	
 	dislikes_germany = {
 		random = no
@@ -235,6 +280,9 @@ leader_traits = {
 		}
 	}
 	
+=======
+
+>>>>>>> master
 	dislikes_griffon_empire = {
 		random = no
 		ai_strategy = {
@@ -279,6 +327,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
+<<<<<<< HEAD
 	
 	stalins_puppet = {
 		random = no
@@ -288,6 +337,9 @@ leader_traits = {
 		}
 	}
 	
+=======
+
+>>>>>>> master
 	union_man = {
 		random = no
 		
@@ -366,17 +418,30 @@ leader_traits = {
 			factor = 1
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	archon_maar = {
 		random = no
 		planning_speed = 0.10
 		political_power_factor = 0.10
 		decryption_factor = 0.10
+<<<<<<< HEAD
+=======
+		opinion_gain_monthly_factor = -0.75
+		enemy_justify_war_goal_time = -0.25
+>>>>>>> master
 		ai_will_do = {
 			factor = 1
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	permanent_revolutionary = {
 		random = no
 		political_power_factor = -0.15
@@ -473,7 +538,7 @@ leader_traits = {
 	
 	popular_figurehead2 = {
 		stability_factor = 0.05
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -496,7 +561,7 @@ leader_traits = {
 		air_chief_cost_factor = -0.25
 		army_chief_cost_factor = -0.25
 		navy_chief_cost_factor = -0.25
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -591,10 +656,27 @@ leader_traits = {
 			factor = 0
 		}
 	}
+<<<<<<< HEAD
 	
 	popular_figurehead = {
 		stability_factor = 0.15
 		
+=======
+	staunch_republican = {
+		random = no
+		# Boosts Unaligned
+		
+		neutrality_drift = 0.1
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	popular_figurehead = {
+		stability_factor = 0.15
+
+>>>>>>> master
 		ai_will_do = {
 			factor = 1
 		}
@@ -602,7 +684,11 @@ leader_traits = {
 	
 	propaganda_expert = {
 		war_support_factor = 0.10
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		ai_will_do = {
 			factor = 1
 		}
@@ -710,23 +796,35 @@ leader_traits = {
 			factor = 1
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	agent_of_smile = {
 		random = no
 		enemy_partisan_effect = -0.25
 		subversive_activites_upkeep = -0.3
 		foreign_subversive_activites = -0.3
 		drift_defence_factor = 0.25
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		ai_will_do = {
 			factor = 0.5
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	financial_expert = {
 		random = yes
 		consumer_goods_factor = -0.05
-		
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -947,7 +1045,7 @@ leader_traits = {
 				air_agility = 0.2 maximum_speed = 0.1
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -979,12 +1077,16 @@ leader_traits = {
 				reliability = 0.2
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	fuel_efficient_aircraft_manufacturer = {
 		random = no
 		equipment_bonus = {
@@ -999,7 +1101,7 @@ leader_traits = {
 				reliability = 0.2
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -1146,7 +1248,7 @@ leader_traits = {
 				sub_detection = -0.25
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -1261,7 +1363,7 @@ leader_traits = {
 		random = no
 		
 		production_speed_infrastructure_factor = 0.1
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -1548,7 +1650,11 @@ leader_traits = {
 	army_armored_1 = { # +4 armor efficiency
 		army_armor_attack_factor = 0.05
 		army_armor_defence_factor = 0.05
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		ai_will_do = {
 			factor = 1
 		}
@@ -1557,7 +1663,11 @@ leader_traits = {
 	army_armored_2 = { # +8 armor efficiency
 		army_armor_attack_factor = 0.1
 		army_armor_defence_factor = 0.1
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		ai_will_do = {
 			factor = 2
 		}
@@ -1566,7 +1676,11 @@ leader_traits = {
 	army_armored_3 = { # +12 armor efficiency
 		army_armor_attack_factor = 0.15
 		army_armor_defence_factor = 0.15
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		ai_will_do = {
 			factor = 3
 		}
@@ -1633,7 +1747,11 @@ leader_traits = {
 		
 		special_forces_attack_factor = 0.1
 		special_forces_defence_factor = 0.1
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		ai_will_do = {
 			factor = 1
 		}
@@ -1643,7 +1761,11 @@ leader_traits = {
 		
 		special_forces_attack_factor = 0.15
 		special_forces_defence_factor = 0.15
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		ai_will_do = {
 			factor = 2
 		}
@@ -1653,7 +1775,11 @@ leader_traits = {
 		
 		special_forces_attack_factor = 0.2
 		special_forces_defence_factor = 0.2
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		ai_will_do = {
 			factor = 3
 		}
@@ -2653,12 +2779,27 @@ leader_traits = {
 	}
 	lady_inquisitor = {
 		stability_factor = 0.05
+		drift_defence_factor = 0.1
+		enemy_partisan_effect = -0.20
+		foreign_subversive_activites = -0.1
+		army_morale_factor = 0.02
+		political_power_factor = 0.10
+		research_time_factor = -0.025
+		ai_will_do = {
+			factor = 8
+		}
+	}
+	lady_inquisitor_planning = {
+		stability_factor = 0.05
 		drift_defence_factor = 0.05
 		enemy_partisan_effect = -0.20
 		foreign_subversive_activites = -0.1
 		army_morale_factor = 0.02
 		political_power_factor = 0.10
 		research_time_factor = -0.025
+		max_planning = 0.2
+		supply_consumption_factor = -0.1
+		global_building_slots_factor = 0.1
 		ai_will_do = {
 			factor = 8
 		}
@@ -2681,7 +2822,11 @@ leader_traits = {
 				reliability = 0.05
 			}
 		}
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		ai_will_do = {
 			factor = 5
 		}
@@ -2726,7 +2871,11 @@ leader_traits = {
 	red_admiral = {
 		random = no
 		stability_factor = 0.10
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		ai_will_do = {
 			factor = 1
 		}
@@ -2819,28 +2968,44 @@ leader_traits = {
 			factor = 1
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	archon_eyr = {
 		random = no
 		monthly_population = 0.05
 		production_factory_max_efficiency_factor = 0.05
 		political_power_cost = 0.10
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	industrialist = {
 		random = no
 		production_speed_buildings_factor = 0.05
 		production_factory_max_efficiency_factor = 0.05
 		political_power_cost = 0.10
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	archon_arcturius = {
 		random = no
 		army_attack_factor = 0.05
 		conscription_factor = 0.10
 		stability_factor = -0.05
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	best_baker_in_town = {
 		random = no
 		stability_factor = 0.05
@@ -2871,7 +3036,11 @@ leader_traits = {
 		random = no
 		stability_factor = 0.10
 		army_morale_factor = 0.05
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		ai_will_do = {
 			factor = 1
 		}
@@ -2985,7 +3154,11 @@ leader_traits = {
 			factor = 1
 		}
 	}
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	marshal = {
 		random = no
 		ai_focus_aggressive_factor = 0.5
@@ -3080,7 +3253,7 @@ leader_traits = {
 			factor = 1
 			modifier = {
 				factor = 2
-				has_resources_amount = { resource = steel amount < 10 }
+				check_variable = { resource_produced@steel < 10 }
 			}
 		}
 	}
@@ -3090,7 +3263,7 @@ leader_traits = {
 			
 		}
 	}
-	
+
 	bookworm = {
 		random = no
 		research_time_factor = -0.05
@@ -3098,9 +3271,15 @@ leader_traits = {
 			factor = 1
 		}
 	}
+<<<<<<< HEAD
 	
 	###DEAD LEAGUE SPECIFIC LEADER TRAITS###
 	
+=======
+
+	###DEAD LEAGUE SPECIFIC LEADER TRAITS###
+
+>>>>>>> master
 	necromancer_hopeful = {
 		random = no
 		
@@ -3130,6 +3309,66 @@ leader_traits = {
 		political_power_gain = 0.1
 		war_support_factor = 0.1
 		conscription = 0.005
+<<<<<<< HEAD
+=======
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	### MARESOC ###
+	
+	miniluv_trait = {
+		random = no
+		drift_defence_factor = 0.50
+		foreign_subversive_activites = -0.9
+		stability_factor = 0.30
+		communism_drift = 0.2
+		decryption_factor = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	minipax_trait = {
+		random = no
+		army_attack_factor = 0.15
+		army_morale_factor = 0.15
+		army_org_Factor = 0.15
+		war_support_factor = 0.3		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	miniplenty_trait = {
+		random = no
+		production_speed_buildings_factor = 0.15
+		production_factory_efficiency_gain_factor = 0.15
+		production_factory_start_efficiency_factor = 0.1
+		line_change_production_efficiency_factor = 0.2
+		production_factory_max_efficiency_factor = 0.1
+		local_resources_factor = 0.2
+		industrial_capacity_factory = 0.2
+		industrial_capacity_dockyard = 0.2
+		consumer_goods_factor = -0.50
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	minitrue_trait = {
+		random = no
+		stability_weekly = 0.02
+		war_support_weekly = 0.02
+		justify_war_goal_time = -0.8
+		political_power_factor = 0.3
+		economy_cost_factor = -0.3
+		mobilization_laws_cost_factor = -0.3
+		trade_laws_cost_factor = -0.3
+		political_advisor_cost_factor = -0.3
+		
+>>>>>>> master
 		ai_will_do = {
 			factor = 1
 		}

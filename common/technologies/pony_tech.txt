@@ -49,10 +49,17 @@ technologies = {
 		dependencies = {
 			pony_race = 1
 		}
+<<<<<<< HEAD
 		
 		monthly_population = 0.15
 		supply_consumption_factor = -0.075
 		
+=======
+
+		monthly_population = 0.15
+		supply_consumption_factor = -0.075
+
+>>>>>>> master
 		path = {
 			leads_to_tech = tech_pony_misc3
 			research_cost_coeff = 1
@@ -84,6 +91,7 @@ technologies = {
 			}
 		}
 	}
+<<<<<<< HEAD
 	
 	#Earth Pony Sappers
 	tech_pony_misc3 = {
@@ -94,6 +102,23 @@ technologies = {
 		
 		path = {
 			leads_to_tech = tech_pony_misc_a
+=======
+
+	#Earth Pony Sappers
+	tech_pony_misc3 = {
+
+		engineer = {
+			entrenchment  = 2
+		}
+
+		path = {
+			leads_to_tech = tech_pony_misc_a
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = tech_pony_misc_a2
+>>>>>>> master
 			research_cost_coeff = 1
 		}
 		
@@ -128,6 +153,7 @@ technologies = {
 			}
 		}
 	}
+<<<<<<< HEAD
 	
 	#Pegasi Weather Engineering
 	tech_pony_misc_a = {
@@ -136,6 +162,16 @@ technologies = {
 		winter_attrition_factor = -0.1
 		heat_attrition_factor = -0.1
 		
+=======
+
+	#Pegasi Weather Engineering
+	tech_pony_misc_a = {
+
+		air_weather_penalty = -0.05
+		winter_attrition_factor = -0.1
+		heat_attrition_factor = -0.1
+
+>>>>>>> master
 		path = {
 			leads_to_tech = tech_pony_misc2
 			research_cost_coeff = 1
@@ -167,6 +203,7 @@ technologies = {
 			}
 		}
 	}
+<<<<<<< HEAD
 	
 	#Earth Pony Industry
 	tech_pony_misc_a2 = {
@@ -175,6 +212,16 @@ technologies = {
 		industrial_capacity_dockyard = 0.1
 		production_speed_buildings_factor = 0.05
 		
+=======
+
+	#Earth Pony Industry
+	tech_pony_misc_a2 = {
+
+		industrial_capacity_factory = 0.1
+		industrial_capacity_dockyard = 0.1
+		production_speed_buildings_factor = 0.05
+
+>>>>>>> master
 		path = {
 			leads_to_tech = tech_pony_misc2
 			research_cost_coeff = 1
@@ -206,12 +253,21 @@ technologies = {
 			}
 		}
 	}
+<<<<<<< HEAD
 	
 	#Pegasi weather manipulation
 	tech_pony_misc2 = {
 		
 		air_weather_penalty = -0.15
 		
+=======
+
+	#Pegasi weather manipulation
+	tech_pony_misc2 = {
+
+		air_weather_penalty = -0.15
+
+>>>>>>> master
 		path = {
 			leads_to_tech = tech_pony_misc_b
 			research_cost_coeff = 1
@@ -246,9 +302,15 @@ technologies = {
 
 	#Earth Pony Mining
 	tech_pony_misc_b = {
+<<<<<<< HEAD
 		
 		local_resources_factor = 0.10
 		
+=======
+
+		local_resources_factor = 0.10
+
+>>>>>>> master
 		path = {
 			leads_to_tech = tech_pony_misc_c
 			research_cost_coeff = 1
@@ -361,11 +423,19 @@ technologies = {
 	
 	
 	tech_pegasi = {
+<<<<<<< HEAD
 		
 		dependencies = {
 			pony_race = 1
 		}
 		
+=======
+
+		dependencies = {
+			pony_race = 1
+		}
+
+>>>>>>> master
 		enable_subunits = {
 			pegasi
 		}
@@ -401,6 +471,11 @@ technologies = {
 		
 		ai_will_do = {
 			factor = 10
+
+			modifier = {
+				factor = 1000
+				has_completed_focus = CRY_SOL_military_of_the_inquisition
+			}
 		}
 	}
 	
@@ -542,11 +617,19 @@ technologies = {
 	}
 	
 	tech_unicorn = {
+<<<<<<< HEAD
 		
 		dependencies = {
 			pony_race = 1
 		}
 		
+=======
+
+		dependencies = {
+			pony_race = 1
+		}
+
+>>>>>>> master
 		enable_subunits = {
 			unicorn_company
 		}
@@ -603,11 +686,19 @@ technologies = {
 	}
 	
 	tech_unicorn_th = {
+<<<<<<< HEAD
 		
 		xor = {
 			tech_unicorn_ms
 		}
 		
+=======
+
+		xor = {
+			tech_unicorn_ms
+		}
+
+>>>>>>> master
 		unicorn_company = {
 			breakthrough = 1
 			reliability = 0.02
@@ -807,7 +898,11 @@ technologies = {
 			defense = 0.66
 			reliability = 0.02
 		}
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		research_cost = 1.5
 		start_year = 1019
 		folder = {
@@ -843,16 +938,28 @@ technologies = {
 	}
 	
 	tech_unicorn_ms = {
+<<<<<<< HEAD
 		
 		xor = {
 			tech_unicorn_th
 		}
 		
+=======
+
+		xor = {
+			tech_unicorn_th
+		}
+
+>>>>>>> master
 		unicorn_company = {
 			armor_value = 4500 #I KNOW WHAT I AM DOING
 			reliability = -0.02
 		}
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		path = {
 			leads_to_tech = tech_unicorn_ms2
 			research_cost_coeff = 1
@@ -900,12 +1007,20 @@ technologies = {
 	}
 	
 	tech_unicorn_ms2 = {
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		unicorn_company = {
 			ap_attack = 2
 			reliability = -0.02
 		}
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		path = {
 			leads_to_tech = tech_unicorn_ms3
 			research_cost_coeff = 1
@@ -945,12 +1060,20 @@ technologies = {
 	}
 	
 	tech_unicorn_ms3 = {
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		unicorn_company = {
 			breakthrough = 2
 			reliability = -0.02
 		}
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		path = {
 			leads_to_tech = tech_unicorn_ms4
 			research_cost_coeff = 1
@@ -990,14 +1113,22 @@ technologies = {
 	}
 	
 	tech_unicorn_ms4 = {
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		unicorn_company = {
 			casualty_trickleback = 0.10
 			armor_value = 2500
 			air_attack = 1500 #ye, it's a lot, but it's 0.01*3000, which amounts to +30 air attack total (less than two AA guns)
 			reliability = -0.02
 		}
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		path = {
 			leads_to_tech = tech_unicorn_ms5
 			research_cost_coeff = 1
@@ -1042,7 +1173,11 @@ technologies = {
 			breakthrough = 0.5
 			reliability = -0.02
 		}
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		research_cost = 1.5
 		start_year = 1019
 		folder = {
@@ -1077,6 +1212,7 @@ technologies = {
 	}
 	
 	tech_pony_magical_infantry = {
+<<<<<<< HEAD
 		
 		dependencies = {
 			pony_race = 1
@@ -1084,6 +1220,15 @@ technologies = {
 		
 		xor = { tech_pony_unicorns }
 		
+=======
+
+		dependencies = {
+			pony_race = 1
+		}
+
+		xor = { tech_pony_unicorns }
+
+>>>>>>> master
 		path = {
 			leads_to_tech = tech_pony_magical_infantry2
 			research_cost_coeff = 1
@@ -1302,11 +1447,19 @@ technologies = {
 	}
 	
 	tech_pony_unicorns = {
+<<<<<<< HEAD
 		
 		dependencies = {
 			pony_race = 1
 		}
 		
+=======
+
+		dependencies = {
+			pony_race = 1
+		}
+
+>>>>>>> master
 		xor = { tech_pony_magical_infantry }
 		
 		path = {

@@ -2,6 +2,7 @@
 
 country_event = {
 	id = civwar.109
+	immediate = {log = "[Root.GetName]: event civwar.109"}#Auto-logging
 	trigger = {
 		has_idea = disrupted_communications
 		has_war = no
@@ -23,6 +24,7 @@ country_event = {
 
 country_event = {
 	id = civwar.110
+	immediate = {log = "[Root.GetName]: event civwar.110"}#Auto-logging
 	is_triggered_only = yes
 	hidden = yes
 
@@ -42,6 +44,7 @@ country_event = {
 
 country_event = {
 	id = civwar.111
+	immediate = {log = "[Root.GetName]: event civwar.111"}#Auto-logging
 	is_triggered_only = yes
 	hidden = yes
 
@@ -57,7 +60,12 @@ country_event = {
 
 #New event that will fire if EQS is at war with a non pony country (eg. Changelings) and with a minor civil war faction offering a ceasefire
 country_event = {
+<<<<<<< HEAD
 	id = civwar.100
+=======
+	id = civwar.100
+	immediate = {log = "[Root.GetName]: event civwar.100"}#Auto-logging
+>>>>>>> master
 	hidden = yes
 
 	trigger = {
@@ -105,7 +113,12 @@ country_event = {
 }
 
 country_event = {
+<<<<<<< HEAD
 	id = civwar.101
+=======
+	id = civwar.101
+	immediate = {log = "[Root.GetName]: event civwar.101"}#Auto-logging
+>>>>>>> master
 	title = civwar.101.t
 	desc = civwar.101.d
 	picture = GFX_event_technical
@@ -176,7 +189,12 @@ country_event = {
 }
 
 country_event = {
+<<<<<<< HEAD
 	id = civwar.102
+=======
+	id = civwar.102
+	immediate = {log = "[Root.GetName]: event civwar.102"}#Auto-logging
+>>>>>>> master
 	title = civwar.102.t
 	desc = civwar.102.d
 	picture = GFX_event_technical
@@ -244,7 +262,12 @@ country_event = {
 }
 
 country_event = {
+<<<<<<< HEAD
 	id = civwar.104
+=======
+	id = civwar.104
+	immediate = {log = "[Root.GetName]: event civwar.104"}#Auto-logging
+>>>>>>> master
 	hidden = yes
 
 	is_triggered_only = yes
@@ -256,7 +279,12 @@ country_event = {
 
 #TODO CHANGE
 country_event = {
+<<<<<<< HEAD
 	id = civwar.105
+=======
+	id = civwar.105
+	immediate = {log = "[Root.GetName]: event civwar.105"}#Auto-logging
+>>>>>>> master
 	title = civwar.105.t
 	desc = civwar.105.d
 	picture = GFX_event_technical
@@ -329,7 +357,12 @@ country_event = {
 }
 
 country_event = {
+<<<<<<< HEAD
 	id = civwar.103
+=======
+	id = civwar.103
+	immediate = {log = "[Root.GetName]: event civwar.103"}#Auto-logging
+>>>>>>> master
 	title = civwar.103.t
 	desc = civwar.103.d
 	picture = GFX_event_technical
@@ -447,7 +480,12 @@ country_event = {
 
 
 country_event = {
+<<<<<<< HEAD
 	id = civwar.2
+=======
+	id = civwar.2
+	immediate = {log = "[Root.GetName]: event civwar.2"}#Auto-logging
+>>>>>>> master
 	title = civwar.2.t
 	desc = civwar.2.d
 	picture = GFX_event_technical
@@ -472,7 +510,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = civwar.3
+=======
+	id = civwar.3
+	immediate = {log = "[Root.GetName]: event civwar.3"}#Auto-logging
+>>>>>>> master
 	title = civwar.3.t
 	desc = civwar.3.d
 	picture = GFX_event_technical
@@ -503,7 +546,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = civwar.4
+=======
+	id = civwar.4
+	immediate = {log = "[Root.GetName]: event civwar.4"}#Auto-logging
+>>>>>>> master
 
 	fire_only_once = yes
 
@@ -551,7 +599,12 @@ country_event = {
 }
 
 country_event = {
+<<<<<<< HEAD
 	id = civwar.5
+=======
+	id = civwar.5
+	immediate = {log = "[Root.GetName]: event civwar.5"}#Auto-logging
+>>>>>>> master
 
 	fire_only_once = yes
 
@@ -600,7 +653,12 @@ country_event = {
 }
 
 country_event = {
+<<<<<<< HEAD
 	id = civwar.6
+=======
+	id = civwar.6
+	immediate = {log = "[Root.GetName]: event civwar.6"}#Auto-logging
+>>>>>>> master
 
 	fire_only_once = yes
 
@@ -636,7 +694,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = civwar.7
+=======
+	id = civwar.7
+	immediate = {log = "[Root.GetName]: event civwar.7"}#Auto-logging
+>>>>>>> master
 
 	fire_only_once = yes
 
@@ -670,7 +733,12 @@ country_event = {
 }
 
 country_event = { # IF EQS WINS
+<<<<<<< HEAD
 	id = civwar.9
+=======
+	id = civwar.9
+	immediate = {log = "[Root.GetName]: event civwar.9"}#Auto-logging
+>>>>>>> master
 	title = civwar.9.t
 	desc = civwar.9.d
 	picture = GFX_event_technical
@@ -689,7 +757,12 @@ country_event = { # IF EQS WINS
 	}
 }
 country_event = { # IF
+<<<<<<< HEAD
 	id = civwar.10
+=======
+	id = civwar.10
+	immediate = {log = "[Root.GetName]: event civwar.10"}#Auto-logging
+>>>>>>> master
 	title = civwar.10.t
 	desc = civwar.10.d
 	picture = GFX_event_technical
@@ -712,7 +785,12 @@ country_event = { # IF
 	}
 }
 country_event = { # NLR Support for NMS
+<<<<<<< HEAD
 	id = civwar.11
+=======
+	id = civwar.11
+	immediate = {log = "[Root.GetName]: event civwar.11"}#Auto-logging
+>>>>>>> master
 	title = civwar.11.t
 	desc = civwar.11.d
 	picture = GFX_event_technical
@@ -727,7 +805,12 @@ country_event = { # NLR Support for NMS
 }
 
 country_event = { # BALTIMARE GETS OFFER
+<<<<<<< HEAD
 	id = civwar.12
+=======
+	id = civwar.12
+	immediate = {log = "[Root.GetName]: event civwar.12"}#Auto-logging
+>>>>>>> master
 	title = civwar.12.t
 	desc = civwar.12.d
 	picture = GFX_event_technical
@@ -757,7 +840,12 @@ country_event = { # BALTIMARE GETS OFFER
 	}
 }
 country_event = { # VAN BACK TO EQS
+<<<<<<< HEAD
 	id = civwar.13
+=======
+	id = civwar.13
+	immediate = {log = "[Root.GetName]: event civwar.13"}#Auto-logging
+>>>>>>> master
 	title = civwar.13.t
 	desc = civwar.13.d
 	picture = GFX_event_technical
@@ -778,7 +866,12 @@ country_event = { # VAN BACK TO EQS
 	}
 }
 country_event = { # BALTIMARE GETS OFFER
+<<<<<<< HEAD
 	id = civwar.14
+=======
+	id = civwar.14
+	immediate = {log = "[Root.GetName]: event civwar.14"}#Auto-logging
+>>>>>>> master
 	title = civwar.14.t
 	desc = civwar.14.d
 	picture = GFX_event_technical
@@ -802,7 +895,12 @@ country_event = { # BALTIMARE GETS OFFER
 	}
 }
 country_event = { # BALTIMARE GETS OFFER
+<<<<<<< HEAD
 	id = civwar.15
+=======
+	id = civwar.15
+	immediate = {log = "[Root.GetName]: event civwar.15"}#Auto-logging
+>>>>>>> master
 	title = civwar.15.t
 	desc = civwar.15.d
 	picture = GFX_event_technical
@@ -826,7 +924,12 @@ country_event = { # BALTIMARE GETS OFFER
 	}
 }
 country_event = { # SCS GETS OFFER
+<<<<<<< HEAD
 	id = civwar.16
+=======
+	id = civwar.16
+	immediate = {log = "[Root.GetName]: event civwar.16"}#Auto-logging
+>>>>>>> master
 	title = civwar.16.t
 	desc = civwar.16.d
 	picture = GFX_event_technical
@@ -868,7 +971,12 @@ country_event = { # SCS GETS OFFER
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = civwar.17
+=======
+	id = civwar.17
+	immediate = {log = "[Root.GetName]: event civwar.17"}#Auto-logging
+>>>>>>> master
 	title = civwar.17.t
 	desc = civwar.17.d
 	picture = GFX_event_technical
@@ -901,7 +1009,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = civwar.18
+=======
+	id = civwar.18
+	immediate = {log = "[Root.GetName]: event civwar.18"}#Auto-logging
+>>>>>>> master
 	title = civwar.18.t
 	desc = civwar.18.d
 	picture = GFX_event_technical
@@ -935,7 +1048,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = civwar.19
+=======
+	id = civwar.19
+	immediate = {log = "[Root.GetName]: event civwar.19"}#Auto-logging
+>>>>>>> master
 	title = civwar.19.t
 	desc = civwar.19.d
 	picture = GFX_event_technical
@@ -961,7 +1079,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = civwar.20
+=======
+	id = civwar.20
+	immediate = {log = "[Root.GetName]: event civwar.20"}#Auto-logging
+>>>>>>> master
 	title = civwar.20.t
 	desc = civwar.20.d
 	picture = GFX_event_technical
@@ -991,7 +1114,12 @@ country_event = {
 	}
 }
 country_event = { # FOR CES
+<<<<<<< HEAD
 	id = civwar.21
+=======
+	id = civwar.21
+	immediate = {log = "[Root.GetName]: event civwar.21"}#Auto-logging
+>>>>>>> master
 	title = civwar.21.t
 	desc = civwar.21.d
 	picture = GFX_event_technical
@@ -1048,7 +1176,12 @@ country_event = { # FOR CES
 	}
 }
 country_event = { # FOR JUN
+<<<<<<< HEAD
 	id = civwar.22
+=======
+	id = civwar.22
+	immediate = {log = "[Root.GetName]: event civwar.22"}#Auto-logging
+>>>>>>> master
 	title = civwar.22.t
 	desc = civwar.22.d
 	picture = GFX_event_technical

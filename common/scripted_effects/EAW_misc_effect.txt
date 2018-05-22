@@ -521,7 +521,7 @@ get_current_autonomy_level = {
 set_previous_autonomy_level = {
 	hidden_effect = {
 		if = {
-			limit = { OR = { has_dlc = "Together for Victory" has_dlc = "Death or Dishonor" } }
+			limit = { is_subject = yes OR = { has_dlc = "Together for Victory" has_dlc = "Death or Dishonor" } }
 			if = {
 				limit = {
 					OR = {
@@ -532,6 +532,7 @@ set_previous_autonomy_level = {
 				}
 				overlord = {
 					if = {
+<<<<<<< HEAD
 						limit = {
 							PREV = {
 								is_griffon_race = yes
@@ -549,6 +550,16 @@ set_previous_autonomy_level = {
 								set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat }
 								else = {
 									set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet }
+=======
+						limit = { autonomy_states_feudal = yes }
+						overlord = { set_autonomy = { target = PREV autonomy_state = autonomy_subjugated_vassal } }
+						else = {
+							if = {
+								limit = { autonomy_states_fascist = yes }
+								overlord = { set_autonomy = { target = PREV autonomy_state = autonomy_reichskommissariat } }
+								else = {
+									overlord = { set_autonomy = { target = PREV autonomy_state = autonomy_integrated_puppet } }
+>>>>>>> master
 								}
 							}
 						}
@@ -566,15 +577,9 @@ set_previous_autonomy_level = {
 						overlord = {
 							if = {
 								limit = {
-									PREV = {
-										is_griffon_race = yes
-										is_griffon_continent_country = yes
-										is_feudal_vassal = yes
-									}
-									NOT = { has_country_flag = have_regular_puppets }
-									is_griffon_race = yes
-									is_griffon_continent_country = yes
+									autonomy_states_feudal = yes
 								}
+<<<<<<< HEAD
 								set_autonomy = { target = PREV autonomy_state = autonomy_vassal }
 								else = {
 									if = {
@@ -582,6 +587,15 @@ set_previous_autonomy_level = {
 										set_autonomy = { target = PREV autonomy_state = autonomy_reichsprotectorate }
 										else = {
 											set_autonomy = { target = PREV autonomy_state = autonomy_puppet }
+=======
+								overlord = { set_autonomy = { target = PREV autonomy_state = autonomy_vassal } }
+								else = {
+									if = {
+										limit = { autonomy_states_fascist = yes }
+										overlord = { set_autonomy = { target = PREV autonomy_state = autonomy_reichsprotectorate } }
+										else = {
+											overlord = { set_autonomy = { target = PREV autonomy_state = autonomy_puppet } }
+>>>>>>> master
 										}
 									}
 								}
@@ -598,15 +612,9 @@ set_previous_autonomy_level = {
 								overlord = {
 									if = {
 										limit = {
-											PREV = {
-												is_griffon_race = yes
-												is_griffon_continent_country = yes
-												is_feudal_vassal = yes
-											}
-											NOT = { has_country_flag = have_regular_puppets }
-											is_griffon_race = yes
-											is_griffon_continent_country = yes
+											autonomy_states_feudal = yes
 										}
+<<<<<<< HEAD
 										set_autonomy = { target = PREV autonomy_state = autonomy_autonomous_vassal }
 										else = {
 											if = {
@@ -614,6 +622,15 @@ set_previous_autonomy_level = {
 												set_autonomy = { target = PREV autonomy_state = autonomy_reichsprotectorate }
 												else = {
 													set_autonomy = { target = PREV autonomy_state = autonomy_colony }
+=======
+										overlord = { set_autonomy = { target = PREV autonomy_state = autonomy_autonomous_vassal } }
+										else = {
+											if = {
+												limit = { autonomy_states_fascist = yes }
+												overlord = { set_autonomy = { target = PREV autonomy_state = autonomy_reichsprotectorate } }
+												else = {
+													overlord = { set_autonomy = { target = PREV autonomy_state = autonomy_colony } }
+>>>>>>> master
 												}
 											}
 										}
@@ -631,15 +648,9 @@ set_previous_autonomy_level = {
 										overlord = {
 											if = {
 												limit = {
-													PREV = {
-														is_griffon_race = yes
-														is_griffon_continent_country = yes
-														is_feudal_vassal = yes
-													}
-													NOT = { has_country_flag = have_regular_puppets }
-													is_griffon_race = yes
-													is_griffon_continent_country = yes
+													autonomy_states_feudal = yes
 												}
+<<<<<<< HEAD
 												set_autonomy = { target = PREV autonomy_state = autonomy_nominal_vassal }
 												else = {
 													if = {
@@ -647,6 +658,15 @@ set_previous_autonomy_level = {
 														set_autonomy = { target = PREV autonomy_state = autonomy_satellite }
 														else = {
 															set_autonomy = { target = PREV autonomy_state = autonomy_dominion }
+=======
+												overlord = { set_autonomy = { target = PREV autonomy_state = autonomy_nominal_vassal } }
+												else = {
+													if = {
+														limit = { autonomy_states_fascist = yes }
+														overlord = { set_autonomy = { target = PREV autonomy_state = autonomy_satellite } }
+														else = {
+															overlord = { set_autonomy = { target = PREV autonomy_state = autonomy_dominion } }
+>>>>>>> master
 														}
 													}
 												}

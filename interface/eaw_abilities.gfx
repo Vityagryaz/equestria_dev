@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 spriteTypes = {
 	spriteType = {
 		name = "GFX_ability_undying"
@@ -12,3 +13,19 @@ spriteTypes = {
 		texturefile = "gfx/interface/abilitylist/ability_force_attack.dds"
 	}
 }
+=======
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ability_undying"
+		texturefile = "gfx/interface/abilitylist/ability_force_attack.dds"
+	}
+	spriteType = {
+		name = "GFX_ability_drown_them"
+		texturefile = "gfx/interface/abilitylist/ability_force_attack.dds"
+	}
+	spriteType = {
+		name = "GFX_ability_terrorize"
+		texturefile = "gfx/interface/abilitylist/ability_force_attack.dds"
+	}
+}
+>>>>>>> master

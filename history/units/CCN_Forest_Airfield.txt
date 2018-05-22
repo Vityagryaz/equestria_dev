@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿air_wings = {
 	230 = {
 		# 1. Vazduhoplovna Brigada -- Dewotine D.1/9/27 fighters
@@ -7,3 +8,14 @@
 		}
 	}
 }
+=======
+﻿air_wings = {
+	230 = {
+		# 1. Vazduhoplovna Brigada -- Dewotine D.1/9/27 fighters
+		fighter_equipment_1 = {
+			owner = "CCN"
+			amount = 150
+		}
+	}
+}
+>>>>>>> master

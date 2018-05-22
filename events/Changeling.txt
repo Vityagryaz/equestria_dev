@@ -2,7 +2,12 @@
 
 
 country_event = {   ######### Talk about Olenian Territories ######
+<<<<<<< HEAD
 	id = changelings.1
+=======
+	id = changelings.1
+	immediate = {log = "[Root.GetName]: event changelings.1"}#Auto-logging
+>>>>>>> master
 	title = changelings.1.t
 	desc = changelings.1.d
 	picture = GFX_event_swarm
@@ -18,7 +23,12 @@ country_event = {   ######### Talk about Olenian Territories ######
 	}
 }
 country_event = { ####### Offer Puppet Rights #########
+<<<<<<< HEAD
 	id = changelings.2
+=======
+	id = changelings.2
+	immediate = {log = "[Root.GetName]: event changelings.2"}#Auto-logging
+>>>>>>> master
 	title = changelings.2.t
 	desc = changelings.2.d
 	picture = GFX_event_swarm
@@ -36,7 +46,12 @@ country_event = { ####### Offer Puppet Rights #########
 	}
 }
 country_event = { ################ Conquest ############
+<<<<<<< HEAD
 	id = changelings.3
+=======
+	id = changelings.3
+	immediate = {log = "[Root.GetName]: event changelings.3"}#Auto-logging
+>>>>>>> master
 	title = changelings.3.t
 	desc = changelings.3.d
 	picture = GFX_event_swarm
@@ -50,7 +65,12 @@ country_event = { ################ Conquest ############
 	}
 }
 country_event = { ################ states ceded ############
+<<<<<<< HEAD
 	id = changelings.4
+=======
+	id = changelings.4
+	immediate = {log = "[Root.GetName]: event changelings.4"}#Auto-logging
+>>>>>>> master
 	title = changelings.4.t
 	desc = changelings.4.d
 	picture = GFX_event_swarm
@@ -66,7 +86,12 @@ country_event = { ################ states ceded ############
 	}
 }
 country_event = { ################ states Denied ############
+<<<<<<< HEAD
 	id = changelings.5
+=======
+	id = changelings.5
+	immediate = {log = "[Root.GetName]: event changelings.5"}#Auto-logging
+>>>>>>> master
 	title = changelings.5.t
 	desc = changelings.5.d
 	picture = GFX_event_swarm
@@ -81,7 +106,12 @@ country_event = { ################ states Denied ############
 	}
 }
 country_event = { ################ Puppet success ############
+<<<<<<< HEAD
 	id = changelings.6
+=======
+	id = changelings.6
+	immediate = {log = "[Root.GetName]: event changelings.6"}#Auto-logging
+>>>>>>> master
 	title = changelings.6.t
 	desc = changelings.6.d
 	picture = GFX_event_swarm
@@ -97,6 +127,7 @@ country_event = { ################ Puppet success ############
 			OLE = {
 				set_country_flag = OLE_CHN_puppet
 				set_party_name = { ideology = fascism long_name = OLE_chn_collaborators_long name = OLE_chn_collaborators }
+<<<<<<< HEAD
 				create_country_leader = {
 					name = "Changeling Collaborator"
 					picture = "leader_unknown.dds"
@@ -106,6 +137,17 @@ country_event = { ################ Puppet success ############
 
 					}
 				}
+=======
+			create_country_leader = {
+				name = "Vidkun Hjortsling"
+				picture = "Hjortsling.dds"
+				expire = "1965.1.1"
+				ideology = rexism
+				traits = {
+
+				}
+			}
+>>>>>>> master
 				drop_cosmetic_tag = yes
 				set_cosmetic_tag = OLE_CHN
 			}
@@ -116,7 +158,12 @@ country_event = { ################ Puppet success ############
 	}
 }
 country_event = { ################ Puppet Denied ############
+<<<<<<< HEAD
 	id = changelings.7
+=======
+	id = changelings.7
+	immediate = {log = "[Root.GetName]: event changelings.7"}#Auto-logging
+>>>>>>> master
 	title = changelings.7.t
 	desc = changelings.7.d
 	picture = GFX_event_swarm
@@ -139,7 +186,12 @@ country_event = { ################ Puppet Denied ############
 	}
 }
 country_event = { ################ Ole surrenderrs ############
+<<<<<<< HEAD
 	id = changelings.8
+=======
+	id = changelings.8
+	immediate = {log = "[Root.GetName]: event changelings.8"}#Auto-logging
+>>>>>>> master
 	title = changelings.8.t
 	desc = changelings.8.d
 	picture = GFX_event_swarm
@@ -158,7 +210,12 @@ country_event = { ################ Ole surrenderrs ############
 	}
 }
 country_event = { ## Olenia agrees to be pupepted #
+<<<<<<< HEAD
 	id = changelings.9
+=======
+	id = changelings.9
+	immediate = {log = "[Root.GetName]: event changelings.9"}#Auto-logging
+>>>>>>> master
 	title = changelings.9.t
 	desc = changelings.9.d
 	picture = GFX_event_swarm
@@ -173,6 +230,7 @@ country_event = { ## Olenia agrees to be pupepted #
 		hidden_effect = {
 			OLE = {
 				set_party_name = { ideology = fascism long_name = OLE_chn_collaborators_long name = OLE_chn_collaborators }
+<<<<<<< HEAD
 				create_country_leader = {
 					name = "Changeling Collaborator"
 					picture = "leader_unknown.dds"
@@ -182,6 +240,17 @@ country_event = { ## Olenia agrees to be pupepted #
 
 					}
 				}
+=======
+			create_country_leader = {
+				name = "Vidkun Hjortsling"
+				picture = "Hjortsling.dds"
+				expire = "1965.1.1"
+				ideology = rexism
+				traits = {
+
+				}
+			}
+>>>>>>> master
 				drop_cosmetic_tag = yes
 				set_cosmetic_tag = OLE_CHN
 			}
@@ -193,7 +262,12 @@ country_event = { ## Olenia agrees to be pupepted #
 	}
 }
 country_event = { 
+<<<<<<< HEAD
 	id = changelings.10
+=======
+	id = changelings.10
+	immediate = {log = "[Root.GetName]: event changelings.10"}#Auto-logging
+>>>>>>> master
 	title = changelings.10.t
 	desc = changelings.10.d
 	picture = GFX_event_swarm
@@ -216,7 +290,12 @@ country_event = {
 	}
 }
 country_event = { 
+<<<<<<< HEAD
 	id = changelings.11
+=======
+	id = changelings.11
+	immediate = {log = "[Root.GetName]: event changelings.11"}#Auto-logging
+>>>>>>> master
 	title = changelings.11.t
 	desc = changelings.11.d
 	picture = GFX_event_swarm
@@ -239,7 +318,12 @@ country_event = {
 	}
 }
 country_event = { 
+<<<<<<< HEAD
 	id = changelings.12
+=======
+	id = changelings.12
+	immediate = {log = "[Root.GetName]: event changelings.12"}#Auto-logging
+>>>>>>> master
 	title = changelings.12.t
 	desc = changelings.12.d
 	picture = GFX_event_swarm
@@ -262,7 +346,12 @@ country_event = {
 	}
 }
 country_event = { 
+<<<<<<< HEAD
 	id = changelings.13
+=======
+	id = changelings.13
+	immediate = {log = "[Root.GetName]: event changelings.13"}#Auto-logging
+>>>>>>> master
 	title = changelings.13.t
 	desc = changelings.13.d
 	picture = GFX_event_swarm
@@ -285,7 +374,12 @@ country_event = {
 	}
 }
 country_event = { 
+<<<<<<< HEAD
 	id = changelings.14
+=======
+	id = changelings.14
+	immediate = {log = "[Root.GetName]: event changelings.14"}#Auto-logging
+>>>>>>> master
 	title = changelings.14.t
 	desc = changelings.14.d
 	picture = GFX_event_swarm
@@ -312,7 +406,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = changelings.15
+=======
+	id = changelings.15
+	immediate = {log = "[Root.GetName]: event changelings.15"}#Auto-logging
+>>>>>>> master
 	title = changelings.15.t
 	desc = changelings.15.d
 	picture = GFX_event_swarm
@@ -333,7 +432,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = changelings.16
+=======
+	id = changelings.16
+	immediate = {log = "[Root.GetName]: event changelings.16"}#Auto-logging
+>>>>>>> master
 	title = changelings.16.t
 	desc = changelings.16.d
 	picture = GFX_event_swarm
@@ -355,7 +459,12 @@ country_event = {
 	}
 }
 country_event = {  ## spy network destroyed
+<<<<<<< HEAD
 	id = changelings.17
+=======
+	id = changelings.17
+	immediate = {log = "[Root.GetName]: event changelings.17"}#Auto-logging
+>>>>>>> master
 	title = changelings.17.t
 	desc = changelings.17.d
 	picture = GFX_event_swarm
@@ -369,7 +478,12 @@ country_event = {  ## spy network destroyed
 	}
 }
 country_event = {  ## Sombra offers puppeting
+<<<<<<< HEAD
 	id = changelings.18
+=======
+	id = changelings.18
+	immediate = {log = "[Root.GetName]: event changelings.18"}#Auto-logging
+>>>>>>> master
 	title = changelings.18.t
 	desc = changelings.18.d
 	picture = GFX_event_swarm
@@ -394,7 +508,12 @@ country_event = {  ## Sombra offers puppeting
 	}
 }
 country_event = {  ## Sombra offers alliance
+<<<<<<< HEAD
 	id = changelings.19
+=======
+	id = changelings.19
+	immediate = {log = "[Root.GetName]: event changelings.19"}#Auto-logging
+>>>>>>> master
 	title = changelings.19.t
 	desc = changelings.19.d
 	picture = GFX_event_swarm
@@ -427,7 +546,12 @@ country_event = {  ## Sombra offers alliance
 	}
 }
 country_event = {  ## War on Equestria HERE
+<<<<<<< HEAD
 	id = changelings.20
+=======
+	id = changelings.20
+	immediate = {log = "[Root.GetName]: event changelings.20"}#Auto-logging
+>>>>>>> master
 	title = changelings.20.t
 	desc = changelings.20.d
 	picture = GFX_event_swarm
@@ -481,7 +605,12 @@ country_event = {  ## War on Equestria HERE
 	}
 }
 country_event = {  ## Sombra offers marriage
+<<<<<<< HEAD
 	id = changelings.21
+=======
+	id = changelings.21
+	immediate = {log = "[Root.GetName]: event changelings.21"}#Auto-logging
+>>>>>>> master
 	title = changelings.21.t
 	desc = changelings.21.d
 	picture = GFX_event_swarm
@@ -508,7 +637,12 @@ country_event = {  ## Sombra offers marriage
 	}
 }
 country_event = {  ## Jungle nation offers puppet
+<<<<<<< HEAD
 	id = changelings.22
+=======
+	id = changelings.22
+	immediate = {log = "[Root.GetName]: event changelings.22"}#Auto-logging
+>>>>>>> master
 	title = changelings.22.t
 	desc = changelings.22.d
 	picture = GFX_event_swarm
@@ -542,7 +676,12 @@ country_event = {  ## Jungle nation offers puppet
 	}
 }
 country_event = {  ## Jungle nation offers puppet
+<<<<<<< HEAD
 	id = changelings.23
+=======
+	id = changelings.23
+	immediate = {log = "[Root.GetName]: event changelings.23"}#Auto-logging
+>>>>>>> master
 	title = changelings.23.t
 	desc = changelings.23.d
 	picture = GFX_event_swarm
@@ -580,7 +719,12 @@ country_event = {  ## Jungle nation offers puppet
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = changelings.24
+=======
+	id = changelings.24
+	immediate = {log = "[Root.GetName]: event changelings.24"}#Auto-logging
+>>>>>>> master
 	title = changelings.24.t
 	desc = changelings.24.d
 	picture = GFX_event_swarm
@@ -594,7 +738,12 @@ country_event = {
 	}
 }
 country_event = { #CLF CONTROL
+<<<<<<< HEAD
 	id = changelings.25
+=======
+	id = changelings.25
+	immediate = {log = "[Root.GetName]: event changelings.25"}#Auto-logging
+>>>>>>> master
 	title = changelings.25.t
 	desc = changelings.25.d
 	picture = GFX_event_swarm
@@ -609,7 +758,12 @@ country_event = { #CLF CONTROL
 	}
 }
 country_event = { #UPC CONTROL
+<<<<<<< HEAD
 	id = changelings.26
+=======
+	id = changelings.26
+	immediate = {log = "[Root.GetName]: event changelings.26"}#Auto-logging
+>>>>>>> master
 	title = changelings.26.t
 	desc = changelings.26.d
 	picture = GFX_event_swarm
@@ -624,7 +778,12 @@ country_event = { #UPC CONTROL
 	}
 }
 country_event = { ################ Balkanize Olenia ############
+<<<<<<< HEAD
 	id = changelings.27
+=======
+	id = changelings.27
+	immediate = {log = "[Root.GetName]: event changelings.27"}#Auto-logging
+>>>>>>> master
 	title = changelings.27.t
 	desc = changelings.27.d
 	picture = GFX_event_swarm
@@ -731,7 +890,12 @@ country_event = { ################ Balkanize Olenia ############
 	}
 }
 country_event = { ################ Final Phase Reinforcements for Puppets ############
+<<<<<<< HEAD
 	id = changelings.28
+=======
+	id = changelings.28
+	immediate = {log = "[Root.GetName]: event changelings.28"}#Auto-logging
+>>>>>>> master
 	title = changelings.28.t
 	desc = changelings.28.d
 	picture = GFX_event_swarm
@@ -747,7 +911,12 @@ country_event = { ################ Final Phase Reinforcements for Puppets ######
 }
 
 country_event = { ################  Communist Infiltraitors Phase One############
+<<<<<<< HEAD
 	id = changelings.29
+=======
+	id = changelings.29
+	immediate = {log = "[Root.GetName]: event changelings.29"}#Auto-logging
+>>>>>>> master
 	title = changelings.29.t
 	desc = changelings.29.d
 	picture = GFX_event_swarm
@@ -766,7 +935,12 @@ country_event = { ################  Communist Infiltraitors Phase One###########
 	}
 }
 country_event = { ################ Intergrate the Commissariats ############
+<<<<<<< HEAD
 	id = changelings.30
+=======
+	id = changelings.30
+	immediate = {log = "[Root.GetName]: event changelings.30"}#Auto-logging
+>>>>>>> master
 	title = changelings.30.t
 	desc = changelings.30.d
 	picture = GFX_event_swarm
@@ -786,7 +960,12 @@ country_event = { ################ Intergrate the Commissariats ############
 	}
 }
 country_event = { ################ Phase 2 (For Olenia)############
+<<<<<<< HEAD
 	id = changelings.31
+=======
+	id = changelings.31
+	immediate = {log = "[Root.GetName]: event changelings.31"}#Auto-logging
+>>>>>>> master
 	title = changelings.31.t
 	desc = changelings.31.d
 	picture = GFX_event_swarm
@@ -806,7 +985,12 @@ country_event = { ################ Phase 2 (For Olenia)############
 	}
 }
 country_event = { ################ Furfore Chrysalis (Vanhoover Sabotour OOB) ############
+<<<<<<< HEAD
 	id = changelings.32
+=======
+	id = changelings.32
+	immediate = {log = "[Root.GetName]: event changelings.32"}#Auto-logging
+>>>>>>> master
 	title = changelings.32.t
 	desc = changelings.32.d
 	picture = GFX_event_swarm
@@ -839,7 +1023,12 @@ country_event = { ################ Furfore Chrysalis (Vanhoover Sabotour OOB) ##
 	}
 }
 country_event = { # Changeling Puppet
+<<<<<<< HEAD
 	id = changelings.33
+=======
+	id = changelings.33
+	immediate = {log = "[Root.GetName]: event changelings.33"}#Auto-logging
+>>>>>>> master
 	hidden = yes
 
 	trigger = {
@@ -856,7 +1045,12 @@ country_event = { # Changeling Puppet
 	}
 }
 country_event = { # Zecora Resistance
+<<<<<<< HEAD
 	id = changelings.34
+=======
+	id = changelings.34
+	immediate = {log = "[Root.GetName]: event changelings.34"}#Auto-logging
+>>>>>>> master
 	hidden = yes
 
 	trigger = {
@@ -868,13 +1062,22 @@ country_event = { # Zecora Resistance
 			EQS = { is_subject_of = CHN }
 		}
 		any_country = {
+<<<<<<< HEAD
 			OR = { is_subject_of = CHN
 				tag = CHN }
 			owns_state = 1
+=======
+			OR = { 
+				is_subject_of = CHN
+				tag = CHN 
+			}
+			1 = { is_owned_and_controlled_by = PREV }
+>>>>>>> master
 		}
 		divisions_in_state = { state = 1 size < 2 }
 	}
 	fire_only_once = yes
+<<<<<<< HEAD
 	mean_time_to_happen = { days = 260
 		modifier = {
 			factor = 0.9
@@ -910,6 +1113,136 @@ country_event = { # Zecora Resistance
 				set_capital = 5 }
 			add_political_power = 300
 			add_manpower = 100000
+=======
+	mean_time_to_happen = { 
+		days = 260
+		modifier = {
+			factor = 0.9
+			has_war = yes
+		}
+		modifier = {
+			factor = 0.5
+			has_war = yes
+			divisions_in_state = { state = 3 size < 2 }
+		}
+		modifier = {
+			factor = 1.2
+			has_war = no
+		}
+		modifier = {
+			factor = 0.45
+			has_war = yes
+			divisions_in_state = { state = 3 size < 2 }
+			divisions_in_state = { state = 2 size < 2 }
+		}
+	}
+	option = {
+		ZRS = {
+			transfer_state = 1
+			if = { 
+				limit = { 
+					ROOT = { divisions_in_state = { state = 5 size < 2 } }
+				}
+				transfer_state = 5
+				set_capital = 5 
+			}
+			add_political_power = 600
+			add_manpower = 100000
+			if = {
+				limit = {
+					PREV = { has_tech = advanced_infantry_weapons }
+				}
+				
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_3
+					amount = 1000
+					producer = CHN
+				}
+				PREV = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_3
+						amount = -1000
+						producer = CHN
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					PREV = { has_tech = improved_infantry_weapons }
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_2
+					amount = 1000
+					producer = CHN
+				}
+				PREV = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_2
+						amount = -1000
+						producer = CHN
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					PREV = { has_tech = infantry_weapons1 }
+					
+				}
+				
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 1000
+					producer = CHN
+				}
+				PREV = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_1
+						amount = -1000
+						producer = CHN
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					PREV = { has_tech = infantry_weapons }
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 1000
+					producer = CHN
+				}
+				PREV = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment_0
+						amount = -1000
+						producer = CHN
+					}
+				}
+			}
+			if = {
+				limit = { has_global_flag = EQS_pinkie_pie_created }
+				event_target:EQS_pinkie_pie = { set_nationality = PREV }
+				else = {
+					create_corps_commander = {
+						name = "Pinkamena Diana Pie"
+						portrait_path = "gfx/leaders/EQS/PinkiePie.tga"
+						traits = { pinkie_pie_bae }
+						skill = 3
+						id = 9
+						female = yes
+						attack_skill = 3
+						defense_skill = 4
+						planning_skill = 2
+						logistics_skill = 3
+					}
+					set_global_flag = EQS_pinkie_pie_created
+					random_unit_leader = {
+						limit = { has_id = 9 }
+						save_global_event_target_as = EQS_pinkie_pie
+					}
+				}
+			}
+>>>>>>> master
 			add_ideas = everfree_resistance
 			declare_war_on = { target = CHN type = puppet_wargoal_focus }
 			load_oob = "ZRS_spawn"
@@ -921,7 +1254,12 @@ country_event = { # Zecora Resistance
 	}
 }
 country_event = { # Resistance news
+<<<<<<< HEAD
 	id = changelings.35
+=======
+	id = changelings.35
+	immediate = {log = "[Root.GetName]: event changelings.35"}#Auto-logging
+>>>>>>> master
 	title = changelings.35.t
 	desc = changelings.35.d
 	picture = GFX_event_swarm
@@ -950,7 +1288,12 @@ country_event = { # Resistance news
 		#  }
 	#}
 country_event = {
+<<<<<<< HEAD
 	id = changelings.36
+=======
+	id = changelings.36
+	immediate = {log = "[Root.GetName]: event changelings.36"}#Auto-logging
+>>>>>>> master
 	title = changelings.36.t
 	desc = changelings.36.d
 	picture = GFX_report_event_merchant_ship_01
@@ -969,7 +1312,12 @@ country_event = {
 	}
 }
 country_event = {
+<<<<<<< HEAD
 	id = changelings.37
+=======
+	id = changelings.37
+	immediate = {log = "[Root.GetName]: event changelings.37"}#Auto-logging
+>>>>>>> master
 	title = changelings.37.t
 	desc = changelings.37.d
 	picture = GFX_event_winter_forest
@@ -987,6 +1335,25 @@ country_event = {
 		add_timed_idea = { idea = chn_vraks_military_effort_2 days = 80 }
 	}
 }
+<<<<<<< HEAD
+=======
+country_event = {
+	id = changelings.38
+	immediate = {log = "[Root.GetName]: event changelings.38"}#Auto-logging
+	title = changelings.38.t
+	desc = changelings.38.d
+	picture = GFX_event_school
+
+	is_triggered_only = yes
+
+	option = {
+		name = changelings.38.a
+		add_ideas = {
+			CHN_celestial_resistance
+		}
+	}
+}
+>>>>>>> master
 #############################################################################
 ################ CHANGELING PUPPET EVENTS ###################################
 ################ Cosmetic tag events for EQS, CRY, STG, YAK, JAK and OLE #############
@@ -994,7 +1361,12 @@ country_event = {
 ################################# with love ~Scroup ############################
 #############################################################################
 country_event = { # Changeling Puppet
+<<<<<<< HEAD
 	id = changelings.900
+=======
+	id = changelings.900
+	immediate = {log = "[Root.GetName]: event changelings.900"}#Auto-logging
+>>>>>>> master
 	title = changelings.900.t
 	desc = changelings.900.d
 	picture = GFX_event_swarm
@@ -1014,7 +1386,12 @@ country_event = { # Changeling Puppet
 	}
 }
 country_event = { # Changeling Puppet
+<<<<<<< HEAD
 	id = changelings.902
+=======
+	id = changelings.902
+	immediate = {log = "[Root.GetName]: event changelings.902"}#Auto-logging
+>>>>>>> master
 	title = changelings.902.t
 	desc = changelings.902.d
 	picture = GFX_event_swarm
@@ -1044,7 +1421,12 @@ country_event = { # Changeling Puppet
 	}
 }
 country_event = { # Changeling Puppet
+<<<<<<< HEAD
 	id = changelings.901
+=======
+	id = changelings.901
+	immediate = {log = "[Root.GetName]: event changelings.901"}#Auto-logging
+>>>>>>> master
 	title = changelings.901.t
 	desc = changelings.901.d
 	picture = GFX_event_swarm
@@ -1064,7 +1446,12 @@ country_event = { # Changeling Puppet
 	}
 }
 country_event = { # Changeling Puppet
+<<<<<<< HEAD
 	id = changelings.903
+=======
+	id = changelings.903
+	immediate = {log = "[Root.GetName]: event changelings.903"}#Auto-logging
+>>>>>>> master
 	title = changelings.903.t
 	desc = changelings.903.d
 	picture = GFX_event_swarm
@@ -1085,7 +1472,12 @@ country_event = { # Changeling Puppet
 	}
 }
 country_event = { # Changeling Puppet
+<<<<<<< HEAD
 	id = changelings.904
+=======
+	id = changelings.904
+	immediate = {log = "[Root.GetName]: event changelings.904"}#Auto-logging
+>>>>>>> master
 	title = changelings.904.t
 	desc = changelings.904.d
 	picture = GFX_event_swarm
@@ -1106,7 +1498,12 @@ country_event = { # Changeling Puppet
 	}
 }
 country_event = { # Changeling Puppet
+<<<<<<< HEAD
 	id = changelings.905
+=======
+	id = changelings.905
+	immediate = {log = "[Root.GetName]: event changelings.905"}#Auto-logging
+>>>>>>> master
 	title = changelings.905.t
 	desc = changelings.905.d
 	picture = GFX_event_swarm
@@ -1127,7 +1524,12 @@ country_event = { # Changeling Puppet
 	}
 }
 country_event = { # Changeling Puppet
+<<<<<<< HEAD
 	id = changelings.906
+=======
+	id = changelings.906
+	immediate = {log = "[Root.GetName]: event changelings.906"}#Auto-logging
+>>>>>>> master
 	title = changelings.902.t
 	desc = changelings.902.d
 	picture = GFX_event_swarm
@@ -1148,7 +1550,12 @@ country_event = { # Changeling Puppet
 	}
 }
 country_event = { # Removal of cosmetic
+<<<<<<< HEAD
 	id = changelings.910
+=======
+	id = changelings.910
+	immediate = {log = "[Root.GetName]: event changelings.910"}#Auto-logging
+>>>>>>> master
 	title = changelings.910.t
 	desc = changelings.910.d
 	picture = GFX_event_canterlot
@@ -1204,11 +1611,27 @@ country_event = { # Removal of cosmetic
 					}
 				}
 			}
+<<<<<<< HEAD
+=======
+			if = {
+				limit = {
+					original_tag = STG
+					has_government = communism
+					is_subject = no
+				}
+				load_focus_tree = stalliongrad
+			}
+>>>>>>> master
 		}
 	}
 }
 country_event = { # Removal of cosmetic for EQS
+<<<<<<< HEAD
 	id = changelings.911
+=======
+	id = changelings.911
+	immediate = {log = "[Root.GetName]: event changelings.911"}#Auto-logging
+>>>>>>> master
 	title = changelings.910.t
 	desc = changelings.910.d
 	picture = GFX_event_canterlot

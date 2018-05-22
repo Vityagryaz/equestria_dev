@@ -50,6 +50,10 @@ ideas = {
 			available = {
 				NOT = { has_idea = proper_science_base }
 				OR = {
+<<<<<<< HEAD
+=======
+					owns_major_griffon_city = yes
+>>>>>>> master
 					AND = {
 						owns_big_griffon_city = yes
 						OR = {
@@ -61,7 +65,11 @@ ideas = {
 					}
 					has_country_flag = big_science_base_unlocked
 				}
+<<<<<<< HEAD
 				
+=======
+
+>>>>>>> master
 			}
 			modifier = {
 				research_time_factor = 0.3
@@ -161,7 +169,11 @@ ideas = {
 					}
 				}
 			}
+<<<<<<< HEAD
 			
+=======
+
+>>>>>>> master
 			cancel_if_invalid = no
 		}
 		dummy_idea_science = {

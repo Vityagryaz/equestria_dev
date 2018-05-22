@@ -2,6 +2,10 @@
 
 country_event = { ### Summit at Dachaigh
 	id = penguin.1
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.1"}#Auto-logging
+>>>>>>> master
 	title = penguin.1.t
 	desc = penguin.1.d
 	picture = GFX_event_palace_hall
@@ -20,6 +24,10 @@ country_event = { ### Summit at Dachaigh
 
 country_event = { ### List of Candidates
 	id = penguin.2
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.2"}#Auto-logging
+>>>>>>> master
 	title = penguin.2.t
 	desc = penguin.2.d
 	picture = GFX_event_palace_hall
@@ -46,6 +54,10 @@ country_event = { ### List of Candidates
 
 country_event = { ### Hindrik Aberg
 	id = penguin.3
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.3"}#Auto-logging
+>>>>>>> master
 	title = penguin.3.t
 	desc = penguin.3.d
 	picture = GFX_event_palace_hall
@@ -71,6 +83,10 @@ country_event = { ### Hindrik Aberg
 
 country_event = { ### Orvar Njordin
 	id = penguin.4
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.4"}#Auto-logging
+>>>>>>> master
 	title = penguin.4.t
 	desc = penguin.4.d
 	picture = GFX_event_palace_hall
@@ -94,6 +110,10 @@ country_event = { ### Orvar Njordin
 
 country_event = { ### For Stalliongrad
 	id = penguin.5
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.5"}#Auto-logging
+>>>>>>> master
 	title = penguin.5.t
 	desc = penguin.5.d
 	picture = GFX_event_palace_hall
@@ -103,13 +123,19 @@ country_event = { ### For Stalliongrad
 	option = {
 		name = penguin.5.a
 		ai_chance = { factor = 80 }
+<<<<<<< HEAD
 		STG = {
 			give_guarantee = PNG
 		}
+=======
+			give_guarantee = FROM
+>>>>>>> master
 		
 		hidden_effect = {
-			country_event = {
-				id = penguin.6
+			FROM = {
+				country_event = {
+					id = penguin.6
+				}
 			}
 		}
 		
@@ -118,8 +144,10 @@ country_event = { ### For Stalliongrad
 	option = {
 		name = penguin.5.b
 		hidden_effect = {
-			country_event = {
-				id = penguin.7
+			FROM = {
+				country_event = {
+					id = penguin.7
+				}
 			}
 		}
 	}
@@ -127,6 +155,10 @@ country_event = { ### For Stalliongrad
 
 country_event = { ### Accepted
 	id = penguin.6
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.6"}#Auto-logging
+>>>>>>> master
 	title = penguin.6.t
 	desc = penguin.6.d
 	picture = GFX_event_palace_hall
@@ -141,6 +173,10 @@ country_event = { ### Accepted
 
 country_event = { ### Declined
 	id = penguin.7
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.7"}#Auto-logging
+>>>>>>> master
 	title = penguin.7.t
 	desc = penguin.7.d
 	picture = GFX_event_palace_hall
@@ -155,6 +191,10 @@ country_event = { ### Declined
 
 country_event = { ### Yak Invite
 	id = penguin.8
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.8"}#Auto-logging
+>>>>>>> master
 	title = penguin.8.t
 	desc = penguin.8.d
 	picture = GFX_event_palace_hall
@@ -190,6 +230,10 @@ country_event = { ### Yak Invite
 
 country_event = { ### Accepted
 	id = penguin.9
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.9"}#Auto-logging
+>>>>>>> master
 	title = penguin.9.t
 	desc = penguin.9.d
 	picture = GFX_event_palace_hall
@@ -204,6 +248,10 @@ country_event = { ### Accepted
 
 country_event = { ### Declined
 	id = penguin.10
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.10"}#Auto-logging
+>>>>>>> master
 	title = penguin.10.t
 	desc = penguin.10.d
 	picture = GFX_event_palace_hall
@@ -218,6 +266,10 @@ country_event = { ### Declined
 
 country_event = { ### Polar Bear Invite
 	id = penguin.11
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.11"}#Auto-logging
+>>>>>>> master
 	title = penguin.11.t
 	desc = penguin.11.d
 	picture = GFX_event_palace_hall
@@ -253,6 +305,10 @@ country_event = { ### Polar Bear Invite
 
 country_event = { ### Accepted
 	id = penguin.12
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.12"}#Auto-logging
+>>>>>>> master
 	title = penguin.12.t
 	desc = penguin.12.d
 	picture = GFX_event_palace_hall
@@ -267,6 +323,10 @@ country_event = { ### Accepted
 
 country_event = { ### Declined
 	id = penguin.13
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.13"}#Auto-logging
+>>>>>>> master
 	title = penguin.13.t
 	desc = penguin.13.d
 	picture = GFX_event_palace_hall
@@ -281,6 +341,10 @@ country_event = { ### Declined
 
 country_event = { ### Nova Griffonia Invite
 	id = penguin.14
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.14"}#Auto-logging
+>>>>>>> master
 	title = penguin.14.t
 	desc = penguin.14.d
 	picture = GFX_event_palace_hall
@@ -316,6 +380,10 @@ country_event = { ### Nova Griffonia Invite
 
 country_event = { ### Accepted
 	id = penguin.15
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.15"}#Auto-logging
+>>>>>>> master
 	title = penguin.15.t
 	desc = penguin.15.d
 	picture = GFX_event_palace_hall
@@ -330,6 +398,10 @@ country_event = { ### Accepted
 
 country_event = { ### Declined
 	id = penguin.16
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.16"}#Auto-logging
+>>>>>>> master
 	title = penguin.16.t
 	desc = penguin.16.d
 	picture = GFX_event_palace_hall
@@ -345,6 +417,10 @@ country_event = { ### Declined
 
 country_event = { ### Equestrian Guarantee
 	id = penguin.17
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.17"}#Auto-logging
+>>>>>>> master
 	title = penguin.17.t
 	desc = penguin.17.d
 	picture = GFX_event_palace_hall
@@ -382,6 +458,10 @@ country_event = { ### Equestrian Guarantee
 
 country_event = { ### Accepted
 	id = penguin.18
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.18"}#Auto-logging
+>>>>>>> master
 	title = penguin.18.t
 	desc = penguin.18.d
 	picture = GFX_event_palace_hall
@@ -396,6 +476,10 @@ country_event = { ### Accepted
 
 country_event = { ### Declined
 	id = penguin.19
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.19"}#Auto-logging
+>>>>>>> master
 	title = penguin.19.t
 	desc = penguin.19.d
 	picture = GFX_event_palace_hall
@@ -410,11 +494,16 @@ country_event = { ### Declined
 
 country_event = { ### Waifu Achievment - It's a secret!
 	id = penguin.20
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.20"}#Auto-logging
+>>>>>>> master
 	hidden = yes
 	
 	fire_only_once = yes
 	
 	trigger = {
+		original_tag = PNG
 		owns_state = 265
 		owns_state = 272
 		owns_state = 280
@@ -427,16 +516,31 @@ country_event = { ### Waifu Achievment - It's a secret!
 		name = penguin.20.a
 		
 		create_corps_commander = {
+<<<<<<< HEAD
 			name = "Commander Waifu"
 			portrait_path = "gfx/leaders/PNG/Waifu.tga"
 			traits = {  }
 			skill = 1
+=======
+			name = "Commander Hululu"
+			portrait_path = "gfx/leaders/PNG/Waifu.tga"
+			traits = {  }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+>>>>>>> master
 		}
 	}
 }
 
 country_event = { ### Commie Uprising event
 	id = penguin.21
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event penguin.21"}#Auto-logging
+>>>>>>> master
 	title = penguin.21.t
 	desc = penguin.21.d
 	picture = GFX_event_palace_hall

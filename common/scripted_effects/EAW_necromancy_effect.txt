@@ -21,6 +21,7 @@ convert_living = {
 			decrease_population_necromancy = yes
 		}
 	}
+<<<<<<< HEAD
 }
 
 #THIS is state
@@ -265,4 +266,17 @@ necro_convert_state_population_digit_4 = {
 			ROOT = { add_manpower = 90000 }
 		}
 	}
+=======
+}
+
+#THIS is state
+decrease_population_necromancy = {
+	set_temp_variable = { pop_to_kill = state_population }
+	multiply_temp_variable = { pop_to_kill = 0.1 } #10%
+	round_variable = pop_to_kill
+	log = "DED converts in [This.GetName], [?pop_to_kill] converted"
+	ROOT = { add_manpower = pop_to_kill }
+	multiply_temp_variable = { pop_to_kill = -1 }
+	add_manpower = pop_to_kill
+>>>>>>> master
 }

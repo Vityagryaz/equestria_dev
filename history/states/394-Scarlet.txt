@@ -13,6 +13,13 @@ state={
 		add_core_of = SIC
 		victory_points = {
 			12180 20
+<<<<<<< HEAD
+=======
+		}
+		buildings = {
+			infrastructure = 1
+			12180 = { naval_base = 1 }
+>>>>>>> master
 		}
 	}
 	manpower=120455

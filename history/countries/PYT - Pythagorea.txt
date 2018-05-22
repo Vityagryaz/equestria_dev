@@ -59,8 +59,13 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Duke Erebus"
+<<<<<<< HEAD
 	
 	picture = "Governor.tga"
+=======
+
+	picture = "Erebus.tga"
+>>>>>>> master
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
@@ -71,11 +76,15 @@ create_country_leader = {
 create_country_leader = {
 	name = "Duke Erebus"
 	desc = ""
-	picture = "Governor.tga"
+	picture = "Erebus.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 	}
 }
 
@@ -86,6 +95,10 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 	}
 }

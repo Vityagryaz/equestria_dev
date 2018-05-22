@@ -71,10 +71,38 @@ democratic_peace = {
 			factor = 0
 			is_subject = yes
 		}
+<<<<<<< HEAD
+=======
+		modifier = {
+			factor = 0
+			tag = event_target:equestria
+			has_global_flag = EQS_recognized_FAT
+			FROM = {
+				tag = GRI
+			}
+		}
+>>>>>>> master
 	}
 
 	liberate = {
 		factor = 0 #200
+<<<<<<< HEAD
+=======
+		modifier = {
+			add = 1000
+			tag = event_target:equestria
+			FROM = {
+				tag = OLE
+			}
+		}
+		modifier = {
+			add = 1000
+			tag = event_target:equestria
+			FROM = {
+				tag = FAT
+			}
+		}
+>>>>>>> master
 	}
 
 	puppet = {
@@ -85,12 +113,17 @@ democratic_peace = {
 		}
 		modifier = {
 			factor = 1000
+<<<<<<< HEAD
 			tag = EQS
+=======
+			tag = event_target:equestria
+>>>>>>> master
 			FROM = {
 				tag = OLE
 			}
 		}
 		modifier = {
+<<<<<<< HEAD
 			factor = 0
 			AND = {
 				FROM = {
@@ -104,6 +137,54 @@ democratic_peace = {
 				}
 				ROOT = {
 					OR = {
+						tag = CES
+						tag = BAL
+						tag = NMS
+						tag = JUN
+						tag = TEM
+					}
+				}
+=======
+			factor = 1000
+			tag = event_target:equestria
+			FROM = {
+				tag = FAT
+			}
+		}
+		modifier = {
+			factor = 0
+			tag = event_target:equestria
+			has_global_flag = EQS_recognized_FAT
+			FROM = {
+				tag = GRI
+>>>>>>> master
+			}
+		}
+		modifier = {
+			factor = 0
+			AND = {
+				FROM = {
+					OR = {
+<<<<<<< HEAD
+						tag = CHN
+						tag = CCN
+=======
+						tag = CES
+						tag = BAL
+						tag = NMS
+						tag = JUN
+						tag = TEM
+>>>>>>> master
+					}
+				}
+				ROOT = {
+					OR = {
+<<<<<<< HEAD
+						tag = CHN
+						tag = CCN
+					}
+				}
+=======
 						tag = CES
 						tag = BAL
 						tag = NMS
@@ -128,6 +209,7 @@ democratic_peace = {
 						tag = CCN
 					}
 				}
+>>>>>>> master
 			}
 		}
 		modifier = {

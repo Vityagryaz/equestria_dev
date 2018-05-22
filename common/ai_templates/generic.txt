@@ -313,10 +313,17 @@ armor_generic = {
 	
 	
 	modern_armor_default = {
+<<<<<<< HEAD
 		
 		upgrade_prio = {
 			factor = 2.5
 			
+=======
+
+		upgrade_prio = {
+			factor = 2.5
+
+>>>>>>> master
 			modifier = {
 				factor = 1
 			}
@@ -325,7 +332,11 @@ armor_generic = {
 				NOT = { has_tech = main_battle_tank }
 			}
 		}
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 		target_width = 18.0
 		width_weight = 2.0
 		column_swap_factor = 0.1
@@ -586,8 +597,7 @@ infantry_generic = {
 			}
 			
 			regiments = {
-				infantry = 7
-				artillery_brigade = 2
+				infantry = 10
 			}
 		}
 		
@@ -753,8 +763,8 @@ DED_infantry_generic = {
 			}
 			
 			regiments = {
-				infantry = 9
-				artillery = 2
+				infantry = 10
+				artillery = 1
 			}
 		}
 		
@@ -858,8 +868,7 @@ magical_infantry_generic = {
 			}
 			
 			regiments = {
-				magical_infantry = 7
-				artillery_brigade = 2
+				magical_infantry = 10
 			}
 		}
 		
@@ -913,9 +922,15 @@ mountaineers_generic = {
 			}
 		}
 	}
+<<<<<<< HEAD
 	
 	match_to_count = 0.45
 	
+=======
+
+	match_to_count = 0.4
+
+>>>>>>> master
 	mountaineers_default = {
 		
 		upgrade_prio = {
@@ -973,7 +988,7 @@ mountaineers_generic = {
 			}
 			
 			regiments = {
-				mountaineers = 8
+				mountaineers = 10
 			}
 		}
 		
@@ -1036,8 +1051,13 @@ marines_generic = {
 				factor = 1
 			}
 		}
+<<<<<<< HEAD
 		
 		target_width = 18.0
+=======
+
+		target_width = 20.0
+>>>>>>> master
 		width_weight = 1.0
 		column_swap_factor = 0.1
 		
@@ -1081,7 +1101,7 @@ marines_generic = {
 			}
 			
 			regiments = {
-				marine = 9
+				marine = 10
 			}
 		}
 		
@@ -1282,7 +1302,7 @@ knights_generic = {
 			}
 			
 			regiments = {
-				knights = 8
+				knights = 10
 			}
 		}
 		

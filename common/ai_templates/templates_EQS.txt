@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 armored_EQS= {
 	
+=======
+armored_EQS = {
+
+>>>>>>> master
 	available_for = {
 		EQS
 		EQC
@@ -25,6 +30,7 @@ armored_EQS= {
 	
 	upgrade_prio = {
 		factor = 2.17
+<<<<<<< HEAD
 		
 		modifier = {
 			factor = 7
@@ -37,6 +43,8 @@ armored_EQS= {
 			factor = 2
 			has_tech = main_battle_tank
 		}
+=======
+>>>>>>> master
 	}
 	
 	light_armor_default_EQS = {
@@ -553,14 +561,23 @@ infantry_EQS = {
 	}
 	
 	match_to_count = 0.45
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> master
 	infantry_default_EQS = {
 		
 		upgrade_prio = {
 			factor = 2
 		}
+<<<<<<< HEAD
 		
 		target_width = 25.0
+=======
+
+		target_width = 20.0
+>>>>>>> master
 		width_weight = 1.0
 		column_swap_factor = 0.1
 		
@@ -601,14 +618,13 @@ infantry_EQS = {
 			support = {
 				engineer = 1
 				recon = 1
-				field_hospital = 1
+				artillery = 1
 				anti_tank = 1
 				unicorn_company = 1
 			}
 			
 			regiments = {
-				infantry = 8
-				artillery_brigade = 3
+				infantry = 10
 			}
 		}
 		
@@ -623,7 +639,6 @@ infantry_EQS = {
 			artillery
 			rocket_artillery
 			anti_tank_brigade
-			artillery_brigade
 			rocket_artillery_brigade
 			unicorn_company
 		}
@@ -647,9 +662,15 @@ magical_infantry_EQS = {
 		upgrade_prio = {
 			factor = 2
 		}
+<<<<<<< HEAD
 		
 		target_width = 25.0
 		width_weight = 2.0
+=======
+
+		target_width = 20.0
+		width_weight = 1.0
+>>>>>>> master
 		column_swap_factor = 0.1
 		
 		stat_weights = {
@@ -684,19 +705,23 @@ magical_infantry_EQS = {
 		
 		target_template = {
 			weight = 0.9
+<<<<<<< HEAD
 			match_value = 9000.0
 			
+=======
+			match_value = 10000.0
+
+>>>>>>> master
 			support = {
 				engineer = 1
-				field_hospital = 1
+				artillery = 1
 				anti_tank = 1
 				unicorn_company = 1
 				recon = 1
 			}
 			
 			regiments = {
-				magical_infantry = 8
-				artillery_brigade = 3
+				magical_infantry = 10
 			}
 		}
 		
@@ -1067,8 +1092,13 @@ pegasi_shock_EQS = {
 		upgrade_prio = {
 			factor = 2
 		}
+<<<<<<< HEAD
 		
 		target_width = 12.0
+=======
+
+		target_width = 20.0
+>>>>>>> master
 		width_weight = 3.0
 		column_swap_factor = 0.1
 		
@@ -1115,7 +1145,7 @@ pegasi_shock_EQS = {
 			}
 			
 			regiments = {
-				pegasi = 6
+				pegasi = 10
 			}
 		}
 		

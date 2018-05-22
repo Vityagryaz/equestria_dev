@@ -54,6 +54,7 @@ set_war_support = 0.341
 add_opinion_modifier = {
 	target = LNS modifier = besties
 }
+give_guarantee = LNS
 create_country_leader = {
 	name = "Grandmaster Siegfried Trappenfeld"
 	desc = ""
@@ -66,8 +67,13 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Siegfried Trappenfeld"
+<<<<<<< HEAD
 	
 	picture = "Governor.tga"
+=======
+
+	picture = "Hamster.tga"
+>>>>>>> master
 	expire = "1965.1.1"
 	ideology = falangism
 	traits = {
@@ -82,7 +88,11 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 	}
 }
 
@@ -93,6 +103,10 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> master
 	}
 }

@@ -8,7 +8,11 @@ state={
 	history = {
 		owner = OLV
 		add_core_of = OLV
+<<<<<<< HEAD
 		victory_points = { 10900 15 }
+=======
+		victory_points = { 10900 4 }
+>>>>>>> master
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1

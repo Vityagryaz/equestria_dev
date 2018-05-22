@@ -2,6 +2,10 @@
 
 country_event = {
 	id = olenia.1
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.1"}#Auto-logging
+>>>>>>> master
 	title = olenia.1.t
 	desc = olenia.1.d
 	picture = GFX_event_olenia_generic
@@ -38,6 +42,10 @@ country_event = {
 }
 country_event = {
 	id = olenia.2
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.2"}#Auto-logging
+>>>>>>> master
 	title = olenia.2.t
 	desc = olenia.2.d
 	picture = GFX_event_olenia_generic
@@ -77,6 +85,7 @@ country_event = {
 }
 country_event = {
 	id = olenia.3
+	immediate = {log = "[Root.GetName]: event olenia.3"}#Auto-logging
 	title = olenia.3.t
 	desc = olenia.3.d
 	picture = GFX_event_olenia_generic
@@ -150,6 +159,7 @@ country_event = {
 }
 country_event = {
 	id = olenia.4
+	immediate = {log = "[Root.GetName]: event olenia.4"}#Auto-logging
 	title = olenia.4.t
 	desc = olenia.4.d
 	picture = GFX_event_olenia_generic
@@ -259,6 +269,10 @@ country_event = {
 #can't help in civil war notification
 country_event = {
 	id = olenia.101
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.101"}#Auto-logging
+>>>>>>> master
 	title = olenia.101.t
 	desc = olenia.101.d
 	picture = GFX_event_olenia_generic
@@ -273,6 +287,10 @@ country_event = {
 #refuses to help in civil war notification
 country_event = {
 	id = olenia.102
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.102"}#Auto-logging
+>>>>>>> master
 	title = olenia.102.t
 	desc = olenia.102.d
 	picture = GFX_event_olenia_generic
@@ -341,6 +359,10 @@ news_event = {
 
 news_event = {
 	id = olenia.104
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.104"}#Auto-logging
+>>>>>>> master
 	title = olenia.104.t
 	desc = olenia.104.d
 	picture = GFX_news_event_olenia_surrenders
@@ -365,6 +387,7 @@ news_event = {
 #Deer's Republic
 news_event = {
 	id = olenia.105
+	immediate = {log = "[Root.GetName]: event olenia.105"}#Auto-logging
 	title = olenia.105.t
 	desc = olenia.105.d
 	picture = GFX_news_event_olenia_surrenders
@@ -390,6 +413,7 @@ news_event = {
 #Deer's Republic
 news_event = {
 	id = olenia.106
+	immediate = {log = "[Root.GetName]: event olenia.106"}#Auto-logging
 	title = olenia.106.t
 	desc = olenia.106.d
 	picture = GFX_news_event_olenia_surrenders
@@ -411,6 +435,10 @@ news_event = {
 #EQS stages coup
 country_event = {
 	id = olenia.510
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.510"}#Auto-logging
+>>>>>>> master
 	title = olenia.510.t
 	desc = olenia.510.d
 	picture = GFX_event_olenia_generic
@@ -459,6 +487,10 @@ country_event = {
 #For EQS
 country_event = {
 	id = olenia.511
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.511"}#Auto-logging
+>>>>>>> master
 	title = olenia.511.t
 	desc = olenia.511.d
 	picture = GFX_event_olenia_generic
@@ -495,7 +527,11 @@ country_event = {
 				original_tag = OLE
 				NOT = { has_government = democratic }
 			}
+<<<<<<< HEAD
 			add_opinion_modifier = { target = EQS modifier = OLE_civil_war_support_enemies }
+=======
+			add_opinion_modifier = { target = event_target:equestria modifier = OLE_civil_war_support_enemies }
+>>>>>>> master
 		}
 	}
 
@@ -504,6 +540,10 @@ country_event = {
 #EQS puppets OLE
 country_event = {
 	id = olenia.512
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.512"}#Auto-logging
+>>>>>>> master
 	title = olenia.512.t
 	desc = olenia.512.d
 	picture = GFX_event_olenia_generic
@@ -514,7 +554,11 @@ country_event = {
 	option = {
 		name = olenia.512.a
 		ai_chance = { factor = 100 }
+<<<<<<< HEAD
 		EQS = {
+=======
+		event_target:equestria = {
+>>>>>>> master
 			puppet = ROOT
 			hidden_effect = {
 				if = {
@@ -531,15 +575,25 @@ country_event = {
 		ai_chance = { factor = 0 }
 		trigger = {
 			is_ai = no
+<<<<<<< HEAD
 			EQS = { is_faction_leader = yes}
 		}
 		EQS = { add_to_faction = ROOT }
+=======
+			event_target:equestria = { is_faction_leader = yes}
+		}
+		event_target:equestria = { add_to_faction = ROOT }
+>>>>>>> master
 	}
 
 }
 
 country_event = {
 	id = olenia.513
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.513"}#Auto-logging
+>>>>>>> master
 	title = olenia.513.t
 	desc = olenia.513.d
 	picture = GFX_event_olenia_generic
@@ -557,6 +611,10 @@ country_event = {
 #EQS gets asked to create a faction with OLE
 country_event = {
 	id = olenia.514
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.514"}#Auto-logging
+>>>>>>> master
 	title = olenia.514.t
 	desc = olenia.514.d
 	picture = GFX_event_olenia_generic
@@ -592,6 +650,10 @@ country_event = {
 #EQS says no
 country_event = {
 	id = olenia.515
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.515"}#Auto-logging
+>>>>>>> master
 	title = olenia.515.t
 	desc = olenia.515.d
 	picture = GFX_event_olenia_generic
@@ -612,6 +674,10 @@ country_event = {
 #Democratic/harmony/Velvet path
 country_event = {
 	id = olenia.500
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.500"}#Auto-logging
+>>>>>>> master
 	title = olenia.500.t
 	desc = olenia.500.d
 	picture = GFX_event_olenia_generic
@@ -633,6 +699,10 @@ country_event = {
 
 country_event = {
 	id = olenia.501
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.501"}#Auto-logging
+>>>>>>> master
 	title = olenia.501.t
 	desc = olenia.501.d
 	picture = GFX_event_olenia_generic
@@ -656,6 +726,7 @@ country_event = {
 
 country_event = {
 	id = olenia.502
+<<<<<<< HEAD
 	title = olenia.502.t
 	desc = olenia.502.d
 	picture = GFX_event_olenia_generic
@@ -706,6 +777,60 @@ country_event = {
 #for EQS
 country_event = {
 	id = olenia.503
+=======
+	immediate = {log = "[Root.GetName]: event olenia.502"}#Auto-logging
+	title = olenia.502.t
+	desc = olenia.502.d
+	picture = GFX_event_olenia_generic
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	immediate = {
+		start_civil_war = {
+			ruling_party = democratic
+			ideology = neutrality
+			size = 0.4
+		}
+		hidden_effect = {
+			set_country_flag = OLE_civil_war
+			remove_ideas = OLE_the_true_queen_idea
+			save_global_event_target_as = democratic_OLE
+			random_neighbor_country = {
+				limit = { original_tag = OLE has_government = neutrality }
+				set_country_flag = OLE_neutrality_civil_war
+				set_country_flag = OLE_civil_war
+				add_ideas = OLE_civil_war_idea
+				set_cosmetic_tag = OLE_NEU
+				event_target:OLE_Roshuo = { set_nationality = PREV }
+				event_target:OLE_Lurswig = { set_nationality = PREV }
+			}
+			if = {
+				limit = { NOT = { has_unit_leader = 110 } }
+				event_target:OLE_Einair = { set_nationality = ROOT }
+			}
+			if = {
+				limit = { NOT = { has_unit_leader = 111 } }
+				event_target:OLE_Pirhonen = { set_nationality = ROOT }
+			}
+			news_event = { id = olenia.103 }
+		}
+	}
+
+	option = {      #wew war time
+		name = olenia.502.a
+		ai_chance = { factor = 100 }
+		add_ideas = OLE_civil_war_idea
+		add_named_threat = { threat = 15 name = OLE_civil_war }
+		hidden_effect = { clr_country_flag = OLE_waiting_on_johan }
+	}
+}
+
+#for EQS
+country_event = {
+	id = olenia.503
+	immediate = {log = "[Root.GetName]: event olenia.503"}#Auto-logging
+>>>>>>> master
 	title = olenia.503.t
 	desc = olenia.503.d
 	picture = GFX_event_olenia_generic
@@ -788,6 +913,10 @@ country_event = {
 
 country_event = {
 	id = olenia.504
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.504"}#Auto-logging
+>>>>>>> master
 	title = olenia.504.t
 	desc = olenia.504.d
 	picture = GFX_event_olenia_generic
@@ -805,6 +934,10 @@ country_event = {
 
 country_event = {
 	id = olenia.505
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.505"}#Auto-logging
+>>>>>>> master
 	title = olenia.505.t
 	desc = olenia.505.d
 	picture = GFX_event_olenia_generic
@@ -825,6 +958,10 @@ country_event = {
 #Commie path
 country_event = {
 	id = olenia.600
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.600"}#Auto-logging
+>>>>>>> master
 	title = olenia.600.t
 	desc = olenia.600.d
 	picture = GFX_event_olenia_generic
@@ -843,8 +980,82 @@ country_event = {
 		}
 	}
 }
+<<<<<<< HEAD
+=======
 
 country_event = {
+	id = olenia.601
+	immediate = {log = "[Root.GetName]: event olenia.601"}#Auto-logging
+	title = olenia.601.t
+	desc = olenia.601.d
+	picture = GFX_event_olenia_generic
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	option = {      #wew johan actually said yes
+		name = olenia.601.a
+		ai_chance = { factor = 100 }
+		set_politics = { ruling_party = communism elections_allowed = no }
+		add_political_power = 100
+		remove_ideas = OLE_the_great_strike_idea
+		add_popularity = { ideology = neutrality popularity = -0.1 }
+		hidden_effect  = {
+			set_country_flag = OLE_civil_war_avoided
+			clr_country_flag = OLE_waiting_on_johan
+		}
+	}
+}
+
+country_event = {
+	id = olenia.602
+	immediate = {log = "[Root.GetName]: event olenia.602"}#Auto-logging
+	title = olenia.602.t
+	desc = olenia.602.d
+	picture = GFX_event_olenia_generic
+
+	is_triggered_only = yes
+	#fire_only_once = yes
+
+	immediate = {
+		start_civil_war = {
+			ruling_party = communism
+			ideology = neutrality
+			size = 0.4
+		}
+		hidden_effect = {
+			set_country_flag = OLE_civil_war
+			remove_ideas = OLE_the_great_strike_idea
+			random_neighbor_country = {
+				limit = { original_tag = OLE has_government = neutrality }
+				set_country_flag = OLE_neutrality_civil_war
+				set_country_flag = OLE_civil_war
+				add_ideas = OLE_civil_war_idea
+				set_cosmetic_tag = OLE_NEU
+				event_target:OLE_Roshuo = { set_nationality = PREV }
+				event_target:OLE_Pirhonen = { set_nationality = PREV }
+			}
+			if = {
+				limit = { NOT = { has_unit_leader = 107 } }
+				event_target:OLE_Perkele = { set_nationality = ROOT }
+			}
+			news_event = { id = olenia.104 }
+		}
+	}
+
+	option = {      #wew war time
+		name = olenia.602.a
+		ai_chance = { factor = 100 }
+		add_ideas = OLE_civil_war_idea
+		add_named_threat = { threat = 15 name = OLE_civil_war }
+		hidden_effect = { clr_country_flag = OLE_waiting_on_johan }
+	}
+}
+>>>>>>> master
+
+#for STG
+country_event = {
+<<<<<<< HEAD
 	id = olenia.601
 	title = olenia.601.t
 	desc = olenia.601.d
@@ -914,6 +1125,10 @@ country_event = {
 #for STG
 country_event = {
 	id = olenia.603
+=======
+	id = olenia.603
+	immediate = {log = "[Root.GetName]: event olenia.603"}#Auto-logging
+>>>>>>> master
 	title = olenia.603.t
 	desc = olenia.603.d
 	picture = GFX_event_olenia_generic
@@ -985,6 +1200,10 @@ country_event = {
 
 country_event = {
 	id = olenia.604
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.604"}#Auto-logging
+>>>>>>> master
 	title = olenia.604.t
 	desc = olenia.604.d
 	picture = GFX_event_olenia_generic
@@ -1002,6 +1221,10 @@ country_event = {
 
 country_event = {
 	id = olenia.605
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.605"}#Auto-logging
+>>>>>>> master
 	title = olenia.605.t
 	desc = olenia.605.d
 	picture = GFX_event_olenia_generic
@@ -1024,6 +1247,10 @@ country_event = {
 #for CHN
 country_event = {
 	id = olenia.700
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.700"}#Auto-logging
+>>>>>>> master
 	title = olenia.700.t
 	desc = olenia.700.d
 	picture = GFX_event_olenia_generic
@@ -1052,6 +1279,10 @@ country_event = {
 #Civil war support
 country_event = {
 	id = olenia.701
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.701"}#Auto-logging
+>>>>>>> master
 	title = olenia.701.t
 	desc = olenia.701.d
 	picture = GFX_event_olenia_generic
@@ -1126,6 +1357,10 @@ country_event = {
 #Puppet offer (for CHN)
 country_event = {
 	id = olenia.702
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.702"}#Auto-logging
+>>>>>>> master
 	title = olenia.702.t
 	desc = olenia.702.d
 	picture = GFX_event_olenia_generic
@@ -1142,6 +1377,15 @@ country_event = {
 				FROM = { has_war_with = EQS }
 			}
 		}
+<<<<<<< HEAD
+=======
+		hidden_effect = {
+			if = {
+				limit = { has_war_with = FROM }
+				white_peace = FROM
+			}
+		}
+>>>>>>> master
 		FROM = { get_current_government_type = yes }
 		puppet = FROM
 		transfer_state = 300
@@ -1179,6 +1423,10 @@ country_event = {
 #Puppet offer (for CHN)
 country_event = {
 	id = olenia.703
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.703"}#Auto-logging
+>>>>>>> master
 	title = olenia.703.t
 	desc = olenia.703.d
 	picture = GFX_event_olenia_generic
@@ -1197,6 +1445,15 @@ country_event = {
 		}
 		transfer_state = 300
 		transfer_state = 292
+<<<<<<< HEAD
+=======
+		hidden_effect = {
+			if = {
+				limit = { has_war_with = FROM }
+				white_peace = FROM
+			}
+		}
+>>>>>>> master
 		FROM = { get_current_government_type = yes }
 		puppet = FROM
 		hidden_effect = {
@@ -1237,6 +1494,10 @@ country_event = {
 
 country_event = {
 	id = olenia.704
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.704"}#Auto-logging
+>>>>>>> master
 	title = olenia.704.t
 	desc = olenia.704.d
 	picture = GFX_event_olenia_generic
@@ -1254,6 +1515,10 @@ country_event = {
 
 country_event = {
 	id = olenia.705
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.705"}#Auto-logging
+>>>>>>> master
 	title = olenia.705.t
 	desc = olenia.705.d
 	picture = GFX_event_olenia_generic
@@ -1273,6 +1538,10 @@ country_event = {
 
 news_event = {
 	id = olenia.7061
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.7061"}#Auto-logging
+>>>>>>> master
 	title = olenia.7061.t
 	desc = olenia.7061.d
 	picture = GFX_news_event_olenia_surrenders
@@ -1298,6 +1567,10 @@ news_event = {
 #CHN says no
 country_event = {
 	id = olenia.719
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.719"}#Auto-logging
+>>>>>>> master
 	title = olenia.719.t
 	desc = olenia.719.d
 	picture = GFX_event_olenia_generic
@@ -1313,6 +1586,10 @@ country_event = {
 #CHN says yes
 country_event = {
 	id = olenia.708
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.708"}#Auto-logging
+>>>>>>> master
 	title = olenia.708.t
 	desc = olenia.708.d
 	picture = GFX_event_olenia_generic
@@ -1328,6 +1605,10 @@ country_event = {
 #For CHN
 country_event = {
 	id = olenia.713
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.713"}#Auto-logging
+>>>>>>> master
 	title = olenia.713.t
 	desc = olenia.713.d
 	picture = GFX_event_olenia_generic
@@ -1367,6 +1648,10 @@ country_event = {
 
 country_event = {
 	id = olenia.714
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.714"}#Auto-logging
+>>>>>>> master
 	title = olenia.714.t
 	desc = olenia.714.d
 	picture = GFX_event_olenia_generic
@@ -1388,6 +1673,10 @@ country_event = {
 
 country_event = {
 	id = olenia.715
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.715"}#Auto-logging
+>>>>>>> master
 	title = olenia.715.t
 	desc = olenia.715.d
 	picture = GFX_event_olenia_generic
@@ -1407,6 +1696,10 @@ country_event = {
 
 country_event = {
 	id = olenia.716
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.716"}#Auto-logging
+>>>>>>> master
 	title = olenia.716.t
 	desc = olenia.716.d
 	picture = GFX_event_olenia_generic
@@ -1421,6 +1714,10 @@ country_event = {
 
 country_event = {
 	id = olenia.717
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.717"}#Auto-logging
+>>>>>>> master
 	title = olenia.717.t
 	desc = olenia.717.d
 	picture = GFX_event_olenia_generic
@@ -1435,6 +1732,10 @@ country_event = {
 
 country_event = {
 	id = olenia.718
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.718"}#Auto-logging
+>>>>>>> master
 	hidden = yes
 
 	trigger = {
@@ -1468,6 +1769,10 @@ country_event = {
 
 country_event = {
 	id = olenia.720
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.720"}#Auto-logging
+>>>>>>> master
 	hidden = yes
 
 	trigger = {
@@ -1501,6 +1806,10 @@ country_event = {
 #Matter of monarchy fascist path
 country_event = {
 	id = olenia.800
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.800"}#Auto-logging
+>>>>>>> master
 	title = olenia.800.t
 	desc = olenia.800.d
 	picture = GFX_event_olenia_generic
@@ -1539,6 +1848,10 @@ country_event = {
 #Fascists gain power
 country_event = {
 	id = olenia.801
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.801"}#Auto-logging
+>>>>>>> master
 	title = olenia.801.t
 	desc = olenia.801.d
 	picture = GFX_event_olenia_generic
@@ -1561,11 +1874,16 @@ country_event = {
 # I need to be sure
 country_event = {
 	id = olenia.900
+<<<<<<< HEAD
+=======
+	immediate = {log = "[Root.GetName]: event olenia.900"}#Auto-logging
+>>>>>>> master
 	hidden = yes
 	trigger = {
 		original_tag = OLE
 		OR = {
 			has_government = democratic
+<<<<<<< HEAD
 			NOT = {
 				any_other_country = { original_tag = OLE }
 			}
@@ -1573,6 +1891,14 @@ country_event = {
 		NOT = {
 			has_event_target = democratic_OLE
 			country_exists = event_target:democratic_OLE
+=======
+			NOT = { any_other_country = { original_tag = OLE } }
+		}
+		OR = {
+			NOT = { has_event_target = democratic_OLE }
+			NOT = { country_exists = event_target:democratic_OLE }
+			event_target:democratic_OLE = { NOT = { original_tag = OLE } }
+>>>>>>> master
 		}
 	}
 	mean_time_to_happen = { days = 1 }

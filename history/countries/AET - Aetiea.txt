@@ -60,7 +60,11 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prelate Ludwig Ebonwing"
 	
+<<<<<<< HEAD
 	picture = "Cloudet.tga"
+=======
+	picture = "Prelate.tga"
+>>>>>>> master
 	expire = "1965.1.1"
 	ideology = falangism
 	traits = {

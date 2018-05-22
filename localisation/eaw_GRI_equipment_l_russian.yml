@@ -1345,6 +1345,7 @@
  JER_heavy_tank_equipment_3:0 "Horton"
  JER_heavy_tank_equipment_3_desc:0 ""
  JER_heavy_tank_equipment_3_short:0 "Horton"
+<<<<<<< HEAD
  #JER_infantry_equipment_0:0 "Lilia-Rifle"
  #JER_infantry_equipment_0_short:0 "Lilia-Rifle"
  #JER_infantry_equipment_1:0 "Lavender Rifle"
@@ -1353,6 +1354,16 @@
  #JER_infantry_equipment_2_short:0 "Limestone"
  #JER_infantry_equipment_3:0 "Everfree SLR"
  #JER_infantry_equipment_3_short:0 "Everfree SLR"
+=======
+ JER_infantry_equipment_0:0 "Lilia-Rifle"
+ JER_infantry_equipment_0_short:0 "Lilia-Rifle"
+ JER_infantry_equipment_1:0 "Lavender Rifle"
+ JER_infantry_equipment_1_short:0 "Lavender Rifle"
+ JER_infantry_equipment_2:0 "Limestone"
+ JER_infantry_equipment_2_short:0 "Limestone"
+ JER_infantry_equipment_3:0 "Everfree SLR"
+ JER_infantry_equipment_3_short:0 "Everfree SLR"
+>>>>>>> master
  JER_light_tank_aa_equipment_1:0 "LI-1 Firestorm"
  JER_light_tank_aa_equipment_1_short:0 "LI-1 Firestorm"
  JER_light_tank_aa_equipment_2:0 "Calico Typhoon"
