@@ -5,11 +5,7 @@ spriteTypes = {
 		name = "GFX_idea_unknown_advisor"
 		texturefile = "gfx/interface/ideas/idea_unknown_advisor.dds"
 	}
-<<<<<<< HEAD
 	
-=======
-
->>>>>>> master
 	### GENERIC PORTRAITS EUROPE
 	### suffix from graphicalculturetype
 	
@@ -1638,7 +1634,7 @@ spriteTypes = {
 		name = "GFX_idea_wingbardian_crown"
 		texturefile = "gfx/interface/ideas/Wingbardy/wingbardian_crown.dds"
 	}
-
+	
 	############################ New Mareland EQC ################################
 	spriteType = {
 		name = "GFX_idea_sour_sweet"
@@ -1733,40 +1729,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_amethyst_star.dds"
 	}
 	SpriteType = {
-<<<<<<< HEAD
 		name = "GFX_idea_eqc_defence_of_the_commonwelth"
 		texturefile = "gfx/interface/ideas/EQC/idea_EQC_defence_of_the_commonwelth.dds"
 	}
 	
 	
-=======
-		name = "GFX_idea_celestia_exile"
-		texturefile = "gfx/interface/ideas/idea_celestia_exile.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_eqc_defence_of_the_commonwelth"
-		texturefile = "gfx/interface/ideas/EQC/idea_EQC_defence_of_the_commonwelth.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_eqc_fascist_pony"
-		texturefile = "gfx/interface/ideas/EQC/EQC_fascist_pony.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_eqc_neutral_pony"
-		texturefile = "gfx/interface/ideas/EQC/EQC_neutral_pony.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_eqc_harmony_pony"
-		texturefile = "gfx/interface/ideas/EQC/EQC_harmony_pony.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_eqc_commie_pony"
-		texturefile = "gfx/interface/ideas/EQC/EQC_commie_pony.dds"
-	}
-
->>>>>>> master
 	############################ River Fed RIV ################################
-		spriteType = {
+	spriteType = {
 		name = "GFX_idea_lake_city"
 		texturefile = "gfx/interface/ideas/RIV/idea_lake_city.dds"
 	}
@@ -1776,7 +1745,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_idea_nimbusia"
-		texturefile = "gfx/interface/ideas/RIV/idea_nimbusia.dds"
+		texturefile = "gfx/interface/ideas/RIV/idea_idea_nimbusia.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_nimbusia_blue"
@@ -1794,12 +1763,12 @@ spriteTypes = {
 		name = "GFX_idea_wittenland"
 		texturefile = "gfx/interface/ideas/RIV/idea_wittenland.dds"
 	}
-
+	
 	spriteType = {
 		name = "GFX_idea_magic_stars"
 		texturefile = "gfx/interface/ideas/idea_magic_stars.dds"
 	}
-
+	
 	spriteType = {
 		name = "GFX_idea_STL_city_state"
 		texturefile = "gfx/interface/ideas/idea_closed_city_state.dds"
@@ -1991,6 +1960,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_celestia.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_EQS_cel_figurehead"
+		texturefile = "gfx/interface/ideas/idea_celestia.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_dicaprio"
 		texturefile = "gfx/interface/ideas/idea_dicaprio.dds"
 	}
@@ -2150,8 +2123,8 @@ spriteTypes = {
 		name = "GFX_idea_FAR_NCH_trade"
 		texturefile = "gfx/interface/ideas/idea_FAR_NCH_trade.dds"
 	}
-
-
+	
+	
 	spriteType = {
 		name = "GFX_idea_astimare_concern"
 		texturefile = "gfx/interface/ideas/idea_astimare.dds"
@@ -2180,7 +2153,7 @@ spriteTypes = {
 		name = "GFX_idea_WAT_holy_srings"
 		texturefile = "gfx/interface/ideas/idea_WAT_holy_srings.dds"
 	}
-
+	
 	SpriteType = {
 		name = "GFX_idea_generic_race_idea"
 		texturefile = "gfx/interface/ideas/generic_race.dds"
@@ -2642,11 +2615,7 @@ spriteTypes = {
 		name = "GFX_idea_SOL_Lux_et_Tenebris_idea"
 		texturefile = "gfx/interface/ideas/SOL_Lux_et_Tenebris_idea.dds"
 	}
-<<<<<<< HEAD
 	
-=======
-
->>>>>>> master
 	SpriteType = {
 		name = "GFX_idea_SOL_Imperial_Corporation_Council_idea"
 		texturefile = "gfx/interface/ideas/SOL_Imperial_Corporation_Council_idea.dds"
@@ -2703,11 +2672,7 @@ spriteTypes = {
 		name = "GFX_idea_elia_storm"
 		texturefile = "gfx/interface/ideas/elia_storm.dds"
 	}
-<<<<<<< HEAD
 	
-=======
-
->>>>>>> master
 	### BOI - Griffonstone ###
 	SpriteType = {
 		name = "GFX_idea_greta"
@@ -2741,75 +2706,4 @@ spriteTypes = {
 		name = "GFX_idea_chn_vraks_military_effort"
 		texturefile = "gfx/interface/ideas/chn_vraks_military_effort.dds"
 	}
-<<<<<<< HEAD
-=======
-	SpriteType = {
-		name = "GFX_idea_CHN_crystal_city_research"
-		texturefile = "gfx/interface/ideas/CHN_crystal_city_research.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_EQS_luna_executive"
-		texturefile = "gfx/interface/ideas/idea_luna.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_lone_princess_luna"
-		texturefile = "gfx/interface/ideas/idea_lone_princess_luna.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_popular_discontent"
-		texturefile = "gfx/interface/ideas/idea_popular_discontent.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_mistral"
-		texturefile = "gfx/interface/ideas/mistral.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_armada"
-		texturefile = "gfx/interface/ideas/armada.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_JER_memories"
-		texturefile = "gfx/interface/ideas/JER_memories.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_WNG_braindrain"
-		texturefile = "gfx/interface/ideas/WNG_braindrain.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_generic_deadly_research_bonus"
-		texturefile = "gfx/interface/ideas/generic_deadly_research_bonus.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_hospital"
-		texturefile = "gfx/interface/ideas/idea_hospital.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_NCH_changeling_submarine"
-		texturefile = "gfx/interface/ideas/NCH/idea_NCH_changeling_submarine.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_NCH_farris"
-		texturefile = "gfx/interface/ideas/NCH/idea_NCH_farris.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_NCH_petiole"
-		texturefile = "gfx/interface/ideas/NCH/idea_NCH_petiole.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_FAT_Kemerskais_legacy"
-		texturefile = "gfx/interface/ideas/idea_FAT_Kemerskais_legacy.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_FAT_political_idealist"
-		texturefile = "gfx/interface/ideas/idea_FAT_political_idealist.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_FAT_political_pragmatist"
-		texturefile = "gfx/interface/ideas/idea_FAT_political_pragmatist.dds"
-	}
-	SpriteType = {
-		name = "GFX_idea_sunrise_sparkle"
-		texturefile = "gfx/interface/ideas/sunrise_sparkle.dds"
-	}
->>>>>>> master
 }

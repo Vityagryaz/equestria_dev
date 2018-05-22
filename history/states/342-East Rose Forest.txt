@@ -9,7 +9,7 @@ state={
 		add_core_of = JAK
 		
 	}
-	manpower=257400
+	manpower=198000
 	state_category=rural
 	buildings_max_level_factor=1.000
 }

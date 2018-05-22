@@ -1,12 +1,7 @@
 ﻿add_namespace = eqscom
 
 country_event = { #### Communist Equestria
-<<<<<<< HEAD
 	id = eqscom.25555
-=======
-	id = eqscom.25555
-	immediate = {log = "[Root.GetName]: event eqscom.25555"}#Auto-logging
->>>>>>> master
 	title = eqscom.25555.t
 	desc = eqscom.25555.d
 	picture = GFX_event_pony_march
@@ -33,12 +28,7 @@ country_event = { #### Communist Equestria
 }
 
 country_event = { #### Communist Civil War
-<<<<<<< HEAD
 	id = eqscom.1
-=======
-	id = eqscom.1
-	immediate = {log = "[Root.GetName]: event eqscom.1"}#Auto-logging
->>>>>>> master
 	title = eqscom.1.t
 	desc = eqscom.1.d
 	picture = GFX_event_eqs_communists
@@ -137,12 +127,7 @@ country_event = { #### Communist Civil War
 
 }
 country_event = { #### Communist Equestria
-<<<<<<< HEAD
 	id = eqscom.2
-=======
-	id = eqscom.2
-	immediate = {log = "[Root.GetName]: event eqscom.2"}#Auto-logging
->>>>>>> master
 	title = eqscom.2.t
 	desc = eqscom.2.d
 	picture = GFX_event_starlight_for_the_win
@@ -155,12 +140,7 @@ country_event = { #### Communist Equestria
 	}
 }
 country_event = { #### Communist Equestria
-<<<<<<< HEAD
 	id = eqscom.3
-=======
-	id = eqscom.3
-	immediate = {log = "[Root.GetName]: event eqscom.3"}#Auto-logging
->>>>>>> master
 	title = eqscom.3.t
 	desc = eqscom.3.d
 	picture = GFX_event_starlight_for_the_win
@@ -177,12 +157,7 @@ country_event = { #### Communist Equestria
 	}
 }
 country_event = { #### Union with Stalliongrad
-<<<<<<< HEAD
 	id = eqscom.4
-=======
-	id = eqscom.4
-	immediate = {log = "[Root.GetName]: event eqscom.4"}#Auto-logging
->>>>>>> master
 	title = eqscom.4.t
 	desc = eqscom.4.d
 	picture = GFX_event_starlight_for_the_win
@@ -208,12 +183,7 @@ country_event = { #### Union with Stalliongrad
 	}
 }
 country_event = { #### STG accepted and is gonna be annexed
-<<<<<<< HEAD
 	id = eqscom.5
-=======
-	id = eqscom.5
-	immediate = {log = "[Root.GetName]: event eqscom.5"}#Auto-logging
->>>>>>> master
 	title = eqscom.5.t
 	desc = eqscom.5.d
 	picture = GFX_event_starlight_for_the_win
@@ -240,12 +210,7 @@ country_event = { #### STG accepted and is gonna be annexed
 	}
 }
 country_event = { #### STG wants to be independent
-<<<<<<< HEAD
 	id = eqscom.6
-=======
-	id = eqscom.6
-	immediate = {log = "[Root.GetName]: event eqscom.6"}#Auto-logging
->>>>>>> master
 	title = eqscom.6.t
 	desc = eqscom.6.d
 	picture = GFX_event_starlight_for_the_win
@@ -257,12 +222,7 @@ country_event = { #### STG wants to be independent
 	}
 }
 country_event = { #### Union with Starlight Village
-<<<<<<< HEAD
 	id = eqscom.7
-=======
-	id = eqscom.7
-	immediate = {log = "[Root.GetName]: event eqscom.7"}#Auto-logging
->>>>>>> master
 	title = eqscom.7.t
 	desc = eqscom.7.d
 	picture = GFX_event_pony_march
@@ -284,12 +244,7 @@ country_event = { #### Union with Starlight Village
 	}
 }
 country_event = { #### Union with Starlight Village
-<<<<<<< HEAD
 	id = eqscom.8
-=======
-	id = eqscom.8
-	immediate = {log = "[Root.GetName]: event eqscom.8"}#Auto-logging
->>>>>>> master
 	title = eqscom.8.t
 	desc = eqscom.8.d
 	picture = GFX_event_pony_march
@@ -302,12 +257,7 @@ country_event = { #### Union with Starlight Village
 	}
 }
 country_event = { #### STL wants to be independent
-<<<<<<< HEAD
 	id = eqscom.9
-=======
-	id = eqscom.9
-	immediate = {log = "[Root.GetName]: event eqscom.9"}#Auto-logging
->>>>>>> master
 	title = eqscom.9.t
 	desc = eqscom.9.d
 	picture = GFX_event_pony_march
@@ -319,12 +269,7 @@ country_event = { #### STL wants to be independent
 	}
 }
 country_event = { #### Rockville pops up
-<<<<<<< HEAD
 	id = eqscom.10
-=======
-	id = eqscom.10
-	immediate = {log = "[Root.GetName]: event eqscom.10"}#Auto-logging
->>>>>>> master
 	title = eqscom.10.t
 	desc = eqscom.10.d
 	picture = GFX_event_pony_march
@@ -351,17 +296,11 @@ country_event = { #### Rockville pops up
 	}
 }
 country_event = { #### Equestrian Union
-<<<<<<< HEAD
 	id = eqscom.11
-=======
-	id = eqscom.11
-	immediate = {log = "[Root.GetName]: event eqscom.11"}#Auto-logging
->>>>>>> master
 	title = eqscom.11.t
 	desc = eqscom.11.d
 	picture = GFX_event_starlight_for_the_win
 
-<<<<<<< HEAD
 	trigger = {
 		OR = {
 			original_tag = EQS
@@ -382,9 +321,6 @@ country_event = { #### Equestrian Union
 	}
 	mean_time_to_happen = { days = 10 }
 	fire_only_once = yes
-=======
-	is_triggered_only = yes
->>>>>>> master
 	option = { ## Ok den
 		name = eqscom.11.a
 		drop_cosmetic_tag = yes
@@ -401,12 +337,7 @@ country_event = { #### Equestrian Union
 	}
 }
 country_event = { #### Equestrian Union from STG
-<<<<<<< HEAD
 	id = eqscom.12
-=======
-	id = eqscom.12
-	immediate = {log = "[Root.GetName]: event eqscom.12"}#Auto-logging
->>>>>>> master
 	title = eqscom.12.t
 	desc = eqscom.12.d
 	picture = GFX_event_starlight_for_the_win
@@ -429,12 +360,7 @@ country_event = { #### Equestrian Union from STG
 	}
 }
 country_event = { #### Equestrian Union from STG
-<<<<<<< HEAD
 	id = eqscom.13
-=======
-	id = eqscom.13
-	immediate = {log = "[Root.GetName]: event eqscom.13"}#Auto-logging
->>>>>>> master
 	title = eqscom.13.t
 	desc = eqscom.13.d
 	picture = GFX_event_gardening
@@ -457,12 +383,7 @@ country_event = { #### Equestrian Union from STG
 	}
 }
 country_event = { #### Rock union
-<<<<<<< HEAD
 	id = eqscom.14
-=======
-	id = eqscom.14
-	immediate = {log = "[Root.GetName]: event eqscom.14"}#Auto-logging
->>>>>>> master
 	title = eqscom.14.t
 	desc = eqscom.14.d
 	picture = GFX_event_starlight_for_the_win
@@ -477,26 +398,13 @@ country_event = { #### Rock union
 			name = "Maud Pie"
 			portrait_path = "gfx/leaders/EQS/MaudPie.tga"
 			traits = { rock_girl }
-<<<<<<< HEAD
 			skill = 4
-=======
-			skill = 2
-			attack_skill = 2
-			defense_skill = 5
-			planning_skill = 1
-			logistics_skill = 3
->>>>>>> master
 		}
 	}
 }
 
 country_event = { #### Equestrian Union with CRY
-<<<<<<< HEAD
 	id = eqscom.15
-=======
-	id = eqscom.15
-	immediate = {log = "[Root.GetName]: event eqscom.15"}#Auto-logging
->>>>>>> master
 	title = eqscom.15.t
 	desc = eqscom.15.d
 	picture = GFX_event_starlight_for_the_win
@@ -517,12 +425,7 @@ country_event = { #### Equestrian Union with CRY
 	}
 }
 country_event = { #### Equestrian Union with CRY
-<<<<<<< HEAD
 	id = eqscom.16
-=======
-	id = eqscom.16
-	immediate = {log = "[Root.GetName]: event eqscom.16"}#Auto-logging
->>>>>>> master
 	title = eqscom.16.t
 	desc = eqscom.16.d
 	picture = GFX_event_starlight_for_the_win
@@ -536,12 +439,7 @@ country_event = { #### Equestrian Union with CRY
 	}
 }
 country_event = { #### Collectivization Effort
-<<<<<<< HEAD
 	id = eqscom.17
-=======
-	id = eqscom.17
-	immediate = {log = "[Root.GetName]: event eqscom.17"}#Auto-logging
->>>>>>> master
 	title = eqscom.17.t
 	desc = eqscom.17.d
 	picture = GFX_event_stg_chleb
@@ -555,12 +453,7 @@ country_event = { #### Collectivization Effort
 	}
 }
 country_event = { #### Baltimare
-<<<<<<< HEAD
 	id = eqscom.19
-=======
-	id = eqscom.19
-	immediate = {log = "[Root.GetName]: event eqscom.19"}#Auto-logging
->>>>>>> master
 	title = eqscom.19.t
 	desc = eqscom.19.d
 	picture = GFX_event_dont_clop
@@ -581,12 +474,7 @@ country_event = { #### Baltimare
 	}
 }
 country_event = { #### Baltimare
-<<<<<<< HEAD
 	id = eqscom.20
-=======
-	id = eqscom.20
-	immediate = {log = "[Root.GetName]: event eqscom.20"}#Auto-logging
->>>>>>> master
 	title = eqscom.20.t
 	desc = eqscom.20.d
 	picture = GFX_event_dont_clop
@@ -607,12 +495,7 @@ country_event = { #### Baltimare
 	}
 }
 country_event = { #### Rock union
-<<<<<<< HEAD
 	id = eqscom.21
-=======
-	id = eqscom.21
-	immediate = {log = "[Root.GetName]: event eqscom.21"}#Auto-logging
->>>>>>> master
 	title = eqscom.21.t
 	desc = eqscom.21.d
 	picture = GFX_event_starlight_for_the_win

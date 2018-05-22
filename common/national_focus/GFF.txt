@@ -16,12 +16,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_funds"#Auto-logging
->>>>>>> master
 			add_political_power = -50
 			country_event = { id = frontier.1 days = 1}
 		}
@@ -38,12 +33,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_got_funds"#Auto-logging
->>>>>>> master
 			add_political_power = 50
 		}
 	}
@@ -58,12 +48,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_roads"#Auto-logging
->>>>>>> master
 			283 = {	add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
@@ -98,12 +83,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_industry"#Auto-logging
->>>>>>> master
 			283 = {	add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -123,12 +103,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_equipment"#Auto-logging
->>>>>>> master
 			country_event = { id = frontier.6 days = 1}
 			load_oob = "GFF_equipment"
 		}
@@ -144,12 +119,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_bounty_hunters"#Auto-logging
->>>>>>> master
 			load_oob = "GFF_new_units"
 		}
 	}
@@ -161,12 +131,7 @@ focus_tree = {
 		prerequisite = { focus = GFF_bounty_hunters }
 		x = 13
 		y = 5
-<<<<<<< HEAD
 		completion_reward = { remove_ideas = GFF_cannibals
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_cannibal_hunt"#Auto-logging
->>>>>>> master
 			add_political_power = 100 }
 	}
 	
@@ -182,12 +147,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 90
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus { remove_ideas"#Auto-logging
->>>>>>> master
 			add_resource = {
 				type = steel
 				amount = 12
@@ -206,12 +166,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_mines"#Auto-logging
->>>>>>> master
 			283 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -233,12 +188,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = { remove_ideas = GFF_bandits
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_arsenal"#Auto-logging
->>>>>>> master
 			add_political_power = 50 }
 	}
 	focus = {
@@ -251,12 +201,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_hunt_bandits"#Auto-logging
->>>>>>> master
 			country_event = { id = frontier.5 days = 1}
 		}
 	}
@@ -274,12 +219,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus { remove_ideas"#Auto-logging
->>>>>>> master
 			country_event = { id = frontier.4 days = 1 }
 			add_political_power = -50
 		}
@@ -295,12 +235,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 200
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_annexation"#Auto-logging
->>>>>>> master
 			end_puppet_this = yes
 			country_event = { id = frontier.7 days = 1 }
 			remove_ideas = { GFF_bandits }
@@ -338,12 +273,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 95
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_not_funds"#Auto-logging
->>>>>>> master
 			load_oob = "GFF_bandits"
 		}
 	}
@@ -357,12 +287,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 90
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_takeover"#Auto-logging
->>>>>>> master
 			load_oob = "GFF_bandit_equipment"
 		}
 	}
@@ -376,12 +301,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 90
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_bandit_troops"#Auto-logging
->>>>>>> master
 			283 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -402,12 +322,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = { remove_ideas = GFF_cannibals
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_bandit_guns"#Auto-logging
->>>>>>> master
 			add_ideas = GFF_cannibal_friends
 			add_political_power = -25
 			load_oob = "GFF_cannibals"
@@ -436,12 +351,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_bandit_arsenal"#Auto-logging
->>>>>>> master
 			add_resource = {
 				type = steel
 				amount = 8
@@ -461,12 +371,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_cannibal_negotiation"#Auto-logging
->>>>>>> master
 			281 = {	add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
@@ -500,12 +405,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 95
 		}
-<<<<<<< HEAD
 		completion_reward = { remove_ideas = GFF_commies
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus { remove_ideas"#Auto-logging
->>>>>>> master
 			add_ideas = GFF_commie_friends
 			load_oob = "GFF_communists"
 			add_popularity = { ideology = communism popularity = 0.05 }
@@ -531,12 +431,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 70
 		}
-<<<<<<< HEAD
 		completion_reward = { add_manpower = 15000
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_steel_production"#Auto-logging
->>>>>>> master
 			add_popularity = { ideology = communism popularity = 0.05 } }
 	}
 	focus = {
@@ -549,12 +444,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 70
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_v_roads"#Auto-logging
->>>>>>> master
 			277 = {	add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -583,12 +473,7 @@ focus_tree = {
 		
 		cancel_if_invalid = yes
 		
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_commie_alliance"#Auto-logging
->>>>>>> master
 			add_political_power = 150
 		}
 	}
@@ -601,12 +486,7 @@ focus_tree = {
 			focus =  GFF_victory }
 		x = 18
 		y = 8
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus { remove_ideas"#Auto-logging
->>>>>>> master
 			add_resource = {
 				type = steel
 				amount = 8
@@ -626,12 +506,7 @@ focus_tree = {
 			factor = 80
 		}
 		
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_commie_volunteers"#Auto-logging
->>>>>>> master
 			add_tech_bonus = {
 				name = industry_bonus
 				bonus = 0.5
@@ -649,7 +524,6 @@ focus_tree = {
 		cost = 8.00
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_smugglers"#Auto-logging
 			281 = {	add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -668,12 +542,7 @@ focus_tree = {
 			focus =  GFF_victory }
 		x = 20
 		y = 8
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_victory"#Auto-logging
->>>>>>> master
 			add_resource = {
 				type = crystals
 				amount = 16
@@ -692,12 +561,7 @@ focus_tree = {
 			factor = 10
 		}
 		
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus yes"#Auto-logging
->>>>>>> master
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
 				bonus = 0.5
@@ -719,12 +583,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_steel"#Auto-logging
->>>>>>> master
 			277 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -753,7 +612,6 @@ focus_tree = {
 			factor = 0
 		}
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_industry_tech"#Auto-logging
 			#custom_effect_tooltip = unlock_focuses
 		}
 	}
@@ -771,7 +629,6 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_industry_2"#Auto-logging
 			add_political_power = 50
 		}
 	}
@@ -788,7 +645,6 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_crytals"#Auto-logging
 			swap_ideas = { remove_idea = GFF_cannibal_friends
 				add_idea = GFF_business_cannibals }
 		}
@@ -803,12 +659,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_magic_weapons"#Auto-logging
->>>>>>> master
 			281 = {	add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = industrial_complex
@@ -845,7 +696,6 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_arsenal_2"#Auto-logging
 			swap_ideas = { remove_idea = GFF_cannibal_friends
 				add_idea = GFF_war_cannibals }
 		}
@@ -860,12 +710,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_issues"#Auto-logging
->>>>>>> master
 			277 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -894,12 +739,7 @@ focus_tree = {
 			factor = 100
 		}
 		
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_virgil_power"#Auto-logging
->>>>>>> master
 			283 = {
 				add_building_construction = {
 					type = bunker
@@ -980,12 +820,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_cannibal_money"#Auto-logging
->>>>>>> master
 			add_war_support = 0.2
 			create_wargoal = { type = annex_everything target = GRF }
 		}
@@ -1004,12 +839,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_cannibal_industry"#Auto-logging
->>>>>>> master
 			country_event = { id = frontier.15 days = 1}
 		}
 	}
@@ -1023,12 +853,7 @@ focus_tree = {
 		}
 		x = 14
 		y = 19
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_cannibal_war"#Auto-logging
->>>>>>> master
 			GFF = {
 				add_state_core = 286
 				add_state_core = 271
@@ -1059,12 +884,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_cannibal_war_industrial"#Auto-logging
->>>>>>> master
 			add_ideas = GFF_expansionism
 		}
 	}
@@ -1080,12 +900,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_forts"#Auto-logging
->>>>>>> master
 			add_research_slot = 1
 		}
 	}
@@ -1100,12 +915,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_Virgil_Invasion"#Auto-logging
->>>>>>> master
 			swap_ideas = { remove_idea = GFF_economic
 				add_idea = GFF_criminal_economy }
 		}
@@ -1121,7 +931,6 @@ focus_tree = {
 		x = 15
 		y = 13
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_Crown_Virgil"#Auto-logging
 			277 = {	add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
@@ -1169,12 +978,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_greater_virgillia"#Auto-logging
->>>>>>> master
 			277 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1216,12 +1020,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_expansion"#Auto-logging
->>>>>>> master
 			add_research_slot = 1
 		}
 	}
@@ -1236,12 +1035,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_virgillia_research"#Auto-logging
->>>>>>> master
 			army_experience = 25
 			swap_ideas = { remove_idea = GFF_bandits_win
 				add_idea = GFF_bandit_army
@@ -1259,12 +1053,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_new_economy"#Auto-logging
->>>>>>> master
 			add_resource = {
 				type = crystals
 				amount = 12
@@ -1303,12 +1092,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_virgilian_railroads"#Auto-logging
->>>>>>> master
 			remove_ideas = GFF_commies
 			add_stability = 0.10
 			add_popularity = { ideology = fascism popularity = 0.10 }
@@ -1330,7 +1114,6 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_virgilian_industry"#Auto-logging
 			add_political_power = 50
 		}
 	}
@@ -1347,7 +1130,6 @@ focus_tree = {
 			factor = 300
 		}
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_virgilian_research"#Auto-logging
 			GRF = { country_event = { id = griffons.29 days = 30 } }
 		}
 	}
@@ -1363,7 +1145,6 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_virgilian_army"#Auto-logging
 			add_political_power = -50
 			add_ideas = GFF_war_economy
 			GFF = {
@@ -1398,7 +1179,6 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_virgilian_resources"#Auto-logging
 			add_ideas = GFF_preperations
 		}
 	}
@@ -1413,7 +1193,6 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_kill_redtail"#Auto-logging
 			load_oob = "GFF_revolutionaries"
 		}
 	}
@@ -1428,12 +1207,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_red_takover"#Auto-logging
->>>>>>> master
 			277 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1469,7 +1243,6 @@ focus_tree = {
 		x = 26
 		y = 16
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_join_union"#Auto-logging
 			277 = {	add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
@@ -1520,12 +1293,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_leap"#Auto-logging
->>>>>>> master
 			remove_ideas = GFF_economic
 		}
 	}
@@ -1540,12 +1308,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_rations"#Auto-logging
->>>>>>> master
 			remove_ideas = GFF_cannibals
 			add_popularity = { ideology = communism popularity = 0.025 }
 			add_stability = 0.10
@@ -1562,12 +1325,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_militias"#Auto-logging
->>>>>>> master
 			add_research_slot = 1
 			add_ideas = GFF_education
 		}
@@ -1582,12 +1340,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_industrial_2"#Auto-logging
->>>>>>> master
 			277 = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1630,12 +1383,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = { add_manpower = 25000
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_railroads"#Auto-logging
->>>>>>> master
 			add_ideas = GFF_training
 			add_popularity = { ideology = communism popularity = 0.05 } }
 	}
@@ -1651,12 +1399,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_economy"#Auto-logging
->>>>>>> master
 			swap_ideas = { remove_idea = GFF_commie_friends
 				add_idea = GFF_red_guard
 			}
@@ -1673,12 +1416,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_kill_cannibals"#Auto-logging
->>>>>>> master
 			add_popularity = { ideology = communism popularity = 0.075 }
 			remove_ideas = GFF_bandits
 			add_stability = 0.10
@@ -1704,7 +1442,6 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_research"#Auto-logging
 			create_wargoal = { type = annex_everything target = GRF }
 		}
 	}
@@ -1722,12 +1459,7 @@ focus_tree = {
 		}
 		x = 23
 		y = 18
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_industrial"#Auto-logging
->>>>>>> master
 			GFF = {
 				add_state_core = 271
 				add_state_core = 335
@@ -1759,7 +1491,6 @@ focus_tree = {
 		cost = 12.00
 		ai_will_do = { factor = 80 }
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_commine_manpower"#Auto-logging
 			288 = {	add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
@@ -1801,12 +1532,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_red_guard_form"#Auto-logging
->>>>>>> master
 			add_popularity = { ideology = communism popularity = 0.15 }
 			add_timed_idea = { idea = GFF_purged days = 210 }
 			add_stability = 0.10
@@ -1825,12 +1551,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_kill_virgil"#Auto-logging
->>>>>>> master
 			add_research_slot = 1
 		}
 	}
@@ -1845,12 +1566,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 100
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_go_east"#Auto-logging
->>>>>>> master
 			add_ideas = GRF_literally_trotsky
 		}
 	}
@@ -1869,7 +1585,6 @@ focus_tree = {
 		x = 25
 		y = 18
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_GRF_cores"#Auto-logging
 			STG = {country_event = { id = frontier.11 } }
 		}
 	}
@@ -1884,12 +1599,7 @@ focus_tree = {
 		y = 4
 		
 		ai_will_do = { factor = 50 }
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_rebuild"#Auto-logging
->>>>>>> master
 			air_experience = 10
 			277 = {
 				add_building_construction = {
@@ -1913,7 +1623,6 @@ focus_tree = {
 		x = 24
 		y = 5
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_purge"#Auto-logging
 			add_tech_bonus = {
 				name = air_support
 				bonus = 0.5
@@ -1933,7 +1642,6 @@ focus_tree = {
 		x = 24
 		y = 6
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_communist_research"#Auto-logging
 			add_tech_bonus = {
 				name = cas_effort
 				bonus = 0.5
@@ -1952,7 +1660,6 @@ focus_tree = {
 		x = 24
 		y = 7
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_world_revolution"#Auto-logging
 			add_tech_bonus = {
 				name = tactical_bombers
 				bonus = 0.5
@@ -1974,7 +1681,6 @@ focus_tree = {
 		x = 26
 		y = 5
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_join_STG"#Auto-logging
 			add_tech_bonus = {
 				name = air_supremecy
 				bonus = 0.5
@@ -1994,7 +1700,6 @@ focus_tree = {
 		x = 26
 		y = 6
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_air_base"#Auto-logging
 			add_tech_bonus = {
 				name = fighters
 				bonus = 0.5
@@ -2013,7 +1718,6 @@ focus_tree = {
 		x = 26
 		y = 7
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_air_support"#Auto-logging
 			add_tech_bonus = {
 				name = strategic_bombers
 				bonus = 0.5
@@ -2033,12 +1737,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_cas"#Auto-logging
->>>>>>> master
 			add_research_slot = 1
 		}
 	}
@@ -2053,12 +1752,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_tatical_b"#Auto-logging
->>>>>>> master
 			army_experience = 25
 		}
 	}
@@ -2073,12 +1767,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_air_supremecy"#Auto-logging
->>>>>>> master
 			add_ideas = GFF_officer
 		}
 	}
@@ -2092,12 +1781,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_fighters"#Auto-logging
->>>>>>> master
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
 				bonus = 0.5
@@ -2117,12 +1801,7 @@ focus_tree = {
 			factor = 10
 		}
 		
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_strategic_b"#Auto-logging
->>>>>>> master
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
 				bonus = 0.5
@@ -2144,12 +1823,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_research_a"#Auto-logging
->>>>>>> master
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
 				bonus = 0.25
@@ -2171,12 +1845,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_army"#Auto-logging
->>>>>>> master
 			add_tech_bonus = {
 				name = infantry_bonus
 				bonus = 0.25
@@ -2195,12 +1864,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_officers"#Auto-logging
->>>>>>> master
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 0.5
@@ -2219,12 +1883,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_arty"#Auto-logging
->>>>>>> master
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 0.5
@@ -2243,12 +1902,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_magic"#Auto-logging
->>>>>>> master
 			add_ideas = GFF_winter_attrition
 		}
 	}
@@ -2268,7 +1922,6 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_guns"#Auto-logging
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
@@ -2356,7 +2009,6 @@ focus_tree = {
 		x = 38
 		y = 8
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_support"#Auto-logging
 			navy_experience = 25
 			if = {
 				limit = {
@@ -2473,12 +2125,7 @@ focus_tree = {
 				}
 			}
 		}
-<<<<<<< HEAD
 		completion_reward = {
-=======
-		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_army_doct"#Auto-logging
->>>>>>> master
 			add_tech_bonus = {
 				name = navdoctrine_bonus
 				bonus = 0.5
@@ -2510,7 +2157,6 @@ focus_tree = {
 		x = 39
 		y = 4
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_army_doct_2"#Auto-logging
 			add_tech_bonus = {
 				name = navy_bonus
 				bonus = 0.5
@@ -2534,7 +2180,6 @@ focus_tree = {
 		x = 37
 		y = 6
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_army_doct_3"#Auto-logging
 			add_tech_bonus = {
 				name = navy_bonus
 				bonus = 0.5
@@ -2554,7 +2199,6 @@ focus_tree = {
 			factor = 80
 		}
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_navy"#Auto-logging
 			add_tech_bonus = {
 				name = dd_bonus
 				bonus = 0.5
@@ -2576,7 +2220,6 @@ focus_tree = {
 		x = 38
 		y = 5
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_b_navy"#Auto-logging
 			add_tech_bonus = {
 				name = navy_bonus
 				bonus = 0.5
@@ -2599,7 +2242,6 @@ focus_tree = {
 		x = 39
 		y = 6
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_flexible_navy"#Auto-logging
 			add_tech_bonus = {
 				name = navy_bonus
 				bonus = 0.5
@@ -2619,7 +2261,6 @@ focus_tree = {
 		x = 39
 		y = 7
 		completion_reward = {
-			log = "[Root.GetName]: Focus GFF_battleships"#Auto-logging
 			add_tech_bonus = {
 				name = navy_bonus
 				bonus = 0.5

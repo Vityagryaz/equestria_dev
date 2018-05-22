@@ -11,19 +11,19 @@ technology_sharing_group = {
 	
 	available = {
 		has_government = democratic
-		event_target:equestria = { NOT = { has_war_with = OLE } }
+		EQS = { NOT = { has_war_with = OLE } }
 		OR = {
 			is_in_faction = no
-			is_in_faction_with = event_target:equestria
+			is_in_faction_with = EQS
 		}
 		
 		if = {
-			limit = { tag = event_target:equestria }
+			limit = { tag = EQS }
 			OLE = {
 				OR = {
 					is_in_faction = no
-					is_in_faction_with = event_target:equestria
-					is_subject_of = event_target:equestria
+					is_in_faction_with = EQS
+					is_subject_of = EQS
 				}
 			}
 		}
@@ -92,11 +92,7 @@ technology_sharing_group = {
 	picture = GFX_technology_sharing_default
 	
 	research_sharing_per_country_bonus = 0.1
-<<<<<<< HEAD
 	
-=======
-
->>>>>>> master
 	available = {
 		is_in_faction_with = WNG
 		WNG = {
@@ -114,18 +110,9 @@ technology_sharing_group = {
 	picture = GFX_commonwealth_research
 	
 	research_sharing_per_country_bonus = 0.1
-<<<<<<< HEAD
 	
 	available = {
 		is_in_faction_with = EQS
-=======
-
-	available = {
-		any_allied_country = {
-			original_tag = EQS
-			is_faction_leader = yes
-		}
->>>>>>> master
 	}
 }
 
@@ -140,16 +127,11 @@ technology_sharing_group = {
 	
 	available = {
 		OR = {
-<<<<<<< HEAD
 			tag = EQS
-=======
-			tag = event_target:equestria
->>>>>>> master
 			tag = WNG
 		}
 		OR = {
 			AND = {
-<<<<<<< HEAD
 				EQS = { has_government = democratic }
 				WNG = { has_government = democratic }
 			}
@@ -168,30 +150,9 @@ technology_sharing_group = {
 		}
 		NOT = { WNG = { has_war_with = EQS } }
 		country_exists = EQS
-=======
-				event_target:equestria = { has_government = democratic }
-				WNG = { has_government = democratic }
-			}
-			AND = {
-				event_target:equestria = { has_government = communism }
-				WNG = { has_government = communism }
-			}
-			AND = {
-				event_target:equestria = { has_government = fascism }
-				WNG = { has_government = fascism }
-			}
-			AND = {
-				event_target:equestria = { has_government = neutrality }
-				WNG = { has_government = neutrality }
-			}
-		}
-		NOT = { WNG = { has_war_with = event_target:equestria } }
-		country_exists = event_target:equestria
->>>>>>> master
 		country_exists = WNG
 	}
 }
-
 
 technology_sharing_group = {
 	
@@ -201,11 +162,7 @@ technology_sharing_group = {
 	picture = GFX_technology_sharing_default
 	
 	research_sharing_per_country_bonus = 0.15
-<<<<<<< HEAD
 	
-=======
-
->>>>>>> master
 	available = {
 		FAT = { exists = yes is_subject = no }
 		OR = {
@@ -222,15 +179,9 @@ technology_sharing_group = {
 	name = northern_science_organisation_name
 	desc = northern_science_organisation_desc
 	picture = GFX_technology_sharing_default
-<<<<<<< HEAD
 	
 	research_sharing_per_country_bonus = 0.1
 	
-=======
-
-	research_sharing_per_country_bonus = 0.1
-
->>>>>>> master
 	available = {
 		is_in_faction_with = GRF
 		GRF = {
@@ -238,51 +189,4 @@ technology_sharing_group = {
 			has_completed_focus = GRF_tech_sharing
 		}
 	}
-<<<<<<< HEAD
-=======
-}
-
-technology_sharing_group = {
-
-	id = CRY_SOL_magic_tech_share
-	name = CRY_SOL_magic_tech_share_name
-	desc = CRY_SOL_magic_tech_share_desc
-	picture = GFX_idea_SOL_Imperial_Inquisition_idea
-
-	research_sharing_per_country_bonus = 0.15
-
-	categories = { race_tech magical_tech nuclear }
-
-	available = {
-		OR = {
-			AND = {
-				original_tag = CRY
-				has_country_flag = CRY_solar_governorship
-				OR = {
-					is_subject_of = event_target:solar_empire
-					is_in_faction_with = event_target:solar_empire
-				}
-			}
-			is_EQS_SOL = yes
-		}
-	}
-}
-
-technology_sharing_group = {
-
-	id = eqc_stg_tech_group
-	name = eqc_stg_tech_group_name
-	desc = eqc_stg_tech_group_desc
-	picture = GFX_technology_sharing_default
-
-	research_sharing_per_country_bonus = 0.1
-
-	available = {
-		has_government = communism
-		OR = {
-			tag = EQC
-			is_in_faction_with = EQC
-		}
-	}
->>>>>>> master
 }

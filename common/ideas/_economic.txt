@@ -180,12 +180,6 @@ ideas = {
 					}
 					NOT = { has_country_flag = economic_laws_blocked }
 				}
-				if = {
-					limit = {
-						original_tag = EQC
-					}
-					has_completed_focus = EQC_full_economic_commitment
-				}
 			}
 			
 			cost = 150
@@ -234,12 +228,6 @@ ideas = {
 						tag = EQS
 					}
 					NOT = { has_country_flag = economic_laws_blocked }
-				}
-				if = {
-					limit = {
-						original_tag = EQC
-					}
-					has_completed_focus = EQC_full_economic_commitment
 				}
 			}
 			

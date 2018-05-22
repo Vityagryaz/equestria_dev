@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿#Equestria At War for Hearts of Iron IV
 
 #PROJECT LEAD
@@ -63,70 +62,4 @@ Paradox Development Studio
 Kaiserreich Team
 HoI 4 Modding Coop
 All artists & creators whose work has been used
-=======
-﻿#Equestria At War for Hearts of Iron IV
-
-#PROJECT LEAD
-Scroup
-
-#DEVELOPMENT
-Cyrus
-Featherus
-Psody
-Yard1
-
-#CONTRIBUTORS
-Arcy
-Axidant
-Batpony Monarch
-BunnyShrubby
-Cherrypone
-Cody MacArthur
-Computational Pragmatist
-Echo
-Flake
-DasPanzer
-dingosupastar
-Gearheart
-Hellstorm12
-Hysterical Fox
-Илларион
-Indyclone77
-King_Wilson
-Kuche
-Lumi
-Mageytash
-Miltonian
-Murp
-Nico von Hapsburg
-Orimmoel
-Orwell
-Redheart
-Shade
-Sinister
-Stemis
-ThatZealousOne
-TheFuego
-Thor
-Udy
-Wells
-
-#TRANSLATORS
-Cwop
-Damiyan
-Murena
-Vasily
-Vizor
-Scrog
-
-#SPECIAL THANKS TO:
-Lauren Faust
-Hasbro
-DHX Media
-Paradox Interactive
-Paradox Development Studio
-Kaiserreich Team
-HoI 4 Modding Coop
-All artists & creators whose work has been used
->>>>>>> master
 Our wonderful community

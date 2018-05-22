@@ -15,11 +15,7 @@ state={
 		owner = EQC
 		add_core_of = EQC
 		buildings = {
-<<<<<<< HEAD
 			infrastructure = 1
-=======
-			infrastructure = 2
->>>>>>> master
 		}
 	}
 	manpower=134560

@@ -250,42 +250,6 @@ demobilization = {
 	}
 }
 political_actions = {
-<<<<<<< HEAD
-=======
-	EQS_annex_darkwing = {
-		icon = stg_cores
-		available = {
-			any_country = {
-				original_tag = STG
-				has_government = democratic
-				is_subject_of = ROOT
-				has_country_flag = darkwing_ready_to_be_annexed
-			}
-		}
-		visible = {
-			original_tag = EQS
-			has_government = democratic
-		}
-		target_trigger = {
-			FROM = {
-				original_tag = STG
-				has_government = democratic
-				is_subject_of = ROOT
-			}
-		}
-		cost = 50
-		ai_will_do = {
-			factor = 100
-		}
-		fire_only_once = yes
-		complete_effect = {
-			FROM = {
-				country_event = stalliongrad.143
-			}
-		}
-	}
-
->>>>>>> master
 		SOL_rehabilitate_generals = {
 
 		icon = generic_army_support
@@ -299,14 +263,7 @@ political_actions = {
 			is_EQS_SOL = yes
 			is_subject = no
 			has_completed_focus = SOL_rehabilitate
-			NOT = {
-				any_country = {
-					AND = {
-						is_original_EQS = yes
-						exists = yes
-					}
-				}
-			}
+			NOT = { country_exists = event_target:equestria }
 			OR = {
 				NOT = { has_unit_leader = 2 }
 				NOT = { has_unit_leader = 3 }
@@ -315,7 +272,6 @@ political_actions = {
 				NOT = { has_unit_leader = 13 }
 				NOT = { has_unit_leader = 14 }
 				NOT = { has_unit_leader = 12 }
-				NOT = { has_unit_leader = 30 }
 			}
 		}
 
@@ -343,10 +299,6 @@ political_actions = {
 			if = {
 				limit = { NOT = { has_unit_leader = 12 } }
 				event_target:EQS_Berrytwist = { set_nationality = ROOT }
-			}
-			if = {
-				limit = { NOT = { has_unit_leader = 30 } }
-				event_target:EQS_Hoofgonery = { set_nationality = ROOT }
 			}
 			if = {
 				limit = { NOT = { has_unit_leader = 13 } }
@@ -733,11 +685,7 @@ EQS_construction_projects = {
 		}
 		cost = 25
 		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 10
-				has_political_power > 155
-			}
+			factor = 2
 		}
 		fire_only_once = yes
 		is_good = yes
@@ -801,11 +749,7 @@ EQS_construction_projects = {
 		}
 		cost = 25
 		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 10
-				has_political_power > 155
-			}
+			factor = 2
 		}
 		fire_only_once = yes
 		is_good = yes
@@ -863,11 +807,7 @@ EQS_construction_projects = {
 		}
 		cost = 50
 		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 10
-				has_political_power > 155
-			}
+			factor = 2
 		}
 		fire_only_once = yes
 		is_good = yes

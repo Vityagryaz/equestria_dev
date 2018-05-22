@@ -7,27 +7,15 @@ magical_weapons_category = {
 			NOT = { has_country_flag = motorized_magical_weapons }
 		}
 		available = {
-			hidden_trigger = { has_army_experience > 50 }
+			has_army_experience > 50
 			NOT = { has_country_flag = motorized_magical_weapons_recently_changed }
 			NOT = { has_country_flag = motorized_magical_weapons }
 		}
-<<<<<<< HEAD
 		
 		cost = 50
 		days_re_enable = 360
 		#days_remove = -1
 		
-=======
-
-		custom_cost_trigger = {
-			has_army_experience > 50
-		}
-
-		custom_cost_text = decision_cost_army_xp_50
-		days_re_enable = 360
-		#days_remove = -1
-
->>>>>>> master
 		ai_will_do = {
 			base = 0
 			modifier = {
@@ -40,9 +28,9 @@ magical_weapons_category = {
 			}
 		}
 		complete_effect = {
+			army_experience = -50
 			custom_effect_tooltip = motorized_magical_weapons_tt
 			hidden_effect = {
-				army_experience = -50
 				set_technology = { magical_weapons_motorized = 1 }
 				set_country_flag = motorized_magical_weapons
 				set_country_flag = { flag = motorized_magical_weapons_recently_changed days = 360 value = 1 }
@@ -57,34 +45,22 @@ magical_weapons_category = {
 			has_country_flag = motorized_magical_weapons
 		}
 		available = {
-			hidden_trigger = { has_army_experience > 50 }
+			has_army_experience > 50
 			NOT = { has_country_flag = motorized_magical_weapons_recently_changed }
 			has_country_flag = motorized_magical_weapons
 		}
-<<<<<<< HEAD
 		
 		cost = 50
 		days_re_enable = 360
 		#days_remove = -1
 		
-=======
-
-		custom_cost_trigger = {
-			has_army_experience > 50
-		}
-
-		custom_cost_text = decision_cost_army_xp_50
-		days_re_enable = 360
-		#days_remove = -1
-
->>>>>>> master
 		ai_will_do = {
 			base = 0
 		}
 		complete_effect = {
+			army_experience = -50
 			custom_effect_tooltip = motorized_magical_weapons_remove_tt
 			hidden_effect = {
-				army_experience = -50
 				set_technology = { magical_weapons_motorized = 0 }
 				clr_country_flag = motorized_magical_weapons
 				set_country_flag = { flag = motorized_magical_weapons_recently_changed days = 360 value = 1 }
@@ -99,27 +75,15 @@ magical_weapons_category = {
 			NOT = { has_country_flag = mechanized_magical_weapons }
 		}
 		available = {
-			hidden_trigger = { has_army_experience > 50 }
+			has_army_experience > 50
 			NOT = { has_country_flag = mechanized_magical_weapons_recently_changed }
 			NOT = { has_country_flag = mechanized_magical_weapons }
 		}
-<<<<<<< HEAD
 		
 		cost = 50
 		days_re_enable = 360
 		#days_remove = -1
 		
-=======
-
-		custom_cost_trigger = {
-			has_army_experience > 50
-		}
-
-		custom_cost_text = decision_cost_army_xp_50
-		days_re_enable = 360
-		#days_remove = -1
-
->>>>>>> master
 		ai_will_do = {
 			base = 0
 			modifier = {
@@ -132,9 +96,9 @@ magical_weapons_category = {
 			}
 		}
 		complete_effect = {
+			army_experience = -50
 			custom_effect_tooltip = mechanized_magical_weapons_tt
 			hidden_effect = {
-				army_experience = -50
 				set_technology = { magical_weapons_mechanized = 1 }
 				set_country_flag = mechanized_magical_weapons
 				set_country_flag = { flag = mechanized_magical_weapons_recently_changed days = 360 value = 1 }
@@ -149,34 +113,22 @@ magical_weapons_category = {
 			has_country_flag = mechanized_magical_weapons
 		}
 		available = {
-			hidden_trigger = { has_army_experience > 50 }
+			has_army_experience > 50
 			NOT = { has_country_flag = mechanized_magical_weapons_recently_changed }
 			has_country_flag = mechanized_magical_weapons
 		}
-<<<<<<< HEAD
 		
 		cost = 50
 		days_re_enable = 360
 		#days_remove = -1
 		
-=======
-
-		custom_cost_trigger = {
-			has_army_experience > 50
-		}
-
-		custom_cost_text = decision_cost_army_xp_50
-		days_re_enable = 360
-		#days_remove = -1
-
->>>>>>> master
 		ai_will_do = {
 			base = 0
 		}
 		complete_effect = {
+			army_experience = -50
 			custom_effect_tooltip = mechanized_magical_weapons_remove_tt
 			hidden_effect = {
-				army_experience = -50
 				set_technology = { magical_weapons_mechanized = 0 }
 				clr_country_flag = mechanized_magical_weapons
 				set_country_flag = { flag = mechanized_magical_weapons_recently_changed days = 360 value = 1 }
@@ -190,27 +142,15 @@ magical_weapons_category = {
 			NOT = { has_country_flag = special_forces_magical_weapons }
 		}
 		available = {
-			hidden_trigger = { has_army_experience > 50 }
+			has_army_experience > 50
 			NOT = { has_country_flag = special_forces_magical_weapons_recently_changed }
 			NOT = { has_country_flag = special_forces_magical_weapons }
 		}
-<<<<<<< HEAD
 		
 		cost = 50
 		days_re_enable = 360
 		#days_remove = -1
 		
-=======
-
-		custom_cost_trigger = {
-			has_army_experience > 50
-		}
-
-		custom_cost_text = decision_cost_army_xp_50
-		days_re_enable = 360
-		#days_remove = -1
-
->>>>>>> master
 		ai_will_do = {
 			base = 0
 			modifier = {
@@ -223,9 +163,9 @@ magical_weapons_category = {
 			}
 		}
 		complete_effect = {
+			army_experience = -50
 			custom_effect_tooltip = special_forces_magical_weapons_tt
 			hidden_effect = {
-				army_experience = -50
 				set_country_flag = special_forces_magical_weapons
 				set_country_flag = { flag = special_forces_magical_weapons_recently_changed days = 360 value = 1 }
 				set_technology = { magical_weapons_special_forces = 1 }
@@ -239,37 +179,22 @@ magical_weapons_category = {
 			has_country_flag = special_forces_magical_weapons
 		}
 		available = {
-			hidden_trigger = { has_army_experience > 50 }
+			has_army_experience > 50
 			NOT = { has_country_flag = special_forces_magical_weapons_recently_changed }
 			has_country_flag = special_forces_magical_weapons
 		}
-<<<<<<< HEAD
 		
 		cost = 50
 		days_re_enable = 360
 		#days_remove = -1
 		
-=======
-
-		custom_cost_trigger = {
-			has_army_experience > 50
-		}
-
-		custom_cost_text = decision_cost_army_xp_50
-		days_re_enable = 360
-		#days_remove = -1
-
->>>>>>> master
 		ai_will_do = {
 			base = 0
 		}
 		complete_effect = {
+			army_experience = -50
 			custom_effect_tooltip = special_forces_magical_weapons_remove_tt
 			hidden_effect = {
-<<<<<<< HEAD
-=======
-				army_experience = -50
->>>>>>> master
 				set_country_flag = { flag = special_forces_magical_weapons_recently_changed days = 360 value = 1 }
 				clr_country_flag = special_forces_magical_weapons
 				set_technology = { magical_weapons_special_forces = 0 }
@@ -283,21 +208,11 @@ military_training_category = {
 		icon = rifles
 		available = {
 			has_war = no
-			hidden_trigger = { command_power > 19 }
+			command_power > 19
 		}
-<<<<<<< HEAD
 		
 		cost = 40
 		
-=======
-
-		custom_cost_trigger = {
-			command_power > 19
-			has_political_power > 24
-		}
-		custom_cost_text = decision_cost_CP_30_pp_25
-
->>>>>>> master
 		days_remove = 7
 		
 		days_re_enable = 340
@@ -334,7 +249,7 @@ military_training_category = {
 			}
 		}
 		modifier = {
-			experience_gain_army_factor = 0.25
+			experience_gain_army_factor = 0.2
 		}
 		complete_effect = {
 			if = {
@@ -344,60 +259,30 @@ military_training_category = {
 			else_if = {
 				limit = {
 					num_divisions > 10
-<<<<<<< HEAD
-=======
-					num_divisions < 20
->>>>>>> master
 					}
 				army_experience = 10
 			}
 			else_if = {
 				limit = {
-<<<<<<< HEAD
 					num_divisions > 20
 					}
 				army_experience = 20
 			}
 			
 			add_command_power = -20
-=======
-					num_divisions > 19
-					}
-				army_experience = 20
-			}
-
-			hidden_effect = { add_command_power = -20 add_political_power = -25 }
->>>>>>> master
 		}
 	}
 	lessons_of_war_army = {
 		icon = generic_tank
-<<<<<<< HEAD
 		
 		cost = 30
 		
-=======
-
-		custom_cost_trigger = {
-			has_army_experience > 150
-			has_political_power > 29
-		}
-		custom_cost_text = decision_cost_army_xp_150_pp_30
-
->>>>>>> master
 		#days_remove = 7
 		
 		days_re_enable = 360
 		
 		available = {
-<<<<<<< HEAD
 			has_army_experience > 150
-=======
-			hidden_trigger = {
-				has_army_experience > 150
-				has_political_power > 29
-			}
->>>>>>> master
 		}
 		
 		ai_will_do = {
@@ -434,14 +319,10 @@ military_training_category = {
 			}
 		}
 		complete_effect = {
-<<<<<<< HEAD
 			army_experience = -150
-=======
-			hidden_effect = { army_experience = -150 add_political_power = -30 }
->>>>>>> master
 			add_tech_bonus = {
 				name = land_doc_bonus
-				bonus = 0.5
+				bonus = 0.33
 				uses = 1
 				category = land_doctrine
 			}
@@ -449,32 +330,15 @@ military_training_category = {
 	}
 	lessons_of_war_air = {
 		icon = generic_air
-<<<<<<< HEAD
 		
 		cost = 30
 		
-=======
-
-		custom_cost_trigger = {
-			has_air_experience > 150
-			has_political_power > 29
-		}
-		custom_cost_text = decision_cost_air_xp_150_pp_30
-
->>>>>>> master
 		#days_remove = 7
 		
 		days_re_enable = 360
 		
 		available = {
-<<<<<<< HEAD
 			has_air_experience > 100
-=======
-			hidden_trigger = {
-				has_air_experience > 150
-				has_political_power > 29
-			}
->>>>>>> master
 		}
 		
 		ai_will_do = {
@@ -503,14 +367,10 @@ military_training_category = {
 			}
 		}
 		complete_effect = {
-<<<<<<< HEAD
 			air_experience = -100
-=======
-			hidden_effect = { air_experience = -150 add_political_power = -30 }
->>>>>>> master
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 0.5
+				bonus = 0.33
 				uses = 1
 				category = air_doctrine
 			}
@@ -518,7 +378,6 @@ military_training_category = {
 	}
 	lessons_of_war_navy = {
 		icon = generic_naval
-<<<<<<< HEAD
 		
 		cost = 30
 		
@@ -528,24 +387,6 @@ military_training_category = {
 		
 		available = {
 			has_navy_experience > 100
-=======
-
-		custom_cost_trigger = {
-			has_navy_experience > 150
-			has_political_power > 29
-		}
-		custom_cost_text = decision_cost_navy_xp_150_pp_30
-
-		#days_remove = 7
-
-		days_re_enable = 360
-
-		available = {
-			hidden_trigger = {
-				has_navy_experience > 150
-				has_political_power > 29
-			}
->>>>>>> master
 		}
 		
 		ai_will_do = {
@@ -599,14 +440,10 @@ military_training_category = {
 			}
 		}
 		complete_effect = {
-<<<<<<< HEAD
 			navy_experience = -100
-=======
-			hidden_effect = { navy_experience = -150 add_political_power = -30 }
->>>>>>> master
 			add_tech_bonus = {
 				name = naval_doc_bonus
-				bonus = 0.5
+				bonus = 0.33
 				uses = 1
 				category = naval_doctrine
 			}

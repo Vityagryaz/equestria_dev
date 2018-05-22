@@ -56,13 +56,8 @@ create_country_leader = {
 create_country_leader = {
 	name = "Gwenaël Godard"
 	#	name = "Giselle Guerin"
-<<<<<<< HEAD
 	
 	picture = "Governor.tga"
-=======
-
-	picture = "Godard.tga"
->>>>>>> master
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
@@ -74,15 +69,11 @@ create_country_leader = {
 	name = "Gwenaël Godard"
 	#	name = "Gauvain Greenheart"
 	desc = ""
-	picture = "Godard.tga"
+	picture = "Governor.tga"
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
-<<<<<<< HEAD
 		
-=======
-
->>>>>>> master
 	}
 }
 
@@ -93,10 +84,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
-<<<<<<< HEAD
 		
-=======
-
->>>>>>> master
 	}
 }

@@ -9,13 +9,7 @@ state={
 	history={
 		owner = RIV
 		add_core_of = RIV
-<<<<<<< HEAD
 		
-=======
-		buildings = {
-			infrastructure = 1
-	    }
->>>>>>> master
 	}
 	
 	provinces={

@@ -20,49 +20,27 @@ focus_tree = {
 
 	}
 	focus = {
-		id = CYA_openHistory
-		icon = GFX_goal_generic_propaganda
-		cost = 10.00
-		mutually_exclusive = {
-			focus = CYA_filteredHistory
-			focus = CYA_filteredHistory
-		}
-		x = 20
-		y = 7
-			completion_Reward = {
-					add_political_power = 150
-					opinion_gain_monthly_factor = 0.10
-				}
-
-	}
-	focus = {
-		id = CYA_openHistory
-		icon = GFX_goal_generic_propaganda
-		cost = 10.00
-		mutually_exclusive = {
-			focus = CYA_filteredHistory
-			focus = CYA_filteredHistory
-		}
-		x = 20
-		y = 7
-			completion_Reward = {
-					add_political_power = 150
-					opinion_gain_monthly_factor = 0.10
-				}
-
-	}
-	focus = {
-		id = CYA_State_of_emergency
-		icon = GFX_goal_generic_army_doctrines
-		cost = 1.00
-		x = 38
+		id = CYA_Trade_Warfare
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 40
 		y = 1
-			available = {
-					is_justifying_wargoal_against = CYA
-				}
-			completion_reward = {
-					war_support_factor = 0.10
-				}
+
+	}
+	focus = {
+		id = CYA_Innovative_Ideas
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 39
+		y = 7
+
+	}
+	focus = {
+		id = CYA_BAE_Systems
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 41
+		y = 7
 
 	}
 	focus = {
@@ -549,6 +527,25 @@ focus_tree = {
 
 	}
 	focus = {
+		id = CYA_openHistory
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = CYA_public_schools
+		}
+		mutually_exclusive = {
+			focus = CYA_filteredHistory
+			focus = CYA_filteredHistory
+		}
+		x = 20
+		y = 7
+			completion_Reward = {
+					add_political_power = 150
+					opinion_gain_monthly_factor = 0.10
+				}
+
+	}
+	focus = {
 		id = CYA_modernisation
 		icon = GFX_goal_generic_demand_territory
 		cost = 5.00
@@ -572,7 +569,7 @@ focus_tree = {
 		x = 25
 		y = 3
 			completion_reward = {
-					political_power = 50
+					add_political_power = 50
 					monthly_population = 0.15
 				}
 
@@ -695,119 +692,195 @@ focus_tree = {
 
 	}
 	focus = {
-		id = CYA_Counter
-		icon = GFX_goal_generic_army_doctrines
-		cost = 2.00
+		id = CYA_Reclaim_The_Coast
+		icon = GFX_goal_unknown
+		cost = 0.00
 		prerequisite = {
-			focus = CYA_State_of_emergency
-		}
-		x = 34
-		y = 2
-			completion_reward = {
-					war_support_factor = 0.05
-				}
-
-	}
-	focus = {
-		id = CYA_Attack
-		icon = GFX_goal_generic_army_doctrines
-		cost = 4.00
-		prerequisite = {
-			focus = CYA_Counter
-		}
-		x = 33
-		y = 3
-			completion_reward = {
-
-}
-
-	}
-	focus = {
-		id = CYA_Speed
-		icon = GFX_goal_generic_army_doctrines
-		cost = 4.00
-		prerequisite = {
-			focus = CYA_Counter
-		}
-		x = 35
-		y = 3
-			completion_reward = {
-					army_org_Factor = 0.05
-					army_speed_factor = 0.05
-				}
-
-	}
-	focus = {
-		id = CYA_conscription
-		icon = GFX_goal_generic_army_doctrines
-		cost = 2.00
-		prerequisite = {
-			focus = CYA_State_of_emergency
+			focus = CYA_Trade_Warfare
 		}
 		x = 38
 		y = 2
-			completion_reward = {
-					war_support_factor = 0.05
-				}
 
 	}
 	focus = {
-		id = CYA_conscription_laws
-		icon = GFX_goal_generic_army_doctrines
-		cost = 4.00
+		id = CYA_Reclaim_The_Sea
+		icon = GFX_goal_unknown
+		cost = 0.00
 		prerequisite = {
-			focus = CYA_conscription
+			focus = CYA_Trade_Warfare
 		}
-		x = 37
-		y = 3
-			completion_reward = {
-					conscription_factor = 0.1
-					non_core_manpower = 0.05
-				}
+		prerequisite = {
+			focus = CYA_Trade_Warfare
+		}
+		x = 40
+		y = 2
 
 	}
 	focus = {
-		id = CYA_mobilisation_speed
-		icon = GFX_goal_generic_army_doctrines
-		cost = 4.00
+		id = CYA_Modern_Caravels
+		icon = GFX_goal_unknown
+		cost = 0.00
 		prerequisite = {
-			focus = CYA_conscription
+			focus = CYA_Reclaim_The_Coast
+		}
+		prerequisite = {
+			focus = CYA_Reclaim_The_Sea
 		}
 		x = 39
 		y = 3
-			completion_reward = {
-					mobilization_speed = 0.1
-					military_leader_cost_factor = -0.25
-				}
 
 	}
 	focus = {
-		id = CYA_Defence
-		icon = GFX_goal_generic_army_doctrines
-		cost = 2.00
+		id = CYA_Reclaim_The_Ocean
+		icon = GFX_goal_unknown
+		cost = 0.00
 		prerequisite = {
-			focus = CYA_State_of_emergency
+			focus = CYA_Trade_Warfare
 		}
 		x = 42
 		y = 2
-			completion_reward = {
-					war_support_factor = 0.05
-				}
 
 	}
 	focus = {
-		id = CYA_entrenchment
-		icon = GFX_goal_generic_army_doctrines
-		cost = 4.00
+		id = CYA_Modern_Galleons
+		icon = GFX_goal_unknown
+		cost = 0.00
 		prerequisite = {
-			focus = CYA_Defence
+			focus = CYA_Reclaim_The_Sea
+		}
+		prerequisite = {
+			focus = CYA_Reclaim_The_Ocean
 		}
 		x = 41
 		y = 3
-			completion_reward = {
-					max_dig_in = 2
-					army_core_defence_factor = 0.1
-				}
+
+	}
+	focus = {
+		id = CYA_Ship_Of_The_Line
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_Modern_Galleons
+		}
+		prerequisite = {
+			focus = CYA_Modern_Caravels
+		}
+		x = 40
+		y = 4
+
+	}
+	focus = {
+		id = CYA_Modern_Theory
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_Ship_Of_The_Line
+		}
+		x = 35
+		y = 5
+
+	}
+	focus = {
+		id = CYA_High_Seas_Fleet
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_Modern_Theory
+		}
+		mutually_exclusive = {
+			focus = CYA_Underwater_Minotaurs
+		}
+		x = 34
+		y = 6
+
+	}
+	focus = {
+		id = CYA_Underwater_Minotaurs
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_Modern_Theory
+		}
+		mutually_exclusive = {
+			focus = CYA_High_Seas_Fleet
+		}
+		x = 36
+		y = 6
+
+	}
+	focus = {
+		id = CYA_Modern_Production
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_Ship_Of_The_Line
+		}
+		x = 40
+		y = 5
+
+	}
+	focus = {
+		id = CYA_Private_Sector
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_Modern_Production
+		}
+		mutually_exclusive = {
+			focus = CYA_Public_Sector
+		}
+		x = 41
+		y = 6
+
+	}
+	focus = {
+		id = CYA_Public_Sector
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_Modern_Production
+		}
+		mutually_exclusive = {
+			focus = CYA_Private_Sector
+		}
+		x = 39
+		y = 6
+
+	}
+	focus = {
+		id = CYA_Modern_Armaments
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_Ship_Of_The_Line
+		}
+		x = 45
+		y = 5
+
+	}
+	focus = {
+		id = CYA_Big_Guns
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_Modern_Armaments
+		}
+		mutually_exclusive = {
+			focus = CYA_Extra_Protection
+		}
+		x = 44
+		y = 6
+
+	}
+	focus = {
+		id = CYA_Lotta_Millimeters
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_Big_Guns
+		}
+		x = 44
+		y = 7
 
 	}
 	focus = {
@@ -1205,22 +1278,103 @@ focus_tree = {
 
 	}
 	focus = {
-		id = CYA_Forts
-		icon = GFX_goal_generic_army_doctrines
-		cost = 4.00
+		id = CYA_Extra_Protection
+		icon = GFX_goal_unknown
+		cost = 0.00
 		prerequisite = {
-			focus = CYA_Defence
+			focus = CYA_Modern_Armaments
 		}
-		x = 43
-		y = 3
-			completion_reward = {
-					every_country = {
-							if = {
-									limit = { has_annex_wargoal }
-									production_speed_bunker_factor = 0.5
-								}
-						}
-				}
+		mutually_exclusive = {
+			focus = CYA_Big_Guns
+		}
+		x = 46
+		y = 6
+
+	}
+	focus = {
+		id = CYA_Interimidating_Interdiction
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_Underwater_Minotaurs
+		}
+		x = 36
+		y = 7
+
+	}
+	focus = {
+		id = CYA_Size_Matters
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_High_Seas_Fleet
+		}
+		x = 34
+		y = 7
+
+	}
+	focus = {
+		id = CYA_Tonnes_Of_Inches
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_Extra_Protection
+		}
+		x = 46
+		y = 7
+
+	}
+	focus = {
+		id = CYA_Pax_Cyanolisia
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_Naval_Academy
+		}
+		prerequisite = {
+			focus = CYA_Foreign_Affairs
+		}
+		prerequisite = {
+			focus = CYA_Engineering_Masterpiece
+		}
+		x = 40
+		y = 9
+
+	}
+	focus = {
+		id = CYA_Naval_Academy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_Interimidating_Interdiction
+			focus = CYA_Size_Matters
+		}
+		x = 35
+		y = 8
+
+	}
+	focus = {
+		id = CYA_Engineering_Masterpiece
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_BAE_Systems
+			focus = CYA_Innovative_Ideas
+		}
+		x = 40
+		y = 8
+
+	}
+	focus = {
+		id = CYA_Foreign_Affairs
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_Tonnes_Of_Inches
+			focus = CYA_Lotta_Millimeters
+		}
+		x = 45
+		y = 8
 
 	}
 }

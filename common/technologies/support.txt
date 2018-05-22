@@ -25,19 +25,11 @@ technologies = {
 	
 	
 	tech_support = {
-<<<<<<< HEAD
 		
 		dependencies = {
 			melee_weapons1 = 1
 		}
 		
-=======
-
-		dependencies = {
-			melee_weapons1 = 1
-		}
-
->>>>>>> master
 		enable_equipments = {
 			support_equipment_1
 		}
@@ -159,11 +151,6 @@ technologies = {
 				factor = 10
 				date > "1011.1.1"
 			}
-
-			modifier = {
-				factor = 1000
-				has_completed_focus = CRY_SOL_military_of_the_inquisition
-			}
 		}
 	}
 	
@@ -259,15 +246,9 @@ technologies = {
 			}
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> Old Engineers <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> Old Engineers <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_engineers4 = {
 		
 		engineer = {
@@ -312,15 +293,9 @@ technologies = {
 			}
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> X <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> X <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_recon = {
 		
 		enable_subunits = {
@@ -370,11 +345,6 @@ technologies = {
 			modifier = {
 				factor = 10
 				date > "1011.1.1"
-			}
-
-			modifier = {
-				factor = 1000
-				has_completed_focus = CRY_SOL_military_of_the_inquisition
 			}
 		}
 	}
@@ -464,15 +434,9 @@ technologies = {
 			}
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> Old Recon <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> Old Recon <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_recon4 = {
 		
 		recon = {
@@ -516,15 +480,9 @@ technologies = {
 			}
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> X <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> X <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_military_police = {
 		
 		enable_subunits = {
@@ -555,11 +513,6 @@ technologies = {
 				factor = 2
 				has_war = yes
 			}
-
-			modifier = {
-				factor = 1000
-				has_completed_focus = CRY_SOL_military_of_the_inquisition
-			}
 		}
 	}
 	
@@ -567,7 +520,6 @@ technologies = {
 		
 		military_police = {
 			suppression_factor = 0.1
-			suppression = 1
 		}
 		
 		
@@ -602,7 +554,6 @@ technologies = {
 		
 		military_police = {
 			suppression_factor = 0.1
-			suppression = 1
 		}
 		
 		path = {
@@ -631,20 +582,13 @@ technologies = {
 			}
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> Old Military Police <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> Old Military Police <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_military_police4 = {
 		
 		military_police = {
 			suppression_factor = 0.1
-			suppression = 1
 		}
 		
 		path = {
@@ -674,15 +618,9 @@ technologies = {
 		}
 		
 	}
-<<<<<<< HEAD
 	
 	###------> X <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> X <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_maintenance_company = {
 		
 		enable_subunits = {
@@ -814,15 +752,9 @@ technologies = {
 			
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> Old Maintenance Company <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> Old Maintenance Company <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_maintenance_company4 = {
 		
 		maintenance_company = {
@@ -867,15 +799,9 @@ technologies = {
 			}
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> X <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> X <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_field_hospital = {
 		
 		enable_subunits = {
@@ -1010,15 +936,9 @@ technologies = {
 			}
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> Old Field Hospital <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> Old Field Hospital <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_field_hospital4 = {
 		
 		field_hospital = {
@@ -1064,15 +984,9 @@ technologies = {
 			}
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> X <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> X <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_logistics_company = {
 		
 		enable_subunits = {
@@ -1209,15 +1123,9 @@ technologies = {
 			}
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> Old Logisitcs Company <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> Old Logisitcs Company <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_logistics_company4 = {
 		
 		logistics_company = {
@@ -1262,15 +1170,9 @@ technologies = {
 			}
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> X <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> X <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_signal_company = {
 		
 		enable_subunits = {
@@ -1390,15 +1292,9 @@ technologies = {
 			}
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> Old Signal Company <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> Old Signal Company <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_signal_company4 = {
 		
 		signal_company = {
@@ -1441,19 +1337,11 @@ technologies = {
 			}
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> X <><> <><> <><> <><> <><>
 	
 	###------> New Signal Company <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> X <><> <><> <><> <><> <><>
-
-	###------> New Signal Company <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_signal_company_a = {
 		
 		signal_company = {
@@ -1534,19 +1422,11 @@ technologies = {
 			factor = 1
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> X <><> <><> <><> <><> <><>
 	
 	###------> New Engineers <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> X <><> <><> <><> <><> <><>
-
-	###------> New Engineers <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_engineers_a = {
 		
 		engineer = {
@@ -1639,19 +1519,11 @@ technologies = {
 			factor = 1
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> X <><> <><> <><> <><> <><>
 	
 	###------> New Recon <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> X <><> <><> <><> <><> <><>
-
-	###------> New Recon <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_recon_a = {
 		
 		recon = {
@@ -1734,19 +1606,11 @@ technologies = {
 		}
 		
 	}
-<<<<<<< HEAD
 	
 	###------> X <><> <><> <><> <><> <><>
 	
 	###------> New Miliary Police <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> X <><> <><> <><> <><> <><>
-
-	###------> New Miliary Police <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_military_police_a = {
 		
 		military_police = {
@@ -1825,19 +1689,11 @@ technologies = {
 			factor = 0.5
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> X <><> <><> <><> <><> <><>
 	
 	###------> New Maintenance Company <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> X <><> <><> <><> <><> <><>
-
-	###------> New Maintenance Company <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_maintenance_company_a = {
 		
 		maintenance_company = {
@@ -1920,15 +1776,9 @@ technologies = {
 		}
 	}
 	###------> X <><> <><> <><> <><> <><>
-<<<<<<< HEAD
 	
 	###------> New Field Hospital <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> New Field Hospital <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_field_hospital_a = {
 		
 		field_hospital = {
@@ -2014,19 +1864,11 @@ technologies = {
 			factor = 1
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> X <><> <><> <><> <><> <><>
 	
 	###------> New Logistics Company <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> X <><> <><> <><> <><> <><>
-
-	###------> New Logistics Company <><> <><> <><> <><> <><>
-
->>>>>>> master
 	tech_logistics_company_a = {
 		
 		logistics_company = {
@@ -2110,15 +1952,9 @@ technologies = {
 			factor = 1
 		}
 	}
-<<<<<<< HEAD
 	
 	###------> X <><> <><> <><> <><> <><>
 	
-=======
-
-	###------> X <><> <><> <><> <><> <><>
-
->>>>>>> master
 }
 
 #####-----------------------------------------------------------> End

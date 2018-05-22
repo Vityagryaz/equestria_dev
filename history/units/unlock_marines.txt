@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿division_template = {
 	name = "Marines"
 	
@@ -11,17 +10,3 @@
 		marine = { x = 1 y = 2 }
 	}
 }
-=======
-﻿division_template = {
-	name = "Marines"
-	
-	regiments = {
-		marine = { x = 0 y = 0 }
-		marine = { x = 0 y = 1 }
-		marine = { x = 1 y = 0 }
-		marine = { x = 1 y = 1 }
-		marine = { x = 0 y = 2 }
-		marine = { x = 1 y = 2 }
-	}
-}
->>>>>>> master

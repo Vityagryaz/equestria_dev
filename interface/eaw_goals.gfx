@@ -1387,13 +1387,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/goal_chn_truck.dds"
 	}
 	SpriteType = {
-<<<<<<< HEAD
-=======
-		name = "GFX_goal_new_temple"
-		texturefile = "gfx/interface/goals/goal_new_temple.dds"
-	}
-	SpriteType = {
->>>>>>> master
 		name = "GFX_goal_ole_velvet_portrait"
 		texturefile = "gfx/interface/goals/goal_ole_velvet_portrait.dds"
 	}
@@ -1808,11 +1801,7 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_goal_graveyard"
 		texturefile = "gfx/interface/goals/goal_graveyard.dds"
-<<<<<<< HEAD
 	}	
-=======
-	}
->>>>>>> master
 	SpriteType = {
 		name = "GFX_goal_skull_treaty"
 		texturefile = "gfx/interface/goals/goal_skull_treaty.dds"
@@ -1841,80 +1830,4 @@ spriteTypes = {
 		name = "GFX_goal_chn_hive_dockyards"
 		texturefile = "gfx/interface/goals/goal_chn_hive_dockyards.dds"
 	}
-<<<<<<< HEAD
-=======
-	SpriteType = {
-		name = "GFX_goal_chn_canterlot"
-		texturefile = "gfx/interface/goals/goal_chn_canterlot.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_chn_crystal_city"
-		texturefile = "gfx/interface/goals/goal_chn_crystal_city.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_chn_griffonia"
-		texturefile = "gfx/interface/goals/goal_chn_griffonia.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_cry_sol_cadence"
-		texturefile = "gfx/interface/goals/goal_cry_solar_cadence.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_solar_crystal_empire"
-		texturefile = "gfx/interface/goals/goal_cry_solar.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_OTT_gendarmerie"
-		texturefile = "gfx/interface/goals/OTT_gendarmerie.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_commune_politics"
-		texturefile = "gfx/interface/goals/goal_commune_politics.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_HOL_military_union"
-		texturefile = "gfx/interface/goals/goal_HOL_military_union.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_red_star_gold_wreath"
-		texturefile = "gfx/interface/goals/goal_red_star_gold_wreath.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_syndicalist_industry"
-		texturefile = "gfx/interface/goals/goal_syndicalist_industry.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_chn_mechanized_rocket"
-		texturefile = "gfx/interface/goals/goal_chn_rocket_artillery.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_chn_mechanized"
-		texturefile = "gfx/interface/goals/goal_chn_mechanized.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_healthcare_program"
-		texturefile = "gfx/interface/goals/focus_healthcare_program.dds"
-	}
-	SpriteType = {
-		name = "GFX_focus_eqc_memories_of_our_town"
-		texturefile = "gfx/interface/goals/focus_eqc_memories_of_our_town.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_nch_farris"
-		texturefile = "gfx/interface/goals/goal_nch_farris.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_nch_petiole"
-		texturefile = "gfx/interface/goals/goal_nch_petiole.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_EEA"
-		texturefile = "gfx/interface/goals/goal_EEA.dds"
-	}
-	SpriteType = {
-		name = "GFX_goal_ease_EEA"
-		texturefile = "gfx/interface/goals/goal_ease_EEA.dds"
-	}
-	
->>>>>>> master
 }

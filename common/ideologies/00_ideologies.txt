@@ -83,12 +83,6 @@ ideologies = {
 			primitive_communism = {
 				
 			}
-			oligarchical_collectivism = {
-				
-			}
-			equalism = {
-				
-			}
 		}
 		
 		dynamic_faction_names = {

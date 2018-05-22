@@ -7,7 +7,7 @@ state={
 	resources={
 		crystals = 9
 	}
-	manpower=91000
+	manpower=70000
 	history={
 		owner = CHN
 		add_core_of = CHN

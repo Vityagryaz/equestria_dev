@@ -39,15 +39,18 @@ political_actions = {
 		visible = {
 			has_civil_war = no
 			is_subject = no
-			OR = {
-				NOT = { has_unit_leader = 105 }
-				NOT = { has_unit_leader = 106 }
-				NOT = { has_unit_leader = 107 }
-				NOT = { has_unit_leader = 108 }
-				NOT = { has_unit_leader = 109 }
-				NOT = { has_unit_leader = 110 }
-				NOT = { has_unit_leader = 111 }
-				NOT = { has_unit_leader = 112 }
+			NOT = {
+				AND = {
+					has_unit_leader = 105
+					has_unit_leader = 106
+					has_unit_leader = 107
+					has_unit_leader = 108
+					has_unit_leader = 109
+					has_unit_leader = 111
+					has_unit_leader = 110
+					has_unit_leader = 108
+					has_unit_leader = 109
+				}
 			}
 		}
 
@@ -83,16 +86,7 @@ political_actions = {
 			if = {
 				limit = { NOT = { has_unit_leader = 111 } }
 				event_target:OLE_Pirhonen = { set_nationality = ROOT }
-<<<<<<< HEAD
 				}		}
-=======
-			}
-			if = {
-				limit = { NOT = { has_unit_leader = 112 } }
-				event_target:OLE_Eilert = { set_nationality = ROOT }
-			}		
-		}
->>>>>>> master
 
 		ai_will_do = {
 			factor = 50

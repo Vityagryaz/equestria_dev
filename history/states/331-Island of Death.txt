@@ -4,7 +4,7 @@ state={
 	provinces={
 		10051
 	}
-	manpower=390
+	manpower=300
 	history = {
 		owner = OLE
 		add_core_of = OLE

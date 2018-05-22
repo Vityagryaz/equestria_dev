@@ -1,12 +1,7 @@
 ﻿add_namespace = sicameon
 
 country_event = { ## Talk with glorious Empire! For GRI
-<<<<<<< HEAD
 	id = sicameon.1
-=======
-	id = sicameon.1
-	immediate = {log = "[Root.GetName]: event sicameon.1"}#Auto-logging
->>>>>>> master
 	title = sicameon.1.t
 	desc = sicameon.1.d
 	picture = GFX_event_griffon_mountain
@@ -27,12 +22,7 @@ country_event = { ## Talk with glorious Empire! For GRI
 }
 
 country_event = { ## Glorious Empire accepts!
-<<<<<<< HEAD
 	id = sicameon.2
-=======
-	id = sicameon.2
-	immediate = {log = "[Root.GetName]: event sicameon.2"}#Auto-logging
->>>>>>> master
 	title = sicameon.2.t
 	desc = sicameon.2.d
 	picture = GFX_event_griffon_mountain
@@ -46,12 +36,7 @@ country_event = { ## Glorious Empire accepts!
 }
 
 country_event = { ## Glorious Empire refused!?!
-<<<<<<< HEAD
 	id = sicameon.3
-=======
-	id = sicameon.3
-	immediate = {log = "[Root.GetName]: event sicameon.3"}#Auto-logging
->>>>>>> master
 	title = sicameon.3.t
 	desc = sicameon.3.d
 	picture = GFX_event_griffon_mountain
@@ -65,12 +50,7 @@ country_event = { ## Glorious Empire refused!?!
 }
 
 country_event = { ## Old Loyalty to Glorious Empire!
-<<<<<<< HEAD
 	id = sicameon.4
-=======
-	id = sicameon.4
-	immediate = {log = "[Root.GetName]: event sicameon.4"}#Auto-logging
->>>>>>> master
 	title = sicameon.4.t
 	desc = sicameon.4.d
 	picture = GFX_event_griffon_mountain
@@ -93,12 +73,7 @@ country_event = { ## Old Loyalty to Glorious Empire!
 }
 
 country_event = { ## Event for Empire informing them of Sicameon becoming dominion
-<<<<<<< HEAD
 	id = sicameon.5
-=======
-	id = sicameon.5
-	immediate = {log = "[Root.GetName]: event sicameon.5"}#Auto-logging
->>>>>>> master
 	title = sicameon.5.t
 	desc = sicameon.5.d
 	picture = GFX_event_griffon_mountain
@@ -112,12 +87,7 @@ country_event = { ## Event for Empire informing them of Sicameon becoming domini
 }
 
 country_event = { ## Event for Empire informing them of Sicameon betraying the pact
-<<<<<<< HEAD
 	id = sicameon.6
-=======
-	id = sicameon.6
-	immediate = {log = "[Root.GetName]: event sicameon.6"}#Auto-logging
->>>>>>> master
 	title = sicameon.6.t
 	desc = sicameon.6.d
 	picture = GFX_event_griffon_mountain

@@ -67,12 +67,6 @@ ideas = {
 					}
 					NOT = { has_country_flag = manpower_laws_blocked }
 				}
-				if = {
-					limit = {
-						original_tag = EQC
-					}
-					has_completed_focus = EQC_national_mobilisation_act
-				}
 			}
 			
 			modifier = {
@@ -131,12 +125,6 @@ ideas = {
 						tag = EQS
 					}
 					NOT = { has_country_flag = manpower_laws_blocked }
-				}
-				if = {
-					limit = {
-						original_tag = EQC
-					}
-					has_completed_focus = EQC_national_mobilisation_act
 				}
 			}
 			
@@ -202,14 +190,6 @@ ideas = {
 						tag = EQS
 					}
 					NOT = { has_country_flag = manpower_laws_blocked }
-				}
-				
-				if = {
-					limit = {
-						original_tag = EQC
-					}
-					has_completed_focus = EQC_national_mobilisation_act
-					has_completed_focus = EQC_expand_conscription
 				}
 			}
 			
@@ -286,14 +266,6 @@ ideas = {
 					}
 					NOT = { has_country_flag = manpower_laws_blocked }
 				}
-				
-				if = {
-					limit = {
-						original_tag = EQC
-					}
-					has_completed_focus = EQC_national_mobilisation_act
-					has_completed_focus = EQC_expand_conscription
-				}
 			}
 			
 			ai_will_do = {
@@ -367,14 +339,6 @@ ideas = {
 						tag = EQS
 					}
 					NOT = { has_country_flag = manpower_laws_blocked }
-				}
-				
-				if = {
-					limit = {
-						original_tag = EQC
-					}
-					has_completed_focus = EQC_national_mobilisation_act
-					has_completed_focus = EQC_expand_conscription
 				}
 			}
 			

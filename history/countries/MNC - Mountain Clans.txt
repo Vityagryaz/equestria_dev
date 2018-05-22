@@ -1,6 +1,6 @@
 ﻿capital = 581
 oob = "MNC_1007"
-set_research_slots = 2
+set_research_slots = 3
 
 set_technology = {
 	griffon_race = 1
@@ -41,21 +41,13 @@ set_politics = {
 	elections_allowed = no
 }
 add_ideas = {
-<<<<<<< HEAD
 	MNC_banditry
 	MNC_economy
 	lack_of_scientists1
 	pre_industrial_society }
-=======
-              MNC_banditry
-			  MNC_economy
-			  lack_of_scientists2
-              pre_industrial_society }
->>>>>>> master
 
-set_stability = 0.50
-set_war_support = 0.30
-set_cosmetic_tag = GRI_SUBJECT
+set_stability = 0.80
+set_war_support = 0.60
 
 create_country_leader = {
 	name = "Eriviar Sunstriker"
@@ -82,7 +74,7 @@ create_country_leader = {
 create_country_leader = {
 	name = "Runa Teafeather"
 	desc = ""
-	picture = "Runa.tga"
+	picture = "Governor.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
@@ -93,26 +85,12 @@ create_country_leader = {
 create_country_leader = {
 	name = "Guntbert Greyfeather"
 	desc = ""
-<<<<<<< HEAD
 	picture = "Governor.tga"
-=======
-	picture = "Greyfeather.tga"
->>>>>>> master
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
 		
 	}
-}
-create_corps_commander = {
-	name = "Ingrich Schaw"
-	portrait_path = "gfx/leaders/MNC/OneGeneral.tga"
-	traits = { }
-	skill = 2
-	attack_skill = 3
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 1
 }
 
 create_corps_commander = {

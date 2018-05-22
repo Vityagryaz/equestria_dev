@@ -125,7 +125,6 @@ if = {
 		puppet = JFT
 		puppet = JRR
 		puppet = JEB
-		puppet = VIN
 	}
 }
 

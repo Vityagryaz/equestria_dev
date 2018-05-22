@@ -14,14 +14,9 @@ state={
 		add_core_of = EQC
 		buildings = {
 			infrastructure = 1
-<<<<<<< HEAD
-=======
-			84 = { naval_base = 1 }
->>>>>>> master
 		}
-		victory_points = { 1680 1 }
 		victory_points = { 84 5 }
 	}
-	manpower=106549
+	manpower=76549
 	buildings_max_level_factor=1.000
 }

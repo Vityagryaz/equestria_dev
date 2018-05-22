@@ -15,11 +15,7 @@ EQS_create_new_commanders = {
 		id = 5
 		female = yes
 		attack_skill = 2
-<<<<<<< HEAD
 		defense_skill = 2
-=======
-		defense_skill = 3
->>>>>>> master
 		planning_skill = 2
 		logistics_skill = 4
 	}
@@ -31,19 +27,6 @@ EQS_create_new_commanders = {
 		attack_skill = 2
 		defense_skill = 1
 		planning_skill = 1
-<<<<<<< HEAD
-=======
-		logistics_skill = 3
-	}
-	create_corps_commander = {
-		name = "Fireflight"
-		portrait_path = "gfx/leaders/EQS/Fireflight.tga"
-		traits = { fireflight }
-		skill = 1
-		attack_skill = 3
-		defense_skill = 1
-		planning_skill = 2
->>>>>>> master
 		logistics_skill = 2
 	}
 	create_corps_commander = {
@@ -53,15 +36,9 @@ EQS_create_new_commanders = {
 		skill = 2
 		id = 6
 		female = yes
-<<<<<<< HEAD
 		attack_skill = 2
 		defense_skill = 3
 		planning_skill = 1
-=======
-		attack_skill = 3
-		defense_skill = 3
-		planning_skill = 2
->>>>>>> master
 		logistics_skill = 2
 	}
 	create_corps_commander = {
@@ -71,15 +48,9 @@ EQS_create_new_commanders = {
 		skill = 1
 		id = 7
 		attack_skill = 2
-<<<<<<< HEAD
 		defense_skill = 3
 		planning_skill = 1
 		logistics_skill = 1
-=======
-		defense_skill = 4
-		planning_skill = 1
-		logistics_skill = 2
->>>>>>> master
 	}
 	create_corps_commander = {
 		name = "Braeburn"
@@ -92,7 +63,6 @@ EQS_create_new_commanders = {
 		planning_skill = 1
 		logistics_skill = 2
 	}
-<<<<<<< HEAD
 	create_corps_commander = {
 		name = "Pinkamena Diana Pie"
 		portrait_path = "gfx/leaders/EQS/PinkiePie.tga"
@@ -104,23 +74,6 @@ EQS_create_new_commanders = {
 		defense_skill = 4
 		planning_skill = 2
 		logistics_skill = 3
-=======
-	if = {
-		limit = { NOT = { has_global_flag = EQS_pinkie_pie_created } }
-		create_corps_commander = {
-			name = "Pinkamena Diana Pie"
-			portrait_path = "gfx/leaders/EQS/PinkiePie.tga"
-			traits = { pinkie_pie_bae }
-			skill = 3
-			id = 9
-			female = yes
-			attack_skill = 3
-			defense_skill = 4
-			planning_skill = 2
-			logistics_skill = 3
-		}
-		set_global_flag = EQS_pinkie_pie_created
->>>>>>> master
 	}
 	create_corps_commander = {
 		name = "Caltrop Deekay"
@@ -128,45 +81,20 @@ EQS_create_new_commanders = {
 		traits = { panzer_leader panzer_expert }
 		skill = 3
 		id = 10
-<<<<<<< HEAD
 		attack_skill = 2
-=======
-		attack_skill = 4
->>>>>>> master
 		defense_skill = 2
 		planning_skill = 3
 		logistics_skill = 2
 	}
 	create_corps_commander = {
-<<<<<<< HEAD
-=======
-		name = "Sun Marble"
-		portrait_path = "gfx/leaders/EQS/Wilson.tga"
-		traits = { commando }
-		skill = 1
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 2
-		logistics_skill = 3
-	}
-	create_corps_commander = {
->>>>>>> master
 		name = "Bernard Hoofgonery"
 		portrait_path = "gfx/leaders/EQS/ComradeKir.tga"
 		traits = { panzer_leader }
 		skill = 2
-<<<<<<< HEAD
 		attack_skill = 3
 		defense_skill = 2
 		planning_skill = 1
 		logistics_skill = 2
-=======
-		attack_skill = 2
-		defense_skill = 2
-		planning_skill = 3
-		logistics_skill = 3
-		id = 30
->>>>>>> master
 	}
 	if = {
 		limit = { NOT = { has_global_flag = EQS_Eisenstadt_created } }
@@ -190,11 +118,7 @@ EQS_create_new_commanders = {
 		skill = 3
 		id = 12
 		female = yes
-<<<<<<< HEAD
 		attack_skill = 3
-=======
-		attack_skill = 4
->>>>>>> master
 		defense_skill = 2
 		planning_skill = 2
 		logistics_skill = 1
@@ -209,7 +133,6 @@ EQS_create_new_commanders = {
 		planning_skill = 1
 		logistics_skill = 2
 	}
-<<<<<<< HEAD
 	random_army_leader = {
 		limit = { has_id = 6 }
 		save_global_event_target_as = EQS_Surprise
@@ -217,21 +140,6 @@ EQS_create_new_commanders = {
 	random_army_leader = {
 		limit = { has_id = 12 }
 		save_global_event_target_as = EQS_Berrytwist
-=======
-	hidden_effect = {
-		random_army_leader = {
-			limit = { has_id = 6 }
-			save_global_event_target_as = EQS_Surprise
-		}
-		random_army_leader = {
-			limit = { has_id = 12 }
-			save_global_event_target_as = EQS_Berrytwist
-		}
-		random_army_leader = {
-			limit = { has_id = 30 }
-			save_global_event_target_as = EQS_Hoofgonery
-		}
->>>>>>> master
 	}
 }
 
@@ -331,7 +239,6 @@ EQS_SOL_show_advisors = {
 		blaze
 		thunderlane
 	}
-<<<<<<< HEAD
 
 	remove_ideas = {
 		padlock
@@ -349,25 +256,6 @@ EQS_SOL_show_advisors = {
 		thunderlane
 	}
 
-=======
-
-	remove_ideas = {
-		padlock
-		dottedline
-		evil_twilight_sparkle
-		scope
-		sunset_shimmer
-		benevelle
-		summersweet
-		morninglight
-		sunnyflare
-		wind_rider
-		arcane_nova
-		blaze
-		thunderlane
-	}
-
->>>>>>> master
 	if = {
 		limit = { has_country_flag = has_nimbusdash_idea }
 		add_ideas = nimbusdash
@@ -580,18 +468,10 @@ EQS_SOL_civil_war = {
 		add_political_power = 450
 		set_party_name = { ideology = fascism long_name = EQS_fascism_generic_party_long name = EQS_fascism_generic_party }
 		add_stability = -0.3
-<<<<<<< HEAD
-=======
-		set_cosmetic_tag = EQS_DEM
->>>>>>> master
 		if = {
 			limit = {
 				ROOT = { has_country_flag = luna_alive }
 			}
-<<<<<<< HEAD
-=======
-			clr_country_flag = luna_alive
->>>>>>> master
 			create_country_leader = {
 				name = "Princess Luna"
 				desc = "LUNA_DESC"
@@ -599,15 +479,8 @@ EQS_SOL_civil_war = {
 				expire = "1965.1.1"
 				ideology = alicornrule
 				traits = {
-<<<<<<< HEAD
 				}
 			}
-=======
-					princess_of_ponies
-				}
-			}
-			set_country_flag = EQD_dem_luna
->>>>>>> master
 			add_stability = -0.1
 			remove_ideas = alicorn_sisters
 			ROOT = {
@@ -615,7 +488,6 @@ EQS_SOL_civil_war = {
 			}
 		}
 		else = {
-<<<<<<< HEAD
 			if = {
 				limit = { NOT = { has_completed_focus = eqs_allow_the_vote } }
 				country_event = equestriadem.4
@@ -624,18 +496,6 @@ EQS_SOL_civil_war = {
 		}
 		add_ideas = SOL_civil_war
 		set_cosmetic_tag = EQS_DEM
-=======
-			set_country_flag = EQS_force_republic
-			complete_national_focus = eqs_come_to_compromise
-			complete_national_focus = eqs_allow_the_vote
-			set_country_flag = congress_president
-			set_cosmetic_tag = EQS_DEM1
-			set_party_name = { ideology = democratic long_name = EQS_republic_long name = EQS_republic }
-			country_event = { hours = 24 id = equestriadem.1 }
-			remove_ideas = alicorn_sisters
-		}
-		add_ideas = SOL_civil_war
->>>>>>> master
 		set_country_flag = { flag = celestia_evil_meter value = 0 }
 		every_unit_leader = {
 			limit = {

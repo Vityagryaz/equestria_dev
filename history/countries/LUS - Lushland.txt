@@ -57,13 +57,8 @@ create_country_leader = {
 
 create_country_leader = {
 	name = "Prince Elias Whitecrest"
-<<<<<<< HEAD
 	
 	picture = "Governor.tga"
-=======
-
-	picture = "Elias.tga"
->>>>>>> master
 	expire = "1965.1.1"
 	ideology = nazism
 	traits = {
@@ -74,15 +69,11 @@ create_country_leader = {
 create_country_leader = {
 	name = "Prince Elias Whitecrest"
 	desc = ""
-	picture = "Elias.tga"
+	picture = "Governor.tga"
 	expire = "1965.1.1"
 	ideology = conservatism
 	traits = {
-<<<<<<< HEAD
 		
-=======
-
->>>>>>> master
 	}
 }
 
@@ -93,11 +84,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = leninism
 	traits = {
-<<<<<<< HEAD
 		
-=======
-
->>>>>>> master
 	}
 }
 create_corps_commander = {

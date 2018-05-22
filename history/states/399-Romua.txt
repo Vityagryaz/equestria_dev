@@ -6,10 +6,6 @@ state={
 	history={
 		owner = PYT
 		add_core_of = PYT
-<<<<<<< HEAD
-=======
-		add_core_of = ROU
->>>>>>> master
 		
 		buildings = {
 			infrastructure = 2

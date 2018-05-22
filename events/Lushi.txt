@@ -2,10 +2,6 @@
 
 country_event = {
 	id = lushi.1
-<<<<<<< HEAD
-=======
-	immediate = {log = "[Root.GetName]: event lushi.1"}#Auto-logging
->>>>>>> master
 	title = lushi.1.t
 	desc = lushi.1.d
 	picture = GFX_event_griffon_mountain
@@ -23,10 +19,6 @@ country_event = {
 }
 country_event = {
 	id = lushi.2
-<<<<<<< HEAD
-=======
-	immediate = {log = "[Root.GetName]: event lushi.2"}#Auto-logging
->>>>>>> master
 	title = lushi.2.t
 	desc = lushi.2.d
 	picture = GFX_event_griffon_mountain
@@ -74,10 +66,6 @@ country_event = {
 }
 country_event = {
 	id = lushi.100
-<<<<<<< HEAD
-=======
-	immediate = {log = "[Root.GetName]: event lushi.100"}#Auto-logging
->>>>>>> master
 	title = lushi.100.t
 	desc = lushi.100.d
 	picture = GFX_event_griffon_mountain

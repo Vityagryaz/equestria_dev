@@ -9,17 +9,11 @@ state={
 		owner = RIV
 		add_core_of = RIV
 		victory_points = { 5228 5 }
-<<<<<<< HEAD
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			arms_factory = 1
 		}
-=======
-	        buildings = {
-	            infrastructure = 1	            
-	    }
->>>>>>> master
 	}
 	manpower=545679
 	buildings_max_level_factor=1.000

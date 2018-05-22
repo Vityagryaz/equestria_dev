@@ -1,13 +1,5 @@
-<<<<<<< HEAD
 
 graphical_culture = GER
 graphical_culture_2d = eastern_european_2d
 
 color = { 160 160 160 }
-=======
-
-graphical_culture = GER
-graphical_culture_2d = eastern_european_2d
-
-color = { 160 160 160 }
->>>>>>> master

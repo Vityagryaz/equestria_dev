@@ -11,12 +11,7 @@ state={
 			infrastructure = 5
 			industrial_complex = 3
 			arms_factory = 2
-<<<<<<< HEAD
 		}
-=======
-			air_base = 1
-	    }
->>>>>>> master
 	}
 	
 	provinces={

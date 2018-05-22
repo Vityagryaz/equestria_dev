@@ -4,7 +4,7 @@ state={
 	provinces={
 		1560 7586 7797 9910 12418
 	}
-	manpower=40600
+	manpower=31231
 	history={
 		owner = PLB
 		add_core_of = PLB

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 focus_tree = {
 	id = equestria_sol_focus
 
@@ -2536,37 +2535,3 @@ focus_tree = {
 		}
 	}
 }
-=======
-focus_tree = {
-	id = equestria_sol_focus
-
-	country = {
-		factor = 0
-
-		modifier = {
-			add = 10
-			is_EQS_SOL = yes
-		}
-	}
-
-	continuous_focus_position = { x = 1250 y = 825 }
-	#################################################
-	###### Politics #######################
-	#################################################
-
-	shared_focus = SOL_Imperium_Solis
-
-	shared_focus = SOL_twilight_ascend
-
-	shared_focus = SOL_civil_war_measures
-
-	shared_focus = examine_the_situation
-
-	shared_focus = Crystal_Fair
-
-	############## DEFENSE SECTION / WAR SECTION ############
-
-	shared_focus = SOL_military_reorganization
-
-}
->>>>>>> master

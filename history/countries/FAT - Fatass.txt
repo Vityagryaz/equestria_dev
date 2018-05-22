@@ -61,7 +61,6 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = centrism
 	traits = {
-		generallissimo
 		democratic_sympathies
 	}
 }
@@ -84,11 +83,7 @@ create_country_leader = {
 	expire = "1965.1.1"
 	ideology = liberalism
 	traits = {
-<<<<<<< HEAD
 
-=======
-		generallissimo
->>>>>>> master
 	}
 }
 

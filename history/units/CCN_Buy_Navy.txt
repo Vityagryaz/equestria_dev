@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿# Destroyers sent to CHN in exchange for bases
 
 units = {
@@ -16,22 +15,3 @@ units = {
 		ship = { name = "CNS Gorleston" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = CHN creator = CHN } } }
 	}
 }
-=======
-﻿# Destroyers sent to CHN in exchange for bases
-
-units = {
-	navy = {
-		name = "CNS Royal Navy"
-		base = 11509
-		location = 11509
-		ship = { name = "CNS Sovereign" definition = battleship equipment = { battleship_1 = { amount = 1 owner = CHN creator = CHN } } }
-		ship = { name = "CNS Impeteux" definition = battleship equipment = { battleship_1 = { amount = 1 owner = CHN creator = CHN } } }
-		ship = { name = "CNS Felicite" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = CHN creator = CHN } } }
-		ship = { name = "CNS Gorak" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = CHN creator = CHN } } }
-		ship = { name = "CNS Svarm" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = CHN creator = CHN } } }
-		ship = { name = "CNS Eshin" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = CHN creator = CHN } } }
-		ship = { name = "CNS Skylax" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = CHN creator = CHN } } }
-		ship = { name = "CNS Gorleston" definition = heavy_cruiser equipment = { heavy_cruiser_1 = { amount = 1 owner = CHN creator = CHN } } }
-	}
-}
->>>>>>> master

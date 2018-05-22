@@ -2,13 +2,11 @@ PsodyCHNPanzerKampfgrupp = {
 	
 	available_for = {
 		CHN
-		CCN
 	}
 	
 	roles = {
 		armor
 	}
-<<<<<<< HEAD
 	
 	match_to_count = 0.4
 	
@@ -26,13 +24,6 @@ PsodyCHNPanzerKampfgrupp = {
 			factor = 2
 			has_tech = main_battle_tank
 		}
-=======
-
-	match_to_count = 0.45
-
-	upgrade_prio = {
-		factor = 2.17
->>>>>>> master
 	}
 	
 	light_armor_default_CHN = {
@@ -89,7 +80,7 @@ PsodyCHNPanzerKampfgrupp = {
 		}
 		
 		target_template = {
-			weight = 0.9
+			weight = 1
 			match_value = 4000.0
 			
 			support = {
@@ -136,13 +127,8 @@ PsodyCHNPanzerKampfgrupp = {
 				}
 			}
 		}
-<<<<<<< HEAD
 		
 		target_width = 19.9
-=======
-
-		target_width = 20
->>>>>>> master
 		width_weight = 2.0
 		column_swap_factor = 0.1
 		
@@ -185,7 +171,6 @@ PsodyCHNPanzerKampfgrupp = {
 				recon = 1
 				logistics_company = 1
 				maintenance_company = 1
-				artillery = 1
 			}
 			
 			regiments = {
@@ -241,13 +226,8 @@ PsodyCHNPanzerKampfgrupp = {
 				}
 			}
 		}
-<<<<<<< HEAD
 		
 		target_width = 22.0
-=======
-
-		target_width = 20.0
->>>>>>> master
 		width_weight = 2.0
 		column_swap_factor = 0.1
 		
@@ -340,13 +320,8 @@ PsodyCHNPanzerKampfgrupp = {
 				NOT = { has_tech = basic_medium_tank }
 			}
 		}
-<<<<<<< HEAD
 		
 		target_width = 19.9
-=======
-
-		target_width = 20
->>>>>>> master
 		width_weight = 2.0
 		column_swap_factor = 0.1
 		
@@ -456,13 +431,8 @@ garrison_CHN = {
 				factor = 2
 			}
 		}
-<<<<<<< HEAD
 		
 		target_width = 8.0
-=======
-
-		target_width = 10.0
->>>>>>> master
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -505,7 +475,7 @@ garrison_CHN = {
 			}
 			
 			regiments = {
-				infantry = 5
+				infantry = 4
 			}
 		}
 		
@@ -550,13 +520,8 @@ infantry_CHN = {
 				factor = 2
 			}
 		}
-<<<<<<< HEAD
 		
 		target_width = 29.0
-=======
-
-		target_width = 20.0
->>>>>>> master
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -597,13 +562,14 @@ infantry_CHN = {
 			support = {
 				engineer = 1
 				recon = 1
+				field_hospital = 1
 				anti_tank = 1
-				artillery = 1
 				infiltrator_company = 1
 			}
 			
 			regiments = {
 				infantry = 10
+				artillery_brigade = 3
 			}
 		}
 		
@@ -615,6 +581,7 @@ infantry_CHN = {
 			anti_tank
 			artillery
 			anti_tank_brigade
+			artillery_brigade
 			infiltrator_company
 		}
 	}
@@ -638,11 +605,7 @@ magical_infantry_CHN = {
 			NOT = { has_tech = magical_weapons }
 		}
 	}
-<<<<<<< HEAD
 	
-=======
-
->>>>>>> master
 	match_to_count = 0.5
 	
 	magical_infantry_default_CHN = {
@@ -650,13 +613,8 @@ magical_infantry_CHN = {
 		upgrade_prio = {
 			factor = 2
 		}
-<<<<<<< HEAD
 		
 		target_width = 25.0
-=======
-
-		target_width = 20.0
->>>>>>> master
 		width_weight = 0.7
 		column_swap_factor = 0.5
 		
@@ -697,13 +655,14 @@ magical_infantry_CHN = {
 			support = {
 				engineer = 1
 				recon = 1
-				anti_tank = 1
-				artillery = 1
+				field_hospital = 1
+				rocket_artillery = 1
 				infiltrator_company = 1
 			}
 			
 			regiments = {
-				magical_infantry = 10
+				magical_infantry = 8
+				artillery_brigade = 3
 			}
 		}
 		
@@ -718,18 +677,13 @@ magical_infantry_CHN = {
 			anti_tank
 			military_police
 			artillery
-<<<<<<< HEAD
 			#		anti_air
 			rocket_artillery
-=======
->>>>>>> master
 			anti_tank_brigade
+			artillery_brigade
 			rocket_artillery_brigade
-<<<<<<< HEAD
 			#		light_tank_destroyer_brigade
 			#		medium_tank_destroyer_brigade
-=======
->>>>>>> master
 		}
 	}
 }
@@ -745,7 +699,6 @@ jager_CHN = {
 	}
 	
 	upgrade_prio = {
-<<<<<<< HEAD
 		factor = 2
 		
 		modifier = {
@@ -754,9 +707,6 @@ jager_CHN = {
 				has_tech = basic_medium_tank
 			}
 		}
-=======
-		factor = 2.1
->>>>>>> master
 	}
 	
 	match_to_count = 0.45
@@ -766,13 +716,8 @@ jager_CHN = {
 		upgrade_prio = {
 			factor = 4
 		}
-<<<<<<< HEAD
 		
 		target_width = 29.0
-=======
-
-		target_width = 24.0
->>>>>>> master
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -814,7 +759,7 @@ jager_CHN = {
 				engineer = 1
 				recon = 1
 				artillery = 1
-				anti_tank = 1
+				logistics_company = 1
 				infiltrator_company = 1
 			}
 			
@@ -919,7 +864,8 @@ mountaineers_CHN = {
 			}
 			
 			regiments = {
-				mountaineers = 10
+				mountaineers = 8
+				artillery_brigade = 2
 			}
 		}
 		
@@ -1016,13 +962,8 @@ marines_CHN = {
 			}
 			
 			regiments = {
-<<<<<<< HEAD
 				marine = 9
 				
-=======
-				marine = 10
-
->>>>>>> master
 			}
 		}
 		
@@ -1072,13 +1013,8 @@ paratroopers_CHN = {
 				factor = 1
 			}
 		}
-<<<<<<< HEAD
 		
 		target_width = 18.0
-=======
-
-		target_width = 20.0
->>>>>>> master
 		width_weight = 2.0
 		column_swap_factor = 0.5
 		
@@ -1125,7 +1061,7 @@ paratroopers_CHN = {
 			}
 			
 			regiments = {
-				paratrooper = 10
+				paratrooper= 9
 			}
 		}
 		
@@ -1195,13 +1131,8 @@ anti_armor_CHN = {
 				}
 			}
 		}
-<<<<<<< HEAD
 		
 		target_width = 24.0
-=======
-
-		target_width = 26.0
->>>>>>> master
 		width_weight = 1.0
 		column_swap_factor = 0.5
 		
@@ -1248,8 +1179,9 @@ anti_armor_CHN = {
 			}
 			
 			regiments = {
-				infantry = 10
+				infantry = 6
 				anti_tank_brigade = 3
+				artillery_brigade = 1
 			}
 		}
 		

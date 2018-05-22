@@ -4,7 +4,7 @@ state={
 	provinces={
 		66 195 3172 9119 10247
 	}
-	manpower=736810
+	manpower=566777
 	history={
 		owner = CHN
 		add_core_of = CHN

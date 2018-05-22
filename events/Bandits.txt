@@ -2,10 +2,6 @@
 
 country_event = {
 	id = bandit.17
-<<<<<<< HEAD
-=======
-	immediate = {log = "[Root.GetName]: event bandit.17"}#Auto-logging
->>>>>>> master
 	title = bandit.17.t
 	desc = bandit.17.d
 	picture = GFX_event_griffon_soldier
@@ -30,10 +26,6 @@ country_event = {
 
 country_event = {
 	id = bandit.18
-<<<<<<< HEAD
-=======
-	immediate = {log = "[Root.GetName]: event bandit.18"}#Auto-logging
->>>>>>> master
 	title = bandit.18.t
 	desc = bandit.18.d
 	picture = GFX_event_griffon_soldier
@@ -56,10 +48,6 @@ country_event = {
 
 country_event = {
 	id = bandit.19
-<<<<<<< HEAD
-=======
-	immediate = {log = "[Root.GetName]: event bandit.19"}#Auto-logging
->>>>>>> master
 	title = bandit.19.t
 	desc = bandit.19.d
 	picture = GFX_event_griffon_soldier
@@ -79,10 +67,6 @@ country_event = {
 
 country_event = { ## For GRW
 	id = bandit.21
-<<<<<<< HEAD
-=======
-	immediate = {log = "[Root.GetName]: event bandit.21"}#Auto-logging
->>>>>>> master
 	title = bandit.21.t
 	desc = bandit.21.d
 	picture = GFX_event_griffon_soldier
@@ -115,10 +99,6 @@ country_event = { ## For GRW
 
 country_event = { ## accepted
 	id = bandit.22
-<<<<<<< HEAD
-=======
-	immediate = {log = "[Root.GetName]: event bandit.22"}#Auto-logging
->>>>>>> master
 	title = bandit.22.t
 	desc = bandit.22.d
 	picture = GFX_event_griffon_soldier
@@ -131,10 +111,6 @@ country_event = { ## accepted
 
 country_event = { ## Decline
 	id = bandit.23
-<<<<<<< HEAD
-=======
-	immediate = {log = "[Root.GetName]: event bandit.23"}#Auto-logging
->>>>>>> master
 	title = bandit.23.t
 	desc = bandit.23.d
 	picture = GFX_event_griffon_soldier
