@@ -21,26 +21,13 @@ focus_tree = {
 	}
 	focus = {
 		id = CYA_Trade_Warfare
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_wolf_pack
 		cost = 0.00
 		x = 40
 		y = 1
-
-	}
-	focus = {
-		id = CYA_Innovative_Ideas
-		icon = GFX_goal_unknown
-		cost = 0.00
-		x = 39
-		y = 7
-
-	}
-	focus = {
-		id = CYA_BAE_Systems
-		icon = GFX_goal_unknown
-		cost = 0.00
-		x = 41
-		y = 7
+			completion_reward = {
+					add_ideas = navy1
+				}
 
 	}
 	focus = {
@@ -569,31 +556,36 @@ focus_tree = {
 		x = 25
 		y = 3
 			completion_reward = {
-					add_political_power = 50
-					monthly_population = 0.15
+					add_ideas = health1
 				}
 
 	}
 	focus = {
 		id = CYA_Doctors
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construction2
 		cost = 5.00
 		prerequisite = {
 			focus = CYA_Clinics
 		}
 		x = 25
 		y = 4
+			completion_reward = {
+					add_ideas = health2
+				}
 
 	}
 	focus = {
 		id = CYA_Hospitals
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_construction2
 		cost = 5.00
 		prerequisite = {
 			focus = CYA_Doctors
 		}
 		x = 25
 		y = 5
+			completion_reward = {
+					add_ideas = health3
+				}
 
 	}
 	focus = {
@@ -606,31 +598,36 @@ focus_tree = {
 		x = 27
 		y = 3
 			completion_reward = {
-					attrition = -0.1
-					supply_consumption_factor = -0.10
+					add_ideas = medic1
 				}
 
 	}
 	focus = {
 		id = CYA_specialised_medics
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = CYA_medics
 		}
 		x = 27
 		y = 4
+			completion_reward = {
+					add_ideas = medic2
+				}
 
 	}
 	focus = {
 		id = CYA_cya_medic_regiment
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_axis_build_infantry
 		cost = 5.00
 		prerequisite = {
 			focus = CYA_specialised_medics
 		}
 		x = 27
 		y = 5
+			completion_reward = {
+					add_ideas = medic3
+				}
 
 	}
 	focus = {
@@ -643,31 +640,36 @@ focus_tree = {
 		x = 29
 		y = 3
 			completion_reward = {
-					stability_factor = 0.15
-					war_support_factor = -0.05
+					add_ideas = policy1
 				}
 
 	}
 	focus = {
 		id = CYA_Update_Law
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_improve_relations
 		cost = 5.00
 		prerequisite = {
 			focus = CYA_hippogrifatic_oath
 		}
 		x = 29
 		y = 4
+			completion_reward = {
+					add_ideas = policy2
+				}
 
 	}
 	focus = {
 		id = CYA_Trade_deals
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_improve_relations
 		cost = 5.00
 		prerequisite = {
 			focus = CYA_Update_Law
 		}
 		x = 29
 		y = 5
+			completion_reward = {
+					add_ideas = policy3
+				}
 
 	}
 	focus = {
@@ -693,18 +695,21 @@ focus_tree = {
 	}
 	focus = {
 		id = CYA_Reclaim_The_Coast
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_cruiser
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Trade_Warfare
 		}
 		x = 38
 		y = 2
+			completion_reward = {
+					add_ideas = navy2
+				}
 
 	}
 	focus = {
 		id = CYA_Reclaim_The_Sea
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_anti_submarine
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Trade_Warfare
@@ -714,11 +719,14 @@ focus_tree = {
 		}
 		x = 40
 		y = 2
+			completion_reward = {
+					add_ideas = navy3
+				}
 
 	}
 	focus = {
 		id = CYA_Modern_Caravels
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Reclaim_The_Coast
@@ -728,22 +736,28 @@ focus_tree = {
 		}
 		x = 39
 		y = 3
+			completion_reward = {
+					add_ideas = navy2_3
+				}
 
 	}
 	focus = {
 		id = CYA_Reclaim_The_Ocean
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_submarine
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Trade_Warfare
 		}
 		x = 42
 		y = 2
+			completion_reward = {
+					add_ideas = navy4
+				}
 
 	}
 	focus = {
 		id = CYA_Modern_Galleons
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_carrier
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Reclaim_The_Sea
@@ -753,11 +767,14 @@ focus_tree = {
 		}
 		x = 41
 		y = 3
+			completion_reward = {
+					add_ideas = 3_4
+				}
 
 	}
 	focus = {
 		id = CYA_Ship_Of_The_Line
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_navy_battleship
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Modern_Galleons
@@ -767,6 +784,9 @@ focus_tree = {
 		}
 		x = 40
 		y = 4
+			completion_reward = {
+					add_ideas = navymain
+				}
 
 	}
 	focus = {
@@ -845,6 +865,17 @@ focus_tree = {
 		}
 		x = 39
 		y = 6
+
+	}
+	focus = {
+		id = CYA_BAE_Systems
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_Private_Sector
+		}
+		x = 41
+		y = 7
 
 	}
 	focus = {
@@ -1310,6 +1341,17 @@ focus_tree = {
 			focus = CYA_High_Seas_Fleet
 		}
 		x = 34
+		y = 7
+
+	}
+	focus = {
+		id = CYA_Innovative_Ideas
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = CYA_Public_Sector
+		}
+		x = 39
 		y = 7
 
 	}
