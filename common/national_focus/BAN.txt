@@ -14,7 +14,7 @@ focus_tree = {
 	
 	focus = {
 		id = BAN_hunt_countess
-		icon = GFX_focus_generic_provoke_border_clashes
+		icon = GFX_goal_stab_cyril
 		cost = 10
 		x = 8
 		y = 0
@@ -28,7 +28,6 @@ focus_tree = {
 		id = BAN_in_griffonstone
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = BAN_hunt_countess }
-		available = { has_country_flag = BAN_countess_in_griffonstone }
 		cost = 10
 		x = 5
 		y = 1
@@ -55,7 +54,6 @@ focus_tree = {
 		id = BAN_in_falcor
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = BAN_hunt_countess }
-		available = { has_country_flag = BAN_countess_in_falcor }
 		cost = 10
 		x = 7
 		y = 1
@@ -82,7 +80,6 @@ focus_tree = {
 		id = BAN_in_sicameon
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = BAN_hunt_countess }
-		available = { has_country_flag = BAN_countess_in_cyanolisia }
 		cost = 10
 		x = 9
 		y = 1
@@ -109,7 +106,6 @@ focus_tree = {
 		id = BAN_in_cyanolisia
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = BAN_hunt_countess }
-		available = { has_country_flag = BAN_countess_in_sicameon }
 		cost = 10
 		x = 11
 		y = 1
@@ -134,7 +130,7 @@ focus_tree = {
 	
 	focus = {
 		id = BAN_blackrock_queen_of_blackhollow
-		icon = GFX_focus_hun_elect_a_king
+		icon = GFX_goal_ban_blackrock
 		prerequisite = { focus = BAN_blaze_through_cannabia focus = BAN_through_the_ridge focus = BAN_storm_falcor focus = BAN_storm_griffonstone }
 		cost = 10
 		x = 8
@@ -468,7 +464,7 @@ focus_tree = {
 	
 	focus = {
 		id = BAN_a_new_lineage
-		icon = GFX_goal_molotov_ribbentrop_pact
+		icon = GFX_goal_degeneracy
 		prerequisite = { focus = BAN_a_peaceful_kingdom focus = BAN_submission_or_war }
 		cost = 10
 		x = 3
