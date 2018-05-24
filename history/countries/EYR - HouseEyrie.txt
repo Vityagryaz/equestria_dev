@@ -1,4 +1,4 @@
-﻿capital = 391
+capital = 391
 oob = "EYR_1007"
 set_research_slots = 3
 
@@ -14,6 +14,9 @@ set_technology = {
 	tech_mountaineers = 1
 	transport = 1
 	infantry_weapons = 1
+	tech_griffon_army = 1
+    tech_knights = 1
+
 }
 
 set_convoys = 70
