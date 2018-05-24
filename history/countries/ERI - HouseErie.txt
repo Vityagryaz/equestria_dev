@@ -1,4 +1,4 @@
-﻿capital = 401
+capital = 401
 oob = "ERI_1007"
 set_research_slots = 3
 
@@ -12,7 +12,10 @@ set_technology = {
 	tech_support = 1
 	tech_mountaineers = 1
 	transport = 1
-	infantry_weapons = 1}
+	infantry_weapons = 1
+	tech_griffon_army = 1
+    tech_knights = 1
+}
 
 
 set_convoys = 70
@@ -44,7 +47,8 @@ set_politics = {
 }
 add_ideas = { outdated_industry
 	lack_of_scientists3
-	poverty3 }
+	poverty3 limited_conscription
+    war_economy}
 
 set_stability = 0.50
 
