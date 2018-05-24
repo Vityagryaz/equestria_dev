@@ -1,1 +1,12 @@
-﻿
+﻿add_namespace = DukeErie
+
+country_event = {
+	id = DukeErie.1
+
+	is_triggered_only = yes
+
+	option = {
+		name = DukeErie.1.a
+		set_cosmetic_tag = Grand_Dutchy_Ereian
+	}
+}

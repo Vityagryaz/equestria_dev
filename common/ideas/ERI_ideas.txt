@@ -1,7 +1,18 @@
 ideas = {
 country = {
-		ERI_war = {
+	ERI_war = {
 			
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			targeted_modifier = { 
+			tag = EYR attack_bonus_against = 0.2 
+			}
+		}
+	Erie_Succession_War = {
 			
 			allowed = {
 				always = yes
@@ -10,10 +21,46 @@ country = {
 			removal_cost = -1
 			
 			modifier = {
-				army_morale_factor = 0.1
-				army_attack_factor = 0.1
-				war_support_factor = 0.05
+					political_power_factor = -0.25
+			}
+		}
+	Ducal_Guard = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+					conscription = 0.01
+					army_org = 1
+					experience_gain_army = 0.05
+			}
+		}
+	Et_Branchium_Umbra = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+						enemy_partisan_effect = -0.15
+			}
+		}
+	Glory_To_The_Duke = {
+			
+			allowed = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+					justify_war_goal_time = -0.25
 			}
 		}
 	}
-	}
+}

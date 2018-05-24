@@ -32,7 +32,7 @@ focus_tree = {
         id = ERI_our_militia
         icon = GFX_goal_generic_small_arms
         relative_position_id = ERI_winwar
-        x = 1
+        x = 2
         y = 1
         prerequisite = { focus = ERI_winwar }
         cost = 4
@@ -58,8 +58,8 @@ focus_tree = {
         }
     }
     focus = {
-        id = ERi_knights_militia
-        icon = GFX_goal_generic_small_arms
+        id = ERI_knights_militia
+        icon = GFX_goal_griffon_knights
         cost = 4
 
         ai_will_do = {
@@ -69,7 +69,7 @@ focus_tree = {
         available = { has_war = yes }
 
         relative_position_id = ERI_winwar
-        x = -1
+        x = -2
         y = 1
 
         prerequisite = { 
@@ -100,13 +100,310 @@ focus_tree = {
         y = 2
 
         prerequisite = { 
+            focus = ERI_knights_militia
+            focus = ERI_our_militia
+        }
+
+        completion_reward = {
+        add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 2000 producer = ERI }
+        add_political_power = -50
+
+        }
+    }
+    focus = {
+        id = ERI_Might_Makes_Right
+        icon = GFX_goal_step_on_skull
+        cost = 4
+
+        ai_will_do = {
+            factor = 5
+        }
+
+        available = { has_war = yes }
+
+        relative_position_id = ERI_winwar
+        x = -2
+        y = 2
+
+        prerequisite = { 
             focus = ERI_winwar
         }
 
         completion_reward = {
         add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 1000 producer = ERI }
         add_political_power = -50
+        }
+    }
+    focus = {
+        id = ERI_Reorganize_The_Levies
+        icon = GFX_goal_generic_small_arms
+        cost = 4
 
+        ai_will_do = {
+            factor = 5
+        }
+
+        available = { has_war = yes }
+
+        relative_position_id = ERI_winwar
+        x = 2
+        y = 2
+
+        prerequisite = { 
+            focus = ERI_winwar
+        }
+
+        completion_reward = {
+        army_experience = 30
+        add_command_power = 50
+        }
+    }
+    focus = {
+        id = ERI_The_Duke_Always_Wins
+        icon = GFX_goal_generic_forceful_treaty
+        cost = 10
+
+        ai_will_do = {
+            factor = 5
+        }
+
+        available = { has_war = no }
+
+        x = 10
+        y = 0
+
+
+        completion_reward = {
+        remove_ideas = Erie_Succession_War
+        }
+    }
+   focus = {
+        id = ERI_Victory
+        icon = GFX_goal_tfv_strengthen_commonwealth_ties
+        cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+
+        relative_position_id = ERI_The_Duke_Always_Wins
+        x = 3
+        y = 1
+
+       prerequisite = { 
+            focus = ERI_The_Duke_Always_Wins
+        }
+
+        completion_reward = {
+        add_political_power = 50
+        add_stability = 0.1
+        }
+    }
+   focus = {
+        id = ERI_Hunt_Down_The_Traitors
+        icon = GFX_goal_tfv_strengthen_commonwealth_ties
+        cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+
+        relative_position_id = ERI_The_Duke_Always_Wins
+        x = 2
+        y = 2
+
+       prerequisite = { 
+            focus = ERI_Victory
+        }
+
+        completion_reward = {
+        391 = {
+            add_manpower = -2000
+        }
+        add_political_power = -50
+        add_stability = 0.1
+        391 = { remove_core_of = EYR }
+        }
+    }
+   focus = {
+        id = ERI_Kill_Ivonius
+        icon = GFX_goal_tfv_strengthen_commonwealth_ties
+        cost = 5
+
+        ai_will_do = {
+            factor = 5
+        }
+
+        relative_position_id = ERI_The_Duke_Always_Wins
+        x = 4
+        y = 2
+
+       prerequisite = { 
+            focus = ERI_Victory
+        }
+
+        completion_reward = {
+        add_political_power = -50
+        add_stability = 0.1
+        400 = { remove_core_of = EYR }
+        }
+    }
+   focus = {
+        id = ERI_Unity
+        icon = GFX_goal_tfv_strengthen_commonwealth_ties
+        cost = 1.5
+
+        ai_will_do = {
+            factor = 5
+        }
+
+        relative_position_id = ERI_The_Duke_Always_Wins
+        x = 3
+        y = 3
+
+       prerequisite = { 
+            focus = ERI_Kill_Ivonius
+            focus = ERI_Hunt_Down_The_Traitors
+        }
+
+        completion_reward = {
+        add_state_core = 391
+        add_state_core = 400
+        }
+    }
+    focus = {
+        id = ERI_Crown_Vincent_Grand_Duke
+        icon = GFX_goal_tfv_strengthen_commonwealth_ties
+        cost = 10
+
+        ai_will_do = {
+            factor = 5
+        }
+
+        relative_position_id = ERI_The_Duke_Always_Wins
+        x = -2
+        y = 1
+
+       prerequisite = { 
+            focus = ERI_The_Duke_Always_Wins
+        }
+
+        completion_reward = {
+        add_political_power = 100
+        }
+    }
+    focus = {
+        id = ERI_New_Advisors
+        icon = GFX_goal_secret_agents
+        cost = 10
+
+        ai_will_do = {
+            factor = 5
+        }
+
+        relative_position_id = ERI_The_Duke_Always_Wins
+        x = 0
+        y = 2
+
+       prerequisite = { 
+            focus = ERI_Crown_Vincent_Grand_Duke
+        }
+        mutually_exclusive = {
+            focus = ERI_Old_Advisors
+        }
+
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = ERI_Old_Advisors
+        icon = GFX_goal_secret_agents
+        cost = 10
+
+        ai_will_do = {
+            factor = 5
+        }
+
+        relative_position_id = ERI_The_Duke_Always_Wins
+        x = -4
+        y = 2
+
+       prerequisite = { 
+            focus = ERI_Crown_Vincent_Grand_Duke
+        }
+        mutually_exclusive = {
+            focus = ERI_New_Advisors
+        }
+
+        completion_reward = {
+        }
+    }
+    focus = {
+        id = ERI_Expand_The_Ducal_Guard
+        icon = GFX_focus_rom_royal_dictatorship
+        cost = 10
+
+        ai_will_do = {
+            factor = 5
+        }
+
+        relative_position_id = ERI_The_Duke_Always_Wins
+        x = -1
+        y = 3
+
+       prerequisite = { 
+            focus = ERI_Old_Advisors
+            focus = ERI_New_Advisors
+        }
+
+        completion_reward = {
+        add_ideas = Ducal_Guard
+        }
+    }
+    focus = {
+        id = ERI_Secret_Police
+        icon = GFX_goal_secret_agents
+        cost = 10
+
+        ai_will_do = {
+            factor = 5
+        }
+
+        relative_position_id = ERI_The_Duke_Always_Wins
+        x = -3
+        y = 3
+
+       prerequisite = { 
+            focus = ERI_Old_Advisors
+            focus = ERI_New_Advisors
+        }
+
+        completion_reward = {
+        add_ideas = Et_Branchium_Umbra
+        }
+    }
+    focus = {
+        id = ERI_All_Hail_Vincent
+        icon = GFX_goal_secret_agents
+        cost = 10
+
+        ai_will_do = {
+            factor = 5
+        }
+
+        relative_position_id = ERI_The_Duke_Always_Wins
+        x = -2
+        y = 4
+
+        prerequisite = { 
+            focus = ERI_Secret_Police
+        }
+        prerequisite = {
+            focus = ERI_Expand_The_Ducal_Guard
+        }
+
+        completion_reward = {
+        add_ideas = Glory_To_The_Duke
         }
     }
 }
