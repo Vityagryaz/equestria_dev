@@ -46,6 +46,7 @@ add_ideas = {
 	closed_economy
 	war_economy
 	pre_industrial_society
+	lack_of_scientists2
 	BAN_bandit_culture
 }
 
