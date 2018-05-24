@@ -1,4 +1,4 @@
-division_template = {
+﻿division_template = {
 	name = "Griffon Infantry Division"			#Infantry Division - kek
 	
 	regiments = {
@@ -36,7 +36,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Succession militia"			#Infantry Division - kek
+	name = "Peasant Levies"			#Infantry Division - kek
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
@@ -50,34 +50,49 @@ division_template = {
 
 units = {
 	division = {
-		#name = "Griffon Knight Division"
-		location = 10866
+		name = "Iovinus's Bodyguards"
+		location = 11629
 		division_template = "Dukedom Knights"
 		start_experience_factor = 0.3 }
 	division = {
 		#name = "Griffon Infantry Division"
-		location = 1697
+		location = 12792
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3 }
 	division = {
 		#name = "Griffon Infantry Division"
-		location = 1697
+		location = 12792
 		division_template = "Griffon Infantry Division"
 		start_experience_factor = 0.3 }
 	division = {
-		#name = "Mobalized Riot"
+		#name = "'Eyrie' Peasant Levy"
+		location = 7863
+		division_template = "Peasant Levies"
+		start_experience_factor = 0.1 }
+	division = {
+		#name = "'Eyrie' Peasant Levy"
+		location = 10735
+		division_template = "Peasant Levies"
+		start_experience_factor = 0.1 }
+	division = {
+		#name = "'Episir' Peasant Levy"
+		location = 1971
+		division_template = "Peasant Levies"
+		start_experience_factor = 0.1 }
+	division = {
+		#name = "'Episir' Peasant Levy"
 		location = 10866
-		division_template = "Succession militia"
-		start_experience_factor = 0.3 }
+		division_template = "Peasant Levies"
+		start_experience_factor = 0.1 }
 	division = {
-		#name = "Peasant Levy"
-		location = 1697
-		division_template = "Succession militia"
-		start_experience_factor = 0.3 }
+		#name = "'Feldbruck' Peasant Levy"
+		location = 1504
+		division_template = "Peasant Levies"
+		start_experience_factor = 0.1 }
 	division = {
-		#name = "Some enthusiastic people"
-		location = 1697
-		division_template = "Succession militia"
-		start_experience_factor = 0.3 }
-	
+		#name = "'Feldbruck' Peasant Levy"
+		location = 3753
+		division_template = "Peasant Levies"
+		start_experience_factor = 0.1 }
+
 }
