@@ -79,9 +79,5 @@ units = {
 		location = 1697
 		division_template = "Succession militia"
 		start_experience_factor = 0.3 }
-	division = {
-		#name = "Band of Misfits"
-		location = 1697
-		division_template = "Succession militia"
-		start_experience_factor = 0.3 }
+	
 }
