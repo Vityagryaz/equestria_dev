@@ -1,5 +1,5 @@
 ﻿division_template = {
-	name = "Griffon Infantry Division"			#Infantry Division - kek
+	name = "Trotstream Guard"			#Infantry Division - kek
 	
 	regiments = {
 		infantry = { x = 0 y = 0 }
