@@ -791,18 +791,21 @@ focus_tree = {
 	}
 	focus = {
 		id = CYA_Modern_Theory
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_scientific_exchange
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Ship_Of_The_Line
 		}
 		x = 35
 		y = 5
+			completion_reward = {
+					add_idea = navytheory1
+				}
 
 	}
 	focus = {
 		id = CYA_High_Seas_Fleet
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_scientific_exchange
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Modern_Theory
@@ -812,11 +815,14 @@ focus_tree = {
 		}
 		x = 34
 		y = 6
+			completion_reward = {
+					add_idea = navytheory2
+				}
 
 	}
 	focus = {
 		id = CYA_Underwater_Minotaurs
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_scientific_exchange
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Modern_Theory
@@ -826,22 +832,28 @@ focus_tree = {
 		}
 		x = 36
 		y = 6
+			completion_reward = {
+					add_idea = navytheory3
+				}
 
 	}
 	focus = {
 		id = CYA_Modern_Production
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_occupy_states_coastal
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Ship_Of_The_Line
 		}
 		x = 40
 		y = 5
+			completion_reward = {
+					add_idea = navyproduction1
+				}
 
 	}
 	focus = {
 		id = CYA_Private_Sector
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_occupy_states_coastal
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Modern_Production
@@ -851,11 +863,14 @@ focus_tree = {
 		}
 		x = 41
 		y = 6
+			completion_reward = {
+					add_idea = navyproduction3
+				}
 
 	}
 	focus = {
 		id = CYA_Public_Sector
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_occupy_states_coastal
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Modern_Production
@@ -865,33 +880,42 @@ focus_tree = {
 		}
 		x = 39
 		y = 6
+			completion_reward = {
+					add_idea = navyproduction2
+				}
 
 	}
 	focus = {
 		id = CYA_BAE_Systems
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_occupy_states_coastal
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Private_Sector
 		}
 		x = 41
 		y = 7
+			completion_reward = {
+					add_idea = navyproduction5
+				}
 
 	}
 	focus = {
 		id = CYA_Modern_Armaments
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Ship_Of_The_Line
 		}
 		x = 45
 		y = 5
+			completion_reward = {
+					add_idea = navyguns1
+				}
 
 	}
 	focus = {
 		id = CYA_Big_Guns
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Modern_Armaments
@@ -901,17 +925,23 @@ focus_tree = {
 		}
 		x = 44
 		y = 6
+			completion_reward = {
+					add_idea = navyguns2
+				}
 
 	}
 	focus = {
 		id = CYA_Lotta_Millimeters
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Big_Guns
 		}
 		x = 44
 		y = 7
+			completion_reward = {
+					add_idea = navyguns4
+				}
 
 	}
 	focus = {
@@ -1310,7 +1340,7 @@ focus_tree = {
 	}
 	focus = {
 		id = CYA_Extra_Protection
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Modern_Armaments
@@ -1320,55 +1350,70 @@ focus_tree = {
 		}
 		x = 46
 		y = 6
+			completion_reward = {
+					add_idea = navyguns3
+				}
 
 	}
 	focus = {
 		id = CYA_Interimidating_Interdiction
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_scientific_exchange
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Underwater_Minotaurs
 		}
 		x = 36
 		y = 7
+			completion_reward = {
+					add_idea = navytheory5
+				}
 
 	}
 	focus = {
 		id = CYA_Size_Matters
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_scientific_exchange
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_High_Seas_Fleet
 		}
 		x = 34
 		y = 7
+			completion_reward = {
+					add_idea = navytheory4
+				}
 
 	}
 	focus = {
 		id = CYA_Innovative_Ideas
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_occupy_states_coastal
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Public_Sector
 		}
 		x = 39
 		y = 7
+			completion_reward = {
+					add_idea = navyproduction4
+				}
 
 	}
 	focus = {
 		id = CYA_Tonnes_Of_Inches
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Extra_Protection
 		}
 		x = 46
 		y = 7
+			completion_reward = {
+					add_idea = navyguns5
+				}
 
 	}
 	focus = {
 		id = CYA_Pax_Cyanolisia
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_CAS
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Naval_Academy
@@ -1381,11 +1426,14 @@ focus_tree = {
 		}
 		x = 40
 		y = 9
+			completion_reward = {
+					add_idea = paxcyanolisia
+				}
 
 	}
 	focus = {
 		id = CYA_Naval_Academy
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_scientific_exchange
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Interimidating_Interdiction
@@ -1393,11 +1441,14 @@ focus_tree = {
 		}
 		x = 35
 		y = 8
+			completion_reward = {
+					add_idea = navytheory6
+				}
 
 	}
 	focus = {
 		id = CYA_Engineering_Masterpiece
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_occupy_states_coastal
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_BAE_Systems
@@ -1405,11 +1456,14 @@ focus_tree = {
 		}
 		x = 40
 		y = 8
+			completion_reward = {
+					add_idea = navyproduction6
+				}
 
 	}
 	focus = {
 		id = CYA_Foreign_Affairs
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_amphibious_assault
 		cost = 0.00
 		prerequisite = {
 			focus = CYA_Tonnes_Of_Inches
@@ -1417,6 +1471,9 @@ focus_tree = {
 		}
 		x = 45
 		y = 8
+			completion_reward = {
+					add_idea = navyguns6
+				}
 
 	}
 }
