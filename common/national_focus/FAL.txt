@@ -1,0 +1,390 @@
+focus_tree = {
+	id = falcor_focus
+
+##################################################
+#############Harmony path#########################
+##################################################
+	
+	country = {
+		factor = 0
+
+		modifier = {
+			add = 10
+			tag = FAL
+		}
+	}
+
+	focus = {
+		id = FAL_harmony
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 9
+		}
+		
+		x = 12
+		y = 0
+		
+		completion_reward = {
+		add_stability = 0.1
+		log = "[Root.GetName]: Focus FAL_harmony"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_strenghten_rule
+		icon = GFX_goal_griffon_harmony_char
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_harmony
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_harmony
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = -0.10
+			log = "[Root.GetName]: Focus FAL_strenghten_rule"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_eliminate_opposition
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_strenghten_rule
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_strenghten_rule
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = democratic popularity = 0.3	}
+			add_popularity = { ideology = fascism popularity = -0.1	}
+			add_popularity = { ideology = communism popularity = -0.1	}
+			log = "[Root.GetName]: Focus FAL_eliminate_opposition"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_educate_farmers
+		icon = GFX_goal_agrarian_reform
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 4
+		}
+		
+		relative_position_id = FAL_eliminate_opposition
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_eliminate_opposition
+		}
+		
+		completion_reward = {
+			remove_ideas = feudalism
+			add_ideas =  FAL_reforms1
+			log = "[Root.GetName]: Focus FAL_educate_farmers"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_stabalize_economy
+		icon = GFX_goal_government_icon
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_educate_farmers
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_educate_farmers
+		}
+		
+		completion_reward = {
+			remove_ideas = poverty3
+			log = "[Root.GetName]: Focus FAL_stabalize_economy"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_prepare_to_attack_wng
+		icon = GFX_goal_generic_major_war
+		cost = 10.00 
+		
+		ai_will_do = {
+			factor = 3
+		}
+		
+		relative_position_id = FAL_stabalize_economy
+		x = -1
+		y = 1
+		
+		mutually_exclusive = {
+			focus = FAL_defend_home
+		}
+		prerequisite = { 
+			focus = FAL_stabalize_economy
+		}
+		
+		completion_reward = {
+			add_ideas = FAL_offense1
+			log = "[Root.GetName]: Focus FAL_prepare_to_attack_wng"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_for_falcor
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		will_lead_to_war_with = WNG
+		ai_will_do = {
+			factor = 3
+		}
+		
+		relative_position_id = FAL_prepare_to_attack_wng
+		x = 0
+		y = 1
+		
+		available = {
+			country_exists = WNG 
+		}
+		
+		prerequisite = { 
+			focus = FAL_prepare_to_attack_wng
+		}
+		
+		completion_reward = {
+			add_manpower = 10000
+			create_wargoal = { type = annex_everything target = WNG }
+		}
+	}
+	
+	focus = {
+		id = FAL_defend_home
+		icon = GFX_goal_generic_defence
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 8
+		}
+		
+		relative_position_id = FAL_stabalize_economy
+		x = 1
+		y = 1
+		
+		mutually_exclusive = {
+			focus = FAL_prepare_to_attack_wng
+		}
+		
+		prerequisite = { 
+			focus = FAL_stabalize_economy
+		}
+		
+		completion_reward = {
+			add_ideas = FAL_defense1
+			log = "[Root.GetName]: Focus FAL_defend_home"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_build_forts
+		icon = GFX_goal_generic_fortify_city
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_defend_home
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_defend_home
+		}
+		
+		completion_reward = {
+			add_ideas = FAL_forts
+			log = "[Root.GetName]: Focus FAL_build_forts"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_improve_illiteracy
+		icon = GFX_goal_griffon_books
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 7
+		}
+		
+		relative_position_id = FAL_build_forts 
+		x = -1
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_build_forts
+			focus = FAL_for_falcor
+		}
+		
+		completion_reward = {
+			remove_ideas = lack_of_scientists2
+			add_ideas = FAL_illiteracy2
+			log = "[Root.GetName]: Focus FAL_improve_illiteracy"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_scientific_improvement
+		icon = GFX_focus_research
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_improve_illiteracy
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_improve_illiteracy
+		}
+		
+		completion_reward = {
+			hidden_effect = { set_country_flag = big_science_base_unlocked }
+			add_ideas = big_science_base
+			log = "[Root.GetName]: Focus FAL_scientific_improvement"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_new_factories
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_scientific_improvement
+		x = -1
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_scientific_improvement
+		}
+		
+		completion_reward = {
+			
+			random_state = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			log = "[Root.GetName]: Focus FAL_new_factories"#Auto-logging
+		}
+	}
+
+	focus = {
+		id = FAL_new_military_factories
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_new_factories
+		x = 2
+		y = 0
+		
+		prerequisite = { 
+			focus = FAL_scientific_improvement
+		}
+		
+		completion_reward = {
+			
+			random_state = {
+				add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factories
+						level = 2
+						instant_build = yes
+					}
+				}
+			log = "[Root.GetName]: Focus FAL_new_military_factories"#Auto-logging
+		}
+	}
+
+	focus = {
+		id = FAL_increase_farm_wages
+		icon = GFX_goal_generic_production
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_scientific_improvement
+		x = 2
+		y = 0
+		
+		prerequisite = { 
+			focus = FAL_improve_illiteracy
+		}
+		
+		completion_reward = {
+			add_ideas = FAL_better_farms
+			log = "[Root.GetName]: Focus FAL_increase_farm_wages"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_universities
+		icon = GFX_goal_generic_scientific_exchange
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_scientific_improvement
+		x = -2
+		y = 0
+		
+		prerequisite = { 
+			focus = FAL_improve_illiteracy
+		}
+		
+		completion_reward = {
+			add_ideas = FAL_universities_idea
+			log = "[Root.GetName]: Focus FAL_universities"#Auto-logging
+		}
+	}
+	
