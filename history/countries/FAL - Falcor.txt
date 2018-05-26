@@ -24,20 +24,19 @@ set_politics = {
 	
 	parties = {
 		democratic = {
-			popularity = 66
+			popularity = 65
 		}
 		
 		fascism = {
-			popularity = 0
+			popularity = 10
 		}
 		
 		communism = {
-			popularity = 0
-			#banned = no #default is no
+			popularity = 10
 		}
 		
 		neutrality = {
-			popularity = 34
+			popularity = 15
 		}
 	}
 	
@@ -52,7 +51,7 @@ add_ideas = {
 	feudalism
 	pre_industrial_society }
 
-set_stability = 0.70
+set_stability = 0.50
 
 create_country_leader = {
 	name = "Princess Maximilliana"

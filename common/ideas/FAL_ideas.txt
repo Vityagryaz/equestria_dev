@@ -591,6 +591,21 @@ ideas = {
 			}
 		}
 		
+		FAL_better_farmers = {
+			
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				local_resources_factor = 0.10
+			}
+		}
+		
 		FAL_schools = {
 		
 			allowed = {
