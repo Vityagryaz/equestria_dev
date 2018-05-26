@@ -1,5 +1,8 @@
 ﻿l_english:
 
+### Ideas ###
+BAN_ID_bandit_culture:0 "Society of Bandits"
+BAN_ID_queenly_aspirations:0 "Queenly Aspirations"
 ### National Focus ###
 BAN_hunt_countess:0 "Hunt Countess Cyril"
 BAN_hunt_countess_desc:0 ""
@@ -288,4 +291,4 @@ banborder.5.a:0 "This is quite a setback."
 
 ### Traits ###
 bandit_lord_trait:0 "Bandit Queen"
-bandit_queen_trait:0 "Empress of Bandits"
+bandit_queen_trait:0 "Bandit Queen"

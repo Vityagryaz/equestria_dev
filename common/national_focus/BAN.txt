@@ -21,6 +21,7 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_hunt_countess"#Auto-logging
+			add_political_power = 100
 		}
 	}
 	
@@ -41,7 +42,7 @@ focus_tree = {
 		id = BAN_storm_griffonstone
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = BAN_in_griffonstone }
-		cost = 10
+		cost = 5
 		x = 5
 		y = 2
 		ai_will_do = { factor = 100 }
@@ -67,7 +68,7 @@ focus_tree = {
 		id = BAN_storm_falcor
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = BAN_in_falcor }
-		cost = 10
+		cost = 5
 		x = 7
 		y = 2
 		ai_will_do = { factor = 100 }
@@ -93,7 +94,7 @@ focus_tree = {
 		id = BAN_through_the_ridge
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = BAN_in_sicameon }
-		cost = 10
+		cost = 5
 		x = 9
 		y = 2
 		ai_will_do = { factor = 100 }
@@ -119,7 +120,7 @@ focus_tree = {
 		id = BAN_blaze_through_cannabia
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = BAN_in_cyanolisia }
-		cost = 10
+		cost = 5
 		x = 11
 		y = 2
 		ai_will_do = { factor = 100 }
@@ -138,6 +139,7 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_blackrock_queen_of_blackhollow"#Auto-logging
+			add_country_leader_trait = bandit_queen_trait
 		}
 	}
 	
@@ -152,6 +154,10 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_a_proper_kingdom"#Auto-logging
+			swap_ideas = {
+				remove_idea = BAN_ID_bandit_culture
+				add_idea = BAN_ID_queenly_aspirations
+			}
 		}
 	}
 	
@@ -179,6 +185,20 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_restore_the_farms"#Auto-logging
+			532 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			490 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -205,6 +225,10 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_restore_blackhollow_industry"#Auto-logging
+			add_timed_idea = {
+				idea = BAN_ID_restoration_effort
+				days = 547
+			}
 		}
 	}
 	
@@ -218,6 +242,13 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_rebuild_workshops"#Auto-logging
+			532 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -231,6 +262,20 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_factories_for_civilians"#Auto-logging
+			532 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			490 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -244,6 +289,13 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_hire_gunsmiths"#Auto-logging
+			532 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -257,6 +309,20 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_gun_factories"#Auto-logging
+			532 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			490 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -271,6 +337,7 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_a_decent_economy"#Auto-logging
+			add_ideas = BAN_ID_rebuilt_nation
 		}
 	}
 	

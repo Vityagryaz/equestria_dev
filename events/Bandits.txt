@@ -39,6 +39,8 @@ country_event = { ## Searching in Griffonstone
 			country_event = {
 				id = bandit.3
 			}
+			
+			
 		}
 	}
 	

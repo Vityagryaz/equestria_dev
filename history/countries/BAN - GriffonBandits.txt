@@ -47,7 +47,7 @@ add_ideas = {
 	war_economy
 	pre_industrial_society
 	lack_of_scientists2
-	BAN_bandit_culture
+	BAN_ID_bandit_culture
 }
 
 set_stability = 0.70

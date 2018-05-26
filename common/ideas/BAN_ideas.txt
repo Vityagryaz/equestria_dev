@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		BAN_bandit_culture = {
+		BAN_ID_bandit_culture = {
 			allowed = {
 				always = no
 			}
@@ -9,26 +9,65 @@ ideas = {
 			
 			modifier = {
 				stability_factor = -0.20
-				war_support_factor = 0.25
+				war_support_factor = 0.20
 				army_core_attack_factor = 0.10
 				army_core_defence_factor = 0.10
-				partisan_effect = 0.40
 				conscription = 0.10
 			}
 		}
 		
-		BAN_blackhollow_nobility = {
+		BAN_ID_queenly_aspirations = {
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = generic_volunteer_expedition_bonus
 			
 			modifier = {
-				neutrality_drift = 0.02
-				political_power_gain = 0.05
+				stability_factor = 0.10
+				war_support_factor = -0.10
 			}
 		}
+		
+		BAN_ID_restoration_effort = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				political_power_cost = 0.10
+			}
+		}
+		
+		BAN_ID_rebuilt_nation = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				political_power_cost = -0.10
+				stability_factor = 0.10
+			}
+		}
+		
+		BAN_ID_new_nobility = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				political_power_cost = -0.10
+				neutrality_drift = 0.15
+			}
+		}
+		
 	}
 	
 	army_chief = {
