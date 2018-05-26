@@ -1,1 +1,103 @@
 ﻿add_namespace = FAL
+
+country_event = {
+	id = FAL.1
+	immediate = {log = "[Root.GetName]: event FAL.1"}#Auto-logging
+	title = FAL.1.t
+	desc = FAL.1.d
+	picture = GFX_event_camelot
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	option = {
+		name = FAL.1.a
+		add_war_support = 0.05
+		add_stability = 0.1
+	}
+}
+
+country_event = {
+	id = FAL.2
+	immediate = {log = "[Root.GetName]: event FAL.2"}#Auto-logging
+	title = FAL.2.t
+	desc = FAL.2.d
+	picture = GFX_event_camelot
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	option = {
+		name = FAL.2.a
+		add_political_power = 50
+	}
+}
+
+country_event = {
+	id = FAL.3
+	immediate = {log = "[Root.GetName]: event FAL.3"}#Auto-logging
+	title = FAL.3.t
+	desc = FAL.3.d
+	picture = GFX_event_camelot
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	option = {
+		name = FAL.3.a
+		add_stability = 0.15
+	}
+}
+
+country_event = {
+	id = FAL.4
+	immediate = {log = "[Root.GetName]: event FAL.4"}#Auto-logging
+	title = FAL.4.t
+	desc = FAL.4.d
+	picture = GFX_event_camelot
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	
+option = {
+		name = FAL.4.a
+		set_province_name = { id = 3144 name = "Maximilliana"}
+	}
+	option = {
+		name = FAL.4.b
+		add_stability = -0.1
+	}
+}
+
+country_event = {
+	id = FAL.5
+	immediate = {log = "[Root.GetName]: event FAL.5"}#Auto-logging
+	title = FAL.5.t
+	desc = FAL.5.d
+	picture = GFX_event_camelot
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	option = {
+		name = FAL.5.a
+		add_stability = 0.15
+		add_political_power = 150
+	}
+}
+
+country_event = {
+	id = FAL.6
+	immediate = {log = "[Root.GetName]: event FAL.6"}#Auto-logging
+	title = FAL.6.t
+	desc = FAL.6.d
+	picture = GFX_event_camelot
+	
+	fire_only_once = yes
+	is_triggered_only = no
+	
+	option = {
+		name = FAL.6.a
+		add_stability = 0.5
+	}
+}

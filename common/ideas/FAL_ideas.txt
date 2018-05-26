@@ -576,21 +576,6 @@ ideas = {
 			}
 		}
 		
-		FAL_illiteracy2 = {
-		
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			picture = GFX_idea_lack_of_scientists
-			
-			modifier = {
-				research_time_factor = 0.25
-			}
-		}
-		
 		FAL_better_farms = {
 			
 			allowed = {
@@ -606,7 +591,7 @@ ideas = {
 			}
 		}
 		
-		FAL_universities_idea = {
+		FAL_schools = {
 		
 			allowed = {
 				always = no
@@ -615,6 +600,23 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				research_time_factor = -0.10
+				research_time_factor = -0.05
+			}
+		}
+	
+		FAL_princess = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = GFX_idea_enlightned_feudalism
+			
+			modifier = {
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+				army_morale_factor = 0.1
 			}
 		}
