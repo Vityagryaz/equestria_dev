@@ -248,7 +248,7 @@ focus_tree = {
 							limit = {
 									free_building_slots = {
 											building = arms_factory
-											size > 3
+											size > 4
 											include_locked = yes
 										}
 									OR = {
@@ -258,7 +258,7 @@ focus_tree = {
 															any_owned_state = {
 																	free_building_slots = {
 																			building = arms_factory
-																			size > 3
+																			size > 4
 																			include_locked = yes
 																		}
 																	is_in_home_area = yes
@@ -267,10 +267,10 @@ focus_tree = {
 												}
 										}
 								}
-							add_extra_state_shared_building_slots = 1
+							add_extra_state_shared_building_slots = 4
 							add_building_construction = {
 									type = arms_factory
-									level = 2
+									level = 3
 									instant_build = yes
 								}
 						}
@@ -703,7 +703,9 @@ focus_tree = {
 		x = 38
 		y = 2
 			completion_reward = {
-					add_ideas = navy2
+					set_technology = {
+							early_destroyer = 1
+						}
 				}
 
 	}
@@ -720,7 +722,9 @@ focus_tree = {
 		x = 40
 		y = 2
 			completion_reward = {
-					add_ideas = navy3
+					set_technology = {
+							early_cruiser = 1
+						}
 				}
 
 	}
@@ -737,7 +741,9 @@ focus_tree = {
 		x = 39
 		y = 3
 			completion_reward = {
-					add_ideas = navy2_3
+					set_technology = {
+							early_heavy_cruiser = 1
+						}
 				}
 
 	}
@@ -751,7 +757,9 @@ focus_tree = {
 		x = 42
 		y = 2
 			completion_reward = {
-					add_ideas = navy4
+					set_technology = {
+							early_submarine = 1
+						}
 				}
 
 	}
@@ -768,7 +776,9 @@ focus_tree = {
 		x = 41
 		y = 3
 			completion_reward = {
-					add_ideas = 3_4
+					set_technology = {
+							early_battleship = 1
+						}
 				}
 
 	}
@@ -786,6 +796,9 @@ focus_tree = {
 		y = 4
 			completion_reward = {
 					add_ideas = navymain
+					set_technology = {
+							early_heavy_cruiser = 1
+						}
 				}
 
 	}
@@ -816,7 +829,11 @@ focus_tree = {
 		x = 34
 		y = 6
 			completion_reward = {
-					add_idea = navytheory2
+			add_tech_bonus = {
+					name = bb_bonus
+					bonus = 0.5
+					uses = 2
+					category = bb_tech
 				}
 
 	}
@@ -833,7 +850,11 @@ focus_tree = {
 		x = 36
 		y = 6
 			completion_reward = {
-					add_idea = navytheory3
+			add_tech_bonus = {
+					name = ss_bonus
+					bonus = 0.5
+					uses = 2
+					category = ss_tech
 				}
 
 	}
@@ -847,7 +868,22 @@ focus_tree = {
 		x = 40
 		y = 5
 			completion_reward = {
-					add_idea = navyproduction1
+					random_owned_controlled_state = {
+							limit = {
+									dockyard > 0
+									free_building_slots = {
+											building = dockyard
+											size > 2
+											include_locked = yes
+										}
+								}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+									type = dockyard
+									level = 2
+									instant_build = yes
+								}
+						}
 				}
 
 	}
@@ -1039,7 +1075,7 @@ focus_tree = {
 							limit = {
 									free_building_slots = {
 											building = industrial_complex
-											size > 3
+											size > 4
 											include_locked = yes
 										}
 									OR = {
@@ -1049,7 +1085,7 @@ focus_tree = {
 															any_owned_state = {
 																	free_building_slots = {
 																			building = industrial_complex
-																			size > 3
+																			size > 4
 																			include_locked = yes
 																		}
 																	is_in_home_area = yes
@@ -1058,10 +1094,10 @@ focus_tree = {
 												}
 										}
 								}
-							add_extra_state_shared_building_slots = 1
+							add_extra_state_shared_building_slots = 4
 							add_building_construction = {
 									type = industrial_complex
-									level = 2
+									level = 3
 									instant_build = yes
 								}
 						}
@@ -1085,7 +1121,7 @@ focus_tree = {
 							limit = {
 									free_building_slots = {
 											building = arms_factory
-											size > 2
+											size > 4
 											include_locked = yes
 										}
 									OR = {
@@ -1095,7 +1131,7 @@ focus_tree = {
 															any_owned_state = {
 																	free_building_slots = {
 																			building = arms_factory
-																			size > 2
+																			size > 4
 																			include_locked = yes
 																		}
 																	is_in_home_area = yes
@@ -1107,7 +1143,7 @@ focus_tree = {
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = arms_factory
-									level = 1
+									level = 3
 									instant_build = yes
 								}
 						}
@@ -1174,7 +1210,7 @@ focus_tree = {
 							limit = {
 									free_building_slots = {
 											building = industrial_complex
-											size > 2
+											size > 4
 											include_locked = yes
 										}
 									OR = {
@@ -1184,7 +1220,7 @@ focus_tree = {
 															any_owned_state = {
 																	free_building_slots = {
 																			building = industrial_complex
-																			size > 2
+																			size > 4
 																			include_locked = yes
 																		}
 																	is_in_home_area = yes
@@ -1196,7 +1232,7 @@ focus_tree = {
 							add_extra_state_shared_building_slots = 1
 							add_building_construction = {
 									type = industrial_complex
-									level = 1
+									level = 3
 									instant_build = yes
 								}
 						}
@@ -1365,7 +1401,11 @@ focus_tree = {
 		x = 36
 		y = 7
 			completion_reward = {
-					add_idea = navytheory5
+			add_tech_bonus = {
+					name = dd_bonus
+					bonus = 0.5
+					uses = 2
+					category = dd_tech
 				}
 
 	}
@@ -1379,7 +1419,11 @@ focus_tree = {
 		x = 34
 		y = 7
 			completion_reward = {
-					add_idea = navytheory4
+			add_tech_bonus = {
+					name = cv_bonus
+					bonus = 0.5
+					uses = 2
+					category = cv_tech
 				}
 
 	}
@@ -1442,6 +1486,7 @@ focus_tree = {
 		x = 35
 		y = 8
 			completion_reward = {
+					remove_idea = navytheory1
 					add_idea = navytheory6
 				}
 

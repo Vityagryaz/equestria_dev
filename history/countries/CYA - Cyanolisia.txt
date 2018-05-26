@@ -14,11 +14,10 @@ set_technology = {
 	tech_mountaineers = 1
 	transport = 1
 	tech_knights = 1
-	early_submarine = 1
-	early_destroyer = 1
 	early_light_cruiser = 1
-	early_battlecruiser = 1
 	infantry_weapons = 1
+	transport = 1
+
 }
 
 set_convoys = 150
@@ -100,3 +99,39 @@ create_country_leader = {
 		
 	}
 }
+
+create_corps_commander = {
+	name = "Libidinous Cuddles"
+	portrait_path = "Governor.tga"
+	traits = { trait_engineer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_field_marshal = {
+	name = "Taillow Marshquill"
+	portrait_path = "redbirb.tga"
+	traits = { defensive_doctrine }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 4
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
