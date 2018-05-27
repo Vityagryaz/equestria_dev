@@ -26,8 +26,10 @@ focus_tree = {
 		y = 0
 		
 		completion_reward = {
-			remove_ideas = feudalism
-			add_ideas =  FAL_reforms1
+			swap_ideas = {
+				remove_idea = feudalism
+				add_idea =  FAL_reforms1
+			}
 			log = "[Root.GetName]: Focus FAL_educate_farmers"#Auto-logging
 		}
 	}
@@ -97,7 +99,7 @@ focus_tree = {
 	focus = {
 		id = FAL_better_farmers
 		icon = GFX_goal_agrarian_reform
-		cost = 10.00
+		cost = 7.00
 		
 		ai_will_do = {
 			factor = 5
@@ -203,7 +205,7 @@ focus_tree = {
 	focus = {
 		id = FAL_new_trains
 		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10.00
+		cost = 7.00
 		
 		ai_will_do = {
 			factor = 5
@@ -348,7 +350,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			country_event = FAL.2
+			country_event = FAL.1
 			add_ideas = FAL_Schools
 			log = "[Root.GetName]: Focus FAL_more_schools"#Auto-logging
 		}
@@ -602,29 +604,348 @@ focus_tree = {
 		}
 	}
 	
-#	focus = {
-#		id = 
-#		icon = 
-#		cost = 
-#		
-#		ai_will_do = {
-#			factor = 
-#		}
-#		
-#		relative_position_id = 
-#		x = 0
-#		y = 1
-#		
-#		prerequisite = { 
-#			focus = 
-#		}
-#		
-#		completion_reward = {
-#		
-#			
-#		}
-#	}
+	focus = {
+		id = FAL_order
+		icon = GFX_goal_government_icon
+		cost = 7.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_harmony
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_harmony
+		}
+		
+		completion_reward = {
+			country_event =  falcor.2
+			log = "[Root.GetName]: Focus FAL_order"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_woes_of_falcor
+		icon = GFX_focus_rom_abdicate
+		cost = 7.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_order
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_order
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			log = "[Root.GetName]: Focus FAL_woes_of_falcor"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_improve_matton
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		mutually_exclusive = {
+			focus = FAL_bitter_falcor
+		}
+		
+		relative_position_id = FAL_woes_of_falcor
+		x = -1
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_woes_of_falcor
+		}
+		
+		completion_reward = {
+			529 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}
+			log = "[Root.GetName]: Focus FAL_improve_matton"#Auto-logging
+			}
+		}
+		
+	focus = {
+		id = FAL_make_matton_bigger
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_improve_matton
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_improve_matton
+		}
+		
+		completion_reward = {
+			  529 = {
+            add_manpower = 100000
+        }
+		log = "[Root.GetName]: Focus FAL_make_matton_bigger"#Auto-logging
+	}
+}
 
+		focus = {
+		id = FAL_bitter_falcor
+		icon = GFX_goal_generic_demand_territory
+		cost = 1.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		mutually_exclusive = {
+			focus = FAL_improve_matton
+		}
+		
+		relative_position_id = FAL_woes_of_falcor
+		x = 1
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_woes_of_falcor
+		}
+		
+		completion_reward = {
+			add_stability = -0.10
+			log = "[Root.GetName]: Focus FAL_bitter_falcor"#Auto-logging
+        }
+	}
+	
+	focus = {
+		id = FAL_asking_for_falcor
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_bitter_falcor
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_bitter_falcor
+		}
+		
+		completion_reward = {
+			WNG = {
+				country_event = falcor.3
+			}
+			log = "[Root.GetName]: Focus FAL_asking_for_falcor"#Auto-logging
+        }
+	}
+	
+	focus = {
+		id = FAL_unite_around_capital
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 8.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+	
+		relative_position_id = FAL_asking_for_falcor
+		x = -1
+		y = 1
+		
+		prerequisite = {
+			focus = FAL_asking_for_falcor
+			focus = FAL_make_matton_bigger
+		}
+		
+		completion_reward = {
+			country_event = falcor.7
+			log = "[Root.GetName]: Focus FAL_unite_around_capital"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_celebrate_princess
+		icon = GFX_goal_generic_propaganda
+		cost = 7.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+	
+		relative_position_id = FAL_unite_around_capital
+		x = -1
+		y = 1
+		
+		prerequisite = {
+			focus = FAL_unite_around_capital
+		}
+		
+		completion_reward = {
+			country_event = falcor.8
+			log = "[Root.GetName]: Focus FAL_celebrate_capital"#Auto-logging
+			add_stability = 0.1
+		}
+	}
+	
+	focus = {
+		id = FAL_building_national_monument
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 7.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+	
+		relative_position_id = FAL_unite_around_capital
+		x = 1
+		y = 1
+		
+		prerequisite = {
+			focus = FAL_unite_around_capital
+		}
+		
+		completion_reward = {
+			country_event = falcor.9
+			log = "[Root.GetName]: Focus FAL_celebrate_capital"#Auto-logging
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = FAL_form_defense_league
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+	
+		relative_position_id = FAL_celebrate_princess
+		x = 1
+		y = 1
+		
+		prerequisite = {
+			focus = FAL_celebrate_princess
+		}
+		
+		prerequisite = {
+			focus = FAL_building_national_monument
+		}
+		
+		completion_reward = {
+			create_faction = "Southern Defense League"
+		}
+	}
+
+	focus = {
+		id = FAL_ask_sic_to_join
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+	
+		relative_position_id = FAL_building_national_monument
+		x = 1
+		y = 1
+		
+		prerequisite = {
+			focus = FAL_celebrate_princess
+		}
+		
+		prerequisite = {
+			focus = FAL_building_national_monument
+		}
+		
+		completion_reward = {
+			SIC = {
+			country_event = falcor.11
+			}
+		}
+	}
+	
+	focus = {
+		id = FAL_ask_mit_to_join
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+	
+		relative_position_id = FAL_celebrate_princess
+		x = -1
+		y = 1
+		
+		prerequisite = {
+			focus = FAL_celebrate_princess
+		}
+		
+		prerequisite = {
+			focus = FAL_building_national_monument
+		}
+		
+		completion_reward = {
+			MIT = {
+			country_event = falcor.11
+			}
+		}
+	}
+	
+	focus = {
+		id = FAL_long_live_princess
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+	
+		relative_position_id = FAL_celebrate_princess
+		x = 1
+		y = 2
+		
+		prerequisite = {
+			focus = FAL_form_defense_league
+		}
+		
+		prerequisite = {
+			focus = FAL_ask_sic_to_join
+		}
+		
+		prerequisite = {
+			focus = FAL_ask_mit_to_join
+		}
+		
+		completion_reward = {
+			country_event = falcor.10
+			log = "[Root.GetName]: Focus FAL_long_live_princess"#Auto-logging
+			add_ideas = FAL_princess
+		}
+	}
 	
 	
 	
