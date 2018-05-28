@@ -39,18 +39,16 @@ country_event = { ## Searching in Griffonstone
 			country_event = {
 				id = bandit.3
 			}
-			
-			
 		}
 	}
 	
 	option = { ## Just invade them
 		name = bandit.2.b
-		
+		complete_national_focus = BAN_storm_griffonstone
 	}
 }
 
-country_event = { ## Searching in Griffonstone
+country_event = { ## Offer to BOI
 	id = bandit.3
 	immediate = {log = "[Root.GetName]: event bandit.3"}#Auto-logging
 	title = bandit.3.t
@@ -58,7 +56,7 @@ country_event = { ## Searching in Griffonstone
 	picture = GFX_event_griffon_soldier
 	is_triggered_only = yes
 	
-	option = { ## Accept the offer. Finds Cyril in 70 days
+	option = { ## Accept the offer. 
 		name = bandit.3.a
 		ai_chance = { factor = 80 }
 		
@@ -71,11 +69,515 @@ country_event = { ## Searching in Griffonstone
 	
 	option = { ## Refuse
 		name = bandit.3.b
+		ai_chance = { factor = 20 }
 		
 		BAN = {
 			country_event = {
 				id = bandit.5
 			}
+		}
+	}
+}
+
+country_event = { ## BOI Accepted
+	id = bandit.4
+	immediate = {log = "[Root.GetName]: event bandit.4"}#Auto-logging
+	title = bandit.4.t
+	desc = bandit.4.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Great.
+		name = bandit.4.a
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = BAN_hiding_in_griffonstone
+				}
+				country_event = {
+					id = bandit.6
+					days = 10
+				}
+			}
+			else = {
+				country_event = {
+					id = bandit.66
+					days = 10
+				}
+			}
+		}
+	}
+}
+
+country_event = { ## BOI Refused
+	id = bandit.5
+	immediate = {log = "[Root.GetName]: event bandit.5"}#Auto-logging
+	title = bandit.5.t
+	desc = bandit.5.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Great.
+		name = bandit.5.a
+		complete_national_focus = BAN_storm_griffonstone
+	}
+}
+
+country_event = { ## Cyril found!
+	id = bandit.6
+	immediate = {log = "[Root.GetName]: event bandit.6"}#Auto-logging
+	title = bandit.6.t
+	desc = bandit.6.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Execute her!
+		name = bandit.6.a
+		
+		country_event = {
+			id = bandit.7
+		}
+	}
+}
+
+country_event = { ## Cyril not found!
+	id = bandit.66
+	immediate = {log = "[Root.GetName]: event bandit.6"}#Auto-logging
+	title = bandit.66.t
+	desc = bandit.66.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## 
+		name = bandit.66.a
+	}
+}
+
+country_event = { ## The Execution
+	id = bandit.7
+	immediate = {log = "[Root.GetName]: event bandit.7"}#Auto-logging
+	title = bandit.7.t
+	desc = bandit.7.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## She's finally gone for good.
+		name = bandit.7.a
+		complete_national_focus = BAN_blackrock_queen_of_blackhollow
+	}
+}
+
+
+country_event = { ## Searching in Falcor
+	id = bandit.8
+	immediate = {log = "[Root.GetName]: event bandit.8"}#Auto-logging
+	title = bandit.8.t
+	desc = bandit.8.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Ask Nicely
+		name = bandit.8.a
+		
+		FAL = {
+			country_event = {
+				id = bandit.9
+			}
+		}
+	}
+	
+	option = { ## Just invade them
+		name = bandit.8.b
+		complete_national_focus = BAN_storm_falcor
+	}
+}
+
+country_event = { ## FAL's response
+	id = bandit.9
+	immediate = {log = "[Root.GetName]: event bandit.9"}#Auto-logging
+	title = bandit.9.t
+	desc = bandit.9.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Accept the offer. Finds Cyril in 70 days
+		name = bandit.9.a
+		ai_chance = { factor = 80 }
+		
+		BAN = {
+			country_event = {
+				id = bandit.10
+			}
+		}
+	}
+	
+	option = { ## Refuse
+		name = bandit.9.b
+		ai_chance = { factor = 20 }
+		
+		BAN = {
+			country_event = {
+				id = bandit.11
+			}
+		}
+	}
+}
+
+country_event = { ## FAL Accepted
+	id = bandit.10
+	immediate = {log = "[Root.GetName]: event bandit.10"}#Auto-logging
+	title = bandit.10.t
+	desc = bandit.10.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Great.
+		name = bandit.10.a
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = BAN_hiding_in_falcor
+				}
+				country_event = {
+					id = bandit.12
+					days = 15
+				}
+			}
+			else = {
+				country_event = {
+					id = bandit.122
+					days = 15
+				}
+			}
+		}
+	}
+}
+
+country_event = { ## FAL Refused
+	id = bandit.11
+	immediate = {log = "[Root.GetName]: event bandit.11"}#Auto-logging
+	title = bandit.11.t
+	desc = bandit.11.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Great.
+		name = bandit.11.a
+		complete_national_focus = BAN_storm_falcor
+	}
+}
+
+country_event = { ## Cyril found!
+	id = bandit.12
+	immediate = {log = "[Root.GetName]: event bandit.12"}#Auto-logging
+	title = bandit.12.t
+	desc = bandit.12.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Execute her!
+		name = bandit.12.a
+		
+		country_event = {
+			id = bandit.7
+		}
+	}
+}
+
+country_event = { ## Cyril found!
+	id = bandit.122
+	immediate = {log = "[Root.GetName]: event bandit.12"}#Auto-logging
+	title = bandit.12.t
+	desc = bandit.12.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = {
+		name = bandit.12.a
+	}
+}
+
+
+country_event = { ## Searching in Cyanolisia
+	id = bandit.13
+	immediate = {log = "[Root.GetName]: event bandit.13"}#Auto-logging
+	title = bandit.13.t
+	desc = bandit.13.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Ask Nicely
+		name = bandit.13.a
+		
+		CYA = {
+			country_event = {
+				id = bandit.14
+			}
+		}
+	}
+	
+	option = { ## Just invade them
+		name = bandit.13.b
+		complete_national_focus = BAN_storm_falcor
+	}
+}
+
+country_event = { ## CYA's response
+	id = bandit.14
+	immediate = {log = "[Root.GetName]: event bandit.14"}#Auto-logging
+	title = bandit.14.t
+	desc = bandit.14.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Accept the offer. Finds Cyril in 70 days
+		name = bandit.14.a
+		ai_chance = { factor = 80 }
+		
+		BAN = {
+			country_event = {
+				id = bandit.15
+			}
+		}
+	}
+	
+	option = { ## Refuse
+		name = bandit.14.b
+		ai_chance = { factor = 20 }
+		
+		BAN = {
+			country_event = {
+				id = bandit.16
+			}
+		}
+	}
+}
+
+country_event = { ## CYA Accepted
+	id = bandit.15
+	immediate = {log = "[Root.GetName]: event bandit.15"}#Auto-logging
+	title = bandit.15.t
+	desc = bandit.15.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Great.
+		name = bandit.15.a
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = BAN_hiding_in_cyanolisia
+				}
+				country_event = {
+					id = bandit.17
+					days = 20
+				}
+			}
+			else = {
+				country_event = {
+					id = bandit.177
+					days = 20
+				}
+			}
+		}
+	}
+}
+
+country_event = { ## CYA Refused
+	id = bandit.16
+	immediate = {log = "[Root.GetName]: event bandit.16"}#Auto-logging
+	title = bandit.16.t
+	desc = bandit.16.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Great.
+		name = bandit.16.a
+		complete_national_focus = BAN_storm_cyanolisia
+	}
+}
+
+country_event = { ## Cyril found!
+	id = bandit.17
+	immediate = {log = "[Root.GetName]: event bandit.17"}#Auto-logging
+	title = bandit.17.t
+	desc = bandit.17.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Execute her!
+		name = bandit.17.a
+		
+		country_event = {
+			id = bandit.7
+		}
+	}
+}
+
+country_event = { ## Cyril found!
+	id = bandit.177
+	immediate = {log = "[Root.GetName]: event bandit.177"}#Auto-logging
+	title = bandit.177.t
+	desc = bandit.177.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = {
+		name = bandit.177.a
+	}
+}
+
+
+country_event = { ## Searching in Sicameon
+	id = bandit.18
+	immediate = {log = "[Root.GetName]: event bandit.18"}#Auto-logging
+	title = bandit.18.t
+	desc = bandit.18.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Ask Nicely
+		name = bandit.18.a
+		
+		SIC = {
+			country_event = {
+				id = bandit.19
+			}
+		}
+	}
+	
+	option = { ## Just invade them
+		name = bandit.18.b
+		complete_national_focus = BAN_storm_falcor
+	}
+}
+
+country_event = { ## SIC's response
+	id = bandit.19
+	immediate = {log = "[Root.GetName]: event bandit.19"}#Auto-logging
+	title = bandit.19.t
+	desc = bandit.19.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Accept the offer. Finds Cyril in 70 days
+		name = bandit.19.a
+		ai_chance = { factor = 80 }
+		
+		BAN = {
+			country_event = {
+				id = bandit.20
+			}
+		}
+	}
+	
+	option = { ## Refuse
+		name = bandit.19.b
+		ai_chance = { factor = 20 }
+		
+		BAN = {
+			country_event = {
+				id = bandit.21
+			}
+		}
+	}
+}
+
+country_event = { ## SIC Accepted
+	id = bandit.20
+	immediate = {log = "[Root.GetName]: event bandit.20"}#Auto-logging
+	title = bandit.20.t
+	desc = bandit.20.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Great.
+		name = bandit.20.a
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					has_country_flag = BAN_hiding_in_sicameon
+				}
+				country_event = {
+					id = bandit.22
+					days = 30
+				}
+			}
+			else = {
+				country_event = {
+					id = bandit.222
+					days = 30
+				}
+			}
+		}
+	}
+}
+
+country_event = { ## SIC Refused
+	id = bandit.21
+	immediate = {log = "[Root.GetName]: event bandit.21"}#Auto-logging
+	title = bandit.21.t
+	desc = bandit.21.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Great.
+		name = bandit.21.a
+		complete_national_focus = BAN_through_the_ridge
+	}
+}
+
+country_event = { ## Cyril found!
+	id = bandit.22
+	immediate = {log = "[Root.GetName]: event bandit.22"}#Auto-logging
+	title = bandit.22.t
+	desc = bandit.22.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = { ## Execute her!
+		name = bandit.22.a
+		
+		country_event = {
+			id = bandit.7
+		}
+	}
+}
+
+country_event = { 
+	id = bandit.222
+	immediate = {log = "[Root.GetName]: event bandit.222"}#Auto-logging
+	title = bandit.222.t
+	desc = bandit.222.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	
+	option = {
+		name = bandit.222.a
+	}
+}
+
+country_event = { 
+	id = bandit.23
+	immediate = {log = "[Root.GetName]: event bandit.23"}#Auto-logging
+	title = bandit.23.t
+	desc = bandit.23.d
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	trigger = {
+		has_war_with = SIC
+		has_war_with = FAL
+		has_war_with = BOI
+		has_war_with = CYA
+	}
+	
+	option = { # Found the bitch
+		name = bandit.23.a
+		country_event = {
+			id = bandit.7
 		}
 	}
 }

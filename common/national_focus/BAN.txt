@@ -15,13 +15,16 @@ focus_tree = {
 	focus = {
 		id = BAN_hunt_countess
 		icon = GFX_goal_stab_cyril
-		cost = 10
+		cost = 1
 		x = 8
 		y = 0
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_hunt_countess"#Auto-logging
-			add_political_power = 100
+			add_political_power = 20
+			
+			set_country_flag = BAN_searching_for_cyril
+			add_ideas = { BAN_ID_searching_for_cyril }
 		}
 	}
 	
@@ -29,12 +32,16 @@ focus_tree = {
 		id = BAN_in_griffonstone
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = BAN_hunt_countess }
-		cost = 10
+		available = { has_idea = BAN_ID_searching_for_cyril } 
+		cost = 1
 		x = 5
 		y = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_in_griffonstone"#Auto-logging
+			country_event = { 
+				id = bandit.2
+			}
 		}
 	}
 	
@@ -42,12 +49,20 @@ focus_tree = {
 		id = BAN_storm_griffonstone
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = BAN_in_griffonstone }
-		cost = 5
+		cost = 1
+		available = {
+			NOT = { has_country_flag = BAN_searching_for_cyril }
+			has_idea = BAN_ID_searching_for_cyril
+		}
 		x = 5
 		y = 2
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_storm_griffonstone"#Auto-logging
+			create_wargoal = { 
+				target = BOI 
+				type = annex_everything 
+			}
 		}
 	}
 	
@@ -55,12 +70,16 @@ focus_tree = {
 		id = BAN_in_falcor
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = BAN_hunt_countess }
-		cost = 10
+		available = { has_idea = BAN_ID_searching_for_cyril }
+		cost = 1
 		x = 7
 		y = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_in_griffonstone"#Auto-logging
+			country_event = { 
+				id = bandit.8
+			}
 		}
 	}
 	
@@ -68,12 +87,20 @@ focus_tree = {
 		id = BAN_storm_falcor
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = BAN_in_falcor }
-		cost = 5
+		cost = 1
+		available = {
+			NOT = { has_country_flag = BAN_searching_for_cyril }
+			has_idea = BAN_ID_searching_for_cyril
+		}
 		x = 7
 		y = 2
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_storm_falcor"#Auto-logging
+			create_wargoal = { 
+				target = FAL 
+				type = annex_everything 
+			}
 		}
 	}
 	
@@ -81,12 +108,16 @@ focus_tree = {
 		id = BAN_in_sicameon
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = BAN_hunt_countess }
-		cost = 10
+		available = { has_idea = BAN_ID_searching_for_cyril }
+		cost = 1
 		x = 9
 		y = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_in_sicameon"#Auto-logging
+			country_event = { 
+				id = bandit.18
+			}
 		}
 	}
 	
@@ -94,12 +125,20 @@ focus_tree = {
 		id = BAN_through_the_ridge
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = BAN_in_sicameon }
-		cost = 5
+		cost = 1
+		available = {
+			NOT = { has_country_flag = BAN_searching_for_cyril }
+			has_idea = BAN_ID_searching_for_cyril
+		}
 		x = 9
 		y = 2
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_through_the_ridge"#Auto-logging
+			create_wargoal = { 
+				target = SIC 
+				type = annex_everything 
+			}
 		}
 	}
 	
@@ -107,12 +146,16 @@ focus_tree = {
 		id = BAN_in_cyanolisia
 		icon = GFX_focus_generic_support_the_left_right
 		prerequisite = { focus = BAN_hunt_countess }
-		cost = 10
+		available = { has_idea = BAN_ID_searching_for_cyril }
+		cost = 1
 		x = 11
 		y = 1
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_in_cyanolisia"#Auto-logging
+			country_event = { 
+				id = bandit.13
+			}
 		}
 	}
 	
@@ -120,12 +163,20 @@ focus_tree = {
 		id = BAN_blaze_through_cannabia
 		icon = GFX_goal_generic_political_pressure
 		prerequisite = { focus = BAN_in_cyanolisia }
-		cost = 5
+		cost = 1
+		available = {
+			NOT = { has_country_flag = BAN_searching_for_cyril }
+			has_idea = BAN_ID_searching_for_cyril
+		}
 		x = 11
 		y = 2
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_blaze_through_cannabia"#Auto-logging
+			create_wargoal = { 
+				target = CYA 
+				type = annex_everything 
+			}
 		}
 	}
 	
@@ -140,6 +191,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_blackrock_queen_of_blackhollow"#Auto-logging
 			add_country_leader_trait = bandit_queen_trait
+			remove_ideas = BAN_ID_searching_for_cyril
 		}
 	}
 	
@@ -351,6 +403,7 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_new_nobility"#Auto-logging
+			add_ideas = BAN_ID_new_nobility
 		}
 	}
 	
@@ -364,6 +417,7 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_seek_recognition"#Auto-logging
+			add_political_power = 100
 		}
 	}
 	
