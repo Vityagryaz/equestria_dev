@@ -942,7 +942,7 @@ focus_tree = {
 			factor = 2
 		}
 		
-		x = 8
+		x = 7
 		y = 0
 		
 		mutually_exclusive = {
@@ -1480,9 +1480,241 @@ focus_tree = {
 			create_wargoal = {
 				target = FNR
 				type = annex_everything
-			}create_wargoal = {
+			}
+			create_wargoal = {
 				target = ARA
 				type = annex_everything
 			}
+			log = "[Root.GetName]: Focus FAL_finish_karthin_pact"#Auto-logging
+		}
+	}
+	
+####################Commie path###############################
+	focus = {
+		id = FAL_organize_workers
+		icon = GFX_goal_support_fourth_int
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_communist
+		x = 1
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_communist
+		}
+		
+		completion_reward = {
+			add_war_support = 0.05
+			log = "[Root.GetName]: Focus FAL_organize_workers"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_demand_princess_steps_down
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_organize_workers
+		x = 1
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_organize_workers
+		}
+		
+		completion_reward = {
+			country_event = falcor.21
+			log = "[Root.GetName]: Focus FAL_demand_princess_steps_down"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_start_bank_reforms
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_demand_princess_steps_down
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_demand_princess_steps_down
+		}
+		
+		completion_reward = {
+			add_ideas = FAL_bank_reforms
+			log = "[Root.GetName]: Focus FAL_start_bank_reforms"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_start_bank_reforms_2
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_start_bank_reforms
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_start_bank_reforms
+		}
+		
+		completion_reward = {
+			add_ideas = FAL_bank_reforms2
+			log = "[Root.GetName]: Focus FAL_start_bank_reforms_2"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_ask_stg_for_help
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_start_bank_reforms_2
+		x = -1
+		y = 1
+		
+		mutually_exclusive = {
+			focus = FAL_join_prywhen
+		}
+		
+		prerequisite = { 
+			focus = FAL_start_bank_reforms_2
+		}
+		
+		completion_reward = {
+			STG = {
+			country_event = falcor.22
+			}
+			log = "[Root.GetName]: Focus FAL_ask_stg_for_help"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_join_prywhen
+		icon = GFX_focus_generic_join_comintern
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_start_bank_reforms_2
+		x = 1
+		y = 1
+		
+		mutually_exclusive = {
+			focus = FAL_ask_stg_for_help
+		}
+		
+		prerequisite = { 
+			focus = FAL_start_bank_reforms_2
+		}
+		
+		completion_reward = {
+			create_faction = "Southern Commies"
+			GRW = {
+			country_event = falcor.23
+		}
+			log = "[Root.GetName]: Focus FAL_join_prywhen"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_revolution_sic
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		will_lead_to_war_with = SIC
+		
+		ai_will_do = {
+			factor = 4
+		}
+		
+		relative_position_id = FAL_join_prywhen
+		x = -1
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_join_prywhen
+			focus = FAL_ask_stg_for_help
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				target = SIC
+				type = annex_everything
+			}
+			log = "[Root.GetName]: Focus FAL_revolution_sic"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_revolution_cya
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		will_lead_to_war_with = CYA
+		
+		ai_will_do = {
+			factor = 4
+		}
+		
+		relative_position_id = FAL_revolution_sic
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_revolution_sic
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				target = CYA
+				type = annex_everything
+			}
+			log = "[Root.GetName]: Focus FAL_revolution_cya"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_world_revolution
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		relative_position_id = FAL_revolution_cya
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_revolution_cya
+		}
+		
+		completion_reward = {
+			add_ideas = FAL_revolution
+			log = "[Root.GetName]: Focus FAL_world_revolution"#Auto-logging
 		}
 	}

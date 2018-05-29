@@ -320,7 +320,7 @@ country_event = { ############ killing commies
 	}
 }
 
-country_event = { ############ killing commies
+country_event = { ############ destroying karthin
 	id = falcor.19
 	immediate = {log = "[Root.GetName]: event falcor.19"}#Auto-logging
 	title = falcor.19.t
@@ -337,7 +337,7 @@ country_event = { ############ killing commies
 	}
 }
 
-country_event = { ############ killing commies
+country_event = { ############ honoring great princess
 	id = falcor.20
 	immediate = {log = "[Root.GetName]: event falcor.20"}#Auto-logging
 	title = falcor.20.t
@@ -352,3 +352,62 @@ country_event = { ############ killing commies
 		set_province_name = { id = 3144 name = "Maximilliana"}
 	}
 }
+
+country_event = { ############ commie takover
+	id = falcor.21
+	immediate = {log = "[Root.GetName]: event falcor.21"}#Auto-logging
+	title = falcor.21.t
+	desc = falcor.21.d
+	picture = GFX_event_camelot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = falcor.21.a
+		set_politics = { ruling_party = communism elections_allowed = no }
+	}
+}
+
+country_event = { ############ help from STG
+	id = falcor.22
+	immediate = {log = "[Root.GetName]: event falcor.22"}#Auto-logging
+	title = falcor.22.t
+	desc = falcor.22.d
+	picture = GFX_event_camelot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = falcor.22.a
+		send_equipment = { target = FAL type = infantry_equipment amount = 5000 }
+	}
+}
+
+country_event = { ############ faction with prywhen
+	id = falcor.23
+	immediate = {log = "[Root.GetName]: event falcor.23"}#Auto-logging
+	title = falcor.23.t
+	desc = falcor.23.d
+	picture = GFX_event_camelot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+    option = {
+        name = falcor.23.a
+        FROM = {
+            country_event = { days = 1 id= falcor.12 }
+        }
+        ai_chance = { factor = 50 }
+    }
+
+    option = {
+        name = falcor.23.b
+        FROM = {
+            country_event = { days = 1 id= falcor.13 }
+		}
+        ai_chance = { factor = 50 }
+		}
+	}
