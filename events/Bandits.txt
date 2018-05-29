@@ -505,11 +505,11 @@ country_event = { ## SIC Accepted
 					id = bandit.22
 					days = 30
 				}
-			}
-			else = {
-				country_event = {
-					id = bandit.222
-					days = 30
+				else = {
+					country_event = {
+						id = bandit.222
+						days = 30
+					}
 				}
 			}
 		}
@@ -568,10 +568,36 @@ country_event = {
 	picture = GFX_event_griffon_soldier
 	is_triggered_only = yes
 	trigger = {
-		has_war_with = SIC
-		has_war_with = FAL
-		has_war_with = BOI
-		has_war_with = CYA
+		if = { 
+			limit =  {
+				has_war_with = FAL 
+				has_country_flag = BAN_hiding_in_falcor 
+			}
+			else = {
+				if = {
+					limit = {
+						has_war_with = CYA
+						has_country_flag = BAN_hiding_in_cyanolisia 
+					}
+				}
+				else = {
+					if = {
+						limit = {
+							has_war_with = SIC
+							has_country_flag = BAN_hiding_in_sicameon 
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								has_war_with = BOI
+								has_country_flag = BAN_hiding_in_griffonstone
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 	
 	option = { # Found the bitch
