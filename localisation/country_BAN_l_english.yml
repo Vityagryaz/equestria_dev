@@ -121,6 +121,7 @@ BAN_ID_queenly_aspirations:0 "Queenly Aspirations"
 BAN_ID_restoration_effort:0 "Restoration Efforts"
 BAN_ID_rebuilt_nation:0 "A Rebuilt Nation"
 BAN_ID_new_nobility:0 "New Nobility"
+BAN_ID_everything_belongs_to_blackrock:0 "Everything Belongs to Blackrock!"
 
 ### National Focus ###
 BAN_hunt_countess:0 "Hunt Countess Cyril"
@@ -231,17 +232,17 @@ BAN_a_decent_economy_desc:0 ""
 BAN_right_talon_man:0 "Right Talon Man"
 BAN_right_talon_man_desc:0 ""
 
-BAN_lord-general_kajetan:0 "Lord-General Kajetan"
-BAN_lord-general_kajetan_desc:0 ""
+BAN_lord-general_bozo:0 "Lord-General Kajetan"
+BAN_lord-general_bozo_desc:0 ""
 
-BAN_lord-general_dominik:0 "Lord-General Dominik"
-BAN_lord-general_dominik_desc:0 ""
+BAN_lord-general_darko:0 "Lord-General Dominik"
+BAN_lord-general_darko_desc:0 ""
 
 BAN_constant_raids:0 "Constant Raids"
 BAN_constant_raids_desc:0 ""
 
-BAN_everything_belongs_to_blackrock:0 "Everything Belongs to Blackrock"
-BAN_everything_belongs_to_blackrock_desc:0 ""
+BAN_universal_dominion:0 "Universal Dominion"
+BAN_universal_dominion_desc:0 ""
 
 BAN_tribute_to_the_queen:0 "Tribute to the Queen"
 BAN_tribute_to_the_queen_desc:0 ""
@@ -379,3 +380,11 @@ banborder.5.a:0 "This is quite a setback."
 ### Traits ###
 bandit_lord_trait:0 "Bandit Queen"
 bandit_queen_trait:0 "Bandit Queen"
+
+### Custom Tooltips ###
+BAN_TT_bandit_economy:0 "Equipment and Supplies taken from raids will be increased.\n"
+BAN_TT_mega_banditry:0 "§REveryone on Griffonia will hate you.§!\n"
+
+### Opinion Modifiers ###
+BAN_bandits:0 "Bandits"
+BAN_mega_bandits:0 "Bandits"

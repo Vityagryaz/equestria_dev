@@ -24,6 +24,25 @@ country_event = { ## event that decides where Cyril is
 	
 }
 
+country_event = { ## event that decides where Cyril is
+	id = bandit.1111
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {
+			original_tag = DED
+		}
+		BAN = {
+			has_completed_focus = BAN_universal_dominion
+		}
+	}
+	
+	option = {
+		add_opinion_modifier = { target = BAN modifier = BAN_mega_bandits }
+	}
+}
+
 country_event = { ## Searching in Griffonstone
 	id = bandit.2
 	immediate = {log = "[Root.GetName]: event bandit.2"}#Auto-logging

@@ -562,4 +562,14 @@ leader_traits = {
 
 		}
 	}
+	
+	### Blackrock Trait
+	
+	scavenger2 = {
+		type = all
+		trait_type = personality_trait
+		modifier = {
+			equipment_capture_factor = 0.35
+		}
+	}
 }

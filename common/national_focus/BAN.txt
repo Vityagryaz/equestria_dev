@@ -224,6 +224,10 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_empire_of_bandits"#Auto-logging
+			swap_ideas = {
+				remove_idea = BAN_ID_bandit_culture
+				add_idea = BAN_ID_empire_of_bandits
+			}
 		}
 	}
 	
@@ -264,6 +268,17 @@ focus_tree = {
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_banditry_based_economy"#Auto-logging
+			custom_effect_tooltip = BAN_TT_bandit_economy
+			create_field_marshal = {
+				name = "Blackrock"
+				portrait_path = "gfx/leaders/BAN/Blackrock.tga"
+				traits = { scavenger2 }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
+			}
 		}
 	}
 	
@@ -610,23 +625,33 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = BAN_lord-general_kajetan
+		id = BAN_lord-general_bozo
 		icon = GFX_focus_generic_strike_at_democracy1
 		prerequisite = { focus = BAN_right_talon_man }
-		mutually_exclusive = { focus = BAN_lord-general_dominik }
+		mutually_exclusive = { focus = BAN_lord-general_darko }
 		cost = 10
 		x = 11
 		y = 6
 		ai_will_do = { factor = 100 }
 		completion_reward = {
-			log = "[Root.GetName]: Focus general_kajetan"#Auto-logging
+			log = "[Root.GetName]: Focus BAN_lord-general_bozo"#Auto-logging
+			create_field_marshal = {
+				name = "Božo Škorić"
+				portrait_path = "gfx/leaders/BAN/BANGen.tga"
+				traits = { trait_mountaineer }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 2
+				logistics_skill = 1
+			}
 		}
 	}
 	
 	focus = {
 		id = BAN_constant_raids
 		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = BAN_lord-general_kajetan }
+		prerequisite = { focus = BAN_lord-general_bozo }
 		cost = 10
 		x = 11
 		y = 7
@@ -650,49 +675,73 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = BAN_lord-general_dominik
+		id = BAN_lord-general_darko
 		icon = GFX_focus_generic_strike_at_democracy1
 		prerequisite = { focus = BAN_right_talon_man }
-		mutually_exclusive = { focus = BAN_lord-general_kajetan }
+		mutually_exclusive = { focus = BAN_lord-general_bozo }
 		cost = 10
 		x = 15
 		y = 6
 		ai_will_do = { factor = 100 }
 		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_lord-general_dominik"#Auto-logging
+			log = "[Root.GetName]: Focus BAN_lord-general_darko"#Auto-logging
+			create_field_marshal = {
+				name = "Darko Rončević"
+				portrait_path = "gfx/leaders/BAN/GriffonPirate.tga"
+				traits = { aggressive_assaulter }
+				skill = 3
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 1
+				logistics_skill = 2
+			}
 		}
 	}
 	
 	focus = {
-		id = BAN_everything_belongs_to_blackrock
+		id = BAN_universal_dominion
 		icon = GFX_goal_generic_dangerous_deal
-		prerequisite = { focus = BAN_lord-general_dominik }
+		prerequisite = { focus = BAN_lord-general_darko }
 		cost = 10
 		x = 15
 		y = 7
 		ai_will_do = { factor = 100 }
 		completion_reward = {
-			log = "[Root.GetName]: Focus BAN_everything_belongs_to_blackrock"#Auto-logging
+			log = "[Root.GetName]: Focus BAN_universal_dominion"#Auto-logging
+			custom_effect_tooltip = BAN_TT_mega_banditry
+			add_ideas = BAN_ID_everything_belongs_to_blackrock
 		}
 	}
 	
 	focus = {
 		id = BAN_conquest_for_blackrock
 		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = BAN_everything_belongs_to_blackrock}
+		prerequisite = { focus = BAN_universal_dominion }
 		cost = 10
 		x = 15
 		y = 8
 		ai_will_do = { factor = 100 }
 		completion_reward = {
 			log = "[Root.GetName]: Focus BAN_conquest_for_blackrock"#Auto-logging
+			add_state_core = 488
+			add_state_core = 531
+			add_state_core = 392
+			add_state_core = 393
+			add_state_core = 518
+			add_state_core = 570
+			add_state_core = 510
+			add_state_core = 511
+			add_state_core = 651
+			add_state_core = 605
+			add_state_core = 607
+			add_state_core = 632
 		}
 	}
 	
 	focus = {
 		id = BAN_forced_conscription
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = BAN_constant_raids focus = BAN_everything_belongs_to_blackrock }
+		prerequisite = { focus = BAN_constant_raids focus = BAN_universal_dominion }
 		cost = 10
 		x = 13
 		y = 8

@@ -210,4 +210,8 @@ opinion_modifiers = {
 	ROU_sent_help = { value = 25 months = 48 }
 
 	EQC_imperial_exhibition = { value = 50 months = 24 }
+	
+	BAN_bandits = { value = -100 }
+	
+	BAN_mega_bandits = { value = -150 }
 }

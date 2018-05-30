@@ -1,3 +1,12 @@
+hidden_ideas = {
+	BAN_ID_raiding_thing = {
+		allowed = {
+			always = no
+		}
+		removal_cost = -1
+	}
+}
+
 ideas = {
 	country = {
 		BAN_ID_bandit_culture = {
@@ -17,6 +26,19 @@ ideas = {
 			}
 		}
 		
+		BAN_ID_everything_belongs_to_blackrock = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_fascism_drift_2
+			
+			modifier = {
+				war_support_factor = 0.20
+				justify_war_goal_time = -0.75
+			}
+		}
+		
 		BAN_ID_queenly_aspirations = {
 			allowed = {
 				always = no
@@ -25,9 +47,26 @@ ideas = {
 			picture = generic_volunteer_expedition_bonus
 			
 			modifier = {
-				political_power_gain = -0.05
-				stability_factor = -0.10
-				war_support_factor = 0.10
+				political_power_gain = 0.10
+				stability_factor = 0.10
+				war_support_factor = -0.10
+			}
+		}
+		
+		BAN_ID_empire_of_bandits = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			picture = generic_volunteer_expedition_bonus
+			
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = -0.25
+				war_support_factor = 0.30
+				
+				army_attack_factor = 0.20
+				army_defence_factor = 0.15
 			}
 		}
 		
