@@ -22,7 +22,7 @@ focus_tree = {
 			factor = 4
 		}
 		
-		x = 24
+		x = 23
 		y = 0
 		
 		completion_reward = {
@@ -1716,5 +1716,674 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = FAL_revolution
 			log = "[Root.GetName]: Focus FAL_world_revolution"#Auto-logging
+		}
+	}
+	
+############## Air Force #########################
+
+	focus = {
+		id = FAL_falcons_flying
+		icon = GFX_goal_generic_build_airforce
+		cost = 7.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		x = 31
+		y = 0
+		
+		completion_reward = {
+			air_experience = 50
+			log = "[Root.GetName]: Focus FAL_falcons_flying"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_air_doctrines
+		icon = GFX_goal_generic_air_fighter2
+		cost = 7.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_falcons_flying
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_falcons_flying
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = air_doctrines
+				bonus = 0.5
+				uses = 1
+				category = air_doctrine
+			}
+			log = "[Root.GetName]: Focus FAL_air_doctrines"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_air_ports
+		icon = GFX_goal_generic_air_doctrine
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 
+		}
+		
+		relative_position_id = FAL_air_doctrines
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_air_doctrines
+		}
+		
+		completion_reward = {
+			random_owned_state = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			log = "[Root.GetName]: Focus FAL_air_ports"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_fighters
+		icon = GFX_goal_generic_air_fighter
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_air_ports
+		x = 2
+		y = 1
+		
+		mutually_exclusive = {
+			focus =  FAL_bombers
+		}
+		
+		prerequisite = { 
+			focus = FAL_air_ports
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = Fighters
+				bonus = 0.5
+				uses = 1
+				category = light_fighter
+				ahead_reduction = 1
+			}
+			log = "[Root.GetName]: Focus FAL_fighters"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_fighters2
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_fighters
+		x = 1
+		y = 1
+		
+		mutually_exclusive = {
+			focus = FAL_heavy_fighters
+		}
+		
+		prerequisite = { 
+			focus = FAL_fighters
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = Fighters
+				bonus = 0.5
+				uses = 1
+				category = light_fighter
+				ahead_reduction = 1
+			}
+		log = "[Root.GetName]: Focus FAL_fighters2"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_heavy_fighters
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_fighters
+		x = -1
+		y = 1
+		
+		mutually_exclusive = {
+			focus = FAL_fighters2
+		}
+		
+		prerequisite = { 
+			focus = FAL_fighters
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = heavy_Fighters
+				bonus = 0.5
+				uses = 1
+				category = cat_heavy_fighter
+				ahead_reduction = 1
+			}
+			log = "[Root.GetName]: Focus FAL_heavy_fighters"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_bombers
+		icon = GFX_goal_poland_goal
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_air_ports
+		x = -2
+		y = 1
+		
+		mutually_exclusive = {
+			focus = FAL_fighters
+		}
+		
+		prerequisite = { 
+			focus = FAL_air_ports
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = bombers
+				bonus = 0.5
+				uses = 1
+				category = tactical_bomber
+				ahead_reduction = 1
+			}
+		log = "[Root.GetName]: Focus FAL_bombers"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_tactial_bombing
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_bombers
+		x = -1
+		y = 1
+		
+		mutually_exclusive = {
+			focus = FAL_strategic_bombers
+		}
+		
+		prerequisite = { 
+			focus = FAL_bombers
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = tatical_bombers
+				bonus = 0.5
+				uses = 1
+				category = tactical_bomber
+				ahead_reduction = 1
+			}
+		log = "[Root.GetName]: Focus FAL_tactial_bombing"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_strategic_bombers
+		icon = GFX_goal_generic_air_bomber
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_bombers
+		x = 1
+		y = 1
+		
+		mutually_exclusive = {
+			focus = FAL_tactial_bombing
+		}
+		
+		prerequisite = { 
+			focus = FAL_bombers
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = strat_bombers
+				bonus = 0.5
+				uses = 1
+				category = cat_strategic_bomber
+				ahead_reduction = 1
+			}
+		log = "[Root.GetName]: Focus FAL_strategic_bombers"#Auto-logging
+		}
+	}
+	
+	
+########################## Naval Path ###################################
+
+	focus = {
+		id = FAL_form_navy
+		icon = GFX_goal_generic_build_navy
+		cost = 7.00
+		
+		ai_will_do = {
+			factor = 4
+		}
+		
+		x = 40
+		y = 0
+		
+		
+		completion_reward = {
+			504 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 3164
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			log = "[Root.GetName]: Focus FAL_form_navy"#Auto-logging	
+		}
+	}
+	
+	focus = {
+		id = FAL_grand_fleet
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 7.00
+		
+		ai_will_do = {
+			factor = 6
+		}
+		
+		relative_position_id = FAL_form_navy
+		x = -2
+		y = 1
+		
+		mutually_exclusive = {
+			focus = FAL_wolf_packs
+		}
+		
+		prerequisite = { 
+			focus = FAL_form_navy
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = fleet_doctrine
+				bonus = 0.5
+				uses = 1
+				category = cat_fleet_in_being
+			}
+			log = "[Root.GetName]: Focus FAL_grand_fleet"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_wolf_packs
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		cost = 7.00
+		
+		ai_will_do = {
+			factor = 4
+		}
+		
+		relative_position_id = FAL_form_navy
+		x = 2
+		y = 1
+		
+		mutually_exclusive = {
+			focus = FAL_grand_fleet
+		}
+		
+		prerequisite = { 
+			focus = FAL_form_navy
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = submarine_doctrine
+				bonus = 0.5
+				uses = 1
+				category = cat_trade_interdiction
+			}
+			log = "[Root.GetName]: Focus FAL_wolf_packs"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_battleships
+		icon = GFX_goal_generic_navy_battleship
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_grand_fleet
+		x = -1
+		y = 1
+		
+		mutually_exclusive = { 
+			focus = FAL_aircraft_carriers
+		}
+		
+		prerequisite = { 
+			focus = FAL_grand_fleet
+		}
+		
+		completion_reward = {
+					add_tech_bonus = {
+				name = battleship
+				bonus = 0.5
+				uses = 1
+				category =bb_tech
+			}
+			log = "[Root.GetName]: Focus FAL_battleships"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_battlecruisers
+		icon = GFX_focus_generic_cruiser2
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_battleships
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_battleships
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = battlecruiser
+				bonus = 0.5
+				uses = 1
+				category =bc_tech
+			}
+			log = "[Root.GetName]: Focus FAL_battlecruisers"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_aircraft_carriers
+		icon = GFX_goal_generic_navy_carrier
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_grand_fleet
+		x = 1
+		y = 1
+		
+		mutually_exclusive = { 
+			focus = FAL_battleships
+		}
+		
+		prerequisite = {
+			focus = FAL_grand_fleet
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = aircraftcarrier
+				bonus = 0.5
+				uses = 1
+				category =cv_tech
+			}
+			log = "[Root.GetName]: Focus FAL_aircraft_carriers"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_naval_air
+		icon = GFX_goal_generic_air_fighter2
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_aircraft_carriers
+		x = 0
+		y = 1
+		
+		prerequisite = {
+			focus = FAL_aircraft_carriers
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = naval_air
+				bonus = 0.5
+				uses = 1
+				category = naval_bomber
+			}
+			log = "[Root.GetName]: Focus FAL_naval_air"#Auto-logging
+		}
+	}
+
+	
+	focus = {
+		id = FAL_make_marines
+		icon = GFX_goal_generic_amphibious_assault
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 4
+		}
+		
+		relative_position_id = FAL_naval_air
+		x = -1
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_naval_air
+			focus = FAL_battlecruisers
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.50
+				uses = 1
+				category = marine_tech
+			}
+			log = "[Root.GetName]: Focus FAL_make_marines"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_submarines
+		icon = GFX_goal_generic_navy_submarine
+		cost = 1
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_wolf_packs
+		x = -1
+		y = 1
+		
+		mutually_exclusive = {
+			focus = FAL_destroyers
+		}
+		
+		prerequisite = { 
+			focus = FAL_wolf_packs
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = subs_bonus
+				bonus = 0.5
+				uses = 1
+				category = ss_tech
+			}
+			log = "[Root.GetName]: Focus FAL_submarines"#Auto-logging
+		}
+	}
+
+	focus = {
+		id = FAL_better_submarines
+		icon = GFX_goal_generic_wolf_pack
+		cost = 1
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_submarines
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_submarines
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = submarine_bonus
+				bonus = 0.5
+				uses = 1
+				category = ss_tech
+			}
+			log = "[Root.GetName]: Focus FAL_better_submarines"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_destroyers
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_wolf_packs
+		x = 1
+		y = 1
+		
+		mutually_exclusive = {
+			focus = FAL_submarines
+		}
+		
+		prerequisite = { 
+			focus = FAL_wolf_packs
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = destroyer_bonus
+				bonus = 0.5
+				uses = 1
+				category = dd_tech
+			}
+			log = "[Root.GetName]: Focus FAL_destroyers"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_light_cruisers
+		icon = GFX_goal_generic_navy_cruiser
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_destroyers
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_destroyers
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = cruiser_bonus
+				bonus = 0.5
+				uses = 1
+				technology = basic_light_cruiser
+				technology = improved_light_cruiser
+				technology = advanced_light_cruiser
+			}
+			log = "[Root.GetName]: Focus FAL_light_cruisers"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_defend_coast
+		icon = GFX_goal_generic_fortify_city
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_light_cruisers
+		x = -1
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_light_cruisers
+			focus = FAL_better_submarines
+		}
+		
+		completion_reward = {
+			add_ideas = FAL_coastal_forts
+			log = "[Root.GetName]: Focus FAL_defend_coast"#Auto-logging
 		}
 	}

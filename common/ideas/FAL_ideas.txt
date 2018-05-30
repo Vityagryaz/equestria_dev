@@ -672,11 +672,26 @@ ideas = {
 			
 			removal_cost = -1
 			
-			picture = GFX_idea_enlightned_feudalism
+			picture = nkvd_2
 			
 			modifier = {
 				army_defence_factor = 0.05
 				army_attack_factor = 0.05
 				army_morale_factor = 0.1
 			}
+		}
 		
+		FAL_coastal_forts = {
+		
+			allowed = {
+				allowed = no
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_fortification_focus
+			
+			modifier = {
+				production_speed_coastal_bunker_factor = 0.2
+			}
+		}
