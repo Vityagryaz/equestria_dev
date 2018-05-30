@@ -2387,3 +2387,648 @@ focus_tree = {
 			log = "[Root.GetName]: Focus FAL_defend_coast"#Auto-logging
 		}
 	}
+	
+############################# army tree #################################
+
+	focus = {
+		id = FAL_make_army
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		x = 50
+		y = 0
+		
+		completion_reward = {
+			army_experience = 25
+			log = "[Root.GetName]: Focus FAL_make_army"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_infantry_research
+		icon = GFX_focus_secret_rearmament
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_make_army
+		x = -1
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_make_army 
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = inf_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
+			log = "[Root.GetName]: Focus FAL_infantry_research"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_support_research
+		icon = GFX_goal_generic_build_tank
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_make_army
+		x = 1
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_make_army 
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = supp_bonus
+				bonus = 0.5
+				uses = 1
+				category = support_tech
+			}
+			log = "[Root.GetName]: Focus FAL_support_research"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_expand_army
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5 
+		}
+		
+		relative_position_id = FAL_infantry_research
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_infantry_research
+		}
+		
+		completion_reward = {
+			add_manpower = 20000
+			log = "[Root.GetName]: Focus FAL_expand_army"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_artillery
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_support_research
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_support_research
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = artil_bonus
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
+			log = "[Root.GetName]: Focus FAL_artillery"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_mobile
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_expand_army
+		x = -2
+		y = 1
+		
+		mutually_exclusive = {
+			focus = FAL_mass_assault
+		}
+		
+		mutually_exclusive = {
+			focus = FAL_superior_fire_power
+		}
+		
+		mutually_exclusive = {
+			focus = FAL_grand_plan
+		}
+		
+		prerequisite = { 
+			focus = FAL_expand_army
+		}
+		
+		prerequisite = { 
+			focus = FAL_artillery
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = mobile_warfare
+				bonus = 0.5
+				uses = 2
+				category = cat_mobile_warfare
+			}
+			log = "[Root.GetName]: Focus FAL_mobile"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_mass_assault
+		icon = GFX_goal_generic_special_forces
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_expand_army
+		x = 0
+		y = 1
+		
+		mutually_exclusive = {
+			focus = FAL_mobile
+		}
+		
+		mutually_exclusive = {
+			focus = FAL_superior_fire_power
+		}
+		
+		mutually_exclusive = {
+			focus = FAL_grand_plan
+		}
+		
+		prerequisite = { 
+			focus = FAL_expand_army
+		}
+		
+		prerequisite = { 
+			focus = FAL_artillery
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = mass_assault
+				bonus = 0.5
+				uses = 2
+				category = cat_mass_assault
+			}
+			log = "[Root.GetName]: Focus FAL_mass_assault"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_superior_fire_power
+		icon = GFX_goal_generic_build_tank
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_artillery
+		x = 0
+		y = 1
+		
+		mutually_exclusive = {
+			focus = FAL_mass_assault
+		}
+		
+		mutually_exclusive = {
+			focus = FAL_mobile
+		}
+		
+		mutually_exclusive = {
+			focus = FAL_grand_plan
+		}
+		
+		prerequisite = { 
+			focus = FAL_expand_army
+		}
+		
+		prerequisite = { 
+			focus = FAL_artillery
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = superior_firepower
+				bonus = 0.5
+				uses = 2
+				category = cat_superior_firepower
+			}
+			log = "[Root.GetName]: Focus FAL_superior_fire_power"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_grand_plan
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_artillery
+		x = 2
+		y = 1
+		
+		mutually_exclusive = {
+			focus = FAL_mass_assault
+		}
+		
+		mutually_exclusive = {
+			focus = FAL_superior_fire_power
+		}
+		
+		mutually_exclusive = {
+			focus = FAL_mobile
+		}
+		
+		prerequisite = { 
+			focus = FAL_expand_army
+		}
+		
+		prerequisite = { 
+			focus = FAL_artillery
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = grand_battleplan
+				bonus = 0.5
+				uses = 2
+				category = cat_grand_battle_plan
+			}
+			log = "[Root.GetName]: Focus FAL_grand_plan"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_inf_stuff
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5 
+		}
+		
+		relative_position_id = FAL_mass_assault
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_mass_assault
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = inf_shit
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+			log = "[Root.GetName]: Focus FAL_inf_stuff"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_support
+		icon = GFX_focus_secret_rearmament
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_inf_stuff
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_inf_stuff
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = supp_bonus
+				bonus = 0.5
+				uses = 1
+				category = support_tech
+			}
+			log = "[Root.GetName]: Focus FAL_support"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_mass_assault2
+		icon = GFX_goal_generic_special_forces
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_support
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_support
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 1
+				category = cat_mass_assault
+			}
+			log = "[Root.GetName]: Focus FAL_mass_assault2"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_tanks
+		icon = GFX_focus_generic_tank_production
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_mobile
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_mobile
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = tanks
+				bonus = 0.5
+				uses = 1
+				category = cat_light_armor
+			}
+			add_tech_bonus = {
+				name = tanks
+				bonus = 0.5
+				uses = 1
+				category = cat_medium_armor
+			}
+			log = "[Root.GetName]: Focus FAL_tanks"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_motorized
+		icon = GFX_goal_generic_army_motorized
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_tanks
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_tanks
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = mech_army_bonus
+				bonus = 0.5
+				uses = 1
+				category = motorized_equipment
+			}
+			log = "[Root.GetName]: Focus FAL_motorized"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_mobile2
+		icon = GFX_goal_generic_army_tanks
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_motorized
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_motorized
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = mobile_warfare
+				bonus = 0.5
+				uses = 1
+				category = cat_mobile_warfare
+			}
+			log = "[Root.GetName]: Focus FAL_mobile2"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_artillery2
+		icon = GFX_goal_generic_army_artillery2
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_superior_fire_power
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_superior_fire_power
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+			log = "[Root.GetName]: Focus FAL_artillery2"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_special_defense
+		icon = GFX_goal_generic_army_artillery
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_artillery2
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_artillery2
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = AT_bonus
+				bonus = 0.5
+				uses = 1
+				category = cat_anti_tank
+			}
+			log = "[Root.GetName]: Focus FAL_special_defense"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_superior_fire_power2
+		icon = GFX_goal_generic_build_tank
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_special_defense
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_special_defense
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = superior_firepower2
+				bonus = 0.5
+				uses = 1
+				category = cat_superior_firepower
+			}
+			log = "[Root.GetName]: Focus FAL_superior_fire_power2"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_inf_stuff2
+		icon = GFX_goal_generic_axis_build_infantry
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5 
+		}
+		
+		relative_position_id = FAL_grand_plan
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_grand_plan
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = inf_shit2
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}
+			log = "[Root.GetName]: Focus FAL_inf_stuff2"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_knights
+		icon = GFX_goal_griffon_knights
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_inf_stuff2
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_inf_stuff2
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = knights
+				bonus = 0.50
+				uses = 1
+				category = knights_tech
+			}
+			log = "[Root.GetName]: Focus FAL_knights"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_grand_plan2
+		icon = GFX_goal_generic_position_armies
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_knights
+		x = 0
+		y = 1
+
+		prerequisite = { 
+			focus = FAL_knights
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				name = grand_battleplan2
+				bonus = 0.5
+				uses = 1
+				category = cat_grand_battle_plan
+			}
+			log = "[Root.GetName]: Focus FAL_grand_plan2"#Auto-logging
+		}
+	}
+	
