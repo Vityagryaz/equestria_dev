@@ -75,7 +75,7 @@ country_event = { ########## rejecting
 	}
 }
 
-country_event = {
+country_event = { #############accepting
 	id = falcor.5
 	immediate = {log = "[Root.GetName]: event falcor.5"}#Auto-logging
 	title = falcor.5.t
@@ -129,7 +129,7 @@ country_event = { ############ uniting around capital
 	}
 }
 
-country_event = { ############ uniting around capital
+country_event = { ############ celebrating princess
 	id = falcor.8
 	immediate = {log = "[Root.GetName]: event falcor.8"}#Auto-logging
 	title = falcor.8.t
@@ -181,7 +181,7 @@ country_event = { ########## asking to join faction
 	desc = falcor.11.d
 	picture = GFX_event_camelot
 	
-    fire_only_once = yes
+    fire_only_once = no
 	is_triggered_only = yes
 	
     option = {
@@ -411,3 +411,82 @@ country_event = { ############ faction with prywhen
         ai_chance = { factor = 50 }
 		}
 	}
+	
+country_event = { ############ minitour debuff
+	id = falcor.24
+	immediate = {log = "[Root.GetName]: event falcor.24"}#Auto-logging
+	title = falcor.24.t
+	desc = falcor.24.d
+	picture = GFX_event_camelot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+    option = {
+        name = falcor.24.a
+        add_timed_idea = { idea = FAL_min_army days = 180 }
+        ai_chance = { factor = 100 }
+    }
+}
+
+country_event = { ########## asking for EQC
+	id = falcor.25
+	immediate = {log = "[Root.GetName]: event falcor.25"}#Auto-logging
+	title = falcor.25.t
+	desc = falcor.25.d
+	picture = GFX_event_camelot
+	
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+    option = {
+        name = falcor.25.a
+        FROM = {
+            country_event = { days = 1 id= falcor.26 }
+        }
+        ai_chance = { factor = 90 }
+    }
+
+    option = {
+        name = falcor.25.b
+        FROM = {
+            country_event = { days = 1 id= falcor.27 }
+}
+        ai_chance = { factor = 10 }
+}
+}
+
+country_event = { ########## rejecting
+	id = falcor.26
+	immediate = {log = "[Root.GetName]: event falcor.26"}#Auto-logging
+	title = falcor.26.t
+	desc = falcor.26.d
+	picture = GFX_event_camelot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = falcor.26.a
+		create_wargoal = {
+				target = EQC
+				type = annex_everything
+		}
+	}
+}
+
+country_event = { #############accepting
+	id = falcor.27
+	immediate = {log = "[Root.GetName]: event falcor.27"}#Auto-logging
+	title = falcor.27.t
+	desc = falcor.27.d
+	picture = GFX_event_camelot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = falcor.27.a
+			puppet = EQC
+	}
+}

@@ -684,7 +684,7 @@ ideas = {
 		FAL_coastal_forts = {
 		
 			allowed = {
-				allowed = no
+				always = no
 			}
 			
 			removal_cost = -1
@@ -693,5 +693,39 @@ ideas = {
 			
 			modifier = {
 				production_speed_coastal_bunker_factor = 0.2
+			}
+		}
+		
+		FAL_min_industry = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.10
+				local_resources_factor = 0.05
+			}
+		}
+		
+		FAL_min_army = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_army_of_aggression_focus
+			
+			modifier = {
+				army_morale_factor = -0.2
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
 			}
 		}

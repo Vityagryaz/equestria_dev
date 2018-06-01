@@ -1489,6 +1489,339 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = FAL_unification
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_eagle_empire
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_eagle_empire
+		}
+		
+		completion_reward = {
+				every_state = {
+					limit = {
+						is_core_of = WNG
+					}
+					add_core_of = FAL
+				}
+			log = "[Root.GetName]: Focus FAL_unification"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_living_room
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_unification
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_unification
+		}
+		
+		completion_reward = {
+			add_war_support = 0.1
+			log = "[Root.GetName]: Focus FAL_living_room"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_mit_war
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		will_lead_to_war_with = MIT
+		
+		available = {
+			country_exists = MIT
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_living_room
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_living_room
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				target = MIT
+				type = annex_everything
+			}
+			log = "[Root.GetName]: Focus FAL_mit_war"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_sic_war
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		will_lead_to_war_with = SIC
+		
+		available = {
+			country_exists = SIC
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_living_room
+		x = -3
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_living_room
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				target = SIC
+				type = annex_everything
+			}
+			log = "[Root.GetName]: Focus FAL_sic_war"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_cya_war
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		will_lead_to_war_with = CYA
+		
+		available = {
+			country_exists = CYA
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_living_room
+		x = 3
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_living_room
+		}
+		
+		completion_reward = {
+			create_wargoal = {
+				target = CYA
+				type = annex_everything
+			}
+			log = "[Root.GetName]: Focus FAL_cya_war"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_integrate_cya
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		
+		available = {
+			CYA = {
+				exists = no
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_cya_war
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_cya_war
+		}
+		
+		completion_reward = {
+				every_state = {
+					limit = {
+						is_core_of = CYA
+					}
+					add_core_of = FAL
+				}
+			log = "[Root.GetName]: Focus FAL_integrate_cya"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_inegrating_sic
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		
+		available = {
+			SIC = {
+				exists = no
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_sic_war
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_sic_war
+		}
+		
+		completion_reward = {
+				every_state = {
+					limit = {
+						is_core_of = SIC
+					}
+					add_core_of = FAL
+				}
+			log = "[Root.GetName]: Focus FAL_inegrating_sic"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_mit_camps
+		icon = GFX_goal_continuous_restrict_freedom
+		cost = 10.00
+		
+		available = {
+			MIT = {
+				exists = no
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		mutually_exclusive = {
+			focus = FAL_mit_army
+		}
+		
+		relative_position_id = FAL_mit_war
+		x = -1
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_mit_war
+		}
+		
+		completion_reward = {
+			add_manpower = -100000
+			add_ideas = FAL_min_industry
+			log = "[Root.GetName]: Focus FAL_mit_camps"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id =FAL_mit_army 
+		icon = GFX_focus_generic_little_entente
+		cost = 10.00
+		
+		available = {
+			MIT = {
+				exists = no
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		mutually_exclusive = {
+			focus = FAL_mit_camps
+		}
+		
+		relative_position_id = FAL_mit_war
+		x = 1
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_mit_war
+		}
+		
+		completion_reward = {
+			add_manpower = 100000
+			add_ideas = FAL_min_army
+			country_event = falcor.24
+			log = "[Root.GetName]: Focus FAL_mit_army"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_newmareland
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_mit_army
+		x = -1
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_mit_army
+			focus = FAL_mit_camps
+		}
+		
+		completion_reward = {
+			EQC = {
+				country_event = falcor.25
+			}
+			log = "[Root.GetName]: Focus FAL_newmareland"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_living_room_achieved
+		icon = GFX_goal_jer_eagle
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 9
+		}
+		
+		relative_position_id = FAL_newmareland
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_newmareland
+		}
+		
+		completion_reward = {
+			every_state = {
+					limit = {
+						is_core_of = FAL
+					}
+			add_manpower = 5000
+		}
+	}
+}
 ####################Commie path###############################
 	focus = {
 		id = FAL_organize_workers
