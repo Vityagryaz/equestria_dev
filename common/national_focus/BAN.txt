@@ -645,6 +645,8 @@ focus_tree = {
 				planning_skill = 2
 				logistics_skill = 1
 			}
+			
+			add_ideas = BAN_ID_strength_rules
 		}
 	}
 	
@@ -695,6 +697,8 @@ focus_tree = {
 				planning_skill = 1
 				logistics_skill = 2
 			}
+			
+			add_ideas = BAN_ID_anything_for_blackrock
 		}
 	}
 	

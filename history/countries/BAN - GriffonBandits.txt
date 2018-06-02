@@ -48,10 +48,10 @@ add_ideas = {
 	pre_industrial_society
 	lack_of_scientists2
 	BAN_ID_bandit_culture
-	poverty
 }
 
 set_stability = 0.50
+set_war_support = 0.30
 set_country_flag = have_regular_puppets
 
 create_country_leader = {

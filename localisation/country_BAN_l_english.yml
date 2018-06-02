@@ -121,7 +121,11 @@ BAN_ID_queenly_aspirations:0 "Queenly Aspirations"
 BAN_ID_restoration_effort:0 "Restoration Efforts"
 BAN_ID_rebuilt_nation:0 "A Rebuilt Nation"
 BAN_ID_new_nobility:0 "New Nobility"
-BAN_ID_everything_belongs_to_blackrock:0 "Everything Belongs to Blackrock!"
+BAN_ID_everything_belongs_to_blackrock:0 "Everything For Blackrock"
+BAN_ID_empire_of_bandits:0 "Empire of Bandits"
+BAN_ID_anything_for_blackrock:0 "Anything for Blackrock"
+BAN_ID_strength_rules:0 "Strength Rules"
+
 
 ### National Focus ###
 BAN_hunt_countess:0 "Hunt Countess Cyril"
