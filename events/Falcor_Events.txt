@@ -208,7 +208,7 @@ country_event = { ############ joins faction
 	desc = falcor.12.d
 	picture = GFX_event_camelot
 	
-	fire_only_once = yes
+	fire_only_once = no
 	is_triggered_only = yes
 
 	option = {
@@ -224,7 +224,7 @@ country_event = { ############ rejecting faction
 	desc = falcor.13.d
 	picture = GFX_event_camelot
 	
-	fire_only_once = yes
+	fire_only_once = no
 	is_triggered_only = yes
 
 	option = {
@@ -424,7 +424,6 @@ country_event = { ############ minitour debuff
 
     option = {
         name = falcor.24.a
-        add_timed_idea = { idea = FAL_min_army days = 180 }
         ai_chance = { factor = 100 }
     }
 }
@@ -487,6 +486,34 @@ country_event = { #############accepting
 	
 	option = {
 		name = falcor.27.a
-			puppet = EQC
+			transfer_state = 354
+			transfer_state = 675
+			transfer_state = 361
+			transfer_state = 360
+			transfer_state = 364
+			transfer_state = 363
+			transfer_state = 365
+			transfer_state = 362
+			transfer_state = 359
+			transfer_state = 358
+			transfer_state = 355
+			transfer_state = 357
+			transfer_state = 356
+			transfer_state = 676
+	}
+}
+
+country_event = { #############accepting
+	id = falcor.28
+	immediate = {log = "[Root.GetName]: event falcor.28"}#Auto-logging
+	title = falcor.28.t
+	desc = falcor.28.d
+	picture = GFX_event_camelot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = falcor.28.a
 	}
 }

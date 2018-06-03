@@ -834,7 +834,7 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = FAL_form_defense_league
+		id = FAL_form_usa
 		icon = GFX_goal_generic_national_unity
 		cost = 10.00
 		
@@ -855,7 +855,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			create_faction = "Southern Defense League"
+			create_faction = "Uion of Southern Allies"
 		}
 	}
 
@@ -873,7 +873,7 @@ focus_tree = {
 		y = 2
 		
 		prerequisite = {
-			focus = FAL_form_defense_league
+			focus = FAL_form_usa
 		}
 		
 		completion_reward = {
@@ -897,7 +897,7 @@ focus_tree = {
 		y = 2
 		
 		prerequisite = {
-			focus = FAL_form_defense_league
+			focus = FAL_form_usa
 		}
 		
 		completion_reward = {
@@ -921,7 +921,7 @@ focus_tree = {
 		y = 3
 		
 		prerequisite = {
-			focus = FAL_form_defense_league
+			focus = FAL_form_usa
 		}
 		
 		completion_reward = {
@@ -931,6 +931,319 @@ focus_tree = {
 		}
 	}
 	
+	focus = {
+		id = FAL_karth_pact_friends
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 5.00
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		relative_position_id = FAL_long_live_princess
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_long_live_princess
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			log = "[Root.GetName]: Focus FAL_karth_pact_friends"#Auto-logging
+		}
+	}
+
+	focus = {
+		id = FAL_karth1
+		icon = GFX_goal_anschluss
+		cost = 7.00
+		
+		ai_will_do = {
+			factor = 7
+		}
+		
+		relative_position_id = FAL_karth_pact_friends
+		x = -2
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_karth_pact_friends
+		}
+		
+		completion_reward = {
+			TAL = {
+				country_event = falcor.11
+			}
+			log = "[Root.GetName]: Focus FAL_karth1"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_karth2
+		icon = GFX_goal_anschluss
+		cost = 7.00
+		
+		ai_will_do = {
+			factor = 7
+		}
+		
+		relative_position_id = FAL_karth_pact_friends
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_karth_pact_friends
+		}
+		
+		completion_reward = {
+			FRN = {
+				country_event = falcor.11
+			}
+			log = "[Root.GetName]: Focus FAL_karth2"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_karth3
+		icon = GFX_goal_anschluss
+		cost = 7.00
+		
+		ai_will_do = {
+			factor = 7
+		}
+		
+		relative_position_id = FAL_karth_pact_friends
+		x = 2
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_karth_pact_friends
+		}
+		
+		completion_reward = {
+			ARA = {
+				country_event = falcor.11
+			}
+			log = "[Root.GetName]: Focus FAL_karth3"#Auto-logging
+			
+		}
+	}
+	
+	focus = {
+		id = FAL_stronger_united
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 7
+		}
+		
+		relative_position_id = FAL_karth2
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_karth1
+		}
+		
+		prerequisite = { 
+			focus = FAL_karth2
+		}
+		
+		prerequisite = { 
+			focus = FAL_karth3
+		}
+		
+		completion_reward = {
+			add_ideas = stronger_united
+			country_event = falcor.28
+			log = "[Root.GetName]: Focus FAL_stronger_united"#Auto-logging
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = FAL_public_works
+		icon = GFX_goal_generic_construction2
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_stronger_united
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_stronger_united
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			log = "[Root.GetName]: Focus FAL_public_works"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_bigger_cities
+		icon = GFX_goal_state_economy
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 7
+		}
+		
+		relative_position_id = FAL_public_works
+		x = -1
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_public_works
+		}
+		
+		completion_reward = {
+			529 = {
+				add_manpower = 10000
+			}
+			
+			530 = {
+				add_manpower = 10000
+			}
+			log = "[Root.GetName]: Focus FAL_bigger_cities"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_sudfolk
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 15.00
+		
+		ai_will_do = {
+			factor = 10 
+		}
+		
+		relative_position_id = FAL_bigger_cities
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_bigger_cities
+		}
+		
+		completion_reward = {
+			504 = {
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				add_manpower = 30000
+			}
+			log = "[Root.GetName]: Focus FAL_sudfolk"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_falcor_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_public_works
+		x = 1
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_public_works
+		}
+		
+		completion_reward = {
+			530 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			log = "[Root.GetName]: Focus FAL_falcor_industry"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_roads
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00 
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_falcor_industry
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_falcor_industry
+		}
+		
+		completion_reward = {
+			533 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			549 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			504 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			log = "[Root.GetName]: Focus FAL_roads"#Auto-logging
+		}
+	}
+	
+	focus = {
+		id = FAL_stands_strong
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_roads
+		x = -1
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_roads
+		}
+		
+		prerequisite = { 
+			focus = FAL_sudfolk
+		}
+		
+		completion_reward = {
+			add_ideas = stands_strong
+			add_stability = 0.10
+			log = "[Root.GetName]: Focus FAL_stands_strong"#Auto-logging
+		}
+	}
 ################################## Falcor fascist/communist path#############
 
 	focus = {
@@ -1729,7 +2042,6 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_manpower = -100000
 			add_ideas = FAL_min_industry
 			log = "[Root.GetName]: Focus FAL_mit_camps"#Auto-logging
 		}
