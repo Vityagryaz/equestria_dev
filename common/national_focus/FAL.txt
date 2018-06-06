@@ -1397,7 +1397,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_stability = -0.1
+			add_stability = -0.5
 			log = "[Root.GetName]: Focus FAL_assassination_plan"#Auto-logging
 		}
 	}
@@ -1443,7 +1443,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_stability = -0.1
+			add_stability = -0.5
 			log = "[Root.GetName]: Focus FAL_tamper_investigation"#Auto-logging
 		}
 	}
@@ -1498,7 +1498,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_stability = -0.05
+			add_stability = 0.05
 			add_war_support = 0.1
 			log = "[Root.GetName]: Focus FAL_blame_wng"#Auto-logging
 		}
@@ -1523,7 +1523,7 @@ focus_tree = {
 		
 		completion_reward = {
 			country_event = falcor.18
-			add_stability = 0.1
+			add_manpower = -10000
 			log = "[Root.GetName]: Focus FAL_crimson_night"#Auto-logging
 		}
 	}
@@ -1733,6 +1733,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_stability = 0.1
 			country_event = falcor.19
 			log = "[Root.GetName]: Focus FAL_burn_karthin"#Auto-logging
 		}
@@ -1751,6 +1752,10 @@ focus_tree = {
 		x = 1
 		y = 1
 		
+		available = {
+			controls_state = 371
+		}
+		
 		mutually_exclusive = {
 			focus = FAL_burn_karthin
 		}
@@ -1760,6 +1765,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			add_stability = 0.05
 			country_event = falcor.20
 			log = "[Root.GetName]: Focus FAL_renaming_karthin"#Auto-logging
 		}
@@ -1791,7 +1797,7 @@ focus_tree = {
 				type = annex_everything
 			}
 			create_wargoal = {
-				target = FNR
+				target = FRN
 				type = annex_everything
 			}
 			create_wargoal = {
@@ -1820,6 +1826,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+				add_stability = 0.05
 				every_state = {
 					limit = {
 						is_core_of = WNG
