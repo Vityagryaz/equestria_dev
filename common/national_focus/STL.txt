@@ -15,16 +15,28 @@ focus_tree = {
 		x = 9
 		y = 0
 			completion_reward = {
-					add_political_power = 50
+					add_political_power = 100
+					country_event = {
+							days = 1
+							id = starlight.0
+						}
 				}
 
 	}
 	focus = {
 		id = STL_The_War
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_bomber
 		cost = 0.00
-		x = 9
+		x = 10
 		y = 2
+			available = {
+					CHN = {
+							has_war_with = EQS
+						}
+				}
+			completion_reward = {
+					add_war_score = 0.15
+				}
 
 	}
 	focus = {
@@ -147,7 +159,7 @@ focus_tree = {
 		prerequisite = {
 			focus = STL_Crystal_Help
 		}
-		x = 9
+		x = 8
 		y = 4
 
 	}
@@ -237,7 +249,7 @@ focus_tree = {
 	}
 	focus = {
 		id = STL_Not_Equals
-		icon = GFX_goal_unknown
+		icon = GFX_goal_generic_air_doctrine
 		cost = 0.00
 		prerequisite = {
 			focus = STL_Review
@@ -247,6 +259,13 @@ focus_tree = {
 		}
 		x = 20
 		y = 1
+			completion_reward = {
+					add_political_power = 50
+					country_event = {
+							days = 1
+							id = starlight.1
+						}
+				}
 
 	}
 	focus = {
@@ -258,6 +277,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 2
+			completion_reward = {
+					add_idea = { deal1 }
+				}
 
 	}
 	focus = {
@@ -269,6 +291,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 3
+			completion_reward = {
+					add_idea = { deal2 }
+				}
 
 	}
 	focus = {
@@ -280,6 +305,9 @@ focus_tree = {
 		}
 		x = 16
 		y = 4
+			completion_reward = {
+					add_idea = { deal3 }
+				}
 
 	}
 	focus = {
@@ -291,6 +319,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 2
+			completion_reward = {
+					add_idea = { industry1 }
+				}
 
 	}
 	focus = {
@@ -302,6 +333,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 3
+			completion_reward = {
+					add_idea = { industry2 }
+				}
 
 	}
 	focus = {
@@ -313,6 +347,9 @@ focus_tree = {
 		}
 		x = 18
 		y = 4
+			completion_reward = {
+					add_idea = { industry3 }
+				}
 
 	}
 	focus = {
@@ -324,6 +361,9 @@ focus_tree = {
 		}
 		x = 20
 		y = 2
+			completion_reward = {
+					add_idea = { gold1 }
+				}
 
 	}
 	focus = {
@@ -335,6 +375,9 @@ focus_tree = {
 		}
 		x = 20
 		y = 3
+			completion_reward = {
+					add_idea = { gold2 }
+				}
 
 	}
 	focus = {
@@ -346,6 +389,9 @@ focus_tree = {
 		}
 		x = 20
 		y = 4
+			completion_reward = {
+					add_idea = { gold3 }
+				}
 
 	}
 	focus = {
@@ -374,6 +420,9 @@ focus_tree = {
 		}
 		x = 22
 		y = 2
+			completion_reward = {
+					add_idea = { citystate1 }
+				}
 
 	}
 	focus = {
@@ -385,6 +434,9 @@ focus_tree = {
 		}
 		x = 22
 		y = 3
+			completion_reward = {
+					add_idea = { citystate1 }
+				}
 
 	}
 	focus = {
@@ -396,6 +448,9 @@ focus_tree = {
 		}
 		x = 22
 		y = 4
+			completion_reward = {
+					add_idea = { citystate1 }
+				}
 
 	}
 	focus = {
@@ -407,6 +462,9 @@ focus_tree = {
 		}
 		x = 24
 		y = 2
+			completion_reward = {
+					add_idea = { police1 }
+				}
 
 	}
 	focus = {
@@ -418,6 +476,10 @@ focus_tree = {
 		}
 		x = 24
 		y = 3
+			completion_reward = {
+					add_idea = { police2 }
+					load_oob = "STL_Paramilitary"
+				}
 
 	}
 	focus = {
@@ -429,6 +491,10 @@ focus_tree = {
 		}
 		x = 24
 		y = 4
+			completion_reward = {
+					add_idea = { police3 }
+					load_oob = "STL_Guards"
+				}
 
 	}
 	focus = {
@@ -563,7 +629,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = STL_Safe_Keepings
+		id = STL_Splendid_Storage
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
@@ -589,7 +655,7 @@ focus_tree = {
 		icon = GFX_goal_unknown
 		cost = 0.00
 		prerequisite = {
-			focus = STL_Safe_Keepings
+			focus = STL_Splendid_Storage
 		}
 		x = 16
 		y = 11
