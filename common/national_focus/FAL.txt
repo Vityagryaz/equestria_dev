@@ -587,6 +587,25 @@ focus_tree = {
 	
 ####################### Harmony path ##########################################
 	focus = {
+		id = FAL_politcal_unrest
+		icon = GFX_goal_government_icon
+		cost = 10.00
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		relative_position_id = FAL_request_reforms
+		x = 3
+		y = -1
+		
+		completion_reward = {
+			country_event = falcor.30
+			log = "[Root.GetName]: Focus FAL_politcal_unrest"#Auto-logging
+		}
+	}
+	
+	focus = {
 		id = FAL_harmony
 		icon = GFX_focus_generic_the_giant_wakes
 		cost = 10.00
@@ -595,8 +614,17 @@ focus_tree = {
 			factor = 9
 		}
 		
-		x = 12
-		y = 0
+		x = 13
+		y = 1
+		
+		available = {
+			has_country_flag = unrest_solved
+		}
+		
+		prerequisite = { 
+			focus = FAL_politcal_unrest
+		}
+		
 		
 		completion_reward = {
 			add_stability = 0.05
@@ -628,12 +656,12 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = FAL_woes_of_falcor
-		icon = GFX_focus_rom_abdicate
-		cost = 7.00
+		id = FAL_fascist_problem
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		cost = 10.00
 		
 		ai_will_do = {
-			factor = 5
+			factor = 6
 		}
 		
 		relative_position_id = FAL_order
@@ -642,6 +670,30 @@ focus_tree = {
 		
 		prerequisite = { 
 			focus = FAL_order
+		}
+		
+		completion_reward = {
+			add_popularity = { ideology = fascism popularity = -1 }
+			log = "[Root.GetName]: Focus FAL_fascist_problem"#Auto-logging
+		}
+	}
+	
+	
+	focus = {
+		id = FAL_woes_of_falcor
+		icon = GFX_focus_rom_abdicate
+		cost = 7.00
+		
+		ai_will_do = {
+			factor = 5
+		}
+		
+		relative_position_id = FAL_fascist_problem
+		x = 0
+		y = 1
+		
+		prerequisite = { 
+			focus = FAL_fascist_problem
 		}
 		
 		completion_reward = {
@@ -1256,7 +1308,15 @@ focus_tree = {
 		}
 		
 		x = 7
-		y = 0
+		y = 1
+		
+		prerequisite = {
+			focus = FAL_politcal_unrest
+		}
+		
+		available = {
+			has_country_flag = unrest
+		}
 		
 		mutually_exclusive = {
 			focus = FAL_harmony

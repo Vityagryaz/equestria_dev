@@ -517,3 +517,38 @@ country_event = { #############accepting
 		name = falcor.28.a
 	}
 }
+
+country_event = { ############ political unrest
+	id = falcor.29
+	immediate = {log = "[Root.GetName]: event falcor.29"}#Auto-logging
+	title = falcor.29.t
+	desc = falcor.29.d
+	picture = GFX_event_the_vote
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = falcor.29.a
+		set_country_flag = unrest_solved
+	}
+	option = {
+		name = falcor.29.b
+		country_event = { id = falcor.30 days = 30 }
+	}
+}
+country_event = { ############# allowing unrest
+	id = falcor.30
+	immediate = {log = "[Root.GetName]: event falcor.30"}#Auto-logging
+	title = falcor.30.t
+	desc = falcor.30.d
+	picture = GFX_event_camelot
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = falcor.30.a
+		set_country_flag = unrest
+	}
+}
