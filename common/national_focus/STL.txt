@@ -8,385 +8,833 @@ focus_tree = {
 		}
 	}
 	default = no
-	continuous_focus_position = { x = 10 y = 10 }
 	focus = {
-		id = STL_abolish_equality
-		icon = GFX_focus_generic_support_the_left_right
-		cost = 3.00
-		x = 8
+		id = STL_Review
+		icon = GFX_goal_generic_demand_territory
+		cost = 0.00
+		x = 9
 		y = 0
-		completion_reward = {
-			country_event = {
-				id = starlight.3 days = 1
-			}
-		}
+			completion_reward = {
+					add_political_power = 50
+				}
+
 	}
 	focus = {
-		id = STL_society_reform
-		icon = GFX_goal_support_fourth_int
-		prerequisite = { focus = STL_abolish_equality }
-		cost = 10.00
-		x = 10
-		y = 0
-		completion_reward = {
-			country_event = {
-				id = starlight.9 days = 1
-			}
-		}
-	}
-	focus = {
-		id = STL_one_factory
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
-		x = 15
-		y = 0
-		completion_reward = {
-			57 = {add_extra_state_shared_building_slots = 1
-				add_building_construction = { type = industrial_complex
-					level = 1
-					instant_build = yes } }
-		}
-	}
-	focus = {
-		id = STL_neighbors_help
-		icon = GFX_focus_generic_socialist_science
-		cost = 10.00
-		prerequisite = {
-			focus = STL_elections
-		}
-		available = {
-			has_country_flag = double_diamond_elected
-		}
-		x = 8
+		id = STL_The_War
+		icon = GFX_goal_unknown
+		cost = 0.00
+		x = 9
 		y = 2
-		completion_reward = {
-			country_event = {
-				id = starlight.4 days = 1
-			}
-		}
-		
+
 	}
 	focus = {
-		id = STL_independence_line
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
+		id = STL_Status_Quo
+		icon = GFX_goal_unknown
+		cost = 0.00
 		prerequisite = {
-			focus = STL_neighbors_help
+			focus = STL_Review
+		}
+		mutually_exclusive = {
+			focus = STL_Not_Equals
+		}
+		x = 2
+		y = 1
+
+	}
+	focus = {
+		id = STL_The_Inevitable
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Status_Quo
+		}
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = STL_Stalliongradion_Industry
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_The_Inevitable
 		}
 		x = 2
 		y = 3
-		completion_reward = {
-			country_event = {
-				id = starlight.5 days = 1
-			}
-		}
+
 	}
 	focus = {
-		id = STL_industrial_effort
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
+		id = STL_No_Longer_Ours
+		icon = GFX_goal_unknown
+		cost = 0.00
 		prerequisite = {
-			focus = STL_independence_line
+			focus = STL_Stalliongradion_Industry
 		}
-		x = 1
+		x = 2
 		y = 4
-		completion_reward = {
-			57 = {add_extra_state_shared_building_slots = 2
-				add_building_construction = { type = industrial_complex
-					level = 2
-					instant_build = yes } }
-		}
+
 	}
 	focus = {
-		id = STL_industrial_help
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
+		id = STL_Our_Mark
+		icon = GFX_goal_unknown
+		cost = 0.00
 		prerequisite = {
-			focus = STL_neighbors_help
+			focus = STL_No_Longer_Ours
 		}
-		x = 5
-		y = 3
-		completion_reward = {
-			country_event = {
-				id = starlight.6 days = 1
-			}
-		}
-	}
-	focus = {
-		id = STL_STG_military_advisors
-		icon = GFX_focus_generic_military_mission
-		cost = 10.00
-		prerequisite = {
-			focus = STL_neighbors_help
-		}
-		x = 7
-		y = 3
-		completion_reward = {
-			country_event = {
-				id = starlight.7 days = 1
-			}
-		}
-	}
-	focus = {
-		id = STL_new_army
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
-		prerequisite = {
-			focus = STL_STG_military_advisors
-		}
-		x = 5
-		y = 4
-		completion_reward = {
-			country_event = {
-				id = starlight.10 days = 1
-			}
-		}
-	}
-	focus = {
-		id = STL_demand_griffon_land
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
-		prerequisite = {
-			focus = STL_new_army
-			focus = STL_industrial_effort
-		}
-		x = 3
+		x = 2
 		y = 5
-		
+
 	}
 	focus = {
-		id = STL_conquest_of_STG
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
+		id = STL_Pre-emptive_Servitude
+		icon = GFX_goal_unknown
+		cost = 0.00
 		prerequisite = {
-			focus = STL_industrial_effort
+			focus = STL_Our_Mark
 		}
-		x = 1
-		y = 5
-		
-	}
-	focus = {
-		id = STL_socialist_trade
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
-		prerequisite = {
-			focus = STL_industrial_help
-		}
-		x = 7
-		y = 4
-		completion_reward = {
-			add_ideas = trade_relations_with_stalliongrad
-			remove_ideas = { STL_city_state STL_city_state2 }
-		}
-	}
-	focus = {
-		id = STL_garden
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
-		prerequisite = {
-			focus = STL_industrial_help
-			focus = STL_independence_line
-		}
-		x = 3
-		y = 4
-		completion_reward = {
-			add_ideas = STL_garden_spirit
-		}
-	}
-	focus = {
-		id = STL_research_facility
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
-		prerequisite = {
-			focus = STL_new_army
-		}
-		prerequisite = {
-			focus = STL_socialist_trade
-		}
-		x = 6
-		y = 5
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	focus = {
-		id = STL_elections
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
-		prerequisite = {
-			focus = STL_society_reform
-		}
-		prerequisite = {
-			focus = STL_abolish_equality
-		}
-		x = 9
-		y = 1
-		completion_reward = {
-			country_event = {
-				id = starlight.14 days = 1
-			}
-		}
-	}
-	focus = {
-		id = STL_twilight_teaching
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
-		prerequisite = {
-			focus = STL_elections
-		}
-		available = {
-			has_country_flag = feather_bangs_elected
-		}
-		x = 10
-		y = 2
-		completion_reward = {
-			
-		}
-		
-	}
-	focus = {
-		id = STL_railroad_way
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
-		prerequisite = {
-			focus = STL_neighbors_help
-		}
-		prerequisite = {
-			focus = STL_twilight_teaching
-		}
-		x = 9
-		y = 4
-		completion_reward = {
-			57 = {
-				add_building_construction = { type = infrastructure
-					level = 3
-					instant_build = yes } }
-		}
-	}
-	focus = {
-		id = STL_equestrian_airbridge
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
-		prerequisite = {
-			focus = STL_twilight_teaching
-		}
-		x = 11
-		y = 3
-		
-	}
-	focus = {
-		id = STL_our_town_fortress
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
-		prerequisite = {
-			focus = STL_equestrian_airbridge
-		}
-		x = 11
-		y = 4
-		
-	}
-	focus = {
-		id = STL_eqs_exped_forces
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
-		prerequisite = {
-			focus = STL_our_town_fortress
-		}
-		x = 11
-		y = 5
-		
-	}
-	focus = {
-		id = STL_griffon_transition
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
-		prerequisite = {
-			focus = STL_twilight_teaching
-		}
-		x = 13
-		y = 3
-		
-	}
-	focus = {
-		id = STL_GRF_cedeing_land
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
-		prerequisite = {
-			focus = STL_griffon_transition
-		}
-		x = 13
-		y = 4
-		
-	}
-	focus = {
-		id = STL_our_town_institute
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
-		prerequisite = {
-			focus = STL_research_facility
-		}
-		x = 6
+		x = 2
 		y = 6
-		
+
 	}
 	focus = {
-		id = STL_call_to_war
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
+		id = STL_Changeling_Help
+		icon = GFX_goal_unknown
+		cost = 0.00
 		prerequisite = {
-			focus = STL_eqs_exped_forces
+			focus = STL_The_War
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = STL_Panzer_Storage
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Changeling_Help
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = STL_Changeling_Gold_Reserves
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Panzer_Storage
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = STL_Crystal_Help
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_The_War
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = STL_Magical_Mystery
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Crystal_Help
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = STL_Crystal_Relocation
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Magical_Mystery
+		}
+		x = 8
+		y = 5
+
+	}
+	focus = {
+		id = STL_Equestrian_Help
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_The_War
 		}
 		x = 12
-		y = 6
-		
+		y = 3
+
 	}
 	focus = {
-		id = STL_first_move
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
+		id = STL_Harmonic_Storage
+		icon = GFX_goal_unknown
+		cost = 0.00
 		prerequisite = {
-			focus = STL_eqs_exped_forces
+			focus = STL_Equestrian_Help
+		}
+		x = 12
+		y = 4
+
+	}
+	focus = {
+		id = STL_Scientific_Evacuees
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Harmonic_Storage
+		}
+		x = 12
+		y = 5
+
+	}
+	focus = {
+		id = STL_Safe_Keepings
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Changeling_Gold_Reserves
+		}
+		prerequisite = {
+			focus = STL_Crystal_Relocation
+		}
+		prerequisite = {
+			focus = STL_Scientific_Evacuees
+		}
+		mutually_exclusive = {
+			focus = STL_Permanent_Gold
+		}
+		x = 5
+		y = 6
+
+	}
+	focus = {
+		id = STL_Permanent_Gold
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Crystal_Relocation
+		}
+		prerequisite = {
+			focus = STL_Scientific_Evacuees
+		}
+		prerequisite = {
+			focus = STL_Changeling_Gold_Reserves
+		}
+		mutually_exclusive = {
+			focus = STL_Safe_Keepings
 		}
 		x = 10
 		y = 6
-		
+
 	}
 	focus = {
-		id = STL_war_on_GRF
-		icon = GFX_goal_support_fourth_int
-		cost = 3.00
+		id = STL_Not_Equals
+		icon = GFX_goal_unknown
+		cost = 0.00
 		prerequisite = {
-			focus = STL_demand_griffon_land
+			focus = STL_Review
 		}
-		x = 2
-		y = 6
-		
+		mutually_exclusive = {
+			focus = STL_Status_Quo
+		}
+		x = 20
+		y = 1
+
 	}
 	focus = {
-		id = STL_second_factory
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
+		id = STL_An_Interesting_Deal
+		icon = GFX_goal_unknown
+		cost = 0.00
 		prerequisite = {
-			focus = STL_one_factory
+			focus = STL_Not_Equals
+		}
+		x = 16
+		y = 2
+
+	}
+	focus = {
+		id = STL_Our_Word
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_An_Interesting_Deal
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = STL_The_Important_Paper
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Our_Word
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = STL_Industrial_Nightmare
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Not_Equals
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = STL_Equally_Good_Industry
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Industrial_Nightmare
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = STL_Prosperous_Industry
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Equally_Good_Industry
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = STL_Economic_Stimulous
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Not_Equals
+		}
+		x = 20
+		y = 2
+
+	}
+	focus = {
+		id = STL_Mysterious_Funding
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Economic_Stimulous
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = STL_Gold_Reserves
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Mysterious_Funding
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = STL_Neutrality_Decleration
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_The_Important_Paper
+		}
+		prerequisite = {
+			focus = STL_Prosperous_Industry
+		}
+		prerequisite = {
+			focus = STL_Gold_Reserves
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = STL_City_State
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Not_Equals
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = STL_Merchant_Airforce
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_City_State
+		}
+		x = 22
+		y = 3
+
+	}
+	focus = {
+		id = STL_Trade_State
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Merchant_Airforce
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = STL_Police
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Not_Equals
+		}
+		x = 24
+		y = 2
+
+	}
+	focus = {
+		id = STL_Paramilitary
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Police
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = STL_Starlight_Guard
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Paramilitary
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = STL_Unrestriced_Trade_Agreement
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Starlight_Guard
+		}
+		prerequisite = {
+			focus = STL_Trade_State
+		}
+		prerequisite = {
+			focus = STL_Gold_Reserves
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = STL_Equestrian_Trade_State
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Neutrality_Decleration
+		}
+		prerequisite = {
+			focus = STL_Unrestriced_Trade_Agreement
+		}
+		x = 20
+		y = 6
+
+	}
+	focus = {
+		id = STL_Our_Policy
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Equestrian_Trade_State
+		}
+		x = 20
+		y = 7
+
+	}
+	focus = {
+		id = STL_Harmony
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Our_Policy
+		}
+		mutually_exclusive = {
+			focus = STL_Fascism
+			focus = STL_Non-Aligned
+		}
+		x = 25
+		y = 8
+
+	}
+	focus = {
+		id = STL_Fascism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Our_Policy
+		}
+		mutually_exclusive = {
+			focus = STL_Non-Aligned
+			focus = STL_Harmony
 		}
 		x = 15
-		y = 1
-		completion_reward = {
-			57 = {add_extra_state_shared_building_slots = 1
-				add_building_construction = { type = industrial_complex
-					level = 1
-					instant_build = yes } }
-		}
+		y = 8
+
 	}
 	focus = {
-		id = STL_GRF_revolution
-		icon = GFX_goal_support_fourth_int
-		cost = 10.00
+		id = STL_New_Trade_Ideas
+		icon = GFX_goal_unknown
+		cost = 0.00
 		prerequisite = {
-			focus = STL_demand_griffon_land
+			focus = STL_Fascism
 		}
-		x = 4
-		y = 6
-		
+		x = 14
+		y = 9
+
+	}
+	focus = {
+		id = STL_Abuse_Wars
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Fascism
+		}
+		x = 16
+		y = 9
+
+	}
+	focus = {
+		id = STL_Equestrian_Trade
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Harmony
+		}
+		x = 24
+		y = 9
+
+	}
+	focus = {
+		id = STL_Non-Aligned
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Our_Policy
+		}
+		mutually_exclusive = {
+			focus = STL_Fascism
+			focus = STL_Harmony
+		}
+		x = 20
+		y = 8
+
+	}
+	focus = {
+		id = STL_Narcotics
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_New_Trade_Ideas
+		}
+		x = 14
+		y = 10
+
+	}
+	focus = {
+		id = STL_Safe_Keepings
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Abuse_Wars
+		}
+		x = 16
+		y = 10
+
+	}
+	focus = {
+		id = STL_Abuse_Adictions
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Narcotics
+		}
+		x = 14
+		y = 11
+
+	}
+	focus = {
+		id = STL_Arms_Giving
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Safe_Keepings
+		}
+		x = 16
+		y = 11
+
+	}
+	focus = {
+		id = STL_Intercontinental_Ties
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Abuse_Adictions
+		}
+		x = 14
+		y = 12
+
+	}
+	focus = {
+		id = STL_The_Griffon_Traders
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Arms_Giving
+		}
+		x = 16
+		y = 12
+
+	}
+	focus = {
+		id = STL_The_Military_Trade_Pact
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_The_Griffon_Traders
+		}
+		prerequisite = {
+			focus = STL_Intercontinental_Ties
+		}
+		x = 15
+		y = 13
+
+	}
+	focus = {
+		id = STL_Unbiased_Trade
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Non-Aligned
+		}
+		x = 19
+		y = 9
+
+	}
+	focus = {
+		id = STL_Proclaim_The_Trade_Empire
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_The_Military_Trade_Pact
+			focus = STL_The_Griffon_Trade_Agreement
+			focus = STL_Harmonious_Trade_Treaty
+		}
+		x = 20
+		y = 14
+
+	}
+	focus = {
+		id = STL_Trade_Expansion
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Non-Aligned
+		}
+		x = 21
+		y = 9
+
+	}
+	focus = {
+		id = STL_Expand_The_Banks
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Unbiased_Trade
+		}
+		x = 19
+		y = 10
+
+	}
+	focus = {
+		id = STL_The_Griffons
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Trade_Expansion
+		}
+		x = 21
+		y = 10
+
+	}
+	focus = {
+		id = STL_More_Griffons
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_The_Griffons
+		}
+		x = 21
+		y = 11
+
+	}
+	focus = {
+		id = STL_Invest_In_Gold
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Expand_The_Banks
+		}
+		x = 19
+		y = 11
+
+	}
+	focus = {
+		id = STL_Intercontinental_Banking
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Invest_In_Gold
+		}
+		x = 19
+		y = 12
+
+	}
+	focus = {
+		id = STL_Trading_Griffons
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_More_Griffons
+		}
+		x = 21
+		y = 12
+
+	}
+	focus = {
+		id = STL_The_Griffon_Trade_Agreement
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Intercontinental_Banking
+		}
+		prerequisite = {
+			focus = STL_Trading_Griffons
+		}
+		x = 20
+		y = 13
+
+	}
+	focus = {
+		id = STL_Laws_Of_Trade
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Harmony
+		}
+		x = 26
+		y = 9
+
+	}
+	focus = {
+		id = STL_Enemies_Of_Harmony
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Equestrian_Trade
+		}
+		x = 24
+		y = 10
+
+	}
+	focus = {
+		id = STL_Ban_Extremism
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Laws_Of_Trade
+		}
+		x = 26
+		y = 10
+
+	}
+	focus = {
+		id = STL_Equestrian_Investment
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Enemies_Of_Harmony
+		}
+		x = 24
+		y = 11
+
+	}
+	focus = {
+		id = STL_Harmonious_Griffons?
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Ban_Extremism
+		}
+		x = 26
+		y = 11
+
+	}
+	focus = {
+		id = STL_Kind_Beaked_Traders
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Harmonious_Griffons?
+		}
+		x = 26
+		y = 12
+
+	}
+	focus = {
+		id = STL_Arsenal_Of_Harmony
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Equestrian_Investment
+		}
+		x = 24
+		y = 12
+
+	}
+	focus = {
+		id = STL_Harmonious_Trade_Treaty
+		icon = GFX_goal_unknown
+		cost = 0.00
+		prerequisite = {
+			focus = STL_Arsenal_Of_Harmony
+		}
+		prerequisite = {
+			focus = STL_Kind_Beaked_Traders
+		}
+		x = 25
+		y = 13
+
 	}
 }
