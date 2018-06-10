@@ -1599,16 +1599,21 @@
 
  ### NLR - Lunar Empire ###
 
- NLR_destroyer_1:0 "Scythe Class"
+ NLR_destroyer_1:0 "LND-993 Class"
+ NLR_destroyer_1_desc:0 "The LND-993, based upon the similar SND-992, was the first destroyer built for the former Lunar Guard Naval Service. As a result, they're also the first destroyer in the Royal Lunar Navy."
 
- NLR_destroyer_2:0 "Reaver Class"
+ NLR_destroyer_2:0 "LND-1007 Class"
+ NLR_destroyer_2_desc:0 "Developed straight from the LND-993, the 1007 continues the trend of naming destroyers after the year of design. This model features far better torpedoes than the 933 class."
 
- NLR_destroyer_3:0 "Hell Class"
+ NLR_destroyer_3:0 "LND-1011 Class"
+ NLR_destroyer_3_desc:0 "The 1011 class is a brand new ship, rather than a conversion of previous ships. A new hull, purpose built to mount new anti-aircraft weaponry, as well as submarine detection equipment."
 
- NLR_destroyer_4:0 "Hades Class"
+ NLR_destroyer_4:0 "LND-1015 Class"
+ NLR_destroyer_4_desc:0 "While a new ship design may be more technologically advanced, a conversion of the previous 1011 class of destroyers in order to take new depth charges, and increased standardisation, is the motto of the 1015."
 
- NLR_destroyer_5:0 "Bloodletter Class"
- NLR_destroyer_5_short:0 "Bloodletter Class"
+ NLR_destroyer_5:0 "LND-1019 Class"
+ NLR_destroyer_5_short:0 "LND-1019 Class"
+ NLR_destroyer_5_desc:0 "Another standalone destroyer [unfinished]"
 
  NLR_destroyer_6:0 "Noir Class"
  NLR_destroyer_6_short:0 "Noir Class"
