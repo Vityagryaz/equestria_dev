@@ -380,12 +380,10 @@ olenia.2.b:0 "Are they out their minds?"
 olenia.3.t:0 "Talks of Surrender in the Royal Cabinet"
 olenia.3.d:0 "There are those in the Royal Cabinet arguing that perhaps this war wasnt in the country's best interests, and that we should have surrendered long ago. They say that it might not yet be too late. Should we approach the Changelings for peace talks?"
 olenia.3.a:0 "Offer an unconditional surrender."
-olenia.3.b:0 "Perhaps we can come to a deal?"
 olenia.3.c:0 "We shall never surrender!"
 olenia.4.t:0 "The Upper Classes Flee"
 olenia.4.d:0 "With Olenia’s situation looking dire, members of the upper classes have withdrawn their assets and have fled to Equestria and other lands further afield. The King now sits in a near-empty throne room with support quickly evaporating around him."
 olenia.4.a:0 "I should join them..."
-olenia.4.b:0 "We can still make a deal, right?"
 olenia.4.c:0 "Cowards! A King doesn't run!"
 
 olenia.101.t:0 "[From.GetName] Cannot Help Us!"
@@ -397,7 +395,11 @@ olenia.102.a:0 "Curses!"
 
 olenia.103.t:0 "Civil War in Olenia"
 olenia.103.d_johan:0 "Yesterday morning, an ultimatum was presented to King Johan of Olenia. He is to abdicate the throne to Princess Velvet within 24 hours, or face arrest. Late last night, with the assistance of officers still loyal to him, King Johan fled the capital by airplane and has appeared on radio denouncing Princess Velvet and calling all loyal to his rule to take up arms against Velvet.\n\nThis morning, the Olenian high court declared King Johan’s reign illegal and officially transferred the crown to Queen Velvet. The Queen has now taken residence in the Hjortland Palace and has met with senior government and military officials to discuss their next move.\n\nWith neither side willing to stand down, a state of civil war now exists in Olenia."
+<<<<<<< HEAD
 olenia.103.d_com:0 "Yesterday morning, royalist supporters stormed the Olenian parliament with the goal of pushing through a bill that would restore the monarchy under Queen Velvet. Fierce firefights broke out all over the city, fallin under royalist control by nightfall.\n\nAcross the nation, royalists, liberals and harmonists took up arms to free themselves from communist oppression. [OLE.GetLeader] took to national radio and called for the nation to fight back against the 'capitalist' coup.\n\nWith neither side willing to stand down, a state of war now exists in Olenia."
+=======
+olenia.103.d_com:0 "Yesterday morning, royalist supporters stormed the Olenian parliament with the goal of pushing through a bill that would restore the monarchy under Queen Velvet. Fierce firefights broke out all over the city, falling under royalist control by nightfall.\n\nAcross the nation, royalists, liberals and harmonists took up arms to free themselves from communist oppression. [OLE.GetLeader] took to national radio and called for the nation to fight back against the 'capitalist' coup.\n\nWith neither side willing to stand down, a state of war now exists in Olenia."
+>>>>>>> master
 olenia.103.d_fas:0 "Yesterday morning, a sudden protest by young Olenian stags and does turned violent as the government unleashed a deadly crackdown. The protesters were demanding a restoration of their freedoms and the return of the exiled Princess Velvet to the throne. The fighting quickly spread across the country, as those opposed to [OLE.GetLeader]'s cruelty took up arms in the name of freedom, while [OLE.GetRulingParty]'s supporters prepared themselves to fight the 'heretics'.\n\nWith no sign of a peaceful resolution, a civil war threatens to tear Olenia apart.."
 olenia.103.d:0 "Yesterday morning, supporters of Queen Velvet stormed the Olenian capital with an aim to restore the monarchy under Queen Velvet. A fierce firefight broke out throughout the city and by nightfall it was under royalist control.\n\nAcross the nation, royalists, liberals and harmonists took up arms to free themselves from communist oppression. [OLE.GetLeader] took to national radio and called for the nation to fight back against the coup.\n\nWith neither side willing to stand down, a state of war now exists in Olenia."
 olenia.103.a:0 "Interesting."
