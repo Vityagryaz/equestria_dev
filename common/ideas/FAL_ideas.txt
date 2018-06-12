@@ -269,7 +269,9 @@ ideas = {
 		Pherae = {
 			allowed = {
 				original_tag = FAL
+				NOT = { has_country_flag = dead_commies }
 			}
+			
 			
 			traits = { captain_of_industry }
 		}
@@ -314,9 +316,10 @@ ideas = {
 		Favorinus = {
 			allowed = {
 				original_tag = FAL
+				NOT = { has_country_flag = dead_commies }
 			}
 			
-			traits = { bureaucrat }
+			traits = { communist_revolutionary }
 		}
 	}
 	
@@ -635,6 +638,7 @@ ideas = {
 				army_morale_factor = 0.1
 			}
 		}
+		
 		FAL_bank_reforms = {
 		
 			allowed = {
@@ -649,6 +653,7 @@ ideas = {
 				consumer_goods_factor = -0.05
 			}
 		}
+		
 		FAL_bank_reforms2 = {
 		
 			allowed = {
@@ -713,6 +718,23 @@ ideas = {
 			}
 		}
 		
+	FAL_min_industry2 = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				consumer_goods_factor = -0.075
+				production_factory_efficiency_gain_factor = 0.15
+				local_resources_factor = 0.075
+			}
+		}
+		
 		FAL_min_army = {
 		
 			allowed = {
@@ -759,5 +781,36 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.05
+			}
+		}
+		
+		worse_factories = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_production_bonus
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+		
+		FAL_sic_tests = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = GFX_nkvd_2
+			
+			modifier = {
+
+				research_time_factor = -0.05
 			}
 		}

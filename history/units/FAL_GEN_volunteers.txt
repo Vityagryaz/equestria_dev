@@ -1,0 +1,43 @@
+﻿division_template = {
+	name = "citizen militia"			#Infantry Division - kek
+	
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+	priority = 0
+}
+
+units = {
+	division = {
+		name = "Matton Volunteers"
+		location = 7868
+		division_template = "citizen militia"
+		start_experience_factor = 0.3 }
+	division = {
+		name = "GreyBill Volunteers"
+		location = 12638
+		division_template = "citizen militia"
+		start_experience_factor = 0.1 }
+	division = {
+		name = "Soarleto Volunteers"
+		location = 10105
+		division_template = "citizen militia"
+		start_experience_factor = 0.1 }
+	division = {
+		name = "Birb Volunteers"
+		location = 11719
+		division_template = "citizen militia"
+		start_experience_factor = 0.1 }
+	division = {
+		name = "'Sudfolk Volunteers"
+		location = 12142
+		division_template = "citizen militia"
+		start_experience_factor = 0.1 }
+}
