@@ -622,6 +622,22 @@ ideas = {
 			}
 		}
 	
+		FAL_wng_military = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				army_defence_factor = 0.05
+				army_attack_factor = 0.05
+			}
+		}
+		
 		FAL_princess = {
 		
 			allowed = {
@@ -635,6 +651,22 @@ ideas = {
 			modifier = {
 				army_defence_factor = 0.05
 				army_attack_factor = 0.05
+				army_morale_factor = 0.1
+			}
+		}
+		
+		royal_palace = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = GFX_idea_enlightned_feudalism
+			
+			modifier = {
+				political_power_gain = 0.1
 				army_morale_factor = 0.1
 			}
 		}
@@ -769,7 +801,7 @@ ideas = {
 			}
 		}
 		
-		stands_strong = {
+		public_work = {
 		
 			allowed = {
 				always = no
@@ -780,7 +812,26 @@ ideas = {
 			picture = nkvd_2
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.1
+			}
+		}
+		
+		united_nation = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = nkvd_2
+			
+			modifier = {
+				political_power_gain = 0.2
+				army_morale_factor = 0.10
+				stability_factor = 0.05
 			}
 		}
 		

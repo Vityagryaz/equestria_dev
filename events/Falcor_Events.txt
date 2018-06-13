@@ -16,7 +16,7 @@ country_event = { ############## volunteers from civilians
 	}
 }
 
-country_event = { ############ increase order in falcor
+country_event = { ############ approach wng
 	id = falcor.2
 	immediate = {log = "[Root.GetName]: event falcor.2"}#Auto-logging
 	title = falcor.2.t
@@ -28,7 +28,7 @@ country_event = { ############ increase order in falcor
 
 	option = {
 		name = falcor.2.a
-		add_stability = 0.05
+		add_stability = -0.1
 	}
 }
 
@@ -113,7 +113,7 @@ country_event = { ###### making capital falcor
 	}
 }
 
-country_event = { ############ uniting around capital
+country_event = { ############ forgiving wng
 	id = falcor.7
 	immediate = {log = "[Root.GetName]: event falcor.7"}#Auto-logging
 	title = falcor.7.t
@@ -129,35 +129,35 @@ country_event = { ############ uniting around capital
 	}
 }
 
-country_event = { ############ celebrating princess
-	id = falcor.8
-	immediate = {log = "[Root.GetName]: event falcor.8"}#Auto-logging
-	title = falcor.8.t
-	desc = falcor.8.d
-	picture = GFX_event_camelot
+#country_event = { ############ celebrating princess
+#	id = falcor.8
+#	immediate = {log = "[Root.GetName]: event falcor.8"}#Auto-logging
+#	title = falcor.8.t
+#	desc = falcor.8.d
+#	picture = GFX_event_camelot
 	
-	fire_only_once = yes
-	is_triggered_only = yes
+#	fire_only_once = yes
+#	is_triggered_only = yes
 
-	option = {
-		name = falcor.8.a
-	}
-}
+#	option = {
+#		name = falcor.8.a
+#	}
+#}
 
-country_event = { ############ building monument
-	id = falcor.9
-	immediate = {log = "[Root.GetName]: event falcor.9"}#Auto-logging
-	title = falcor.9.t
-	desc = falcor.9.d
-	picture = GFX_event_camelot
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	option = {
-		name = falcor.9.a
-	}
-}
+#country_event = { ############ building monument
+#	id = falcor.9
+#	immediate = {log = "[Root.GetName]: event falcor.9"}#Auto-logging
+#	title = falcor.9.t
+#	desc = falcor.9.d
+#	picture = GFX_event_camelot
+#	
+#	fire_only_once = yes
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = falcor.9.a
+#	}
+#}
 
 country_event = { ############ long live princess
 	id = falcor.10
@@ -328,12 +328,22 @@ country_event = { ############ destroying karthin
 	picture = GFX_event_griffon_mountain
 	
 	fire_only_once = yes
-	is_triggered_only = yes
+	trigger = {
+		tag = FAL
+			FAL = { controls_state = 371 }
+	}
+	mean_time_to_happen = { days = 7 }
 
 	option = {
 		name = falcor.19.a
 		set_province_name = { id = 3144 name = "Ruins of Karthin"}
 		371 = { add_manpower = -100000 }
+	}
+	
+	option = {
+		name = falcor.19.b
+		set_province_name = { id = 3144 name = "Maximillion"}
+		add_stability = 0.1
 	}
 }
 
