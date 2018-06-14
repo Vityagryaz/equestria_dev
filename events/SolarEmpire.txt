@@ -614,6 +614,29 @@ country_event = {
 			}
 			set_global_flag = EQS_Eisenstadt_created
 		}
+		if = {
+			limit = { NOT = { has_global_flag = EQS_Comet_Trail_created } }
+			create_corps_commander = {
+				name = "Comet Trail"
+				picture = "Stemis.tga"
+				traits = { supply_raider }
+				skill = 2
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 3
+				id = 204
+			}
+			set_global_flag = EQS_Comet_Trail_created
+			random_army_leader = {
+				limit = { has_id = 204 }
+				save_global_event_target_as = EQS_Comet_Trail
+			}
+		}
+		else_if = {
+			limit = { NOT = { has_unit_leader = 204 } }
+			event_target:EQS_Comet_Trail = { set_nationality = ROOT }
+		}
 		create_corps_commander = {
 			name = "Capsaicin"
 			portrait_path = "gfx/leaders/SOL/Spice.tga"

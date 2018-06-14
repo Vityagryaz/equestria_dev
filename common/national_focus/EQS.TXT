@@ -957,6 +957,10 @@ focus_tree = {
 				add_political_power = 100
 				CRY = { add_stability = 0.09 }
 			}
+			if = {
+				limit = { is_historical_focus_on = no CRY = { is_ai = yes } }
+				custom_effect_tooltip = increase_presense_inCRY_tt
+			}
 		}
 	}
 
@@ -1698,7 +1702,13 @@ focus_tree = {
 			}
 		}
 		bypass = {
-			has_war_with = CHN
+			CHN = {
+				OR = {
+					exists = no
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
 		}
 		prerequisite = {
 			focus = River_Fortifications
