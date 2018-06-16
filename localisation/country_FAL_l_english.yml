@@ -1,0 +1,294 @@
+﻿l_english:
+###########################################
+### FOCUS LOCALISATION ####################
+###########################################
+#industrial path
+FAL_educate_farmers:0 ""
+FAL_educate_farmers_desc:0 ""
+
+FAL_new_factories:0 ""
+FAL_new_factories_desc:0 ""
+
+FAL_new_military_factories:0 ""
+FAL_new_military_factories_desc:0 ""
+
+FAL_better_farmers:0 ""
+FAL_better_farmers_desc:0 ""
+
+FAL_stabalize_economy:0 ""
+FAL_stabalize_economy_desc:0 ""
+
+FAL_better_factories:0 ""
+FAL_better_factories_desc:0 ""
+
+FAL_better_intel:0 ""
+FAL_better_intel_desc:0 ""
+
+FAL_new_trains:0 ""
+FAL_new_trains_desc:0 ""
+
+FAL_improve_illiteracy:0 ""
+FAL_improve_illiteracy_desc:0 ""
+
+FAL_industry1:0 ""
+FAL_industry1_desc:0 ""
+
+FAL_science1:0 ""
+FAL_science1_desc:0 ""
+
+FAL_scientific_greatness:0 ""
+FAL_scientific_greatness_desc:0 ""
+
+FAL_more_schools:0 ""
+FAL_more_schools_desc:0 ""
+
+FAL_can_read:0 ""
+FAL_can_read_desc:0 ""
+
+FAL_farmers_can_read:0 ""
+FAL_farmers_can_read_desc:0 ""
+
+FAL_more_factories:0 ""
+FAL_more_factories_desc:0 ""
+
+FAL_more_mil_factories:0 ""
+FAL_more_mil_factories_desc:0 ""
+
+FAL_more_trains:0 ""
+FAL_more_trains_desc:0 ""
+
+FAL_new_banks:0 ""
+FAL_new_banks_desc:0 ""
+
+FAL_science2:0 ""
+FAL_science2_desc:0 ""
+
+FAL_industry2:0 ""
+FAL_industry2_desc:0 ""
+################Harmony Path###############
+FAL_politcal_unrest:0 ""
+FAL_politcal_unrest_desc:0 ""
+
+FAL_harmony:0 ""
+FAL_harmony_desc:0 ""
+
+FAL_increase_order:0 ""
+FAL_increase_order_desc:0 ""
+
+FAL_clean_politics:0 ""
+FAL_clean_politics_desc:0 ""
+
+FAL_approach_wng:0 ""
+FAL_approach_wng_desc:0 ""
+
+FAL_wng_threat:0 ""
+FAL_wng_threat_desc:0 ""
+
+FAL_forgive_wng:0 ""
+FAL_forgive_wng_desc:0 ""
+
+FAL_please_population:0 ""
+FAL_please_population_desc:0 ""
+
+FAL_defend_boarder:0 ""
+FAL_defend_boarder_desc:0 ""
+
+FAL_trade_wng:0 ""
+FAL_trade_wng_desc:0 ""
+
+FAL_request_military_help:0 ""
+FAL_request_military_help_desc:0 ""
+
+FAL_volunteers:0 ""
+FAL_volunteers_desc:0 ""
+
+FAL_everyhouse_a_fort:0 ""
+FAL_everyhouse_a_fort_desc:0 ""
+
+FAL_ask_for_falcor:0 ""
+FAL_ask_for_falcor_desc:0 ""
+
+FAL_improve_matton:0 ""
+FAL_improve_matton_desc:0 ""
+
+FAL_reunite_families:0 ""
+FAL_reunite_families_desc:0 ""
+
+FAL_rebuild_roads:0 ""
+FAL_rebuild_roads_desc:0 ""
+
+FAL_expand_matton:0 ""
+FAL_expand_matton_desc:0 ""
+
+FAL_allow_immigration:0 ""
+FAL_allow_immigration_desc:0 ""
+
+FAL_reintegrate_falcor:0 ""
+FAL_reintegrate_falcor_desc:0 ""
+
+FAL_reunited_nation:0 ""
+FAL_reunited_nation_desc:0 ""
+
+FAL_royal_palace:0 ""
+FAL_royal_palace_desc:0 ""
+
+FAL_join_karthin:0 ""
+FAL_join_karthin_desc:0 ""
+
+FAL_form_usa:0 ""
+FAL_form_usa_desc:0 ""
+
+FAL_public_works:0 ""
+FAL_public_works_desc:0 ""
+
+FAL_long_live_princess:0 ""
+FAL_long_live_princess_desc:0 ""
+###########################################
+### IDEAS #################################
+###########################################
+FAL_reforms1:0 ""
+FAL_reforms1_desc:0 ""
+
+FAL_defense1:0 ""
+FAL_defense1_desc:0 ""
+
+FAL_forts:0 ""
+FAL_forts_desc:0 ""
+
+FAL_schools:0 ""
+FAL_schools_desc:0 ""
+
+FAL_wng_military:0 ""
+FAL_wng_military_desc:0 ""
+
+FAL_princess:0 ""
+FAL_princess_desc:0 ""
+
+royal_palace:0 ""
+royal_palace_desc:0 ""
+
+FAL_coastal_forts:0 ""
+FAL_coastal_forts_desc:0 ""
+
+FAL_min_industry:0 ""
+FAL_min_industry_desc:0 ""
+
+FAL_min_industry2:0 ""
+FAL_min_industry2_desc:0 ""
+
+FAL_min_army:0 ""
+FAL_min_army_desc:0 ""
+
+public_work:0 ""
+public_work_desc:0 ""
+
+united_nation:0 ""
+united_nation_desc:0 ""
+
+worse_factories:0 ""
+worse_factories_desc:0 ""
+
+FAL_sic_tests:0 ""
+FAL_sic_tests_desc:0 ""
+
+min_uniforms:0 ""
+min_uniforms_desc:0 ""
+###########################################
+### EVENTS ################################
+###########################################
+#Civilian volunteers
+falcor.1.t:0 ""
+falcor.1.d:0 ""
+falcor.1.a:0 ""
+#approaching WNG
+falcor.2.t:0 ""
+falcor.2.d:0 ""
+falcor.2.a:0 ""
+#asking for falcor back
+falcor.3.t:0 ""
+falcor.3.d:0 ""
+falcor.3.a:0 ""
+falcor.3.b:0 ""
+#Getting rejected
+falcor.4.t:0 ""
+falcor.4.d:0 ""
+falcor.4.a:0 ""
+#wng accepts
+falcor.5.t:0 ""
+falcor.5.d:0 ""
+falcor.5.a:0 ""
+#making falcor capital
+falcor.6.t:0 ""
+falcor.6.d:0 ""
+falcor.6.a:0 ""
+#forgiving WNG
+falcor.7.t:0 ""
+falcor.7.d:0 ""
+falcor.7.a:0 ""
+#long live princess
+falcor.10.t:0 ""
+falcor.10.d:0 ""
+falcor.10.a:0 ""
+#inviting nations to faction
+falcor.11.t:0 ""
+falcor.11.d:0 ""
+falcor.11.a:0 ""
+#accepting faction invite
+falcor.12.t:0 ""
+falcor.12.d:0 ""
+falcor.12.a:0 ""
+#declining faction invite
+falcor.13.t:0 ""
+falcor.13.d:0 ""
+falcor.13.a:0 ""
+#killing princess
+falcor.17.t:0 ""
+falcor.17.d:0 ""
+falcor.17.a:0 ""
+#killing commies
+falcor.18.t:0 ""
+falcor.18.d:0 ""
+falcor.18.a:0 ""
+#destroying karthin
+falcor.19.t:0 ""
+falcor.19.d:0 ""
+falcor.19.a:0 ""
+falcor.19.b:0 ""
+#volunteers from generals
+falcor.20.t:0 ""
+falcor.20.d:0 ""
+falcor.20.a:0 ""
+#Using minitour to make new uniforms
+falcor.23.t:0 ""
+falcor.23.d:0 ""
+falcor.23.a:0 ""
+#minitour forced into army
+falcor.24.t:0 ""
+falcor.24.d:0 ""
+falcor.24.a:0 ""
+#demanding EQC
+falcor.25.t:0 ""
+falcor.25.d:0 ""
+falcor.25.a:0 ""
+falcor.25.b:0 ""
+#EQC rejcing
+falcor.26.t:0 ""
+falcor.26.d:0 ""
+falcor.26.a:0 ""
+#EQC accepting
+falcor.27.t:0 ""
+falcor.27.d:0 ""
+falcor.27.a:0 ""
+#unrest
+falcor.30.t:0 ""
+falcor.30.d:0 ""
+falcor.30.a:0 ""
+falcor.30.b:0 ""
+#tests on SIC
+falcor.31.t:0 ""
+falcor.31.d:0 ""
+falcor.31.a:0 ""
+#approaching WNG for friendship
+falcor.32.t:0 ""
+falcor.32.d:0 ""
+falcor.32.a:0 ""

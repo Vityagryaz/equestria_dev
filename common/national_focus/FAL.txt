@@ -1944,7 +1944,7 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			add_ideas = FAL_min_industry
+			add_ideas = FAL_min_industry2
 			log = "[Root.GetName]: Focus FAL_mit_camps"#Auto-logging
 		}
 	}

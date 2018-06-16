@@ -516,7 +516,7 @@ ideas = {
 		}
 	}
 	
-	country = {
+	country = {	
 		FAL_reforms1 = {
 		
 			allowed = {
@@ -525,27 +525,12 @@ ideas = {
 			
 			removal_cost = -1
 			
-			picture = GFX_idea_enlightned_feudalism
+			picture = FRA_fortification_focus
 			
 			modifier = {
-				local_resources_factor = -0.05
-				production_factory_efficiency_gain_factor = -0.075
+			    local_resources_factor = -0.05
+				production_factory_max_efficiency_factor = -0.075
 				research_time_factor = 0.05
-			}
-		}
-
-		FAL_offense1 = {
-		
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			picture = FRA_scw_intervention_nationalists_focus
-			
-			modifier = {
-				army_attack_factor = 0.10
 			}
 		}
 		
@@ -578,22 +563,7 @@ ideas = {
 				production_speed_bunker_factor = 0.2
 			}
 		}
-		
-		FAL_better_farms = {
-			
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			picture = generic_production_bonus
-			
-			modifier = {
-				production_factory_efficiency_gain_factor = 0.10
-			}
-		}
-		
+
 		FAL_better_farmers = {
 			
 			allowed = {
@@ -671,53 +641,6 @@ ideas = {
 			}
 		}
 		
-		FAL_bank_reforms = {
-		
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			picture = nkvd_2
-			
-			modifier = {
-				consumer_goods_factor = -0.05
-			}
-		}
-		
-		FAL_bank_reforms2 = {
-		
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			picture = nkvd_2
-			
-			modifier = {
-				local_resources_factor = 0.10
-			}
-		}
-		
-		FAL_revolution = {
-		
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			picture = nkvd_2
-			
-			modifier = {
-				army_defence_factor = 0.05
-				army_attack_factor = 0.05
-				army_morale_factor = 0.1
-			}
-		}
-		
 		FAL_coastal_forts = {
 		
 			allowed = {
@@ -781,23 +704,6 @@ ideas = {
 				army_morale_factor = -0.2
 				army_attack_factor = 0.10
 				army_defence_factor = 0.10
-			}
-		}
-		
-		stronger_united = {
-		
-				allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-			
-			picture = FRA_army_of_aggression_focus
-			
-			modifier = {
-				army_morale_factor = 0.1
-				army_attack_factor = 0.05
-				army_defence_factor = 0.05
 			}
 		}
 		

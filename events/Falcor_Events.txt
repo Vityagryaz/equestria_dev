@@ -129,36 +129,6 @@ country_event = { ############ forgiving wng
 	}
 }
 
-#country_event = { ############ celebrating princess
-#	id = falcor.8
-#	immediate = {log = "[Root.GetName]: event falcor.8"}#Auto-logging
-#	title = falcor.8.t
-#	desc = falcor.8.d
-#	picture = GFX_event_camelot
-	
-#	fire_only_once = yes
-#	is_triggered_only = yes
-
-#	option = {
-#		name = falcor.8.a
-#	}
-#}
-
-#country_event = { ############ building monument
-#	id = falcor.9
-#	immediate = {log = "[Root.GetName]: event falcor.9"}#Auto-logging
-#	title = falcor.9.t
-#	desc = falcor.9.d
-#	picture = GFX_event_camelot
-#	
-#	fire_only_once = yes
-#	is_triggered_only = yes
-#
-#	option = {
-#		name = falcor.9.a
-#	}
-#}
-
 country_event = { ############ long live princess
 	id = falcor.10
 	immediate = {log = "[Root.GetName]: event falcor.10"}#Auto-logging
@@ -231,62 +201,6 @@ country_event = { ############ rejecting faction
 		name = falcor.13.a
 	}
 }
-
-#country_event = { ############ elections
-#	id = falcor.14
-#	immediate = {log = "[Root.GetName]: event falcor.14"}#Auto-logging
-#	title = falcor.14.t
-#	desc = falcor.14.d
-#	picture = GFX_event_the_vote
-	
-#	fire_only_once = yes
-#	trigger = { 
-#		tag = FAL
-#			has_country_flag = FAL_elections
-#	}
-#		mean_time_to_happen = { days = 14 }
-#	
-#	option = {
-#		name = falcor.14.a
-#		country_event = falcor.15
-#	}
-#	option = {
-#		name = falcor.14.b
-#		country_event = falcor.16
-#	}
-#}
-
-#country_event = { ############ choosing fascism
-#	id = falcor.15
-#	immediate = {log = "[Root.GetName]: event falcor.15"}#Auto-logging
-#	title = falcor.15.t
-#	desc = falcor.15.d
-#	picture = GFX_event_the_vote
-#	
-#	fire_only_once = yes
-#	is_triggered_only = yes
-#
-#	option = {
-#		name = falcor.15.a
-#		set_country_flag = FAL_fascist
-#	}
-#}
-
-#country_event = { ############ choosing communist
-#	id = falcor.16
-#	immediate = {log = "[Root.GetName]: event falcor.16"}#Auto-logging
-#	title = falcor.16.t
-#	desc = falcor.16.d
-#	picture = GFX_event_the_vote
-	
-#	fire_only_once = yes
-#	is_triggered_only = yes
-
-#	option = {
-#		name = falcor.16.a
-#		set_country_flag = FAL_communist
-#	}
-#}
 
 country_event = { ############ killing princess
 	id = falcor.17
@@ -363,38 +277,6 @@ country_event = { ############ volunteers from generals
 	}
 }
 
-#country_event = { ############ commie takover
-#	id = falcor.21
-#	immediate = {log = "[Root.GetName]: event falcor.21"}#Auto-logging
-#	title = falcor.21.t
-#	desc = falcor.21.d
-#	picture = GFX_event_camelot
-	
-#	fire_only_once = yes
-#	is_triggered_only = yes
-
-#	option = {
-#		name = falcor.21.a
-#		set_politics = { ruling_party = communism elections_allowed = no }
-#	}
-#}
-
-#country_event = { ############ help from STG
-#	id = falcor.22
-#	immediate = {log = "[Root.GetName]: event falcor.22"}#Auto-logging
-#	title = falcor.22.t
-#	desc = falcor.22.d
-#	picture = GFX_event_camelot
-#	
-#	fire_only_once = yes
-#	is_triggered_only = yes
-#
-#	option = {
-#		name = falcor.22.a
-#		send_equipment = { target = FAL type = infantry_equipment amount = 5000 }
-#	}
-#}
-
 country_event = { ############ using minitour to make new uniforms
 	id = falcor.23
 	immediate = {log = "[Root.GetName]: event falcor.23"}#Auto-logging
@@ -408,6 +290,7 @@ country_event = { ############ using minitour to make new uniforms
    option = {
        name = falcor.23.a
     }
+}
 	
 country_event = { ############ minitour debuff
 	id = falcor.24
@@ -500,41 +383,7 @@ country_event = { #############accepting
 	}
 }
 
-country_event = { #############accepting
-	id = falcor.28
-	immediate = {log = "[Root.GetName]: event falcor.28"}#Auto-logging
-	title = falcor.28.t
-	desc = falcor.28.d
-	picture = GFX_event_camelot
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = falcor.28.a
-	}
-}
-
-country_event = { ############ political unrest
-	id = falcor.29
-	immediate = {log = "[Root.GetName]: event falcor.29"}#Auto-logging
-	title = falcor.29.t
-	desc = falcor.29.d
-	picture = GFX_event_the_vote
-	
-	fire_only_once = yes
-	is_triggered_only = yes
-	
-	option = {
-		name = falcor.29.a
-		set_country_flag = unrest_solved
-	}
-	option = {
-		name = falcor.29.b
-		country_event = { id = falcor.30 days = 30 }
-	}
-}
-country_event = { ############# allowing unrest
+country_event = { ############# unrest
 	id = falcor.30
 	immediate = {log = "[Root.GetName]: event falcor.30"}#Auto-logging
 	title = falcor.30.t
@@ -547,10 +396,12 @@ country_event = { ############# allowing unrest
 	option = {
 		name = falcor.30.a
 		set_country_flag = unrest
+		ai_chance = { factor = 20 }
 	}
 	option = {
 		name = falcor.30.b
 		set_country_flag = unrest_solved
+		ai_chance = { factor = 80 }
 	}
 }
 
@@ -584,10 +435,12 @@ country_event = { ############# approaching wng for friendship
 		FAL = {
 			set_country_flag = WNG_does_not_want_to_be_friends
 		}
+		ai_chance = { factor = 30 }
 	}
 	
 	option = {
 		name = falcor.32.b
 		add_stability = 0.1
+		ai_chance = { factor = 70 }
 	}
 }
