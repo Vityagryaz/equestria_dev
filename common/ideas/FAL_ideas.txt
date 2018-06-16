@@ -865,3 +865,19 @@ ideas = {
 				research_time_factor = -0.05
 			}
 		}
+		
+		min_uniforms = {
+		
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = GFX_nkvd_2
+			
+			modifier = {
+				heat_attrition_factor = -0.05
+				winter_attrition_factor = -0.05
+			}
+		}

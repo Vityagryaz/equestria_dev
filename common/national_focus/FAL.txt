@@ -693,6 +693,18 @@ focus_tree = {
 		x = 0
 		y = 1
 		
+		available = {
+			NOT = { has_country_flag = WNG_does_not_want_to_be_friends }
+			OR = {
+			WNG= {
+				has_government = democratic
+			}
+			WNG= {
+				has_government = neutrality
+			}
+		}
+		}
+		
 		mutually_exclusive = {
 			focus = FAL_wng_threat
 		}
@@ -705,11 +717,21 @@ focus_tree = {
 			focus = FAL_clean_politics
 		}
 		
-		completion_reward = {
-			country_event = falcor.2
-			log = "[Root.GetName]: Focus FAL_approach_wng"#Auto-logging
-		}
+		select_effect = {
+        WNG = { country_event = { id = falcor.32 days = 30 }                
+    }
+}
+    
+    completion_reward = {
+        custom_effect_tooltip = "You will approach Wingbardy and ask to be friends."
+		country_event = falcor.2
+		log = "[Root.GetName]: Focus FAL_approach_wng"#Auto-logging
 	}
+    cancel = {
+        has_country_flag = WNG_does_not_want_to_be_friends
+    }
+}
+
 
 	focus = {
 		id = FAL_wng_threat
@@ -739,6 +761,7 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.1
 			log = "[Root.GetName]: Focus FAL_wng_threat"#Auto-logging
+			set_country_flag = hates_wng
 		}
 	}
 	focus = {
@@ -829,18 +852,19 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			log = "[Root.GetName]: Focus WNG_only_fascism"#Auto-logging
-			WNG = {
-			add_opinion_modifier = {
-				target = ROOT
-			}
-		}
-			add_opinion_modifier = {
-				target = WNG
-			}
-			log = "[Root.GetName]: Focus FAL_trade_wng"#Auto-logging
+    log = "[Root.GetName]: Focus FAL_trade_wng"#Auto-logging
+		WNG = {
+        add_opinion_modifier = {
+            target = ROOT
+            modifier = FAL_wingbardy_trade
+        }
+    }
+		add_opinion_modifier = {
+        target = WNG
+        modifier = FAL_wingbardy_trade
 		}
 	}
+}
 	
 	focus = {
 		id = FAL_request_military_help
@@ -1955,14 +1979,15 @@ focus_tree = {
 		}
 		
 		completion_reward = {
-			
-			
+			country_event = falcor.23
+			add_ideas = min_uniforms
+			log = "[Root.GetName]: Focus FAL_kill_min"#Auto-logging
 		}
 	}
 	
 	
 	focus = {
-		id =FAL_mit_army 
+		id = FAL_mit_army 
 		icon = GFX_focus_generic_little_entente
 		cost = 10.00
 		
